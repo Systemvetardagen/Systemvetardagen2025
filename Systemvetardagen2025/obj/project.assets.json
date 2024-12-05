@@ -460,19 +460,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/janpakos/.nuget/packages/": {}
+    "/Users/wilhelmdurelius/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/janpakos/SYSTEMVETARDAGEN2025/Systemvetardagen2025/Systemvetardagen2025.csproj",
+      "projectUniqueName": "/Users/wilhelmdurelius/Documents/Code/Systemvetardagen2025backend/Systemvetardagen2025/Systemvetardagen2025/Systemvetardagen2025.csproj",
       "projectName": "Systemvetardagen2025",
-      "projectPath": "/Users/janpakos/SYSTEMVETARDAGEN2025/Systemvetardagen2025/Systemvetardagen2025.csproj",
-      "packagesPath": "/Users/janpakos/.nuget/packages/",
-      "outputPath": "/Users/janpakos/SYSTEMVETARDAGEN2025/Systemvetardagen2025/obj/",
+      "projectPath": "/Users/wilhelmdurelius/Documents/Code/Systemvetardagen2025backend/Systemvetardagen2025/Systemvetardagen2025/Systemvetardagen2025.csproj",
+      "packagesPath": "/Users/wilhelmdurelius/.nuget/packages/",
+      "outputPath": "/Users/wilhelmdurelius/Documents/Code/Systemvetardagen2025backend/Systemvetardagen2025/Systemvetardagen2025/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/janpakos/.nuget/NuGet/NuGet.Config"
+        "/Users/wilhelmdurelius/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Systemvetardagen2025.props" />
+</Project>
