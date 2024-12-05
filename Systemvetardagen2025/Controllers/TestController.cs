@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Systemvetardagen2025.Controllers;
+namespace webapi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -18,9 +18,20 @@ public class TestController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public string Get()
+    [HttpPost("post-test")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult PostTest([FromBody] string request)
     {
-     return "system";
+        string test = "system";
+        return Ok(new { test = test + " post test" });
+    }
+
+    [HttpGet("get-test")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult GetTest()
+    {
+        return Ok(new { test = "get test" });
     }
 }
