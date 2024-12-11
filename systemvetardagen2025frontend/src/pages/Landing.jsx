@@ -9,8 +9,10 @@ function Landing() {
     }
     return (
         <>
-            <div className="bg-background  h-screen text-center">
-                <h1 className="text-9xl text-text font-bold ">DISK</h1>
+            <div className="bg-background flex flex-col h-screen text-center">
+                <h1 className="text-9xl bg-gradient-to-r from-first via-second to-third inline-block text-transparent bg-clip-text font-bold ">
+                    Systemvetardagen 2025
+                </h1>
                 <button
                     className="bg-primary rounded-md text-text border-secondary focus:border-accent border-2 shadow-md m-5 p-5 transition active:scale-90"
                     onClick={() => {

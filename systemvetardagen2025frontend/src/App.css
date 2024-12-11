@@ -1,3 +1,8 @@
+:root {
+  --logo-gradient-first: 65, 88, 208;
+  --logo-gradient-second: 200, 80, 192;
+  --logo-gradient-third: 255, 204, 112;
+}
 @media (prefers-color-scheme: light) {
     :root {
         --background: 247, 244, 255;
@@ -16,6 +21,7 @@
         --accent: 253, 64, 139;
     }
 }
+
 body {
     font-family: 'WorkSans';
 }
