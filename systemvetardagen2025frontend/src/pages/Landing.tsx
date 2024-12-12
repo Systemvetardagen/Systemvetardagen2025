@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../App.css';
-import Test from './test';
+import Test from './Test';
 
 function Landing() {
     const [count, setCount] = useState(0);
@@ -10,7 +10,7 @@ function Landing() {
     return (
         <>
             <div className="bg-background flex flex-col h-screen text-center">
-                <h1 className="text-9xl bg-gradient-to-r from-first via-second to-third inline-block text-transparent bg-clip-text font-bold ">
+                <h1 className="text-9xl bg-gradient-to-r from-gradientFirst via-gradientSecond to-gradientThird inline-block text-transparent bg-clip-text font-bold ">
                     Systemvetardagen 2025
                 </h1>
                 <button

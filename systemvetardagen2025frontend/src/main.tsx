@@ -2,7 +2,8 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 
-import Landing from './pages/Landing.js';
+import TemporaryLanding from './pages/TemporaryLanding.tsx';
+import Landing from './pages/Landing.tsx';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -11,6 +12,6 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
     <StrictMode>
-        <Landing />
+        <TemporaryLanding />
     </StrictMode>
 );
