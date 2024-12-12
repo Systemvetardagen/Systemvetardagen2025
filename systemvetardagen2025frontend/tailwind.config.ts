@@ -14,6 +14,7 @@ export default {
                 gradientThird: 'rgba(var(--gradient-third))',
             },
             fontFamily: { body: ['WorkSans'], heading: ['OverPass'] },
+            
         },
     },
     plugins: [],

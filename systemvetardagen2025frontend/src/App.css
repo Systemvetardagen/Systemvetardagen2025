@@ -24,6 +24,7 @@
 
 body {
     font-family: 'WorkSans';
+    font-size: unset;
 }
 h1,
 h2,
@@ -32,4 +33,5 @@ h4,
 h5,
 h6 {
     font-family: 'Overpass';
+    font-size: unset;
 }
