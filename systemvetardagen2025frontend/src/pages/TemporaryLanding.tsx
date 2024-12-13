@@ -22,9 +22,6 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1.5vw] font-black my-[2em]">
                 🪚 Site under construction 🪚
             </span>
-            <span className="text-white lg:text-[1vw] font-normal">
-                Want to take a look at last year's event?
-            </span>
 
             <span className="w-3/5 text-center text-white text-xs lg:text-[.8vw] font-normal my-auto">
                 Systemvetardagen is organized by the Student Union DISK <br />
