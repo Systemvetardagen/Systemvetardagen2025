@@ -19,7 +19,7 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1vw] font-normal opacity-90 mt-2">
                 Kista Nod, Borgarfjordsgatan 12
             </span>
-            <span className="text-white lg:text-[1.5vw] font-black my-[2em]">
+            <span className="text-white lg:text-[1.9vw] font-black my-[2em]">
                 🪚 Site under construction 🪚
             </span>
 
