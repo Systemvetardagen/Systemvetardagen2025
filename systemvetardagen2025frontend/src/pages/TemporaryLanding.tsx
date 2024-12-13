@@ -10,7 +10,7 @@ export default function TemporaryLanding() {
                 className=" w-[50vw] min-w-[190px] max-w-[240px]"
                 src="/images/systemvetardagen-logo.png"
             />
-            <h1 className="text-white text-3xl lg:text-[2.5vw] font-black mt-8 font-work-sans ">
+            <h1 className="text-white text-3xl lg:text-[2.5vw] font-black mt-8">
                 Systemvetardagen 2025
             </h1>
             <span className="text-white lg:text-[1.2vw] opacity-95">
