@@ -25,11 +25,6 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1vw] font-normal">
                 Want to take a look at last year's event?
             </span>
-            <button className="lg:text-[1.2vw] text-xs sm:text-md max-w-[80vw] min-w-[350px] mt-4 bg-white p-2 px-20 rounded-full transform transition-all hover:scale-[102%]">
-                <a href="https://systemvetardagen.se/blog/systemvetardagen-2024">
-                    Go to Systemvetardagen 2024
-                </a>
-            </button>
 
             <span className="w-3/5 text-center text-white text-xs lg:text-[.8vw] font-normal my-auto">
                 Systemvetardagen is organized by the Student Union DISK <br />
