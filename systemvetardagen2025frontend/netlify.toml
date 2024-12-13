@@ -1,7 +1,0 @@
-[build]
-  base = "systemvetardagen2025frontend"           # Folder containing the React app
-  publish = "systemvetardagen2025frontend/src"  # Folder containing built files
-  command = "npm run build"    # Build command
-
-[dev]
-  framework = "react"          # Optional: Specifies React for local Netlify dev
