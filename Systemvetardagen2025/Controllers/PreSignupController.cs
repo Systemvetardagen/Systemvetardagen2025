@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,7 @@ public class PreSignupController(SystemvetardagenContext context) : ControllerBa
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult PostTest([FromBody] PreSignupDTO ps)
     {
-        if (ps == null) return BadRequest("emptyps");
+        if (ps == null) return NoContent();
         try
         {
 
