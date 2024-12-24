@@ -1,3 +1,5 @@
+@import './index.css';
+
 :root {
     --gradient-first: 255, 204, 112;
     --gradient-second: 200, 80, 192;
