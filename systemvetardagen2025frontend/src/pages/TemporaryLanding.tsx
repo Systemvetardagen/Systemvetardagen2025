@@ -10,7 +10,7 @@ export default function TemporaryLanding() {
                 className=" w-[50vw] min-w-[190px] max-w-[240px]"
                 src="/images/systemvetardagen-logo.png"
             />
-            <h1 className="text-white text-3xl lg:text-[2vw] mb-10 font-black mt-8">
+            <h1 className="text-white text-3xl lg:text-[2vw] mb-10 font-semiBold mt-8">
                 Systemvetardagen 2025
             </h1>
             <span className="text-white lg:text-[1.2vw] opacity-95">
@@ -19,7 +19,7 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1vw] font-normal opacity-90 mt-2">
                 Kista Nod, Borgarfjordsgatan 12
             </span>
-            <span className="text-white lg:text-[2vw] font-black my-[2em]">
+            <span className="text-white lg:text-[1.5vw] font-bold my-[2em]">
                 🪚 Site under construction 🪚
             </span>
 

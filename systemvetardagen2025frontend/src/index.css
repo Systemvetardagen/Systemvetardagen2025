@@ -27,33 +27,41 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Overpass';
-    src: local('Overpass-Black'),
-        url('./fonts/Overpass/static/Overpass-Black.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: local('Poppins-Black'),
+        url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Overpass';
-    src: local('Overpass-Bold'),
-        url('./fonts/Overpass/static/Overpass-Bold.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: local('Poppins-Bold'),
+        url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Overpass';
-    src: local('Overpass-Medium'),
-        url('./fonts/Overpass/static/Overpass-Medium.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: local('Poppins-SemiBold'),
+        url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins-Medium'),
+        url('./fonts/Poppins/Poppins-Medium.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Overpass';
-    src: local('Overpass-Regular'),
-        url('./fonts/Overpass/static/Overpass-Regular.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: local('Poppins-Regular'),
+        url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     font-display: swap;

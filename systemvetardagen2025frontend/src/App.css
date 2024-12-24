@@ -3,6 +3,7 @@
     --gradient-second: 200, 80, 192;
     --gradient-third: 65, 88, 208;
 }
+
 @media (prefers-color-scheme: light) {
     :root {
         --background: 247, 244, 255;
@@ -12,6 +13,7 @@
         --accent: 255, 201, 63;
     }
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background: 30, 30, 30;
@@ -26,12 +28,15 @@ body {
     font-family: 'WorkSans';
     font-size: unset;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: unset;
 }
