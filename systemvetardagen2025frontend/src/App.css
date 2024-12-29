@@ -1,9 +1,9 @@
 @import './index.css';
 
 :root {
-    background: linear-gradient(26deg, #4158D0, #C850C0, #FFCC70);
+    background: linear-gradient(26deg, #325FFF, #FF4CC2, #FFC93F);
     background-size: 300% 150%;
-    animation: Background 15s ease infinite;
+    animation: Background 20s ease infinite;
 }
 
 @keyframes Background {
