@@ -1,9 +1,23 @@
 @import './index.css';
 
 :root {
-    --gradient-first: 255, 204, 112;
-    --gradient-second: 200, 80, 192;
-    --gradient-third: 65, 88, 208;
+    background: linear-gradient(26deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 300% 150%;
+    animation: Background 15s ease infinite;
+}
+
+@keyframes Background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @media (prefers-color-scheme: light) {
