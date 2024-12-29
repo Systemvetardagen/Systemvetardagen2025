@@ -1,9 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-
-import TemporaryLanding from './pages/TemporaryLanding.tsx';
-import Landing from './pages/Landing.tsx';
+import App from './App'; // Import your main App component where routes are defined
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -12,6 +11,8 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
     <StrictMode>
-        <TemporaryLanding />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </StrictMode>
 );

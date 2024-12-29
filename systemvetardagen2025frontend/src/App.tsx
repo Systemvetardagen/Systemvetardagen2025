@@ -1,17 +1,17 @@
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import TemporaryLanding from './pages/TemporaryLanding';
+import Landing from './pages/Landing';
+import SignupForm from './pages/SignupForm'; // Add your new page
 
-function App() {
+const App: React.FC = () => {
     return (
-        <>
-            <div className="bg-background  h-screen text-center">
-                <h1 className="text-9xl text-text font-bold ">DISK</h1>
-                <span className="text-text">DISK</span>
-                <button className="bg-primary rounded-md text-text border-accent border-2 shadow-md m-5 p-5 animate-bounce">
-                    Klicka knapp
-                </button>
-            </div>
-        </>
+        <Routes>
+            <Route path="/" element={<TemporaryLanding />} />
+            <Route path="/landing" element={<Landing />} />
+            <Route path="/signupform" element={<SignupForm />} />
+        </Routes>
     );
-}
+};
 
 export default App;
