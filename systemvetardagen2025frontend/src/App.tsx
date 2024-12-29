@@ -9,7 +9,7 @@ const App: React.FC = () => {
         <Routes>
             <Route path="/" element={<TemporaryLanding />} />
             <Route path="/landing" element={<Landing />} />
-            <Route path="/signupform" element={<SignupForm />} />
+            <Route path="/signup" element={<SignupForm />} />
         </Routes>
     );
 };
