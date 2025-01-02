@@ -7,9 +7,8 @@ import SignupForm from './pages/SignupForm'; // Add your new page
 const App: React.FC = () => {
     return (
         <Routes>
-            <Route path="/" element={<TemporaryLanding />} />
-            <Route path="/landing" element={<Landing />} />
             <Route path="/signup" element={<SignupForm />} />
+            <Route path="/" element={<TemporaryLanding />} />
         </Routes>
     );
 };
