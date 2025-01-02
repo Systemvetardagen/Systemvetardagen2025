@@ -17,7 +17,8 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-orange-400 p-4 flex flex-col items-center">
+    <div className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+                        flex flex-col items-center pt-[10vh] min-w-[351px]">
       <div className="w-full max-w-4xl text-center mb-12 mt-16">
         <div className="mb-4">
           <h1 className="text-white text-5xl font-bold mb-8">Systemvetardagen 2025</h1>
