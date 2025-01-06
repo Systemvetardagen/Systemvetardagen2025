@@ -20,26 +20,7 @@ const StudentDashboard: React.FC = () => {
     direction: 'asc' | 'desc';
   }>({ field: null, direction: 'asc' });
 
-  useEffect(() => {
-    setStudents([
-      {
-        id: '1',
-        firstName: 'Anna',
-        lastName: 'Andersson',
-        email: 'anna.andersson@student.su.se',
-        degree: 'bachelors',
-        fieldOfStudy: 'Computer Science'
-      },
-      {
-        id: '2',
-        firstName: 'Erik',
-        lastName: 'Eriksson',
-        email: 'erik.eriksson@student.su.se',
-        degree: 'masters',
-        fieldOfStudy: 'Data Science'
-      }
-    ]);
-  }, []);
+  
 
   const handleSort = (field: keyof Student) => {
     setSortConfig({
