@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Copy, Download, Search, Loader2, AlertCircle } from 'lucide-react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
 
-// Types
 interface Student {
   id?: string;
   firstName: string;
@@ -14,86 +10,56 @@ interface Student {
   createdAt?: string;
 }
 
-interface DashboardState {
-  students: Student[];
-  isLoading: boolean;
-  error: string | null;
-  searchTerm: string;
-  sortField: keyof Student | null;
-  sortDirection: 'asc' | 'desc';
-}
-
 const StudentDashboard: React.FC = () => {
-  const [state, setState] = useState<DashboardState>({
-    students: [],
-    isLoading: false,
-    error: null,
-    searchTerm: '',
-    sortField: null,
-    sortDirection: 'asc'
-  });
+  const [students, setStudents] = useState<Student[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [sortConfig, setSortConfig] = useState<{
+    field: keyof Student | null;
+    direction: 'asc' | 'desc';
+  }>({ field: null, direction: 'asc' });
 
-  // For demo purposes - remove this when connecting to real API
   useEffect(() => {
-    setState(prev => ({
-      ...prev,
-      students: [
-        {
-          id: '1',
-          firstName: 'Anna',
-          lastName: 'Andersson',
-          email: 'anna.andersson@student.su.se',
-          degree: 'bachelors',
-          fieldOfStudy: 'Computer Science',
-          createdAt: new Date().toISOString()
-        },
-        {
-          id: '2',
-          firstName: 'Erik',
-          lastName: 'Eriksson',
-          email: 'erik.eriksson@student.su.se',
-          degree: 'masters',
-          fieldOfStudy: 'Data Science',
-          createdAt: new Date().toISOString()
-        }
-      ]
-    }));
+    setStudents([
+      {
+        id: '1',
+        firstName: 'Anna',
+        lastName: 'Andersson',
+        email: 'anna.andersson@student.su.se',
+        degree: 'bachelors',
+        fieldOfStudy: 'Computer Science'
+      },
+      {
+        id: '2',
+        firstName: 'Erik',
+        lastName: 'Eriksson',
+        email: 'erik.eriksson@student.su.se',
+        degree: 'masters',
+        fieldOfStudy: 'Data Science'
+      }
+    ]);
   }, []);
 
   const handleSort = (field: keyof Student) => {
-    setState(prev => ({
-      ...prev,
-      sortField: field,
-      sortDirection: 
-        prev.sortField === field && prev.sortDirection === 'asc' 
-          ? 'desc' 
-          : 'asc'
-    }));
-  };
-
-  const handleSearch = (value: string) => {
-    setState(prev => ({
-      ...prev,
-      searchTerm: value
-    }));
+    setSortConfig({
+      field,
+      direction: sortConfig.field === field && sortConfig.direction === 'asc' ? 'desc' : 'asc'
+    });
   };
 
   const copyEmails = async () => {
-    const emails = state.students.map(student => student.email).join(', ');
     try {
-      await navigator.clipboard.writeText(emails);
+      await navigator.clipboard.writeText(students.map(s => s.email).join(', '));
     } catch (err) {
-      setState(prev => ({
-        ...prev,
-        error: 'Failed to copy emails to clipboard'
-      }));
+      setError('Failed to copy emails');
     }
   };
 
   const exportCSV = () => {
     try {
       const headers = ['First Name', 'Last Name', 'Email', 'Degree', 'Field of Study'];
-      const csvData = state.students.map(student => 
+      const csvData = students.map(student => 
         [student.firstName, student.lastName, student.email, student.degree, student.fieldOfStudy].join(',')
       );
       const csv = [headers.join(','), ...csvData].join('\n');
@@ -102,38 +68,31 @@ const StudentDashboard: React.FC = () => {
       const a = document.createElement('a');
       a.href = url;
       a.download = 'systemvetardagen-signups.csv';
-      document.body.appendChild(a);
       a.click();
-      document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     } catch (err) {
-      setState(prev => ({
-        ...prev,
-        error: 'Failed to export CSV'
-      }));
+      setError('Failed to export CSV');
     }
   };
 
-  const filteredStudents = state.students.filter(student => 
-    Object.values(student)
-      .join(' ')
-      .toLowerCase()
-      .includes(state.searchTerm.toLowerCase())
-  );
-
-  const sortedStudents = [...filteredStudents].sort((a, b) => {
-    if (!state.sortField) return 0;
-    
-    const aValue = a[state.sortField];
-    const bValue = b[state.sortField];
-    
-    if (typeof aValue === 'string' && typeof bValue === 'string') {
-      return state.sortDirection === 'asc' 
-        ? aValue.localeCompare(bValue)
-        : bValue.localeCompare(aValue);
-    }
-    return 0;
-  });
+  const filteredAndSortedStudents = [...students]
+    .filter(student => 
+      Object.values(student)
+        .join(' ')
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) => {
+      if (!sortConfig.field) return 0;
+      const aVal = a[sortConfig.field];
+      const bVal = b[sortConfig.field];
+      if (typeof aVal === 'string' && typeof bVal === 'string') {
+        return sortConfig.direction === 'asc' 
+          ? aVal.localeCompare(bVal)
+          : bVal.localeCompare(aVal);
+      }
+      return 0;
+    });
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">
@@ -142,110 +101,105 @@ const StudentDashboard: React.FC = () => {
         <h2 className="text-white text-xl">Marketing Dashboard</h2>
       </div>
 
-      <Card className="w-full max-w-6xl">
-        <CardHeader>
-          <CardTitle className="flex justify-between items-center flex-wrap gap-4">
-            <span>Student Signups</span>
-            <div className="flex gap-4">
-              <button
-                onClick={copyEmails}
-                disabled={state.isLoading || state.students.length === 0}
-                className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
-              >
-                <Copy size={16} /> Copy All Emails
-              </button>
-              <button
-                onClick={exportCSV}
-                disabled={state.isLoading || state.students.length === 0}
-                className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
-              >
-                <Download size={16} /> Export CSV
-              </button>
-            </div>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          {state.error && (
-            <Alert variant="destructive" className="mb-6">
-              <AlertCircle className="h-4 w-4" />
-              <AlertDescription>{state.error}</AlertDescription>
-            </Alert>
-          )}
-
-          <div className="mb-6 relative">
-            <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
-            <input
-              type="text"
-              placeholder="Search students..."
-              className="w-full pl-10 pr-4 py-2 rounded-md bg-gray-100"
-              value={state.searchTerm}
-              onChange={(e) => handleSearch(e.target.value)}
-              disabled={state.isLoading}
-            />
+      <div className="bg-white rounded-lg shadow-lg w-full max-w-6xl p-6">
+        <div className="flex justify-between items-center flex-wrap gap-4 mb-6">
+          <span className="text-xl font-semibold">Student Signups</span>
+          <div className="flex gap-4">
+            <button
+              onClick={copyEmails}
+              disabled={isLoading || students.length === 0}
+              className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
+            >
+              Copy All Emails
+            </button>
+            <button
+              onClick={exportCSV}
+              disabled={isLoading || students.length === 0}
+              className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
+            >
+              Export CSV
+            </button>
           </div>
+        </div>
 
-          {state.isLoading ? (
-            <div className="flex justify-center items-center py-12">
-              <Loader2 className="animate-spin text-purple-600" size={48} />
-            </div>
-          ) : (
-            <>
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th 
-                        className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                        onClick={() => handleSort('firstName')}
-                      >
-                        Name
-                      </th>
-                      <th 
-                        className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                        onClick={() => handleSort('email')}
-                      >
-                        Email
-                      </th>
-                      <th 
-                        className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                        onClick={() => handleSort('degree')}
-                      >
-                        Degree
-                      </th>
-                      <th 
-                        className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                        onClick={() => handleSort('fieldOfStudy')}
-                      >
-                        Field of Study
-                      </th>
+        {error && (
+          <div className="mb-6 p-4 bg-red-100 text-red-700 rounded-md">
+            {error}
+          </div>
+        )}
+
+        <div className="mb-6">
+          <input
+            type="text"
+            placeholder="Search students..."
+            className="w-full px-4 py-2 rounded-md bg-gray-100"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            disabled={isLoading}
+          />
+        </div>
+
+        {isLoading ? (
+          <div className="flex justify-center items-center py-12">
+            Loading...
+          </div>
+        ) : (
+          <>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th 
+                      className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
+                      onClick={() => handleSort('firstName')}
+                    >
+                      Name
+                    </th>
+                    <th 
+                      className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
+                      onClick={() => handleSort('email')}
+                    >
+                      Email
+                    </th>
+                    <th 
+                      className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
+                      onClick={() => handleSort('degree')}
+                    >
+                      Degree
+                    </th>
+                    <th 
+                      className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
+                      onClick={() => handleSort('fieldOfStudy')}
+                    >
+                      Field of Study
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredAndSortedStudents.map((student) => (
+                    <tr key={student.id} className="border-b border-gray-100 hover:bg-gray-50">
+                      <td className="px-4 py-3">{`${student.firstName} ${student.lastName}`}</td>
+                      <td className="px-4 py-3">{student.email}</td>
+                      <td className="px-4 py-3 capitalize">{student.degree}</td>
+                      <td className="px-4 py-3">{student.fieldOfStudy}</td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {sortedStudents.map((student) => (
-                      <tr key={student.id} className="border-b border-gray-100 hover:bg-gray-50">
-                        <td className="px-4 py-3">{`${student.firstName} ${student.lastName}`}</td>
-                        <td className="px-4 py-3">{student.email}</td>
-                        <td className="px-4 py-3 capitalize">{student.degree}</td>
-                        <td className="px-4 py-3">{student.fieldOfStudy}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                  ))}
+                </tbody>
+              </table>
+            </div>
 
-              {sortedStudents.length === 0 ? (
-                <div className="text-center py-8 text-gray-500">
-                  No students found
-                </div>
-              ) : (
-                <div className="mt-4 text-sm text-gray-600">
-                  Total Signups: {sortedStudents.length}
-                </div>
-              )}
-            </>
-          )}
-        </CardContent>
-      </Card>
+            {filteredAndSortedStudents.length === 0 ? (
+              <div className="text-center py-8 text-gray-500">
+                No students found
+              </div>
+            ) : (
+              <div className="mt-4 text-sm text-gray-600">
+                Total Signups: {filteredAndSortedStudents.length}
+              </div>
+            )}
+          </>
+        )}
+      </div>
 
       <div className="mt-8 text-center text-white text-sm">
         <p>Systemvetardagen is organized by the Student Union DISK</p>
