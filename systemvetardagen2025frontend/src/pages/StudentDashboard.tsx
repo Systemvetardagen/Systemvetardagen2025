@@ -33,6 +33,33 @@ const StudentDashboard: React.FC = () => {
     sortDirection: 'asc'
   });
 
+  // For demo purposes - remove this when connecting to real API
+  useEffect(() => {
+    setState(prev => ({
+      ...prev,
+      students: [
+        {
+          id: '1',
+          firstName: 'Anna',
+          lastName: 'Andersson',
+          email: 'anna.andersson@student.su.se',
+          degree: 'bachelors',
+          fieldOfStudy: 'Computer Science',
+          createdAt: new Date().toISOString()
+        },
+        {
+          id: '2',
+          firstName: 'Erik',
+          lastName: 'Eriksson',
+          email: 'erik.eriksson@student.su.se',
+          degree: 'masters',
+          fieldOfStudy: 'Data Science',
+          createdAt: new Date().toISOString()
+        }
+      ]
+    }));
+  }, []);
+
   const handleSort = (field: keyof Student) => {
     setState(prev => ({
       ...prev,
