@@ -86,14 +86,14 @@ const StudentDashboard: React.FC = () => {
         <div className="flex justify-between items-center flex-wrap gap-4 mb-6">
           <span id="pagetext" className="text-xl font-semibold">Student Signups</span>
           <div className="flex gap-4">
-            <button
+            <button id="pagetext"
               onClick={copyEmails}
               disabled={isLoading || students.length === 0}
               className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
             >
               Copy All Emails
             </button>
-            <button
+            <button id="pagetext"
               onClick={exportCSV}
               disabled={isLoading || students.length === 0}
               className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
