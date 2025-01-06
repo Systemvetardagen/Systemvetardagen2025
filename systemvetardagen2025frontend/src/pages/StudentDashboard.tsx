@@ -84,7 +84,7 @@ const StudentDashboard: React.FC = () => {
 
       <div className="bg-white rounded-lg shadow-lg w-full max-w-6xl p-6">
         <div className="flex justify-between items-center flex-wrap gap-4 mb-6">
-          <span className="text-xl font-semibold">Student Signups</span>
+          <span id="pagetext" className="text-xl font-semibold">Student Signups</span>
           <div className="flex gap-4">
             <button
               onClick={copyEmails}
@@ -111,6 +111,7 @@ const StudentDashboard: React.FC = () => {
 
         <div className="mb-6">
           <input
+            id="pagetext"
             type="text"
             placeholder="Search students..."
             className="w-full px-4 py-2 rounded-md bg-gray-100"
@@ -130,25 +131,25 @@ const StudentDashboard: React.FC = () => {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th 
+                    <th id="pagetext"
                       className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                       onClick={() => handleSort('firstName')}
                     >
                       Name
                     </th>
-                    <th 
+                    <th id="pagetext"
                       className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                       onClick={() => handleSort('email')}
                     >
                       Email
                     </th>
-                    <th 
+                    <th id="pagetext"
                       className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                       onClick={() => handleSort('degree')}
                     >
                       Degree
-                    </th>
-                    <th 
+                    </th> 
+                    <th  id="pagetext"
                       className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                       onClick={() => handleSort('fieldOfStudy')}
                     >
@@ -174,17 +175,12 @@ const StudentDashboard: React.FC = () => {
                 No students found
               </div>
             ) : (
-              <div className="mt-4 text-sm text-gray-600">
+              <div id="pagetext" className="mt-4 text-sm text-gray-600">
                 Total Signups: {filteredAndSortedStudents.length}
               </div>
             )}
           </>
         )}
-      </div>
-
-      <div className="mt-8 text-center text-white text-sm">
-        <p>Systemvetardagen is organized by the Student Union DISK</p>
-        <p>at the Department of Computer and Systems Sciences at Stockholm University</p>
       </div>
     </div>
   );
