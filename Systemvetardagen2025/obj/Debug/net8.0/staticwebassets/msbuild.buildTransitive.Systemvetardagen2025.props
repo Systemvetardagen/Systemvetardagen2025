@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/Systemvetardagen2025.props" />
-</Project>
