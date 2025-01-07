@@ -34,7 +34,11 @@ const SignupForm = () => {
     };
     if (formSubmitted) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-orange-400 p-4 flex flex-col items-center">
+            <div
+                className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+        flex flex-col items-center pt-[10vh] min-w-[351px]"
+            >
+                {' '}
                 <div className="w-full max-w-4xl text-center mb-12 mt-16">
                     <div className="mb-4">
                         <h1 className="text-white text-5xl font-bold mb-8">
@@ -45,12 +49,10 @@ const SignupForm = () => {
                         </h2>
                     </div>
                 </div>
-
                 <div className="bg-white rounded-lg p-8 w-full max-w-2xl shadow-xl text-center">
                     {/*TODO: FIX THIS PAGE*/}
                     <h1>Form submitted!</h1>
                 </div>
-
                 <div className="mt-8 text-center text-white text-sm">
                     <p>
                         Systemvetardagen is organized by the Student Union DISK
@@ -64,7 +66,10 @@ const SignupForm = () => {
         );
     }
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-orange-400 p-4 flex flex-col items-center">
+        <div
+            className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+        flex flex-col items-center pt-[10vh] min-w-[351px]"
+        >
             <div className="w-full max-w-4xl text-center mb-12 mt-16">
                 <div className="mb-4">
                     <h1 className="text-white text-5xl font-bold mb-8">

@@ -56,3 +56,12 @@ h6 {
     font-style: normal;
     font-size: unset;
 }
+
+input {
+    font-family: "Poppins";
+}
+
+#pagetext {
+    font-family: "Poppins", "WorkSans";
+
+}

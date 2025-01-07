@@ -2,8 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import TemporaryLanding from './pages/TemporaryLanding';
 import Landing from './pages/Landing';
-import SignupForm from './pages/SignupForm'; // Add your new page
 import { QueryClient, QueryClientProvider } from 'react-query';
+import SignupForm from './pages/SignupForm';
+import StudentDashboard from './pages/StudentDashboard';
 
 const App: React.FC = () => {
     const queryClient = new QueryClient();
@@ -13,6 +14,10 @@ const App: React.FC = () => {
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
                 <Route path="/" element={<TemporaryLanding />} />
+                <Route
+                    path="/studentdashboard"
+                    element={<StudentDashboard />}
+                />
             </Routes>
         </QueryClientProvider>
     );
