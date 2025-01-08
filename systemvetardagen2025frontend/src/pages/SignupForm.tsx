@@ -35,10 +35,9 @@ const SignupForm = () => {
     if (formSubmitted) {
         return (
             <div
-                className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+                className="h-screen max-h-fit w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
         flex flex-col items-center pt-[10vh] min-w-[351px]"
             >
-                {' '}
                 <div className="w-full max-w-4xl text-center mb-12 mt-16">
                     <div className="mb-4">
                         <h1 className="text-white text-5xl font-bold mb-8">
@@ -67,19 +66,19 @@ const SignupForm = () => {
     }
     return (
         <div
-            className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
-        flex flex-col items-center pt-[10vh] min-w-[351px]"
+            className="h-screen max-h-screen w-full min-w-[375px] bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+        flex flex-col items-center pt-[10vh]"
         >
-            <div className="w-full max-w-4xl text-center mb-12 mt-16">
+            <div className="w-full lg:max-w-4xl max-w-[80%] text-center md:mb-12 md:mt-16">
                 <div className="mb-4">
-                    <h1 className="text-white text-5xl font-bold mb-8">
+                    <h1 className="text-white lg:text-5xl sm:text-4xl text-2xl font-bold mb-8">
                         Systemvetardagen 2025
                     </h1>
                     <h2 className="text-white text-2xl">Sign up for updates</h2>
                 </div>
             </div>
 
-            <div className="bg-white rounded-lg p-8 w-full max-w-2xl shadow-xl">
+            <div className="bg-white rounded-lg p-8 w-[80%] max-w-2xl shadow-xl">
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
