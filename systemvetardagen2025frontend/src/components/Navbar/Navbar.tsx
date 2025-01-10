@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
-    const [isSticky, setIsSticky] = useState(false);
+    const [isSticky, setIsSticky] = useState<boolean>(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,12 +16,13 @@ const Navbar: React.FC = () => {
         };
     }, []);
 
-    const getNavLinkClass = ({ isActive }) =>
-        `font-bold text-2xl text-black  ${
+    const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
+        `font-bold text-2xl text-black ${
             isActive
                 ? 'text-black underline underline-offset-8'
                 : 'hover:text-gray-500'
         }`;
+
     return (
         <nav
             className={`${
