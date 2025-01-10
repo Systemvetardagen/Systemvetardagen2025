@@ -1,22 +1,25 @@
 @import './index.css';
 
 :root {
-    background: linear-gradient(26deg, #325FFF, #FF4CC2, #FFC93F);
+}
+
+.gradient-background {
+    background: linear-gradient(26deg, #325fff, #ff4cc2, #ffc93f);
     background-size: 300% 150%;
     animation: Background 20s ease infinite;
 }
 
 @keyframes Background {
     0% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
 
     50% {
-        background-position: 100% 50%
+        background-position: 100% 50%;
     }
 
     100% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
 }
 
@@ -51,17 +54,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins", "WorkSans"; /*Should be Poppins only*/
+    font-family: 'Poppins', 'WorkSans'; /*Should be Poppins only*/
     font-weight: 600;
     font-style: normal;
     font-size: unset;
 }
 
 input {
-    font-family: "Poppins";
+    font-family: 'Poppins';
 }
 
 #pagetext {
-    font-family: "Poppins", "WorkSans";
-
+    font-family: 'Poppins', 'WorkSans';
 }

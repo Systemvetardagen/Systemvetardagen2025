@@ -4,10 +4,7 @@ import Countdown from '../components/Countdown/Countdown';
 export default function TemporaryLanding() {
     const targetDate = '2025-03-26T16:00:00+01:00';
     return (
-        <div
-            className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
-                        flex flex-col items-center pt-[10vh] min-w-[351px]"
-        >
+        <div className="h-screen w-screen  gradient-background flex flex-col items-center pt-[10vh] min-w-[351px]">
             <img
                 className=" w-[50vw] min-w-[190px] max-w-[240px]"
                 src="/images/systemvetardagen-logo.png"
@@ -21,7 +18,7 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1vw] font-normal opacity-90 mt-2 mb-6">
                 Kista Nod, Borgarfjordsgatan 12
             </span>
-            <Countdown targetDate={targetDate}/>
+            <Countdown targetDate={targetDate} />
             <span className="text-white lg:text-[1.5vw] font-bold my-[2em]">
                 🪚 Site under construction 🪚
             </span>
