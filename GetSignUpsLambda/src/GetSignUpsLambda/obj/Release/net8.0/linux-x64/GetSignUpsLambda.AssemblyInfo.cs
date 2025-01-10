@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GetSignUpsLambda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d389017618f5f7c5230a95485510031d8bdc3e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be3ae6995cd6aa95b18df4de3b68bf19192ef649")]
 [assembly: System.Reflection.AssemblyProductAttribute("GetSignUpsLambda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GetSignUpsLambda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

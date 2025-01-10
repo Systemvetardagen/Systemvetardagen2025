@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Amazon.Lambda.Core;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 //deploy:  dotnet lambda deploy-function <aws function name>   
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -33,6 +34,7 @@ public class Function
     /// 
     public async Task<object> FunctionHandler(User login, ILambdaContext context)
     {
+
         Console.WriteLine($"Input: {JsonSerializer.Serialize(login)}");
 
         await using var dbContext = new PreSignupDbContext();
@@ -53,10 +55,13 @@ public class Function
             return new { signups = new List<PreSignup>() };
         }
     }
-    // private void EnsureTableExists()
+    // private void ResetTable()
     // {
     //     using var connection = new NpgsqlConnection(_connString);
     //     connection.Open();
+
+    //     string dropTableQuery = @"
+    //         DROP table pre_signup;";
 
     //     string createTableQuery = @"
     //         CREATE TABLE IF NOT EXISTS pre_signup (
@@ -68,8 +73,11 @@ public class Function
     //             field_of_study VARCHAR(255) NOT NULL
     //         );";
 
-    //     using var command = new NpgsqlCommand(createTableQuery, connection);
+    //     using var command = new NpgsqlCommand(dropTableQuery, connection);
     //     command.ExecuteNonQuery();
+    //     using var command2 = new NpgsqlCommand(createTableQuery, connection);
+    //     command2.ExecuteNonQuery();
+    //     connection.Close();
 
     //     Console.WriteLine("Table ensured.");
     // }
