@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { useMutation } from 'react-query';
-import { customFetch } from '../utilities/customFetch';
+import { customFetchInsertPreSignup } from '../utilities/customFetchInsertPreSignup';
 interface PreSignup {
     firstName: string;
     lastName: string;
@@ -20,7 +20,7 @@ const SignupForm = () => {
     const [consent, setConsent] = useState<boolean>(false);
     const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
     const { mutate: insertPreSignup } = useMutation({
-        mutationFn: () => customFetch('test', { ...formData }),
+        mutationFn: () => customFetchInsertPreSignup('test', { ...formData }),
 
         onSuccess: (response) => {
             if (response && response.success) {
