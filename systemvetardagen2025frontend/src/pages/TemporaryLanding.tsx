@@ -1,6 +1,8 @@
 import '../App.css';
+import Countdown from '../components/Countdown/Countdown';
 
 export default function TemporaryLanding() {
+    const targetDate = '2025-03-26T16:00:00+01:00';
     return (
         <div
             className="h-screen w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
@@ -16,13 +18,13 @@ export default function TemporaryLanding() {
             <span className="text-white lg:text-[1.2vw] opacity-95">
                 Wednesday, March 26 10:00-16:00
             </span>
-            <span className="text-white lg:text-[1vw] font-normal opacity-90 mt-2">
+            <span className="text-white lg:text-[1vw] font-normal opacity-90 mt-2 mb-6">
                 Kista Nod, Borgarfjordsgatan 12
             </span>
+            <Countdown targetDate={targetDate}/>
             <span className="text-white lg:text-[1.5vw] font-bold my-[2em]">
                 🪚 Site under construction 🪚
             </span>
-
             <span className="w-3/5 text-center text-white text-xs lg:text-[.8vw] font-normal my-auto">
                 Systemvetardagen is organized by the Student Union DISK <br />
                 at the Department of Computer and Systems Sciences at Stockholm
