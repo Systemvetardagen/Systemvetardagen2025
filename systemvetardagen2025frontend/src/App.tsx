@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import SignupForm from './pages/SignupForm';
 import StudentDashboard from './pages/StudentDashboard';
+import About from "./pages/About";
 
 const App: React.FC = () => {
     const queryClient = new QueryClient();
@@ -17,6 +18,10 @@ const App: React.FC = () => {
                 <Route
                     path="/studentdashboard"
                     element={<StudentDashboard />}
+                />
+                <Route
+                    path="/about"
+                    element={<About/>}
                 />
             </Routes>
         </QueryClientProvider>
