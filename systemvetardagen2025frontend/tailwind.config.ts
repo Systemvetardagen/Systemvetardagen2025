@@ -13,8 +13,7 @@ export default {
                 gradientSecond: 'rgba(var(--gradient-second))',
                 gradientThird: 'rgba(var(--gradient-third))',
             },
-            fontFamily: { body: ['WorkSans'], heading: ['OverPass'] },
-            
+            fontFamily: { body: ['WorkSans'], heading: ['OverPass'], poppins:['Poppins'] },
         },
     },
     plugins: [],
