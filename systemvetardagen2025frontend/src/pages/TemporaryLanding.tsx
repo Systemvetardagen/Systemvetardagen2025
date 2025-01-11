@@ -10,17 +10,17 @@ export default function TemporaryLanding() {
                 src="/images/systemvetardagen-logo.png"
                 alt="Systemvetardagen Logo"
             />
-            <h1 className="text-white text-2xl sm:text-3xl lg:text-[2vw] mb-6 font-semiBold mt-6 text-center">
+            <h1 className="text-white text-2xl sm:text-3xl lg:text-[2vw] mb-8 font-semiBold mt-6 text-center">
                 Systemvetardagen 2025
             </h1>
             <span className="text-white text-sm sm:text-base lg:text-[1.2vw] opacity-95 text-center">
                 Wednesday, March 26 10:00-16:00
             </span>
-            <span className="text-white text-xs sm:text-sm lg:text-[1vw] font-normal opacity-90 mt-2 mb-4 text-center">
+            <span className="text-white text-xs sm:text-sm lg:text-[1vw] font-normal opacity-90 mt-2 mb-8 text-center">
                 Kista Nod, Borgarfjordsgatan 12
             </span>
             <Countdown targetDate={targetDate} />
-            <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold my-6 text-center">
+            <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold mt-10 text-center">
                 🪚 Site under construction 🪚
             </span>
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal mt-auto mb-6">
