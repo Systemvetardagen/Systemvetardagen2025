@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Timeunit from './Timeunit';
-import '../../App.css'
+import '../../App.css';
+import { useTranslation } from 'react-i18next';
 
 interface CountdownProps {
     targetDate: string;
@@ -14,6 +15,7 @@ interface TimeLeft {
 }
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
+    const [t, i18n] = useTranslation('landing');
     function calculateTimeLeft(): TimeLeft | null {
         const difference =
             new Date(targetDate).getTime() - new Date().getTime();
@@ -43,10 +45,10 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     }
     return (
         <div className="grid gap-4 lg:flex lg:gap-24 grid-cols-2">
-            <Timeunit value={timeLeft.days} label='dagar'/>
-            <Timeunit value={timeLeft.hours} label='timmar'/>
-            <Timeunit value={timeLeft.minutes} label='minuter'/>
-            <Timeunit value={timeLeft.seconds} label='sekunder'/>
+            <Timeunit value={timeLeft.days} label={t("days")} />
+            <Timeunit value={timeLeft.hours} label={t("hours")} />
+            <Timeunit value={timeLeft.minutes} label={t("minutes")} />
+            <Timeunit value={timeLeft.seconds} label={t("seconds")} />
         </div>
     );
 };

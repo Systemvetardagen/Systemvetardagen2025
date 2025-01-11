@@ -1,0 +1,15 @@
+{
+    "header": "Systemvetardagen",
+    "date": {
+        "day": "Wednesday",
+        "month": "March"
+    },
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "construction": "Site under construction",
+    "signup": "Sign up for update here",
+    "disk": "Systemvetardagen is organized by the Student Union DISK at the Department of Computer and Systems Sciences at Stockholm University"
+  }
+  

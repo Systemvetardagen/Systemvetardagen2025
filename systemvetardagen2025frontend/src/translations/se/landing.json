@@ -1,0 +1,14 @@
+{
+    "header": "Systemvetardagen",
+    "date": {
+        "day": "Onsdag",
+        "month": "Mars"
+    },
+    "days": "dagar",
+    "hours": "timmar",
+    "minutes": "minuter",
+    "seconds": "sekunder",
+    "construction": "Sidan renoveras",
+    "signup": "Registrera för uppdateringar här!",
+    "disk": "Systemvetardagen är organiserat av Studentkåren DISK vid Institutionen för data- och systemvetenskap under Stockholms Universitet"
+}

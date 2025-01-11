@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 
 const Navbar: React.FC = () => {
     const [isSticky, setIsSticky] = useState<boolean>(false);
@@ -52,13 +53,7 @@ const Navbar: React.FC = () => {
                     About
                 </NavLink>
             </div>
-            <div className="flex-shrink-0">
-                <img
-                    src="/svgs/en.svg"
-                    alt="selected-language"
-                    className="h-10 rounded-xl"
-                />
-            </div>
+            <LanguageSwitch/>
         </nav>
     );
 };
