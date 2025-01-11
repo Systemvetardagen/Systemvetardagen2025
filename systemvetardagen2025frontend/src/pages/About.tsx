@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import Navbar from '../components/Navbar/Navbar'
 
 const About = () => {
   return (
     <div>
-      <Header></Header>
+      <Navbar/>
       <h1>About Systemvetardagen 2025</h1>
 
       <h2>What is Systemvetardagen?</h2>
