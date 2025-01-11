@@ -21,24 +21,21 @@ const login = {
 const StudentDashboard: React.FC = () => {
     const [students, setStudents] = useState<Student[]>([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [sortConfig, setSortConfig] = useState<{
         field: keyof Student | null;
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
-    const {} = useQuery({
+    const { isLoading: signUpsIsLoading } = useQuery({
         queryKey: ['GetSignUps'],
         queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
         onSuccess: (data) => {
             if (!data.success) {
                 setError('Failed to fetch signups');
-                setIsLoading(false);
                 return;
             }
             setStudents(data.signups as Student[]);
-            setIsLoading(false);
         },
     });
     console.log(students);
@@ -130,7 +127,7 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={copyEmails}
-                            disabled={isLoading || students.length === 0}
+                            disabled={signUpsIsLoading || students.length === 0}
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Copy All Emails
@@ -138,7 +135,7 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={exportCSV}
-                            disabled={isLoading || students.length === 0}
+                            disabled={signUpsIsLoading || students.length === 0}
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Export CSV
@@ -160,11 +157,11 @@ const StudentDashboard: React.FC = () => {
                         className="w-full px-4 py-2 rounded-md bg-gray-100"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
-                        disabled={isLoading}
+                        disabled={signUpsIsLoading}
                     />
                 </div>
 
-                {isLoading ? (
+                {signUpsIsLoading ? (
                     <div className="flex justify-center items-center py-12">
                         Loading...
                     </div>
