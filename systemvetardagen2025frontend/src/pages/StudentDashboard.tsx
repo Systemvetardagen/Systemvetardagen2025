@@ -2,39 +2,45 @@ import React, { useState, useEffect } from 'react';
 import { useQuery } from 'react-query';
 import { customFetchInsertPreSignup } from '../utilities/customFetchInsertPreSignup';
 import { customFetchGetPreSignup } from '../utilities/customFetchGetPreSignUp';
-import { data } from 'react-router-dom';
 import Login from './Login';
-
 interface Student {
-    id?: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    degree: string;
-    fieldOfStudy: string;
-    createdAt?: string;
+    Id?: number;
+    FirstName: string;
+    LastName: string;
+    Email: string;
+    Degree: string;
+    FieldOfStudy: string;
+    CreatedAt?: string;
 }
+
 const login = {
-    username: sessionStorage.getItem('username') || '',
-    password: sessionStorage.getItem('password') || '',
-    // username: 'systemvetardagenadmin',
-    // password: 'eOlP1FaShp',
+    username: sessionStorage.getItem('username'),
+    password: sessionStorage.getItem('password'),
 };
+
 const StudentDashboard: React.FC = () => {
-    const { data: dataPreSignUps } = useQuery({
-        queryKey: ['GetSignUps'],
-        queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
-    });
-    console.log(dataPreSignUps);
     const [students, setStudents] = useState<Student[]>([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [sortConfig, setSortConfig] = useState<{
         field: keyof Student | null;
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
+    const { data: dataPreSignUps } = useQuery({
+        queryKey: ['GetSignUps'],
+        queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
+        onSuccess: (data) => {
+            setStudents(data.signups as Student[]);
+            setIsLoading(false);
+        },
+        onError: (err) => {
+            setError('Failed to fetch signups');
+            setIsLoading(false);
+        },
+    });
+    console.log(students)
     const handleSort = (field: keyof Student) => {
         setSortConfig({
             field,
@@ -44,17 +50,15 @@ const StudentDashboard: React.FC = () => {
                     : 'asc',
         });
     };
-
     const copyEmails = async () => {
         try {
             await navigator.clipboard.writeText(
-                students.map((s) => s.email).join(', ')
+                students.map((s) => s.Email).join(', ')
             );
         } catch (err) {
             setError('Failed to copy emails');
         }
     };
-
     const exportCSV = () => {
         try {
             const headers = [
@@ -66,11 +70,11 @@ const StudentDashboard: React.FC = () => {
             ];
             const csvData = students.map((student) =>
                 [
-                    student.firstName,
-                    student.lastName,
-                    student.email,
-                    student.degree,
-                    student.fieldOfStudy,
+                    student.FirstName,
+                    student.LastName,
+                    student.Email,
+                    student.Degree,
+                    student.FieldOfStudy,
                 ].join(',')
             );
             const csv = [headers.join(','), ...csvData].join('\n');
@@ -104,8 +108,8 @@ const StudentDashboard: React.FC = () => {
             }
             return 0;
         });
-    if () {
-        return <Login />
+    if (students.length === 0){
+        return <Login/>
     }
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">
@@ -173,7 +177,7 @@ const StudentDashboard: React.FC = () => {
                                             id="pagetext"
                                             className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                                             onClick={() =>
-                                                handleSort('firstName')
+                                                handleSort('FirstName')
                                             }
                                         >
                                             Name
@@ -181,14 +185,14 @@ const StudentDashboard: React.FC = () => {
                                         <th
                                             id="pagetext"
                                             className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                                            onClick={() => handleSort('email')}
+                                            onClick={() => handleSort('Email')}
                                         >
                                             Email
                                         </th>
                                         <th
                                             id="pagetext"
                                             className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
-                                            onClick={() => handleSort('degree')}
+                                            onClick={() => handleSort('Degree')}
                                         >
                                             Degree
                                         </th>
@@ -196,7 +200,7 @@ const StudentDashboard: React.FC = () => {
                                             id="pagetext"
                                             className="px-4 py-2 text-left cursor-pointer hover:bg-gray-50"
                                             onClick={() =>
-                                                handleSort('fieldOfStudy')
+                                                handleSort('FieldOfStudy')
                                             }
                                         >
                                             Field of Study
@@ -205,20 +209,20 @@ const StudentDashboard: React.FC = () => {
                                 </thead>
                                 <tbody>
                                     {filteredAndSortedStudents.map(
-                                        (student) => (
+                                        (student, index) => (
                                             <tr
-                                                key={student.id}
-                                                className="border-b border-gray-100 hover:bg-gray-50"
+                                                key={student.Id ?? index}
+                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${index % 2 !== 0 && 'bg-gray-100'}`}
                                             >
-                                                <td className="px-4 py-3">{`${student.firstName} ${student.lastName}`}</td>
+                                                <td className="px-4 py-3">{`${student.FirstName} ${student.LastName}`}</td>
                                                 <td className="px-4 py-3">
-                                                    {student.email}
+                                                    {student.Email}
                                                 </td>
                                                 <td className="px-4 py-3 capitalize">
-                                                    {student.degree}
+                                                    {student.Degree}
                                                 </td>
                                                 <td className="px-4 py-3">
-                                                    {student.fieldOfStudy}
+                                                    {student.FieldOfStudy}
                                                 </td>
                                             </tr>
                                         )
@@ -226,7 +230,6 @@ const StudentDashboard: React.FC = () => {
                                 </tbody>
                             </table>
                         </div>
-
                         {filteredAndSortedStudents.length === 0 ? (
                             <div className="text-center py-8 text-gray-500">
                                 No students found

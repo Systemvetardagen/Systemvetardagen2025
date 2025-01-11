@@ -8,6 +8,11 @@
     background-size: 300% 150%;
     animation: Background 20s ease infinite;
 }
+.gradient-background-reverse {
+    background: linear-gradient(26deg, #ffc93f, #ff4cc2, #325fff);
+    background-size: 300% 150%;
+    animation: Background 20s ease infinite;
+}
 
 @keyframes Background {
     0% {
