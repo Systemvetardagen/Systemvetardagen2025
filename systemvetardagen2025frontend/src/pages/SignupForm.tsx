@@ -35,14 +35,16 @@ const SignupForm = () => {
     if (formSubmitted) {
         return (
             <div
-                className="h-screen max-h-fit w-screen
+                className="h-screen w-screen gradient-background
         flex flex-col items-center pt-[10vh] min-w-[351px]"
             >
                 <div className="w-full max-w-4xl text-center mb-12 mt-16">
                     <div className="mb-4">
-                        <h1 className="text-white text-5xl font-bold mb-8">
-                            Systemvetardagen 2025
-                        </h1>
+                        <a href="/">
+                            <h1 className="text-white text-5xl font-bold mb-8">
+                                Systemvetardagen 2025
+                            </h1>
+                        </a>
                         <h2 className="text-white text-2xl">
                             Sign up for updates
                         </h2>
@@ -71,9 +73,11 @@ const SignupForm = () => {
         >
             <div className="w-full lg:max-w-4xl max-w-[80%] text-center md:mb-12 md:mt-16">
                 <div className="mb-4">
-                    <h1 className="text-white lg:text-5xl sm:text-4xl text-2xl font-bold mb-8">
-                        Systemvetardagen 2025
-                    </h1>
+                    <a href="/">
+                        <h1 className="text-white text-5xl font-bold mb-8">
+                            Systemvetardagen 2025
+                        </h1>
+                    </a>
                     <h2 className="text-white text-2xl">Sign up for updates</h2>
                 </div>
             </div>
@@ -142,8 +146,8 @@ const SignupForm = () => {
                             required
                         >
                             <option value="">Select degree</option>
-                            <option value="bachelors">Bachelor's</option>
-                            <option value="masters">Master's</option>
+                            <option value="bachelors">Bachelor&apos;s</option>
+                            <option value="masters">Master&apos;s</option>
                             <option value="phd">PhD</option>
                         </select>
 

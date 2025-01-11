@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import TemporaryLanding from './pages/TemporaryLanding';
 import Landing from './pages/Landing';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -20,6 +20,8 @@ const App: React.FC = () => {
                     path="/studentdashboard"
                     element={<StudentDashboard />}
                 />
+                {/* Redirecting undefined routes */}
+                <Route path="*" element={<Navigate to="/" replace />} /> 
             </Routes>
         </QueryClientProvider>
     );

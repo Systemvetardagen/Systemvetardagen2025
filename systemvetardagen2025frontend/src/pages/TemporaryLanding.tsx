@@ -23,6 +23,11 @@ export default function TemporaryLanding() {
             <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold mt-10 text-center">
                 🪚 Site under construction 🪚
             </span>
+            <a href="/signup">
+                <button className="gradient-background-reverse shadow-xl p-4 rounded-xl text-text font-bold font-poppins mt-20">
+                    Sign up for updates here!
+                </button>
+            </a>
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal mt-auto mb-6">
                 Systemvetardagen is organized by the Student Union DISK <br />
                 at the Department of Computer and Systems Sciences at Stockholm
