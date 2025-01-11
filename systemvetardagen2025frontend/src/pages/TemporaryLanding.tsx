@@ -31,11 +31,11 @@ export default function TemporaryLanding() {
                     Sign up for updates here!
                 </button>
             </a> */}
-            <a href="/signup" className="">
+            {/* <a href="/signup" className="">
                 <button className="bg-white shadow-xl p-4 rounded-full text-black font-bold font-poppins mt-20 transition-transform duration-200 hover:scale-110">
                     {t('signup')}
                 </button>
-            </a>
+            </a> */}
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal mt-auto mb-6">
                 {t('disk')}
             </span>
