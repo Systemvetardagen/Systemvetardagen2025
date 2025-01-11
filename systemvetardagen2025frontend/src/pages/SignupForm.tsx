@@ -35,7 +35,7 @@ const SignupForm = () => {
     if (formSubmitted) {
         return (
             <div
-                className="h-screen max-h-fit w-screen bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+                className="h-screen max-h-fit w-screen
         flex flex-col items-center pt-[10vh] min-w-[351px]"
             >
                 <div className="w-full max-w-4xl text-center mb-12 mt-16">
@@ -66,7 +66,7 @@ const SignupForm = () => {
     }
     return (
         <div
-            className="h-screen max-h-screen w-full min-w-[375px] bg-[linear-gradient(15deg,_theme(colors.gradientFirst),_theme(colors.gradientSecond),_theme(colors.gradientThird))]
+            className="h-screen max-h-screen w-full min-w-[375px] gradient-background
         flex flex-col items-center pt-[10vh]"
         >
             <div className="w-full lg:max-w-4xl max-w-[80%] text-center md:mb-12 md:mt-16">
