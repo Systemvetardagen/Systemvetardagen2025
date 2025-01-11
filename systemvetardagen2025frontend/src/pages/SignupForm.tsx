@@ -35,7 +35,7 @@ const SignupForm = () => {
     if (formSubmitted) {
         return (
             <div
-                className="h-screen max-h-fit w-screen
+                className="h-screen max-h-fit w-screen gradient-background
         flex flex-col items-center pt-[10vh] min-w-[351px]"
             >
                 <div className="w-full max-w-4xl text-center mb-12 mt-16">
@@ -142,8 +142,8 @@ const SignupForm = () => {
                             required
                         >
                             <option value="">Select degree</option>
-                            <option value="bachelors">Bachelor's</option>
-                            <option value="masters">Master's</option>
+                            <option value="bachelors">Bachelor&apos;s</option>
+                            <option value="masters">Master&apos;s</option>
                             <option value="phd">PhD</option>
                         </select>
 
