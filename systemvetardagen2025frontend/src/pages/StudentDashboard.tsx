@@ -28,19 +28,21 @@ const StudentDashboard: React.FC = () => {
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
-    const { data: dataPreSignUps } = useQuery({
+    const {} = useQuery({
         queryKey: ['GetSignUps'],
         queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
         onSuccess: (data) => {
+            if (!data.success) {
+                setError('Failed to fetch signups');
+                setIsLoading(false);
+                return;
+            }
             setStudents(data.signups as Student[]);
             setIsLoading(false);
         },
-        onError: (err) => {
-            setError('Failed to fetch signups');
-            setIsLoading(false);
-        },
+        onError: (err) => {},
     });
-    console.log(students)
+    console.log(students);
     const handleSort = (field: keyof Student) => {
         setSortConfig({
             field,
@@ -108,8 +110,8 @@ const StudentDashboard: React.FC = () => {
             }
             return 0;
         });
-    if (students.length === 0){
-        return <Login/>
+    if (students.length === 0) {
+        return <Login />;
     }
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">
@@ -212,7 +214,10 @@ const StudentDashboard: React.FC = () => {
                                         (student, index) => (
                                             <tr
                                                 key={student.Id ?? index}
-                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${index % 2 !== 0 && 'bg-gray-100'}`}
+                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${
+                                                    index % 2 !== 0 &&
+                                                    'bg-gray-100'
+                                                }`}
                                             >
                                                 <td className="px-4 py-3">{`${student.FirstName} ${student.LastName}`}</td>
                                                 <td className="px-4 py-3">
