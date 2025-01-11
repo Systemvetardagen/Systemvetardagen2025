@@ -42,7 +42,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         return <div>Systemvetardagen is happening now!</div>;
     }
     return (
-        <div className="flex gap-4 lg:gap-24">
+        <div className="grid gap-4 lg:flex lg:gap-24 grid-cols-2">
             <Timeunit value={timeLeft.days} label='dagar'/>
             <Timeunit value={timeLeft.hours} label='timmar'/>
             <Timeunit value={timeLeft.minutes} label='minuter'/>
