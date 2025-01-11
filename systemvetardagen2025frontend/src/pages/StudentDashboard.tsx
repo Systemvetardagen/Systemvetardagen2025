@@ -40,7 +40,6 @@ const StudentDashboard: React.FC = () => {
             setStudents(data.signups as Student[]);
             setIsLoading(false);
         },
-        onError: (err) => {},
     });
     console.log(students);
     const handleSort = (field: keyof Student) => {
