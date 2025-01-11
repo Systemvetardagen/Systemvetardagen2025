@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 
-const AboutPage = () => {
+const About = () => {
   return (
     <div>
-        <Header></Header>
+      <Header></Header>
       <h1>About Systemvetardagen 2025</h1>
-      
+
       <h2>What is Systemvetardagen?</h2>
       <p>
         Systemvetardagen is an annual career fair for students and recent graduates focusing on the IT sector. The fair is hosted by the Student Union DISK, a student union at the Department of Computer and Systems Sciences in Kista at Stockholm University. This event is completely free to attend for all students!
@@ -97,4 +97,8 @@ const AboutPage = () => {
       </div>
       <div>
         <h3>Michael Vaxev</h3>
-    </div>
+      </div>
+    /</div>
+    )}
+
+    export default About;
