@@ -41,10 +41,10 @@ const Navbar: React.FC = () => {
             className={`${
                 isSticky
                     ? 'fixed top-0 left-0 w-full rounded-none'
-                    : 'absolute top-8 w-[90vw] mx-[5vw] rounded-3xl'
+                    : 'absolute top-8 w-[90vw] mx-[5vw] rounded-full'
             } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150`}
         >
-            <a href='/' className="flex-shrink-0">
+            <a href="/" className="flex-shrink-0">
                 <img
                     src="/svgs/logo.svg"
                     alt="Left Logo"
