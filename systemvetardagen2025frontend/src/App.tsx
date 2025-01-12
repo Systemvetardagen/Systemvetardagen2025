@@ -23,9 +23,9 @@ const App: React.FC = () => {
                     path="/studentdashboard"
                     element={<StudentDashboard />}
                 />
-                {/* <Route path="/companies" element={<Companies />} />
-                <Route path="/visit-info" element={<VisitInfo />} />
-                <Route path="/about" element={<About />} /> */}
+                {/* <Route path="/companies" element={<Companies />} /> */}
+                {/* <Route path="/visit-info" element={<VisitInfo />} /> */}
+                {/* <Route path="/about" element={<About />} /> */}
                 {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
