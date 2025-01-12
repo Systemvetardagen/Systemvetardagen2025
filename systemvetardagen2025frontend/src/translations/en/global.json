@@ -1,1 +1,8 @@
-{}
+{
+    "navbar": {
+        "home": "Home",
+        "companies": "Companies",
+        "visit-info": "Visit Info",
+        "about": "About"
+    }
+}
