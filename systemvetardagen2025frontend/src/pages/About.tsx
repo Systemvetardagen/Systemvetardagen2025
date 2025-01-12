@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import ProjectGroup from '../components/ProjectGroup';
 
 const About = () => {
     return (
         <div>
-            <Navbar />
             <div className="min-h-screen bg-[rgb(var(--background))] text-[rgb(var(--text))]">
                 <div className="max-w-4xl mx-auto px-4 py-8">
                     <div className="space-y-12">
@@ -79,9 +77,6 @@ const About = () => {
                                         .
                                     </p>
                                 </div>
-
-
-
                             </div>
                         </section>
                     </div>
