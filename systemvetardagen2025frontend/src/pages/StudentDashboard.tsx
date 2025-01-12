@@ -27,7 +27,7 @@ const StudentDashboard: React.FC = () => {
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
-    const { isLoading: signUpsIsLoading } = useQuery({
+    const { isFetching: signUpsIsFetching } = useQuery({
         queryKey: ['GetSignUps'],
         queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
         onSuccess: (data) => {
@@ -127,7 +127,9 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={copyEmails}
-                            disabled={signUpsIsLoading || students.length === 0}
+                            disabled={
+                                signUpsIsFetching || students.length === 0
+                            }
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Copy All Emails
@@ -135,7 +137,9 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={exportCSV}
-                            disabled={signUpsIsLoading || students.length === 0}
+                            disabled={
+                                signUpsIsFetching || students.length === 0
+                            }
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Export CSV
@@ -157,11 +161,11 @@ const StudentDashboard: React.FC = () => {
                         className="w-full px-4 py-2 rounded-md bg-gray-100"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
-                        disabled={signUpsIsLoading}
+                        disabled={signUpsIsFetching}
                     />
                 </div>
 
-                {signUpsIsLoading ? (
+                {signUpsIsFetching ? (
                     <div className="flex justify-center items-center py-12">
                         Loading...
                     </div>
