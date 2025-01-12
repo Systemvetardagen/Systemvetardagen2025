@@ -4,7 +4,7 @@ import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 
 const Navbar: React.FC = () => {
-    const [t, i18n] = useTranslation('global');
+    const [t] = useTranslation('global');
     const links = [
         { label: t('navbar.home'), href: '/' },
         { label: t('navbar.companies'), href: '/companies' },
@@ -44,13 +44,13 @@ const Navbar: React.FC = () => {
                     : 'absolute top-8 w-[90vw] mx-[5vw] rounded-3xl'
             } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150`}
         >
-            <div className="flex-shrink-0">
+            <a href='/' className="flex-shrink-0">
                 <img
                     src="/svgs/logo.svg"
                     alt="Left Logo"
                     className="h-10 lg:h-14 p-0 m-0"
                 />
-            </div>
+            </a>
             <div className="hidden lg:flex justify-center flex-grow space-x-20 font-bold font-heading tracking-wide">
                 {links.map((link, index) => (
                     <NavLink

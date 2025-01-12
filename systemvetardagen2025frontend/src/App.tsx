@@ -6,6 +6,9 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import SignupForm from './pages/SignupForm';
 import StudentDashboard from './pages/StudentDashboard';
 import Navbar from './components/Navbar/Navbar';
+import Companies from './pages/Companies';
+import VisitInfo from './pages/VisitInfo';
+import About from './pages/About';
 
 const App: React.FC = () => {
     const queryClient = new QueryClient();
@@ -20,8 +23,11 @@ const App: React.FC = () => {
                     path="/studentdashboard"
                     element={<StudentDashboard />}
                 />
+                {/* <Route path="/companies" element={<Companies />} />
+                <Route path="/visit-info" element={<VisitInfo />} />
+                <Route path="/about" element={<About />} /> */}
                 {/* Redirecting undefined routes */}
-                <Route path="*" element={<Navigate to="/" replace />} /> 
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </QueryClientProvider>
     );

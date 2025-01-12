@@ -8,7 +8,7 @@ interface TimeUnitProps {
 
 const Timeunit: React.FC<TimeUnitProps> = ({ value, label }) => {
     return (
-        <div className="font-bold flex flex-col items-center text-text font-poppins">
+        <div className="font-bold flex flex-col items-center text-white font-poppins">
             <div className="text-4xl lg:text-7xl">
                 {value.toString().padStart(2, '0')}{' '}
             </div>
