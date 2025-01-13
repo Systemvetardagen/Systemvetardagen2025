@@ -6,12 +6,12 @@
         "sub-header": "Föreläsningar i vår stora aula, med ingång från mässgolvet"
     },
     "getting-to": {
-        "header": "Så tar du dig till Systemvetardagen",
+        "header": "Ta sig till Systemvetardagen",
         "metro": {
             "header": "Tunnelbana",
             "body": "Du kan resa med blåa tunnelbanelinjen (nummer 11) från Kungsträdgården eller T-Centralen (riktning Akalla) till Kista (beräknad restid från T-Centralen är 20 minuter)."
         },
-        "Parking": {
+        "parking": {
             "header": "Parkering",
             "body": "Du kan parkera på Isafjordsgatan eller i garageparkeringen i Kista Galleria. Parkering är tillåten på Isafjordsgatan måndag till fredag 8:00–18:00, i två timmar åt gången. I Kista Galleria kan du parkera mot en avgift per halvtimme."
         },

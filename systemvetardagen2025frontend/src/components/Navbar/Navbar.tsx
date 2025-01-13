@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
                 <img
                     src="/svgs/logo.svg"
                     alt="Left Logo"
-                    className="h-10 lg:h-14 p-0 m-0"
+                    className="h-10 p-0 m-0"
                 />
             </a>
             <div className="hidden lg:flex justify-center flex-grow space-x-20 font-bold font-heading tracking-wide">
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
                     <LanguageSwitch />
                 </div>
             ) : null}
-            <LanguageSwitch className="hidden lg:flex" />
+            <LanguageSwitch className="hidden lg:block" />
         </nav>
     );
 };

@@ -3,13 +3,7 @@ import Countdown from '../components/Countdown/Countdown';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer/Footer';
-
-const partners = [
-    { alt: 'Accenture logo', src: '/companies/accenture-logo.png' },
-    { alt: 'Accenture logo', src: '/companies/accenture-logo.png' },
-    { alt: 'Accenture logo', src: '/companies/accenture-logo.png' },
-    { alt: 'Accenture logo', src: '/companies/accenture-logo.png' },
-];
+import Partners from '../components/Partners/Partners';
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
@@ -22,8 +16,8 @@ export default function Landing() {
                         flex flex-col items-center pt-[20vh] min-w-[351px] font-poppins tracking-wide"
             >
                 <h1 className="text-4xl">{t('sub-header')}</h1>
-                <h1 className="text-2xl sm:text-3xl lg:text-[2vw] mb-8 font-semiBold mt-6 text-center">
-                    {t('header')} 2025
+                <h1 className="text-2xl sm:text-3xl lg:text-[3vw] mb-8 font-semiBold mt-6 text-center">
+                    Systemvetardagen 2025
                 </h1>
                 <Countdown targetDate={targetDate} />
                 <span className="lg:text-[1.5vw] font-bold opacity-90 mt-8">
@@ -42,25 +36,11 @@ export default function Landing() {
                 </NavLink>
             </div>
             {/*Body*/}
-            <div className="w-screen flex flex-col items-center bg-background text-text">
-                <div className="px-[7vw] py-[4vw] gradient-background gradient-text text-3xl lg:text-7xl text-center">
+            <div className="w-screen flex flex-col items-center bg-background text-text text-center">
+                <div className="px-[7vw] py-[4vw] gradient-background gradient-text text-3xl lg:text-7xl">
                     {t('body.about')}
                 </div>
-                <div className="px-[7vw] flex flex-col items-center gap-14">
-                    <h2 className="text-xl lg:text-3xl">
-                        {t('body.partners')}
-                    </h2>
-                    <div className="flex flex-col lg:flex-row gap-8">
-                        {partners.map((partner, index) => (
-                            <img
-                                className="h-16"
-                                key={index}
-                                src={partner.src}
-                                alt={partner.alt}
-                            />
-                        ))}
-                    </div>
-                </div>
+                <Partners />
                 <a
                     href="/companies"
                     className="w-full lg:px-[7vw] h-[20vh] lg:h-[35vh] overflow-hidden relative mt-20"
@@ -74,8 +54,8 @@ export default function Landing() {
                         {t('body.meet-companies', { numberOfCompanies: 37 })}
                     </span>
                 </a>
-                <div className="bg-[#FFE6F4] mx-[7vw] my-[7vh] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%] lg:px-[25%]">
-                    <h1 className="text-2xl lg:text-4xl font-normal">
+                <div className="bg-[#FFE6F4] mx-[7vw] my-[7vh] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%]">
+                    <h1 className="text-2xl lg:text-4xl ">
                         {t('body.almost-there.header')}
                     </h1>
                     {['p1', 'p2', 'p3'].map((key) => (
@@ -98,7 +78,7 @@ export default function Landing() {
                         {t('body.lectures')}
                     </span>
                 </a>
-                <div className="flex flex-col lg:flex-row mt-16 gap-16 px-[7vw] w-full">
+                <div className="flex flex-col md:flex-row mt-12 gap-12 px-[7vw] w-full">
                     {[
                         {
                             href: '/about',
@@ -119,7 +99,7 @@ export default function Landing() {
                         <a
                             key={index}
                             href={item.href}
-                            className="w-full h-[20vh] lg:h-[35vh] overflow-hidden relative"
+                            className="rounded-3xl w-full h-[20vh] lg:h-[35vh] overflow-hidden relative"
                         >
                             <img
                                 src={item.imgSrc}
