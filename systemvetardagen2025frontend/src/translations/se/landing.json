@@ -15,7 +15,6 @@
     "disk": "Systemvetardagen är organiserat av Studentkåren DISK vid Institutionen för data- och systemvetenskap under Stockholms Universitet",
     "body": {
         "about": "En av Sveriges största arbetsmarknadsdagar för studenter och arbetsgivare inom IT-branschen",
-        "partners": "Våra partners",
         "meet-companies": "Träffa {{numberOfCompanies}} företag från IT-branschen",
         "almost-there": {
             "header": "Snart är det dags!",

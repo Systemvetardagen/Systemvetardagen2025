@@ -15,7 +15,6 @@
     "disk": "Systemvetardagen is organized by the Student Union DISK at the Department of Computer and Systems Sciences at Stockholm University",
     "body": {
         "about": "One of the biggest job fairs in Sweden for students and employers in the IT‑business.",
-        "partners": "Our partners",
         "meet-companies": "Meet {{numberOfCompanies}} companies from the IT industry",
         "almost-there": {
             "header": "We're almost there!",

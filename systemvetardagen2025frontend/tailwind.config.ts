@@ -10,7 +10,7 @@ export default {
                 secondary: 'rgba(var(--secondary))',
                 accent: 'rgba(var(--accent))',
             },
-            fontFamily: { body: ['WorkSans'], heading: ['OverPass'], poppins:['Poppins'] },
+            fontFamily: { body: ['WorkSans'], heading: ['OverPass'], poppins:['Poppins'], ibm:['IBM Plex Mono', 'monospace'] },
         },
     },
     plugins: [],

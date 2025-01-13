@@ -21,7 +21,7 @@ const LanguageSwitch: React.FC<ButtonProps> = ({ className }) => {
             <img
                 src={currentImage}
                 alt="selected language"
-                className="h-10 rounded-xl"
+                className="h-8 rounded-xl"
             />
         </button>
     );
