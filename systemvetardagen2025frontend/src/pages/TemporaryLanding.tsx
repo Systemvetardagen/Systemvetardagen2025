@@ -16,12 +16,14 @@ export default function TemporaryLanding() {
             <h1 className="text-white text-2xl sm:text-3xl lg:text-[2vw] font-semiBold text-center">
                 {t('header')} 2025
             </h1>
-            <span className="text-white text-s lg:text-[1.2vw] opacity-95 text-center">
-                {t('date.day')}, {t('date.month')} 26 10:00-16:00
-            </span>
-            <span className="text-white text-s lg:text-[1vw] font-normal opacity-90 text-center">
-                Kista Nod, Borgarfjordsgatan 12
-            </span>
+            <div className='flex flex-col gap-2'>
+                <span className="text-white text-s lg:text-[1.2vw] opacity-95 text-center">
+                    {t('date.day')}, {t('date.month')} 26 10:00-16:00
+                </span>
+                <span className="text-white text-s lg:text-[1vw] font-normal opacity-90 text-center">
+                    Kista Nod, Borgarfjordsgatan 12
+                </span>
+            </div>
             <Countdown targetDate={targetDate} />
             <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold text-center">
                 🪚 {t('construction')} 🪚
@@ -39,7 +41,7 @@ export default function TemporaryLanding() {
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal">
                 {t('disk')}
             </span>
-            <LanguageSwitch className='absolute top-4 right-4'/>
+            <LanguageSwitch className="absolute top-4 right-4" />
         </div>
     );
 }
