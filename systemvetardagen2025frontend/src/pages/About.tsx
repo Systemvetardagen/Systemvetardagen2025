@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import logoWithShirt from '../assets/2024logoWithShirt.jpg';
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
                             className="max-w-full h-auto"
                             style={{
                                 width: '100vw',
-                                height: '220px',
+                                height: '250px',
                                 objectFit: 'cover',
                                 objectPosition: '0 -125px'
                               }}
