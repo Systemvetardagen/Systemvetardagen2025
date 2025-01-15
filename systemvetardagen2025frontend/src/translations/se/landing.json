@@ -1,0 +1,47 @@
+{
+    "header": "Systemvetardagen",
+    "sub-header": "Välkommen till",
+    "date": {
+        "day": "Onsdag",
+        "month": "Mars"
+    },
+    "days": "dagar",
+    "hours": "timmar",
+    "minutes": "minuter",
+    "seconds": "sekunder",
+    "construction": "Sidan renoveras",
+    "signup": "Registrera för uppdateringar här!",
+    "exhibitors": "Se alla utställande företag",
+    "disk": "Systemvetardagen är organiserat av Studentkåren DISK vid Institutionen för data- och systemvetenskap under Stockholms Universitet",
+    "body": {
+        "about": "En av Sveriges största arbetsmarknadsdagar för studenter och arbetsgivare inom IT-branschen",
+        "meet-companies": "Träffa {{numberOfCompanies}} företag från IT-branschen",
+        "almost-there": {
+            "header": "Snart är det dags!",
+            "p1": "För 29e året i rad arrangeras Systemvetardagen på Stockholms universitet Campus Kista.",
+            "p2": "Det är Studentkåren DISKs från Institutionen för data- och systemvetenskap (DSV) egna arbetsmarknadsdag.",
+            "p3": "Alla studenter är välkomna (även om du inte går på Stockholms universitet) och det är help kostnadsfritt att delta - det är bara att dyka upp!"
+        },
+        "lectures": "Föreläsningar i Aula NOD",
+        "tips": {
+            "header": "Tips for those participating",
+            "before": {
+                "header": "Inför mässan",
+                "t1": "Uppdatera ditt CV och ha det lättillgängligt så att du enkelt kan ge eller skicka det vid förfrågan.",
+                "t2": "Kolla igenom katalogen och notera vilka företag du är intresserad av att prata med!",
+                "t3": "Kolla in vilka företagsevent som du är intresserad av att gå på."
+            },
+            "during": {
+                "header": "Inför mässan",
+                "t1": "Använd mässkartan för att hitta företagen du är intresserad av.",
+                "t2": "Gå runt på mässgolvet och prata med företagen. De är där för att få kontakt med studenter, så passa på!",
+                "t3": "Under dagen kommer det att hållas företagsevent i Aula NOD. Kolla schemat efter intressanta event!."
+            }
+        },
+        "uppdated": {
+            "header":"Håll dig uppdaterad",
+            "body": "Vill du få uppdateringar om Systemvetardagen med skräddarsydd information via e-post?",
+            "button": "Klicka här!"
+        }
+    }
+}

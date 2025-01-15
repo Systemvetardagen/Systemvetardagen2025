@@ -1,0 +1,21 @@
+{
+    "header": "Plan your visit",
+    "sub-header": "Go to talks, find your way on the fair floor and create new connections.",
+    "lectures": {
+        "header": "Aula NOD program",
+        "sub-header": "Talks and keynotes in our large auditorium, with entrance on the fair floor"
+    },
+    "getting-to": {
+        "header": "Getting to Systemvetardagen",
+        "metro": {
+            "header": "Metro",
+            "body": "You can travel with the blue metro line (number 11) from Kungsträdgården or T-Centralen (direction Akalla) to Kista (estimated travel time from T-Centralen is 20 minutes)."
+        },
+        "parking": {
+            "header": "Parking",
+            "body": "You can park on Isafjordsgatan or in the Garage Parking in Kista Galleria. Parking is allowed for on Isafjordsgatan Monday to Friday 8:00-18:00, for two hours at a time. In Kista Galleria you can park for a half hour fee."
+        },
+        "footer": "More detailed directions can be found at {{link}}"
+    }
+    
+}

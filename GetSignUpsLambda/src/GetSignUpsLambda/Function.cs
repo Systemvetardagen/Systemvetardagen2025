@@ -42,17 +42,17 @@ public class Function
         {
             if (login.Username != "systemvetardagenadmin" && login.Password != "eOlP1FaShp")
             {
-                return new { signups = new List<PreSignup>() };
+                return new { signups = new List<PreSignup>(), success = false };
             }
             var presignups = await dbContext.PreSignups.ToListAsync();
             await dbContext.SaveChangesAsync();
-            return new { signups = presignups };
+            return new { signups = presignups, success = true };
         }
         catch (Exception ex)
         {
             Console.WriteLine("login input: " + login);
             Console.WriteLine(ex);
-            return new { signups = new List<PreSignup>() };
+            return new { signups = new List<PreSignup>(), success = false };
         }
     }
     // private void ResetTable()

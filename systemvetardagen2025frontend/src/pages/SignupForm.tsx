@@ -68,13 +68,13 @@ const SignupForm = () => {
     }
     return (
         <div
-            className="h-screen max-h-screen w-full min-w-[375px] gradient-background
-        flex flex-col items-center pt-[10vh]"
+            className="min-h-screen w-full min-w-[375px] gradient-background
+        flex flex-col items-center pt-[5vh]"
         >
-            <div className="w-full lg:max-w-4xl max-w-[80%] text-center md:mb-12 md:mt-16">
+            <div className="w-full lg:max-w-4xl max-w-[80%] text-center mt-16">
                 <div className="mb-4">
                     <a href="/">
-                        <h1 className="text-white text-5xl font-bold mb-8">
+                        <h1 className="text-white text-3xl lg:text-5xl font-bold mb-8">
                             Systemvetardagen 2025
                         </h1>
                     </a>
@@ -192,7 +192,7 @@ const SignupForm = () => {
                 </form>
             </div>
 
-            <div className="mt-8 text-center text-white text-sm">
+            <div className="my-8 text-center text-white text-sm">
                 <p>Systemvetardagen is organized by the Student Union DISK</p>
                 <p>
                     at the Department of Computer and Systems Sciences at

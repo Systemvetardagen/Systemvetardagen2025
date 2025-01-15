@@ -21,26 +21,24 @@ const login = {
 const StudentDashboard: React.FC = () => {
     const [students, setStudents] = useState<Student[]>([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [sortConfig, setSortConfig] = useState<{
         field: keyof Student | null;
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
-    const { data: dataPreSignUps } = useQuery({
+    const { isFetching: signUpsIsFetching } = useQuery({
         queryKey: ['GetSignUps'],
         queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
         onSuccess: (data) => {
+            if (!data.success) {
+                setError('Failed to fetch signups');
+                return;
+            }
             setStudents(data.signups as Student[]);
-            setIsLoading(false);
-        },
-        onError: (err) => {
-            setError('Failed to fetch signups');
-            setIsLoading(false);
         },
     });
-    console.log(students)
+    console.log(students);
     const handleSort = (field: keyof Student) => {
         setSortConfig({
             field,
@@ -108,8 +106,8 @@ const StudentDashboard: React.FC = () => {
             }
             return 0;
         });
-    if (students.length === 0){
-        return <Login/>
+    if (students.length === 0) {
+        return <Login />;
     }
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">
@@ -129,7 +127,9 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={copyEmails}
-                            disabled={isLoading || students.length === 0}
+                            disabled={
+                                signUpsIsFetching || students.length === 0
+                            }
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Copy All Emails
@@ -137,7 +137,9 @@ const StudentDashboard: React.FC = () => {
                         <button
                             id="pagetext"
                             onClick={exportCSV}
-                            disabled={isLoading || students.length === 0}
+                            disabled={
+                                signUpsIsFetching || students.length === 0
+                            }
                             className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors disabled:bg-purple-400"
                         >
                             Export CSV
@@ -159,11 +161,11 @@ const StudentDashboard: React.FC = () => {
                         className="w-full px-4 py-2 rounded-md bg-gray-100"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
-                        disabled={isLoading}
+                        disabled={signUpsIsFetching}
                     />
                 </div>
 
-                {isLoading ? (
+                {signUpsIsFetching ? (
                     <div className="flex justify-center items-center py-12">
                         Loading...
                     </div>
@@ -212,7 +214,10 @@ const StudentDashboard: React.FC = () => {
                                         (student, index) => (
                                             <tr
                                                 key={student.Id ?? index}
-                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${index % 2 !== 0 && 'bg-gray-100'}`}
+                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${
+                                                    index % 2 !== 0 &&
+                                                    'bg-gray-100'
+                                                }`}
                                             >
                                                 <td className="px-4 py-3">{`${student.FirstName} ${student.LastName}`}</td>
                                                 <td className="px-4 py-3">

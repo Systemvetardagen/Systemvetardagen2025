@@ -1,8 +1,5 @@
 @import './index.css';
 
-:root {
-}
-
 .gradient-background {
     background: linear-gradient(26deg, #325fff, #ff4cc2, #ffc93f);
     background-size: 300% 150%;
@@ -12,6 +9,10 @@
     background: linear-gradient(26deg, #ffc93f, #ff4cc2, #325fff);
     background-size: 300% 150%;
     animation: Background 20s ease infinite;
+}
+.gradient-text {
+    -webkit-background-clip: text;
+    color: transparent
 }
 
 @keyframes Background {
@@ -40,11 +41,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: 30, 30, 30;
+        --background: 247, 244, 255;
+        --text: 9, 0, 27;
+        --primary: 50, 95, 255;
+        --secondary: 255, 76, 194;
+        --accent: 255, 201, 63;
+        /* Temporarily disabling darkmode */
+        /* --background: 30, 30, 30;
         --text: 238, 229, 255;
         --primary: 101, 23, 252;
         --secondary: 253, 126, 220;
-        --accent: 253, 64, 139;
+        --accent: 253, 64, 139; */
     }
 }
 

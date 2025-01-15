@@ -4,6 +4,32 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App'; // Import main App component where routes are defined
 
+import global_en from './translations/en/global.json';
+import global_se from './translations/se/global.json';
+import landing_en from './translations/en/landing.json';
+import landing_se from './translations/se/landing.json';
+import visitInfo_en from './translations/en/visit-info.json';
+import visitInfo_se from './translations/se/visit-info.json';
+import i18next from 'i18next';
+import { I18nextProvider } from 'react-i18next';
+
+i18next.init({
+    interpolation: { escapevalue: false },
+    lng: 'en',
+    resources: {
+        en: {
+            global: global_en,
+            landing: landing_en,
+            visitInfo: visitInfo_en,
+        },
+        se: {
+            global: global_se,
+            landing: landing_se,
+            visitInfo: visitInfo_se,
+        },
+    },
+});
+
 const rootElement = document.getElementById('root');
 if (!rootElement) {
     throw new Error('Root element not found');
@@ -11,8 +37,10 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
     <StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <I18nextProvider i18n={i18next}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </I18nextProvider>
     </StrictMode>
 );

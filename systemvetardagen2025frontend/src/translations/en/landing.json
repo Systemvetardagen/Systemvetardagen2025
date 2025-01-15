@@ -1,0 +1,47 @@
+{
+    "header": "Systemvetardagen",
+    "sub-header": "Welcome to",
+    "date": {
+        "day": "Wednesday",
+        "month": "March"
+    },
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "construction": "Site under construction",
+    "signup": "Sign up for update here",
+    "exhibitors": "Se all exhibitors",
+    "disk": "Systemvetardagen is organized by the Student Union DISK at the Department of Computer and Systems Sciences at Stockholm University",
+    "body": {
+        "about": "One of the biggest job fairs in Sweden for students and employers in the IT‑business.",
+        "meet-companies": "Meet {{numberOfCompanies}} companies from the IT industry",
+        "almost-there": {
+            "header": "We're almost there!",
+            "p1": "For the 28th year in a row, Systemvetardagen is arranged at Stockholm University Campus Kista.",
+            "p2": "It is the job fair day organized by DISK, the student union of the Department of Computer and Systems Sciences (DSV).",
+            "p3": "All students are welcome (even if you are not a student at Stockholm University) and the entire event is free - just show up!"
+        },
+        "lectures": "Lectures in Aula NOD",
+        "tips": {
+            "header": "Tips for those participating",
+            "before": {
+                "header": "Before the fair",
+                "t1": "Update your CV and have it easily accessible so you can quickly hand it over or send it upon request.",
+                "t2": "Browse through the catalog and note which companies you're interested in talking to!",
+                "t3": "Check out the company events you're interested in attending."
+            },
+            "during": {
+                "header": "During the fair",
+                "t1": "Use the fair map to find the companies you're interested in.",
+                "t2": "Walk around the exhibition floor and talk to the companies. They're there to connect with students, so take the opportunity!",
+                "t3": "Throughout the day, company events will be held in Aula NOD. Check the schedule for interesting events!"
+            }
+        },
+        "uppdated": {
+            "header":"Keep yourself updated",
+            "body": "Would you like to receive updates about Systemvetardagen with tailored information via email?",
+            "button": "Click here!"
+        }
+    }
+}

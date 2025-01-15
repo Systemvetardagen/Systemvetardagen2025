@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import logoWithShirt from '../assets/2024logoWithShirt.jpg';
 
 const About: React.FC = () => {
@@ -77,6 +78,7 @@ const About: React.FC = () => {
             {/* <Footer /> */}
         </div>
     );
+
 };
 
 export default About;
