@@ -2,7 +2,7 @@ import React from 'react';
 
 import logoWithShirt from '../assets/2024logoWithShirt.jpg';
 
-const About = () => {
+const About: React.FC = () => {
     return (
         <div className="bg-[rgb(var(--background))] text-[rgb(var(--text))] flex flex-col min-h-screen">
             <img
