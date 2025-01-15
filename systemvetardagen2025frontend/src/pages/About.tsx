@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
+
 import logoWithShirt from '../assets/2024logoWithShirt.jpg';
 
 const About = () => {
@@ -72,7 +72,9 @@ const About = () => {
                     </section>
                 </div>
             </div>
-            <Footer />
+            {/* need add project group
+            need add Our partners */}
+            {/* <Footer /> */}
         </div>
     );
 };
