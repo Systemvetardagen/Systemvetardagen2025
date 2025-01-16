@@ -12,9 +12,9 @@ const About: React.FC = () => {
                             className="max-w-full h-auto"
                             style={{
                                 width: '100vw',
-                                height: '250px',
+                                height: 'min(250px, 25vh)',
                                 objectFit: 'cover',
-                                objectPosition: '0 -125px'
+                                objectPosition: 'center 35%'
                               }}
                         />
             <div className="flex-grow max-w-4xl mx-auto px-4 py-8">
@@ -47,7 +47,7 @@ const About: React.FC = () => {
                                     You can find all the displaying companies in our{' '}
                                     <a
                                         href="/companies"
-                                        className="text-[rgb(var(--primary))] hover:underline"
+                                        className="text-[rgb(var(--link))] hover:underline"
                                     >
                                         company catalog
                                     </a>
@@ -62,7 +62,7 @@ const About: React.FC = () => {
                                     Email us at{' '}
                                     <a
                                         href="mailto:systemvetardagen@disk.su.se"
-                                        className="text-[rgb(var(--primary))] hover:underline"
+                                        className="text-[rgb(var(--link))] hover:underline"
                                     >
                                         systemvetardagen@disk.su.se
                                     </a>
