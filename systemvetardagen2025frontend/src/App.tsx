@@ -7,7 +7,7 @@ import SignupForm from './pages/SignupForm';
 import StudentDashboard from './pages/StudentDashboard';
 
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/footer';
+import Footer from './components/Footer/Footer';
 import Companies from './pages/Companies';
 import VisitInfo from './pages/VisitInfo';
 import About from './pages/About';

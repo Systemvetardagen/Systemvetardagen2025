@@ -1,13 +1,12 @@
 import React from 'react';
 
 
-import logoWithShirt from '../assets/2024logoWithShirt.jpg';
 
 const About: React.FC = () => {
     return (
         <div className="bg-[rgb(var(--background))] text-[rgb(var(--text))] flex flex-col min-h-screen">
             <img
-                            src={logoWithShirt}
+                            src={"/images/2024logoWithShirt.jpg"}
                             alt="Systemvetardagen Logo shirt"
                             className="max-w-full h-auto"
                             style={{
@@ -75,7 +74,7 @@ const About: React.FC = () => {
             </div>
             {/* need add project group
             need add Our partners */}
-            {/* <Footer /> */}
+     
         </div>
     );
 
