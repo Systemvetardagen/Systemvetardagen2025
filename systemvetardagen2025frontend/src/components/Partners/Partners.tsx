@@ -4,7 +4,7 @@ import partners from '../../assets/partners.json';
 const Partners = () => {
     const [t] = useTranslation('global');
     return (
-        <div className="px-[7vw] py-10">
+        <div className="px-[10vw] py-10">
             <h2 className="text-xl lg:text-3xl mb-8 font-light">{t('partners')}</h2>
             <div className="flex flex-col md:flex-row gap-8">
                 {partners.map((partner, index) => (

@@ -13,7 +13,7 @@ export default function Landing() {
             {/*Hero*/}
             <div
                 className="h-screen w-screen gradient-background text-white
-                        flex flex-col items-center pt-[20vh] min-w-[351px] font-poppins tracking-wide"
+                        flex flex-col items-center justify-center gap-4 min-w-[351px] font-poppins tracking-wide"
             >
                 <h1 className="text-4xl">{t('sub-header')}</h1>
                 <h1 className="text-2xl sm:text-3xl lg:text-[3vw] mb-8 font-semiBold mt-6 text-center">
@@ -29,7 +29,7 @@ export default function Landing() {
                 <span className="lg:text-[1.2vw] opacity-95">
                     10:00 - 16:00
                 </span>
-                <NavLink to="/signup">
+                <NavLink to="/companies">
                     <button className="bg-none border-2 py-4 px-6 rounded-full text-xl font-bold  mt-16 transition-transform duration-200 hover:scale-110">
                         {t('exhibitors')}
                     </button>
@@ -37,13 +37,13 @@ export default function Landing() {
             </div>
             {/*Body*/}
             <div className="w-screen flex flex-col items-center bg-background text-text text-center">
-                <div className="px-[7vw] py-[4vw] gradient-background gradient-text text-3xl lg:text-7xl">
+                <div className="px-[8   vw] lg:px-[14vw] py-[4vw] gradient-background gradient-text text-3xl lg:text-7xl">
                     {t('body.about')}
                 </div>
                 <Partners />
                 <a
                     href="/companies"
-                    className="w-full lg:px-[7vw] h-[20vh] lg:h-[35vh] overflow-hidden relative mt-20"
+                    className="w-full lg:px-[14vw] h-[25vh] lg:h-[35vh] overflow-hidden relative mt-20"
                 >
                     <img
                         src="/images/crowded-from-above.jpg"
@@ -54,7 +54,7 @@ export default function Landing() {
                         {t('body.meet-companies', { numberOfCompanies: 37 })}
                     </span>
                 </a>
-                <div className="bg-[#FFE6F4] mx-[7vw] my-[7vh] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%]">
+                <div className="bg-[#FFE6F4] mx-[8vw] lg:mx-[14vw] my-[7vh] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%]">
                     <h1 className="text-2xl lg:text-4xl ">
                         {t('body.almost-there.header')}
                     </h1>
@@ -67,7 +67,7 @@ export default function Landing() {
 
                 <a
                     href="/visit-info"
-                    className="w-full lg:px-[7vw] h-[20vh] lg:h-[35vh] overflow-hidden relative"
+                    className="w-full lg:px-[14vw] h-[25vh] lg:h-[35vh] overflow-hidden relative"
                 >
                     <img
                         src="/images/auditorium-seats.jpg"
@@ -78,7 +78,7 @@ export default function Landing() {
                         {t('body.lectures')}
                     </span>
                 </a>
-                <div className="flex flex-col md:flex-row mt-12 gap-12 px-[7vw] w-full">
+                <div className="flex flex-col md:flex-row mt-8 gap-8 px-[8vw] lg:px-[14vw] w-full">
                     {[
                         {
                             href: '/about',
@@ -86,12 +86,12 @@ export default function Landing() {
                             text: 'Läs mer om Systemvetardagen',
                         },
                         {
-                            href: '/about',
+                            href: '/signup',
                             imgSrc: '/images/crowded.jpg',
-                            text: 'Lorem Impsum',
+                            text: 'Newsletter',
                         },
                         {
-                            href: '/about',
+                            href: '/visit-info',
                             imgSrc: '/images/nod.jpg',
                             text: 'Hitta hit',
                         },
@@ -113,31 +113,31 @@ export default function Landing() {
                     ))}
                 </div>
 
-                <div className="mx-[7vw] mt-16 bg-[#FFEAC9] rounded-3xl py-10 text-center flex flex-col gap-10">
+                <div className="mx-[8vw] lg:mx-[14vw] mt-16 bg-[#FFEAC9] rounded-3xl py-10 text-center flex flex-col gap-10">
                     <h1 className="text-2xl lg:text-4xl px-4 font-bold">
                         {t('body.tips.header')}
                     </h1>
                     <div className="w-full flex flex-col gap-8 lg:flex-row">
                         {['before', 'during'].map((period) => (
                             <div
-                                className="flex flex-col text-center px-10"
+                                className="flex flex-col px-10 md:px-20 lg:px-30"
                                 key={period}
                             >
-                                <h1 className="font-bold text-2xl">
+                                <h1 className="font-bold text-center text-2xl">
                                     {t(`body.tips.${period}.header`)}
                                 </h1>
                                 {['t1', 't2', 't3'].map((tip) => (
-                                    <p className="text-xl mt-4" key={tip}>
+                                    <li className="text-xl mt-4 text-left list-disc" key={tip}>
                                         {t(`body.tips.${period}.${tip}`)}
-                                    </p>
+                                    </li>
                                 ))}
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="mx-[7vw] my-16 bg-[#E5E8FF] rounded-3xl py-10 flex flex-col items-center gap-10">
-                    <h1 className="text-2xl lg:text-4xl">
+                <div className="mx-[8vw] lg:mx-[14vw] my-16 bg-[#E5E8FF] rounded-3xl py-10 flex flex-col items-center gap-10">
+                    <h1 className="text-2xl lg:text-4xl px-2">
                         {t('body.uppdated.header')}
                     </h1>
                     <p className="w-3/4 text-xl text-center">

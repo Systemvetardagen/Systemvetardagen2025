@@ -69,7 +69,7 @@ const SignupForm = () => {
     return (
         <div
             className="min-h-screen w-full min-w-[375px] gradient-background
-        flex flex-col items-center pt-[5vh]"
+        flex flex-col items-center justify-center pt-[5vh]"
         >
             <div className="w-full lg:max-w-4xl max-w-[80%] text-center mt-16">
                 <div className="mb-4">

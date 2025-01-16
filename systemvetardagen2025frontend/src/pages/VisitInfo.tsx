@@ -79,7 +79,7 @@ const VisitInfo: React.FC = () => {
                 </div>
             </div>
             <img className="px-20 my-10" src="/svgs/floormap.svg" alt="" />
-            <div className="w-[500px] max-w-[90wv] text-start">
+            <div className="w-[500px] max-w-[90wv] text-start my-8">
                 <h1 className="font-light text-3xl mb-2">
                     {t('getting-to.header')}
                 </h1>
