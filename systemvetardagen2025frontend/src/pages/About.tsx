@@ -70,14 +70,12 @@ const About: React.FC = () => {
                             </div>
                         </div>
                     </section>
+                    {/* Project group component */}
+                    <ProjectGroup />
                 </div>
             </div>
-            {/* need add project group
-            need add Our partners */}
-     
         </div>
     );
-
 };
 
 export default About;
