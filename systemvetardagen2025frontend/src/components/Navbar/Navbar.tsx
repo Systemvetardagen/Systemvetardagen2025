@@ -30,9 +30,9 @@ const Navbar: React.FC = () => {
     }, []);
 
     const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
-        `font-bold text-2xl text-black ${
+        `font-bold text-[3.5vh] text-black ${
             isActive
-                ? 'text-black underline underline-offset-8'
+                ? 'text-black underline underline-offset-4'
                 : 'hover:text-gray-500'
         }`;
 
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                 </button>
             </div>
             {isOpen ? (
-                <div className="fixed top-0 left-0 flex flex-col justify-center gap-4 p-4 font-bold font-heading tracking-wide bg-white w-screen transition-transform duration-300 ease-in-out">
+                <div className="fixed top-0 left-0 flex flex-col justify-center gap-4 p-4 font-bold font-heading tracking-wide bg-white  w-screen transition-transform duration-300 ease-in-out">
                     {links.map((link, index) => (
                         <NavLink
                             key={index}

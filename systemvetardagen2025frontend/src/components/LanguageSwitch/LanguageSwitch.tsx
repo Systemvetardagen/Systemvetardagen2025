@@ -14,14 +14,15 @@ const LanguageSwitch: React.FC<ButtonProps> = ({ className }) => {
         setIsEnglish(!isEnglish);
     };
     const currentImage = isEnglish ? '/svgs/se.svg' : '/svgs/en.svg';
-    const baseClasses = 'flex-shrink-0';
-    const combinedClasses = `${baseClasses} ${className || ''}`;
     return (
-        <button onClick={handleChangeLanguage} className={combinedClasses}>
+        <button
+            onClick={handleChangeLanguage}
+            className={`flex-shrink-0 ${className}`}
+        >
             <img
                 src={currentImage}
                 alt="selected language"
-                className="h-8 rounded-xl"
+                className="h-[4.5vh] rounded-xl"
             />
         </button>
     );
