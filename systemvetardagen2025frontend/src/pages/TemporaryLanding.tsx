@@ -7,7 +7,7 @@ export default function TemporaryLanding() {
     const targetDate = '2025-03-26T16:00:00+01:00';
     const [t] = useTranslation('landing');
     return (
-        <div className="h-screen w-screen gradient-background flex flex-col items-center justify-evenly  px-4">
+        <div className="h-screen w-screen gradient-background flex flex-col items-center justify-evenly font-poppins  px-4">
             <img
                 className="w-[60vw] min-w-[150px] max-w-[240px]"
                 src="/images/systemvetardagen-logo.png"
