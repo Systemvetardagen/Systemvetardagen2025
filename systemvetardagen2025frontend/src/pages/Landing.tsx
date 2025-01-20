@@ -13,7 +13,7 @@ export default function Landing() {
             {/*Hero*/}
             <div
                 className="h-screen w-screen gradient-background text-white
-                        flex flex-col items-center justify-center gap-4 min-w-[351px] font-poppins tracking-wide"
+                        flex flex-col items-center justify-evenly py-[20vh] gap-4 min-w-[351px] font-poppins tracking-wide"
             >
                 <h1 className="text-4xl">{t('sub-header')}</h1>
                 <h1 className="text-2xl sm:text-3xl lg:text-[3vw] mb-8 font-semiBold mt-6 text-center">
@@ -30,7 +30,7 @@ export default function Landing() {
                     10:00 - 16:00
                 </span>
                 <NavLink to="/companies">
-                    <button className="bg-none border-2 py-4 px-6 rounded-full text-xl font-bold  mt-16 transition-transform duration-200 hover:scale-110">
+                    <button className="bg-none border-2 py-4 px-6 rounded-full text-xl font-bold  transition-transform duration-200 hover:scale-110">
                         {t('exhibitors')}
                     </button>
                 </NavLink>

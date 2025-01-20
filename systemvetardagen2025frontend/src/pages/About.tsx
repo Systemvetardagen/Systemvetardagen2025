@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import ProjectGroup from './ProjectContributors';
 
 const About: React.FC = () => {
     return (

@@ -116,6 +116,19 @@ const ProjectGroup = () => {
                         email: "michael@systemvetardagen.se",
                         linkedin: "https://linkedin.com/in/michaelb"
                     }}
+                    teamMembers={[
+                      {
+                          name: "Test member 2",
+                          email: "",
+                          linkedin: "",
+                          github: ""
+                      },
+                      {
+                            name: "Testmember 2",
+                            email: "alice@systemvetardagen.se",
+                            github: "https://github.com/alicej"
+                        }
+                  ]}
                 />
                 
                 <TeamSection
@@ -130,6 +143,19 @@ const ProjectGroup = () => {
                         email: "james@systemvetardagen.se",
                         linkedin: "https://linkedin.com/in/jamesw"
                     }}
+                    teamMembers={[
+                      {
+                          name: "Test member 2",
+                          email: "",
+                          linkedin: "",
+                          github: ""
+                      },
+                      {
+                            name: "Testmember 2",
+                            email: "alice@systemvetardagen.se",
+                            github: "https://github.com/alicej"
+                        }
+                  ]}
                 />
                 
                 <TeamSection
@@ -144,6 +170,19 @@ const ProjectGroup = () => {
                         email: "lisa@systemvetardagen.se",
                         linkedin: "https://linkedin.com/in/lisaa"
                     }}
+                    teamMembers={[
+                      {
+                          name: "Test member 2",
+                          email: "",
+                          linkedin: "",
+                          github: ""
+                      },
+                      {
+                            name: "Testmember 2",
+                            email: "alice@systemvetardagen.se",
+                            github: "https://github.com/alicej"
+                        }
+                  ]}
                 />
                 
                 <TeamSection
@@ -158,6 +197,19 @@ const ProjectGroup = () => {
                         email: "emily@systemvetardagen.se",
                         linkedin: "https://linkedin.com/in/emilyd"
                     }}
+                    teamMembers={[
+                      {
+                          name: "Test member 2",
+                          email: "",
+                          linkedin: "",
+                          github: ""
+                      },
+                      {
+                            name: "Testmember 2",
+                            email: "alice@systemvetardagen.se",
+                            github: "https://github.com/alicej"
+                        }
+                  ]}
                 />
                 
                 <TeamSection
@@ -172,6 +224,19 @@ const ProjectGroup = () => {
                         email: "daniel@systemvetardagen.se",
                         linkedin: "https://linkedin.com/in/daniell"
                     }}
+                    teamMembers={[
+                      {
+                          name: "Test member 2",
+                          email: "",
+                          linkedin: "",
+                          github: ""
+                      },
+                      {
+                            name: "Testmember 2",
+                            email: "alice@systemvetardagen.se",
+                            github: "https://github.com/alicej"
+                        }
+                  ]}
                 />
             </div>
         </section>
