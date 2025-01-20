@@ -58,9 +58,9 @@
     }
 }
 
-body {
-    font-family: 'WorkSans';
-    font-size: unset;
+*{
+    font-family: 'poppins';
+    font-family: unset;
 }
 
 h1,
@@ -69,16 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', 'WorkSans'; /*Should be Poppins only*/
     font-weight: 600;
     font-style: normal;
     font-size: unset;
-}
-
-input {
-    font-family: 'Poppins';
-}
-
-#pagetext {
-    font-family: 'Poppins', 'WorkSans';
 }
