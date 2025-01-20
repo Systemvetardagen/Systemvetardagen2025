@@ -10,22 +10,26 @@ import landing_en from './translations/en/landing.json';
 import landing_se from './translations/se/landing.json';
 import visitInfo_en from './translations/en/visit-info.json';
 import visitInfo_se from './translations/se/visit-info.json';
+import about_en from './translations/en/about.json';
+import about_se from './translations/se/about.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
 i18next.init({
-    interpolation: { escapevalue: false },
+    interpolation: { escapeValue: false },
     lng: 'en',
     resources: {
         en: {
             global: global_en,
             landing: landing_en,
             visitInfo: visitInfo_en,
+            about: about_en,
         },
         se: {
             global: global_se,
             landing: landing_se,
             visitInfo: visitInfo_se,
+            about: about_se,
         },
     },
 });

@@ -37,7 +37,7 @@ export default function Landing() {
             </div>
             {/*Body*/}
             <div className="w-screen flex flex-col items-center bg-background text-text text-center">
-                <div className="px-[8   vw] lg:px-[14vw] py-[4vw] gradient-background gradient-text text-3xl lg:text-7xl">
+                <div className="px-[8vw] lg:px-[18vw] py-[4vw] gradient-background gradient-text text-2xl md:text-3xl lg:text-5xl">
                     {t('body.about')}
                 </div>
                 <Partners />

@@ -7,17 +7,17 @@ const TeamSection = ({ title, head, viceHead, teamMembers }) => {
     const SocialLinks = ({ email, linkedin, github }) => (
         <div className="flex gap-2 mt-2">
             {email && (
-                <a href={`mailto:${email}`} className="text-[rgb(var(--link))] hover:text-opacity-80">
+                <a href={`mailto:${email}`} className="text-link hover:text-opacity-80">
                     <Mail size={20} />
                 </a>
             )}
             {linkedin && (
-                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-[rgb(var(--link))] hover:text-opacity-80">
+                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-link hover:text-opacity-80">
                     <Linkedin size={20} />
                 </a>
             )}
             {github && (
-                <a href={github} target="_blank" rel="noopener noreferrer" className="text-[rgb(var(--link))] hover:text-opacity-80">
+                <a href={github} target="_blank" rel="noopener noreferrer" className="text-link hover:text-opacity-80">
                     <Github size={20} />
                 </a>
             )}
@@ -43,7 +43,7 @@ const TeamSection = ({ title, head, viceHead, teamMembers }) => {
                 <div className="space-y-4">
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
-                        className="flex items-center gap-2 px-4 py-2 bg-[rgb(var(--link))] text-white rounded-md hover:opacity-90 transition-opacity"
+                        className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-md hover:opacity-90 transition-opacity"
                     >
                         Team Members
                         <ChevronDown

@@ -1,16 +1,18 @@
 import React from 'react';
 import ProjectGroup from './ProjectContributors';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
+    const [t] = useTranslation("about")
     return (
-        <div className="bg-[rgb(var(--background))] text-[rgb(var(--text))] flex flex-col min-h-screen">
+        <div className="bg-background text-text flex flex-col min-h-screen">
             <img
                             src={"/images/2024logoWithShirt.jpg"}
                             alt="Systemvetardagen Logo shirt"
                             className="max-w-full h-auto"
                             style={{
                                 width: '100vw',
-                                height: 'min(250px, 25vh)',
+                                height: 'min(250px, 30vh)',
                                 objectFit: 'cover',
                                 objectPosition: 'center 35%'
                               }}
@@ -23,44 +25,44 @@ const About: React.FC = () => {
                         <div className="space-y-6">
                             <div>
                                 <h2 className="text-2xl font-semibold mb-3">
-                                    What is Systemvetardagen?
+                                    {t('header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
-                                    Systemvetardagen is an annual career fair for students and recent graduates focusing on the IT sector. The fair is hosted by the Student Union DISK, a student union at the Department of Computer and Systems Sciences in Kista at Stockholm University. This event is completely free to attend for all students!
+                                {t('body')}
                                 </p>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-semibold mb-3">
-                                    Where & when is it?
+                                  {t('where-when.header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
-                                    In 2025 the fair is held on the 26th of March between 10-16 in Kista Nod, located at Borgarfjordsgatan 12 in Stockholm. No sign-up is needed, just come as you are!
+                                  {t('where-when.body')}
                                 </p>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-semibold mb-3">
-                                    What companies are attending this year?
+                                  {t('companies.header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
-                                    You can find all the displaying companies in our{' '}
+                                  {t('companies.body')}{' '}
                                     <a
                                         href="/companies"
-                                        className="text-[rgb(var(--link))] hover:underline"
+                                        className="text-link hover:underline"
                                     >
-                                        company catalog
+                                        {t('companies.link')}
                                     </a>
                                     .
                                 </p>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-semibold mb-3">
-                                    How can I as a company display?
+                                  {t('company-display.header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
-                                    Email us at{' '}
+                                  {t('company-display.body')}{' '}
                                     <a
                                         href="mailto:systemvetardagen@disk.su.se"
-                                        className="text-[rgb(var(--link))] hover:underline"
+                                        className="text-link hover:underline"
                                     >
                                         systemvetardagen@disk.su.se
                                     </a>

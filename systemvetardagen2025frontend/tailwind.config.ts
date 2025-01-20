@@ -9,6 +9,8 @@ export default {
                 primary: 'rgba(var(--primary))',
                 secondary: 'rgba(var(--secondary))',
                 accent: 'rgba(var(--accent))',
+                link: 'rgba(var(--link))',
+                
             },
             fontFamily: { body: ['WorkSans'], heading: ['OverPass'], poppins:['Poppins'], ibm:['IBM Plex Mono', 'monospace'] },
         },

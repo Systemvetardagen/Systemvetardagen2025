@@ -1,0 +1,19 @@
+{
+    "header": "Vad är Systemvetardagen?",
+    "body": "Systemvetardagen är en årlig arbetsmarknadsmässa för studenter och nyutexaminerade med fokus på IT-sektorn. Mässan arrangeras av Studentkåren DISK, en studentkår vid Institutionen för data- och systemvetenskap i Kista på Stockholms universitet. Evenemanget är helt gratis att besöka för alla studenter!",
+    "where-when": {
+        "header": "Var och när är det?",
+        "body": "År 2025 hålls mässan den 26 mars mellan 10–16 i Kista Nod, beläget på Borgarfjordsgatan 12 i Kista. Ingen föranmälan krävs, kom som du är!"
+    },
+    "companies": {
+        "header": "Vilka företag deltar i år?",
+        "body": "Du hittar alla deltagande företag i vår",
+        "link": "företagskatalog"
+    },
+    "company-display": {
+        "header": "Hur kan jag som företag delta?",
+        "body": "Maila oss på"
+        
+    },
+    "project-group": "Project Group"
+}

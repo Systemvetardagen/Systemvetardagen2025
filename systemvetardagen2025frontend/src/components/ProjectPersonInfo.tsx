@@ -35,7 +35,7 @@ const ProjectPersonInfo: React.FC<ProjectPersonInfoProps> = ({
                         href={LinkedIn}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[rgb(var(--primary))] hover:underline"
+                        className="text-primary hover:underline"
                     >
                         LinkedIn
                     </a>
@@ -45,7 +45,7 @@ const ProjectPersonInfo: React.FC<ProjectPersonInfoProps> = ({
                         <span className="text-gray-400">|</span>
                         <a
                             href={`mailto:${Email}`}
-                            className="text-[rgb(var(--primary))] hover:underline"
+                            className="text-primary hover:underline"
                         >
                             Email
                         </a>
@@ -56,7 +56,7 @@ const ProjectPersonInfo: React.FC<ProjectPersonInfoProps> = ({
                         <span className="text-gray-400">|</span>
                         <a
                             href={`tel:${Phone}`}
-                            className="text-[rgb(var(--primary))] hover:underline"
+                            className="text-primary hover:underline"
                         >
                             Phone
                         </a>
