@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
-import { ChevronDown, Mail, Linkedin, Github } from 'lucide-react';
+import { ChevronDown,  Linkedin, Github } from 'lucide-react';
 
 
-const SocialLinks = ({ email, linkedin, github }) => (
+const SocialLinks = ({  linkedin, github }) => (
   <div className="flex gap-2 mt-2">
-    {email && (
-      <a href={`mailto:${email}`} className="text-link hover:text-opacity-80">
-        <Mail size={20} />
-      </a>
-    )}
+
     {linkedin && (
       <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-link hover:text-opacity-80">
         <Linkedin size={20} />
