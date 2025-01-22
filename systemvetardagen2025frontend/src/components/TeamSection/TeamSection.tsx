@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Mail, Linkedin, Github } from 'lucide-react';
-import { teamData } from './teamData.js';
+
 
 const SocialLinks = ({ email, linkedin, github }) => (
   <div className="flex gap-2 mt-2">
@@ -68,26 +68,9 @@ const TeamSection = ({ title, head, viceHead, teamMembers }) => {
         </div>
       )}
     </div>
-  );
+  );  
 };
 
-const ProjectGroup = () => {
-  return (
-    <section className="space-y-8">
-      <h2 className="text-2xl font-semibold mb-6">Project Group</h2>
-      <div className="space-y-12">
-        {Object.entries(teamData).map(([title, data]) => (
-          <TeamSection
-            key={title}
-            title={title}
-            head={data.head}
-            viceHead={data.viceHead}
-            teamMembers={data.teamMembers}
-          />
-        ))}
-      </div>
-    </section>
-  );
-};
 
-export default ProjectGroup;
+
+export default TeamSection;
