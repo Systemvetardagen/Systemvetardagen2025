@@ -6,12 +6,12 @@ const SocialLinks = ({  linkedin, github }) => (
   <div className="flex gap-2 mt-2">
 
     {linkedin && (
-      <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-link hover:text-opacity-80">
+      <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-link hover:opacity-80">
         <Linkedin size={20} />
       </a>
     )}
     {github && (
-      <a href={github} target="_blank" rel="noopener noreferrer" className="text-link hover:text-opacity-80">
+      <a href={github} target="_blank" rel="noopener noreferrer" className="text-link hover:opacity-80">
         <Github size={20} />
       </a>
     )}
