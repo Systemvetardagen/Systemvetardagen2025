@@ -58,7 +58,7 @@ const VisitInfo: React.FC = () => {
                 <img
                     src="/images/nod.jpg"
                     alt=""
-                    className="object-cover w-full h-full filter grayscale object-[50%_70%]"
+                    className="object-cover w-full h-full object-[50%_70%]"
                 />
             </div>
             <h1 className="font-heading font-bold text-2xl lg:text-4xl mt-10">

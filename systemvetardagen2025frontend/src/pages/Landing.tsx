@@ -48,7 +48,7 @@ export default function Landing() {
                     <img
                         src="/images/crowded-from-above.jpg"
                         alt=""
-                        className="object-cover w-full h-full filter grayscale rounded-3xl"
+                        className="object-cover w-full h-full  rounded-3xl"
                     />
                     <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-sm lg:text-xl text-center">
                         {t('body.meet-companies', { numberOfCompanies: 37 })}
@@ -72,7 +72,7 @@ export default function Landing() {
                     <img
                         src="/images/auditorium-seats.jpg"
                         alt=""
-                        className="object-cover w-full h-full filter grayscale rounded-3xl"
+                        className="object-cover w-full h-full filter  rounded-3xl"
                     />
                     <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-sm lg:text-xl text-center">
                         {t('body.lectures')}
@@ -99,7 +99,7 @@ export default function Landing() {
                             <img
                                 src={item.imgSrc}
                                 alt=""
-                                className="object-cover w-full h-full filter grayscale rounded-3xl"
+                                className="object-cover w-full h-full rounded-3xl"
                             />
                             <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-sm lg:text-xl text-center">
                                 {item.text}
