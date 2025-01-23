@@ -17,17 +17,17 @@ const App: React.FC = () => {
 
     return (
         <QueryClientProvider client={queryClient}>
-            {/* <Navbar /> */}
+            <Navbar />
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
-                <Route path="/" element={<TemporaryLanding />} />
+                <Route path="/" element={<Landing />} />
                 <Route
                     path="/studentdashboard"
                     element={<StudentDashboard />}
                 />
 
-                {/* <Route path="/companies" element={<Companies />} /> */}
-                {/* <Route path="/visit-info" element={<VisitInfo />} /> */}
+                <Route path="/companies" element={<Companies />} />
+                <Route path="/visit-info" element={<VisitInfo />} />
                 <Route path="/about" element={<About />} />
                 {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />

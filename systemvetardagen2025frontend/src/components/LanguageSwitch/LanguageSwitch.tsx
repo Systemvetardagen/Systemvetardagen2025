@@ -7,23 +7,34 @@ interface ButtonProps {
 
 const LanguageSwitch: React.FC<ButtonProps> = ({ className }) => {
     const [t, i18n] = useTranslation();
+    const [isChecked, setIsChecked] = useState(false);
     const [isEnglish, setIsEnglish] = useState(i18n.language === 'en');
     const handleChangeLanguage = () => {
         const newLanguage = isEnglish ? 'se' : 'en';
         i18n.changeLanguage(newLanguage);
         setIsEnglish(!isEnglish);
     };
-    const currentImage = isEnglish ? '/svgs/se.svg' : '/svgs/en.svg';
+    const handleChange = () => {
+        setIsChecked(!isChecked);
+        handleChangeLanguage();
+    };
     return (
-        <button
-            onClick={handleChangeLanguage}
-            className={`flex-shrink-0 ${className}`}
-        >
-            <img
-                src={currentImage}
-                alt="selected language"
-                className="h-[4.5vh] rounded-xl"
-            />
+        <button className="flex gap-1 flex-shrink-0" onClick={handleChange}>
+            <h1 className={`font-bold font-poppins text-[3vh] transition-opacity duration-300 ${isChecked && "opacity-50"} `}>EN</h1>
+            <h1 className={`font-bold font-poppins text-[3vh] transition-opacity duration-300 ${!isChecked && "opacity-50"} `}>SE</h1>
+            {/* <label className="relative flex items-center  cursor-pointer">
+                <input
+                    type="checkbox"
+                    onChange={handleChange}
+                    checked={isChecked}
+                    value=""
+                    className="sr-only peer"
+                />
+                <div className="w-20 h-10 bg-white peer-focus:outline-0 relative peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full after:content-[''] after:absolute after:bg-blue-400 bg-white after:h-10 after:w-10 after:rounded-xl after:transition-all dark:border-gray-600 ">
+                    <span className="absolute left-0 top-0 z-10 font-bold">EN</span>
+                    <span className="absolute right-0 top-0 z-10 font-bold">SE</span>
+                </div>
+            </label> */}
         </button>
     );
 };
