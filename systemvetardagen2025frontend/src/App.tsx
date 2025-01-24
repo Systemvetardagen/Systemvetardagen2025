@@ -17,10 +17,10 @@ const App: React.FC = () => {
 
     return (
         <QueryClientProvider client={queryClient}>
-            <Navbar />
+            {/* <Navbar /> */}
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
-                <Route path="/" element={<Landing />} />
+                <Route path="/" element={<TemporaryLanding />} />
                 <Route
                     path="/studentdashboard"
                     element={<StudentDashboard />}

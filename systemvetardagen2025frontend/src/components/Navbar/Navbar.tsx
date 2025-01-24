@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
                     <LanguageSwitch />
                 </div>
             ) : null}
-            <LanguageSwitch className="hidden lg:flex" />
+            <LanguageSwitch className="hidden" />
         </nav>
     );
 };
