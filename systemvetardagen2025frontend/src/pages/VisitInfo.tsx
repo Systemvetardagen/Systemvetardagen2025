@@ -93,8 +93,8 @@ const VisitInfo: React.FC = () => {
                 </div>
             </div>
             <h2 className="my-32">Google maps embed here</h2>
-            <Partners />
-            <Footer />
+            <Partners/>
+            <div className='mt-[5vh]'></div>
         </div>
     );
 };

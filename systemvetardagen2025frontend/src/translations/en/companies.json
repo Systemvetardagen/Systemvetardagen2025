@@ -1,0 +1,20 @@
+{
+    "global": {
+        "areaOfBusiness": "Area of business",
+        "founded": "Founded",
+        "employeesInSweden": "Employees in Sweden",
+        "employeesInternationally": "Employees internationally",
+        "lookingFor": "{{company}} is looking for",
+        "qualifications": "Qualifications",
+        "contact": "Contact",
+        "learnMore": "Learn more about working at {{company}"
+    },
+    "cygni": {
+        "areaOfBusiness": "Systems development, consulting",
+        "description": {
+            "paragraph1": "Cygni, part of Accenture; we are an IT consultancy with the vision of being the best employer for passionate developers. Our consultants are full-stack, frontend, and mobile developers, UX designers, project managers, etc. All types of competences needed for helping our customers build the best digital solutions. Currently, we have offices in Sweden (Stockholm, Gothenburg, Malmö, Linköping, Luleå, and Östersund).",
+            "paragraph2": "At Cygni, competence development is highly prioritized. Every employee creates an individual development plan together with their consultant manager on their very first day. In the talent program, the entire talent team also meets to learn about different areas. \"The talent program at Cygni is a fantastic opportunity for those at the beginning of their careers as system developers. If you want to be part of a company that values its consultants, has a great community, and exciting clients - look no further.\" \"Cygni sponsors everything that's good,\" and we love spending time together! Therefore, we organize activities, including joint autumn and spring conferences."
+        },
+        "qualifications": "Knowledge of SQL Server and T-SQL, C#, DotNet, and WebAPI. Experience with cloud solutions, preferably within Azure. Azure DevOps, Kubernetes, Docker Swarm, or Service Fabric. Azure PaaS, SaaS, and IaaS services. Git, Powershell, Bash, Python, JavaScript, and React. Scrum. Finance. Fluency in Swedish is mandatory."
+    }
+}

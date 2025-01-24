@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
         { label: t('navbar.visit-info'), href: '/visit-info' },
         { label: t('navbar.about'), href: '/about' },
     ];
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isSticky, setIsSticky] = useState<boolean>(false);
 
     const toggleMenu = () => {

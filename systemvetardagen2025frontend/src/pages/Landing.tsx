@@ -145,7 +145,6 @@ export default function Landing() {
                     </NavLink>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }
