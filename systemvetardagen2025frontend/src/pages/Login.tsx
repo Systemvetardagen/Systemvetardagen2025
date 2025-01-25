@@ -16,7 +16,7 @@ const Login = () => {
         <div className="h-screen w-screen flex flex-col items-center pt-[10vh] min-w-[350px] gradient-background">
             <div className="w-full max-w-4xl text-center mb-12 mt-16">
                 <div className="mb-4">
-                    <h1 className="text-white text-5xl font-bold mb-8">
+                    <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                         Systemvetardagen 2025
                     </h1>
                     <h2 className="text-white text-2xl">Marketing Login</h2>

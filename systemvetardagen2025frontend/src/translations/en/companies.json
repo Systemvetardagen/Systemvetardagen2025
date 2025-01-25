@@ -7,7 +7,36 @@
         "lookingFor": "{{company}} is looking for",
         "qualifications": "Qualifications",
         "contact": "Contact",
-        "learnMore": "Learn more about working at {{company}"
+        "learnMore": "Learn more about working at {{company}}",
+        "backToCompanies": "Back to companies",
+        "scrollToTop": "Scroll to top"
+    },
+    "programs": {
+        "SYSDK": "Computer and Systems Sciences",
+        "SAFFK": "Enterprise Systems and Service Design",
+        "SDAVK": "Computer Science and Software Engineering",
+        "SGAMK": "Computer Game Development",
+        "SDIMK": "Digital Media",
+        "SITEK": "Business Administration and Information Technology",
+        "SIADK": "Interaction Design",
+        "SMARK": "Maket Communication and Information Technology",
+        "SAIHO": "AI for health",
+        "SMINO": "Information Security",
+        "SMEFO": "Open eGovernment",
+        "SCSSO": "Computer and Systems Sciences",
+        "SHINO": "Health Informatics",
+        "SSLIO": "Strategic Information Systems Management",
+        "SDSBO": "Data Science, Statistics and Decision Analysis",
+        "SPROM": "IT Project Management",
+        "SDKIO": "Design for Creative and Immersive Technology"
+    },
+    "positions": {
+        "fullTime": "Full time positions",
+        "partTime": "Part-time positions",
+        "thesis": "Thesis project",
+        "trainee": "Traineeprogram",
+        "internship": "Interships",
+        "foreignServices": "Foreign Services"
     },
     "cygni": {
         "areaOfBusiness": "Systems development, consulting",
@@ -16,5 +45,13 @@
             "paragraph2": "At Cygni, competence development is highly prioritized. Every employee creates an individual development plan together with their consultant manager on their very first day. In the talent program, the entire talent team also meets to learn about different areas. \"The talent program at Cygni is a fantastic opportunity for those at the beginning of their careers as system developers. If you want to be part of a company that values its consultants, has a great community, and exciting clients - look no further.\" \"Cygni sponsors everything that's good,\" and we love spending time together! Therefore, we organize activities, including joint autumn and spring conferences."
         },
         "qualifications": "Knowledge of SQL Server and T-SQL, C#, DotNet, and WebAPI. Experience with cloud solutions, preferably within Azure. Azure DevOps, Kubernetes, Docker Swarm, or Service Fabric. Azure PaaS, SaaS, and IaaS services. Git, Powershell, Bash, Python, JavaScript, and React. Scrum. Finance. Fluency in Swedish is mandatory."
+    },
+    "accenture": {
+        "areaOfBusiness": "IT consulting services, Strategy, Security, Business Intelligence, Interaction Design, Front End, Back End, ERP Systems, System Implementations, Design.",
+        "description": {
+            "paragraph1": "Accenture is a global consultancy firm specializing in digitization, cloud services, and cybersecurity. Leveraging specialized knowledge and experience across 40 different industries, we provide services encompassing strategy, consultancy, IT, interactive solutions, and business optimization. Our presence is robust on both a global and local scale. Currently, we boast a workforce of 740 000 employees in over 120 countries, diligently delivering on the promise of technological and human ingenuity daily, with 1600 operating in Sweden.",
+            "paragraph2": "By embracing the transformative power of change, we generate value for customers, employees, shareholders, and society at large. In April 2021, software development company Cygni became a part of Accenture, and in June, we welcomed Sentor, experts in cybersecurity and managed security services. We are consistently on the lookout for talented individuals with diverse backgrounds and expertise, including recent university graduates and experienced professionals with extensive work experience. Curious about the opportunities available with us? Come and talk to us during Systemvetardagen!"
+        },
+        "qualifications": "Active union member, Exchange studies, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
     }
 }

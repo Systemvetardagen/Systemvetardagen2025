@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
     }, []);
 
     const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
-        `font-bold text-[3vh] text-black ${
+        `font-bold text-2xl text-black ${
             isActive
                 ? 'text-black underline underline-offset-4'
                 : 'hover:text-gray-500'
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                 isSticky
                     ? 'fixed top-0 left-0 w-full rounded-none'
                     : 'absolute top-8 w-[90vw] mx-[5vw] rounded-2xl'
-            } flex bg-white text-black px-4 lg:py-1  z-10 items-center justify-between transition-all duration-150`}
+            } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150`}
         >
             <a href="/" className="flex-shrink-0">
                 <img
@@ -74,8 +74,11 @@ const Navbar: React.FC = () => {
                     />
                 </button>
             </div>
+            {isSticky && (
+                <div className="absolute bottom-0 left-0 w-screen h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+            )}
             {isOpen ? (
-                <div className="fixed top-0 left-0 flex flex-col justify-center gap-4 p-4 font-bold font-heading tracking-wide bg-white  w-screen transition-transform duration-300 ease-in-out">
+                <div className="fixed top-0 left-0 flex flex-col justify-center gap-4 p-4 font-bold font-heading tracking-wide bg-white w-screen transition-transform duration-300 ease-in-out">
                     {links.map((link, index) => (
                         <NavLink
                             key={index}
@@ -86,9 +89,10 @@ const Navbar: React.FC = () => {
                         </NavLink>
                     ))}
                     <LanguageSwitch />
+                    <div className="absolute bottom-0 left-0 w-screen h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
                 </div>
             ) : null}
-            <LanguageSwitch className="hidden" />
+            <LanguageSwitch className="hidden lg:flex" />
         </nav>
     );
 };

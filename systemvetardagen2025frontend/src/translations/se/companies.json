@@ -7,7 +7,36 @@
     "lookingFor": "{{company}} söker",
     "qualifications": "Kvalifikationer",
     "contact": "Kontakt",
-    "learnMore": "Läs mer om att arbeta på {{company}}"
+    "learnMore": "Läs mer om att arbeta på {{company}}",
+    "backToCompanies": "Tillbaka till företagen",
+    "scrollToTop": "Skrolla till toppen"
+  },
+  "programs": {
+    "SYSDK": "Data- och systemvetenskap",
+    "SAFFK": "Affärssystem och tjänstedesign",
+    "SDAVK": "Datavetenskap",
+    "SGAMK": "Datorspelsutveckling",
+    "SDIMK": "Digitala medier",
+    "SITEK": "Ekonomi och IT",
+    "SIADK": "Interaktionsdesign",
+    "SMARK": "Marknadskommunikation och IT",
+    "SAIHO": "AI for health",
+    "SMINO": "Information Security",
+    "SMEFO": "Open eGovernment",
+    "SCSSO": "Computer and Systems Sciences",
+    "SHINO": "Health Informatics",
+    "SSLIO": "Strategic Information Systems Management",
+    "SDSBO": "Data Science, Statistics and Decision Analysis",
+    "SPROM": "IT Project Management",
+    "SDKIO": "Design for Creative and Immersive Technology"
+  },
+  "positions": {
+    "fullTime": "Heltidstjänster",
+    "partTime": "Deltidtjänster",
+    "thesis": "Examensarbete",
+    "trainee": "Traineeprogram",
+    "internship": "Praktikplatser",
+    "foreignServices": "Utlandstjänster"
   },
   "cygni": {
     "areaOfBusiness": "Systemutveckling, konsulttjänster",
@@ -16,5 +45,13 @@
       "paragraph2": "På Cygni är kompetensutveckling något som är högt prioriterat. Varje medarbetare gör redan sin första anställningsdag en individuell kompetensplan tillsammans med sin konsultchef. I talangprogrammet träffas även hela talangteamet för att lära sig inom olika områden. \"Talangprogrammet på Cygni är en fantastisk möjlighet för dig som är i början av din karriär som systemutvecklare. Om du vill vara en del av ett företag som värdesätter sina konsulter, har en härlig gemenskap och spännande kunder – look no further.\" \"Cygni sponsrar allt som är bra\" och vi gillar att umgås! Därför anordnar vi aktiviteter tillsammans, däribland gemensamma höst- och vårkonferenser."
     },
     "qualifications": "Kunskap inom SQL Server och T-SQL, C#, DotNet och WebAPI. Erfarenhet av molnlösningar, gärna inom Azure. Azure DevOps, Kubernetes, Docker Swarm eller Service Fabric. Azure PaaS-, SaaS- och IaaS-tjänster. Git, Powershell, Bash, Python, JavaScript och React. Scrum. Ekonomi. Flytande svenska är ett krav."
+  },
+  "accenture": {
+      "areaOfBusiness": "It-konsulttjänster, Strategi, Säkerhet, Business Intelligence, Interaktionsdesign, Front End, Back End, Affärssystem, Systemimplementationer, Design.",
+      "description": {
+          "paragraph1": "Accenture är ett globalt konsultföretag inriktat mot digitalisering, molntjänster och cybersäkerhet. Med specialistkunskap och erfarenhet från 40 olika branscher erbjuder vi tjänster inom strategi, rådgivning, IT, interaktiva lösningar samt verksamhetsoptimering. Vi har stark närvaro både globalt och lokalt. För närvarande är vi ungefär 740 000 medarbetare i mer än 120 länder som varje dag levererar på löftet om teknisk och mänsklig uppfinningsförmåga, 1600 av dem är verksamma i Sverige.",
+          "paragraph2": "Genom att anamma kraften i förändring skapar vi värde för kunder, medarbetare, aktieägare och samhället i stort. I april 2021 blev mjuvaruutvecklingsföretaget Cygni en del av Accenture och i juni välkomnade vi Sentor, experter inom cybersäkerhet och manged security Services. Vi söker alltid kompetenta personer med varierad bakgrund och expertis – studenter direkt från universitetet såväl som erfarna personer med många års arbetslivserfarenhet. Vill du veta vilka möjligheter som finns hos oss? Kom och prata med oss under Systemvetardagen!"
+      },
+      "qualifications": "Aktiv kårmedlem, Utbytestudier, Föreningsliv, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
   }
 }
