@@ -34,7 +34,7 @@ const Company: React.FC = () => {
                     <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="w-[400px] max-w-[50vw]"
+                        className="w-[300px] max-w-[50vw]"
                     />
                 </div>
             </div>

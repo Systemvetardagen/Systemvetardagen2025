@@ -41,6 +41,17 @@ const Companies: React.FC = () => {
             positions: new Set(),
         });
     };
+    const getLabel = (
+        set: Set<string>,
+        type: 'programs' | 'positions'
+    ): string => {
+        const size = set.size;
+
+        if (size === 0) return `${t('global.all')} ${t(`global.${type}`)}`;
+        if (size === 1) return t(`${type}.${Array.from(set)[0]}`);
+
+        return `${size} ${t(`global.${type}`)}`;
+    };
 
     const filteredCompanies = companies.filter((company) => {
         const matchesCandidateProgram =
@@ -88,11 +99,13 @@ const Companies: React.FC = () => {
     return (
         <div className="bg-background min-h-screen">
             <div className="flex flex-col items-center py-32 px-10">
-                <h1 className="text-5xl lg:text-6xl mb-8">Companies</h1>
+                <h1 className="text-5xl lg:text-6xl mb-8">
+                    {t('global.header')}
+                </h1>
                 <div className="relative">
                     <div className="flex items-center flex-wrap justify-center gap-2 mb-4">
                         <h1 className="font-light text-gray-700">
-                            Showing companies for
+                            {t('global.showing')}
                         </h1>
                         <div className="">
                             <button
@@ -102,7 +115,13 @@ const Companies: React.FC = () => {
                                 }}
                                 className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-md hover:opacity-90 transition-opacity"
                             >
-                                all programs
+                                {getLabel(
+                                    new Set<string>([
+                                        ...selectedFilters.candidatePrograms,
+                                        ...selectedFilters.masterPrograms,
+                                    ]),
+                                    'programs'
+                                )}
                                 <ChevronDown
                                     className={`transform transition-transform duration-200 ${
                                         programsExpanded ? 'rotate-180' : ''
@@ -117,7 +136,9 @@ const Companies: React.FC = () => {
                                 }`}
                             ></div>
                         </div>
-                        <h1 className="font-light text-gray-700">and</h1>
+                        <h1 className="font-light text-gray-700">
+                            {t('global.and')}
+                        </h1>
                         <div className="">
                             <button
                                 onClick={() => {
@@ -126,7 +147,10 @@ const Companies: React.FC = () => {
                                 }}
                                 className="flex items-center gap-2 px-4 py-2 bg-accent rounded-md hover:opacity-90 transition-opacity"
                             >
-                                all positions
+                                {getLabel(
+                                    selectedFilters.positions,
+                                    'positions'
+                                )}
                                 <ChevronDown
                                     className={`transform transition-transform duration-200 ${
                                         positionsExpanded ? 'rotate-180' : ''
@@ -226,7 +250,7 @@ const Companies: React.FC = () => {
                 {noFiltersSelected ? (
                     <div>
                         <h1 className="text-2xl mb-8 text-center text-gray-700 font-light">
-                            Our Partners
+                            {t('global.partners')}
                         </h1>
                         <div className="grid grid-cols-2 lg:grid-cols-3 grd-flow-row gap-6">
                             {partners.map((partner, index) => (
@@ -244,11 +268,11 @@ const Companies: React.FC = () => {
                         onClick={clearFilters}
                         className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-md hover:opacity-90 transition-opacity mb-8"
                     >
-                        Clear filters
+                        {t('global.clearFilters')}
                     </button>
                 )}
                 <h1 className="text-2xl mb-8 text-center text-gray-700 font-light">
-                    All Companies
+                    {t('global.allCompanies')}
                 </h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
                     {filteredCompanies.map((company, index) => (

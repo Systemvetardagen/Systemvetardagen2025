@@ -1,5 +1,14 @@
 {
     "global": {
+        "header": "Companies",
+        "showing": "Showing companies for",
+        "and": "and",
+        "all": "all",
+        "programs": "programs",
+        "positions": "positions",
+        "clearFilters": "Clear filters",
+        "partners": "Our Partners",
+        "allCompanies": "All Companies",
         "areaOfBusiness": "Area of business",
         "founded": "Founded",
         "employeesInSweden": "Employees in Sweden",
