@@ -13,17 +13,18 @@ export default function TemporaryLanding() {
                 src="/images/systemvetardagen-logo.png"
                 alt="Systemvetardagen Logo"
             />
+            <div className='flex flex-col gap-3'>
             <h1 className="text-white text-2xl sm:text-3xl lg:text-[2vw] font-semiBold text-center">
                 {t('header')} 2025
             </h1>
-            <div className='flex flex-col gap-2'>
-                <span className="text-white text-s lg:text-[1.2vw] opacity-95 text-center">
-                    {t('date.day')}, {t('date.month')} 26 10:00-16:00
-                </span>
-                <span className="text-white text-s lg:text-[1vw] font-normal opacity-90 text-center">
-                    Kista Nod, Borgarfjordsgatan 12
-                </span>
+            <a href="https://calendar.google.com/calendar/r/eventedit?text=Systemvetardagen+2025&dates=20250326T090000Z/20250326T150000Z&details=&location=Kista+Nod,+Borgarfjordsgatan+12" target="_blank" rel="noopener noreferrer" className="text-white text-s lg:text-[1.2vw] opacity-95 hover:scale-105 transition-transform duration-100 text-center">
+                {t('date.day')}, {t('date.month')} 26 10:00-16:00
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kista+Nod,+Borgarfjordsgatan+12" target="_blank" rel="noopener noreferrer" className="text-white text-s lg:text-[1vw] font-normal opacity-90 hover:scale-105 transition-transform duration-100 text-center">
+                Kista Nod, Borgarfjordsgatan 12
+            </a>
             </div>
+
             <Countdown targetDate={targetDate} />
             <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold text-center">
                 🪚 {t('construction')} 🪚
