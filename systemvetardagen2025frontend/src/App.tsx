@@ -18,10 +18,10 @@ const App: React.FC = () => {
 
     return (
         <QueryClientProvider client={queryClient}>
-            {/* <Navbar /> */}
+            <Navbar />
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
-                <Route path="/" element={<TemporaryLanding />} />
+                <Route path="/" element={<Landing />} />
                 <Route
                     path="/studentdashboard"
                     element={<StudentDashboard />}
@@ -35,7 +35,7 @@ const App: React.FC = () => {
                 <Route path="*" element={<Navigate to="/" replace />} />
 
             </Routes>
-            {/* <Footer/> */}
+            <Footer/>
         </QueryClientProvider>
     );
 };

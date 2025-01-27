@@ -169,7 +169,7 @@ const Companies: React.FC = () => {
                     <div className="relative">
                         {programsExpanded && (
                             <div className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full gap-2">
-                                <h1>Bachelor's programmes</h1>
+                                <h1>Bachelor&apos;s programmes</h1>
                                 {candidatePrograms.map((program) => (
                                     <label
                                         key={program}
@@ -192,7 +192,7 @@ const Companies: React.FC = () => {
                                         {t(`programs.${program}`)}
                                     </label>
                                 ))}
-                                <h1>Master's programmes</h1>
+                                <h1>Master&apos;s programmes</h1>
                                 {masterPrograms.map((program) => (
                                     <label
                                         key={program}
@@ -215,6 +215,12 @@ const Companies: React.FC = () => {
                                         {t(`programs.${program}`)}
                                     </label>
                                 ))}
+                                <button
+                                    onClick={clearFilters}
+                                    className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                                >
+                                    {t('global.clearFilters')}
+                                </button>
                             </div>
                         )}
                     </div>
@@ -243,6 +249,12 @@ const Companies: React.FC = () => {
                                         {t(`positions.${position}`)}
                                     </label>
                                 ))}
+                                <button
+                                    onClick={clearFilters}
+                                    className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                                >
+                                    {t('global.clearFilters')}
+                                </button>
                             </div>
                         )}
                     </div>
