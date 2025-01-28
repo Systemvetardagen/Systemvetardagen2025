@@ -92,7 +92,7 @@ const Company: React.FC = () => {
                     </div>
                 )}
                 <div>
-                    <h1 className="text-4xl">
+                    <h1 className="text-4xl text-center">
                         {t('global.lookingFor', { company: company.name })}
                     </h1>
                 </div>
@@ -120,12 +120,12 @@ const Company: React.FC = () => {
                 </a>
                 <div className="flex gap-4">
                     <a href='/companies' className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl">
-                        <div className="p-4 bg-white rounded-xl">
+                        <div className="p-4 bg-white rounded-xl text-center">
                             {t('global.backToCompanies')}
                         </div>
                     </a>
                     <button onClick={() => window.scrollTo({top:0, behavior: "smooth"})} className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl">
-                        <div className="p-4 bg-white rounded-xl">
+                        <div className="p-4 bg-white rounded-xl text-center">
                             {t('global.scrollToTop')}
                         </div>
                     </button>
