@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Footer from '../components/Footer/Footer';
+import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
 const lectures = [
     {
@@ -87,15 +87,20 @@ const VisitInfo: React.FC = () => {
                 </h1>
                 <div className="mb-4">
                     <h2>{t('getting-to.metro.header')}</h2>
-                    <p className='text-pretty'>{t('getting-to.metro.body')}</p>
+                    <p className="text-pretty">{t('getting-to.metro.body')}</p>
                 </div>
                 <div className="mb-4">
                     <h2>{t('getting-to.parking.header')}</h2>
-                    <p className='text-pretty'>{t('getting-to.parking.body')}</p>
+                    <p className="text-pretty">
+                        {t('getting-to.parking.body')}
+                    </p>
                 </div>
             </div>
             <h2 className="my-32">Google maps embed here</h2>
             <Partners />
+            <br />
+            <br />
+            <SignupLink />
             <div className="mt-[5vh]"></div>
         </div>
     );

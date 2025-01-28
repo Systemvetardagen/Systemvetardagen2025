@@ -2,8 +2,9 @@ import '../App.css';
 import Countdown from '../components/Countdown/Countdown';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Footer from '../components/Footer/Footer';
+import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
+import { MapPin } from 'lucide-react';
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
@@ -17,14 +18,15 @@ export default function Landing() {
             >
                 <div className="text-center">
                     <h1 className="text-4xl">{t('sub-header')}</h1>
-                    <h1 className="text-2xl sm:text-3xl lg:text-[3v w] mb-8 font-semiBold mt-6">
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-8 font-semiBold mt-6">
                         Systemvetardagen 2025
                     </h1>
                 </div>
                 <Countdown targetDate={targetDate} />
-                <span className="lg:text-[1.5vw] font-bold opacity-90 mt-8">
+                <a target='_blank' href="https://www.google.com/maps/place/Borgarfjordsgatan+12,+164+55+Kista/@59.4068103,17.9426538,17z/" className="relative lg:text-[1.5vw] font-bold opacity-90 mt-8">
                     Kista Nod, Borgarfjordsgatan 12
-                </span>
+                    <MapPin className='absolute -top-4 -right-6 rotate-45' />
+                </a>
                 <span className="lg:text-[1.2vw] opacity-95">
                     {t('date.day')}, {t('date.month')} 26 10:00-16:00
                 </span>
@@ -118,31 +120,18 @@ export default function Landing() {
                                     {t(`body.tips.${period}.header`)}
                                 </h1>
                                 {['t1', 't2', 't3'].map((tip) => (
-                                    <li
-                                        className="text-xl mt-4 text-left list-disc"
+                                    <p
+                                        className="text-xl mt-4 list-item text-left"
                                         key={tip}
                                     >
                                         {t(`body.tips.${period}.${tip}`)}
-                                    </li>
+                                    </p>
                                 ))}
                             </div>
                         ))}
                     </div>
                 </div>
-
-                <div className="bg-[#E5E8FF] rounded-3xl py-10 flex flex-col items-center gap-10">
-                    <h1 className="text-2xl lg:text-4xl px-2">
-                        {t('body.uppdated.header')}
-                    </h1>
-                    <p className="w-3/4 text-xl text-center">
-                        {t('body.uppdated.body')}
-                    </p>
-                    <NavLink to="/signup">
-                        <button className="bg-white py-4 px-6 rounded-full text-xl transition-transform duration-200 hover:scale-110">
-                            {t('body.uppdated.button')}
-                        </button>
-                    </NavLink>
-                </div>
+                <SignupLink />
             </div>
         </div>
     );
