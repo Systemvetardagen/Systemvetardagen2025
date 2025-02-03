@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { ChevronDown,  Linkedin, Github } from 'lucide-react';
+import { Team } from './teamData';
 
-
-const SocialLinks = ({  linkedin, github }) => (
+interface SocialLinksProps {
+  linkedIn?: string;
+  github?: string;
+}
+const SocialLinks: React.FC<SocialLinksProps> = ({  linkedIn, github }) => (
   <div className="flex gap-2 mt-2">
 
-    {linkedin && (
-      <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-link hover:opacity-80">
+    {linkedIn && (
+      <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="text-link hover:opacity-80">
         <Linkedin size={20} />
       </a>
     )}
@@ -18,7 +22,7 @@ const SocialLinks = ({  linkedin, github }) => (
   </div>
 );
 
-const TeamSection = ({ title, head, viceHead, teamMembers }) => {
+const TeamSection: React.FC<Team> = ({ title, head, viceHead, teamMembers }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
