@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+    const [t] = useTranslation('global');
     return (
         <footer className="bg-background w-full">
             <div className="h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
@@ -27,7 +30,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="text-center text-gray-600">
-                    <p className="text-sm">Studentkåren DISK</p>
+                    <a href='https://disk.su.se/' className="text-sm">{t('disk')}</a>
                     <p className="text-sm">Borgarfjordsgatan 6C 164 40 Kista</p>
                 </div>
             </div>
