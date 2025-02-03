@@ -62,5 +62,20 @@
             "paragraph2": "By embracing the transformative power of change, we generate value for customers, employees, shareholders, and society at large. In April 2021, software development company Cygni became a part of Accenture, and in June, we welcomed Sentor, experts in cybersecurity and managed security services. We are consistently on the lookout for talented individuals with diverse backgrounds and expertise, including recent university graduates and experienced professionals with extensive work experience. Curious about the opportunities available with us? Come and talk to us during Systemvetardagen!"
         },
         "qualifications": "Active union member, Exchange studies, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
+    },
+    "handelsbanken": {
+        "areaOfBusiness": "Handelsbanken IT",
+        "description": {
+            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future."
+        },
+        "qualifications": ""
+    },
+    "ericsson": {
+        "areaOfBusiness": "Information and communication technology",
+        "description": {
+            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible."
+        },
+        "qualifications": ""
     }
+    
 }

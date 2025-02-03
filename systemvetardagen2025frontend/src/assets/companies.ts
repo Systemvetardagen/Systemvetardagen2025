@@ -16,8 +16,8 @@ export interface Company {
 }
 export interface Contact {
     name: string;
-    mail: string;
-    phoneNumber: string;
+    mail?: string;
+    phoneNumber?: string;
 }
 
 export const candidatePrograms = [
@@ -114,5 +114,48 @@ export const companies: Company[] = [
         candidatePrograms: ['SDIMK'],
         masterPrograms: ['SHINO'],
         positions: ['trainee'],
+    },
+    {
+        id: 'handelsbanken',
+        name: 'Handelsbanken',
+        logo: '/companies/Handelsbanken/handelsbanken-logo.svg',
+        banner: '/companies/Handelsbanken/handelsbanken-banner.png',
+        video: '/companies/Cygni/placeholder-video.mp4',
+        founded: 1871,
+        employeesSweden: 8000,
+        employeesTotal: 12000,
+        isPartner: false,
+        websiteLink: "https://www.handelsbanken.se/sv/om-oss/jobba-hos-oss/tech-data-innovation",
+        contacts: [
+            {
+                name: 'Rebecka Kjellström',
+                mail: 'rebecka.kjellstrom@handelsbanken.se',
+                phoneNumber: '+46 (0)730315596',
+            }
+        ],
+        candidatePrograms: ['SYSDK', 'SDAVK', 'SITEK', 'SMARK', 'SAFFK'],
+        masterPrograms: ['SAIHO', 'SDSBO', 'SCSSO', 'SMINO', 'SSLIO', 'SMEFO', 'SDKIO', 'SHINO'],
+        positions: ['fullTime', 'trainee', 'partTime', 'internship'],
+    },
+    {
+        id: 'ericsson',
+        name: 'Ericsson',
+        logo: '/companies/Ericsson/ericsson-logo.png',
+        banner: '/companies/Ericsson/ericsson-banner.png',
+        video: '/companies/Cygni/placeholder-video.mp4',
+        founded: 1876,
+        employeesSweden: 14500,
+        employeesTotal: 105000,
+        isPartner: false,
+        websiteLink: "https://www.ericsson.com/en/careers",
+        contacts: [
+            {
+                name: 'Ida Ellingsson',
+                mail: 'ida.ellingsson@ericsson.com'
+            }
+        ],
+        candidatePrograms: ['SDAVK', 'SYSDK', 'SITEK', 'SIADK', 'SMARK'],
+        masterPrograms: ['SAIHO', 'SDSBO', 'SCSSO', 'SDKIO', 'SHINO', 'SMINO', 'SSLIO'],
+        positions: ['fullTime', 'partTime', 'thesis', 'trainee', 'internship'],
     },
 ];

@@ -23,10 +23,12 @@ const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
 const Company: React.FC = () => {
     const { companyId } = useParams<{ companyId: string }>();
     const company = companies.find((company) => company.id === companyId);
-    const [t] = useTranslation('companies');
+    const { t, i18n } = useTranslation('companies');
+
     if (!company) {
         return <p>Company not found</p>;
     }
+
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
@@ -64,20 +66,16 @@ const Company: React.FC = () => {
                 <p className="px-[5vw] lg:px-[10vw] text-justify">
                     {t(`${companyId}.description.paragraph1`)}
                 </p>
-                <p className="px-[5vw] lg:px-[10vw] text-justify">
-                    {t(`${companyId}.description.paragraph2`)}
-                </p>
                 <img
                     className="rounded-3xl max-h-[200px] w-full object-cover"
                     src={company.banner}
                     alt=""
                 />
-                <p className="px-[5vw] lg:px-[10vw] text-justify">
-                    {t(`${companyId}.description.paragraph1`)}
-                </p>
-                <p className="px-[5vw] lg:px-[10vw] text-justify">
-                    {t(`${companyId}.description.paragraph2`)}
-                </p>
+                <div>
+                    <h1 className="text-4xl text-center">
+                        {t('global.lookingFor', { company: company.name })}
+                    </h1>
+                </div>
                 {company.video && (
                     <div className="flex justify-center">
                         <video
@@ -91,11 +89,6 @@ const Company: React.FC = () => {
                         </video>
                     </div>
                 )}
-                <div>
-                    <h1 className="text-4xl text-center">
-                        {t('global.lookingFor', { company: company.name })}
-                    </h1>
-                </div>
                 <div className="text-center px-[5vw] lg:px-[20vw]">
                     <h1 className="text-4xl mb-4">
                         {t('global.qualifications')}
@@ -115,16 +108,27 @@ const Company: React.FC = () => {
                             ></Contact>
                         ))}
                 </div>
-                <a className="text-link text-2xl text-center font-bold" href={company.websiteLink}>
+                <a
+                    className="text-link text-2xl text-center font-bold"
+                    href={company.websiteLink}
+                >
                     {t('global.learnMore', { company: company.name })}
                 </a>
                 <div className="flex gap-4">
-                    <a href='/companies' className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl">
+                    <a
+                        href="/companies"
+                        className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl"
+                    >
                         <div className="p-4 bg-white rounded-xl text-center">
                             {t('global.backToCompanies')}
                         </div>
                     </a>
-                    <button onClick={() => window.scrollTo({top:0, behavior: "smooth"})} className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl">
+                    <button
+                        onClick={() =>
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
+                        className="bg-gradient-to-r from-primary via-secondary to-accent p-[3px] rounded-2xl"
+                    >
                         <div className="p-4 bg-white rounded-xl text-center">
                             {t('global.scrollToTop')}
                         </div>
