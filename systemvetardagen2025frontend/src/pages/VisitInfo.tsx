@@ -78,8 +78,13 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <div className="mb-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.2724538117486!2d17.94447928059294!3d59.40656019752912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed05efbb67%3A0x18ac39c13897c4a9!2sDSV%2C%20Institutionen%20f%C3%B6r%20data-%20och%20systemvetenskap!5e0!3m2!1ssv!2sse!4v1738844966811!5m2!1ssv!2sse" width="600" height="450" allowfullscreen="" loading="lazy" ></iframe>
+            <div className="m-4 w-[70vw]">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.2724538117486!2d17.94447928059294!3d59.40656019752912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed05efbb67%3A0x18ac39c13897c4a9!2sDSV%2C%20Institutionen%20f%C3%B6r%20data-%20och%20systemvetenskap!5e0!3m2!1ssv!2sse!4v1738844966811!5m2!1ssv!2sse"
+                    width="100%"
+                    height="450"
+                    loading="lazy"
+                ></iframe>
             </div>
             <img className="px-20 my-10" src="/svgs/floormap.svg" alt="" />
             <div className="w-[500px] max-w-[90wv] text-start my-8">
