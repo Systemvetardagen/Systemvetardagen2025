@@ -1,42 +1,9 @@
 [
     {
-        "id": "cygni",
-        "name": "Cygni",
-        "logo": "/companies/Cygni/logo.png",
-        "banner": "/companies/Cygni/banner.jpeg",
-        "video": "/companies/Cygni/placeholder-video.mp4",
-        "founded": 2006,
-        "employeesSweden": 240,
-        "employeesTotal": 240,
-        "isPartner": true,
-        "websiteLink": "https://cygni.se/",
-        "contacts": [
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            },
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            },
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            }
-        ],
-        "candidatePrograms": ["SYSDK", "SAFFK", "SMARK"],
-        "masterPrograms": ["SDKIO"],
-        "positions": ["fullTime", "partTime", "thesis"]
-    },
-    {
         "id": "accenture",
         "name": "Accenture",
-        "logo": "/companies/Accenture/accenture-logo.png",
-        "banner": "/companies/Accenture/accenture-banner.png",
-        "video": "/companies/Cygni/placeholder-video.mp4",
+        "logo": "/companies/Accenture/accenture-logo.webp",
+        "banner": "/companies/Accenture/accenture-banner.webp",
         "founded": 2001,
         "employeesSweden": 1600,
         "employeesTotal": 740000,
@@ -67,8 +34,7 @@
         "id": "handelsbanken",
         "name": "Handelsbanken",
         "logo": "/companies/Handelsbanken/handelsbanken-logo.svg",
-        "banner": "/companies/Handelsbanken/handelsbanken-banner.png",
-        "video": "/companies/Cygni/placeholder-video.mp4",
+        "banner": "/companies/Handelsbanken/handlebanken-banner.webp",
         "founded": 1871,
         "employeesSweden": 8000,
         "employeesTotal": 12000,
@@ -97,9 +63,8 @@
     {
         "id": "ericsson",
         "name": "Ericsson",
-        "logo": "/companies/Ericsson/ericsson-logo.png",
-        "banner": "/companies/Ericsson/ericsson-banner.png",
-        "video": "/companies/Cygni/placeholder-video.mp4",
+        "logo": "/companies/Ericsson/ericsson-logo.webp",
+        "banner": "/companies/Ericsson/ericsson-banner.webp",
         "founded": 1876,
         "employeesSweden": 14500,
         "employeesTotal": 105000,
