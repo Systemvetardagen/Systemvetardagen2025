@@ -39,7 +39,7 @@ const CompanyPage: React.FC = () => {
                     <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="w-[250px]"
+                        className="w-[400px] max-w-[75vw] max-h-[150px] object-contain"
                     />
                 </div>
             </div>
@@ -92,14 +92,16 @@ const CompanyPage: React.FC = () => {
                         </video>
                     </div>
                 )}
-                <div className="text-center px-[5vw] lg:px-[20vw]">
-                    <h1 className="text-4xl mb-4">
-                        {t('global.qualifications')}
-                    </h1>
-                    <div className="bg-accent rounded-3xl p-8">
-                        {t(`${companyId}.qualifications`)}
+                {t(`${companyId}.qualifications`)?.trim() && (
+                    <div className="text-center px-[5vw] lg:px-[20vw]">
+                        <h1 className="text-4xl mb-4">
+                            {t('global.qualifications')}
+                        </h1>
+                        <div className="bg-accent rounded-3xl p-8">
+                            {t(`${companyId}.qualifications`)}
+                        </div>
                     </div>
-                </div>
+                )}
                 <div className="flex flex-col md:flex-row justify-evenly gap-10">
                     {company.contacts.length > 0 &&
                         company.contacts.map((contact, index) => (
