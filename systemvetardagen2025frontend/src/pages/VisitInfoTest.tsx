@@ -83,7 +83,6 @@ const VisitInfo: React.FC = () => {
                         )}
                 </div>
 
-                {/* Company List */}
                 <div className="flex-1 bg-white p-4 rounded-lg">
                     <ul className="grid grid-cols-2 gap-2">
                         {companies.map((company) => (
