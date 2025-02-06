@@ -29,14 +29,14 @@ export default function TemporaryLanding() {
             <span className="text-white text-sm sm:text-base lg:text-[1.5vw] font-bold text-center">
                 🪚 {t('construction')} 🪚
             </span>
-            <div className="w-full sm:w-3/4 lg:w-3/5 flex flex-col items-center">
-    <div className="w-full bg-gray-700 rounded-full h-4 relative">
-        <div className="bg-white/80 h-4 rounded-full" style={{ width: '80%' }}></div>
-    </div>
-    <span className="text-white text-sm sm:text-base mt-2">
-        {t('Nearly Done!')}
-    </span>
-</div>
+                <div className="w-full sm:w-3/4 lg:w-3/5 flex flex-col items-center">
+                <div className="w-full bg-gray-700 rounded-full h-4 relative">
+                <div className="bg-white/80 h-4 rounded-full" style={{ width: '80%' }}></div>
+            </div>
+            <span className="text-white text-sm sm:text-base mt-2">
+                {t('nearlyDone')}
+            </span>
+        </div>
 
             {/* <a href="/signup">
                 <button className="gradient-background-reverse shadow-xl p-4 rounded-xl text-text font-bold font-poppins mt-20">
