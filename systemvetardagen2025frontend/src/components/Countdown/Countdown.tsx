@@ -15,6 +15,7 @@ interface TimeLeft {
 }
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
+    const [clickAmount, setClickAmount] = useState<number>(0);
     const [t, i18n] = useTranslation('landing');
     function calculateTimeLeft(): TimeLeft | null {
         const difference =
@@ -43,12 +44,41 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     if (!timeLeft) {
         return <div>Systemvetardagen is happening now!</div>;
     }
+    console.log(clickAmount);
+    if (clickAmount > 50) {
+        return (
+            <div
+                className="grid gap-4 lg:flex lg:gap-24 grid-cols-2"
+                onClick={() => setClickAmount((prev) => prev + 1)}
+            >
+                <Timeunit
+                    value={timeLeft.days + Math.random()}
+                    label={t('days')}
+                />
+                <Timeunit
+                    value={timeLeft.hours + Math.random()}
+                    label={t('hours')}
+                />
+                <Timeunit
+                    value={timeLeft.minutes + Math.random()}
+                    label={t('minutes')}
+                />
+                <Timeunit
+                    value={timeLeft.seconds + Math.random()}
+                    label={t('seconds')}
+                />
+            </div>
+        );
+    }
     return (
-        <div className="grid gap-4 lg:flex lg:gap-24 grid-cols-2">
-            <Timeunit value={timeLeft.days} label={t("days")} />
-            <Timeunit value={timeLeft.hours} label={t("hours")} />
-            <Timeunit value={timeLeft.minutes} label={t("minutes")} />
-            <Timeunit value={timeLeft.seconds} label={t("seconds")} />
+        <div
+            className="grid gap-4 lg:flex lg:gap-24 grid-cols-2"
+            onClick={() => setClickAmount((prev) => prev + 1)}
+        >
+            <Timeunit value={timeLeft.days} label={t('days')} />
+            <Timeunit value={timeLeft.hours} label={t('hours')} />
+            <Timeunit value={timeLeft.minutes} label={t('minutes')} />
+            <Timeunit value={timeLeft.seconds} label={t('seconds')} />
         </div>
     );
 };
