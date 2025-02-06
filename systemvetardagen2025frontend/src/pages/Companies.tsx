@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import {
-    companies,
     candidatePrograms,
     masterPrograms,
     positions,
     Company,
 } from '../assets/companies';
+import companiesData from "../assets/companies.json";
 import { useTranslation } from 'react-i18next';
 
 const Companies: React.FC = () => {
+    const companies: Company[] = companiesData;
     const [t] = useTranslation('companies');
     const [selectedFilters, setSelectedFilters] = useState<{
         [key: string]: Set<string>;

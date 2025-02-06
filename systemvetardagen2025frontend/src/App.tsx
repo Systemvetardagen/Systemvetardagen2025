@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
 import Companies from './pages/Companies';
 import VisitInfo from './pages/VisitInfo';
 import About from './pages/About';
-import Company from './pages/Company';
+import CompanyPage from './pages/CompanyPage';
 
 const App: React.FC = () => {
     const queryClient = new QueryClient();
@@ -28,7 +28,7 @@ const App: React.FC = () => {
                 />
 
                 <Route path="/companies" element={<Companies />} />
-                <Route path="/companies/:companyId" element={<Company />} />
+                <Route path="/companies/:companyId" element={<CompanyPage />} />
                 <Route path="/visit-info" element={<VisitInfo />} />
                 <Route path="/about" element={<About />} />
                 {/* Redirecting undefined routes */}
