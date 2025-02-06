@@ -1,8 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { companies } from '../assets/companies';
+import companiesData from '../assets/companies.json';
+import { Company } from '../assets/companies';
 import { useTranslation } from 'react-i18next';
 import { Contact as ContactType } from '../assets/companies';
+
+const companies: Company[] = companiesData;
 
 const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
     const [t] = useTranslation('companies');
@@ -20,10 +23,10 @@ const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
     );
 };
 
-const Company: React.FC = () => {
+const CompanyPage: React.FC = () => {
     const { companyId } = useParams<{ companyId: string }>();
     const company = companies.find((company) => company.id === companyId);
-    const { t, i18n } = useTranslation('companies');
+    const { t } = useTranslation('companies');
 
     if (!company) {
         return <p>Company not found</p>;
@@ -32,11 +35,11 @@ const Company: React.FC = () => {
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
-                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-4">
+                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
                     <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="w-[300px] max-w-[50vw]"
+                        className="w-[250px]"
                     />
                 </div>
             </div>
@@ -139,4 +142,4 @@ const Company: React.FC = () => {
     );
 };
 
-export default Company;
+export default CompanyPage;

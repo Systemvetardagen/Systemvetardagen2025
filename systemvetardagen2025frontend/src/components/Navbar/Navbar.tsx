@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
     }, []);
 
     const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
-        `font-bold text-2xl text-black ${
+        `font-bold text-[20px] text-black ${
             isActive
                 ? 'text-black underline underline-offset-4'
                 : 'hover:text-gray-500'
