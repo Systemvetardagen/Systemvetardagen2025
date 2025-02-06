@@ -28,7 +28,7 @@ export const teamData: Team[] = [
         head: {
             name: 'Jan Pakos',
             linkedIn: 'https://linkedIn.com/in/janesmith',
-            github: 'https://www.github.com/',
+            github: 'https://github.com/Jan-Pakos',
         },
         viceHead: {
             name: 'Daniel Mansour',
@@ -53,13 +53,15 @@ export const teamData: Team[] = [
             },
             {
                 name: 'Giancarlo Valverde',
-                github: 'https://github.com/klkolly',
+                github: 'https://github.com/giancarlovalverde',
+                linkedIn:
+                    'https://www.linkedIn.com/in/giancarlo-valverde-340a501b4/',
             },
             {
                 name: 'Lingyu Kong',
                 linkedIn:
-                    'https://www.linkedIn.com/in/giancarlo-valverde-340a501b4/',
-                github: 'https://github.com/giancarlovalverde',
+                    'https://www.linkedin.com/in/lingyu-kong-c0destudent/',
+                github: 'https://github.com/klkolly',
             },
         ],
     },
