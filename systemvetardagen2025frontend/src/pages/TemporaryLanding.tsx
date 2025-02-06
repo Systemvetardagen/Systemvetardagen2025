@@ -34,7 +34,7 @@ export default function TemporaryLanding() {
                         <div className="bg-white/80 h-4 rounded-full" style={{ width: '80%' }}></div>
                     </div>
                     <span className="text-white text-sm sm:text-base mt-2">
-                        {t('nearlyDone')}
+                        {t('body.almost-there.nearlyDone')}                    
                     </span>
                 </div>
 
