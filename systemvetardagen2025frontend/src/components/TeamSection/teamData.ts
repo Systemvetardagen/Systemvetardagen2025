@@ -27,7 +27,7 @@ export const teamData: Team[] = [
         title: 'Web Development',
         head: {
             name: 'Jan Pakos',
-            linkedIn: 'https://linkedIn.com/in/janesmith',
+            linkedIn: 'https://www.linkedin.com/in/jan-p-b065a2127/',
             github: 'https://github.com/Jan-Pakos',
         },
         viceHead: {
