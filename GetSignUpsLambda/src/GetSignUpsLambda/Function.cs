@@ -40,7 +40,7 @@ public class Function
         await using var dbContext = new PreSignupDbContext();
         try
         {
-            if (login.Username != "systemvetardagenadmin" && login.Password != "eOlP1FaShp")
+            if (login.Username != "systemvetardagenadmin" || login.Password != System.Environment.GetEnvironmentVariable("systemvetarDagenAdminPwd"))
             {
                 return new { signups = new List<PreSignup>(), success = false };
             }
