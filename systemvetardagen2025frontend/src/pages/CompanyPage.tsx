@@ -35,11 +35,11 @@ const CompanyPage: React.FC = () => {
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
-                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-4">
+                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
                     <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="w-[300px] max-w-[50vw]"
+                        className="w-[250px]"
                     />
                 </div>
             </div>

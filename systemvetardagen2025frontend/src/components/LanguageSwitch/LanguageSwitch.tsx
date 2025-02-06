@@ -21,7 +21,7 @@ const LanguageSwitch: React.FC<ButtonProps> = ({ className }) => {
     return (
         <button className={`flex gap-1 ${className}`} onClick={handleChange}>
             <h1 className={`font-bold font-poppins text-2xl transition-opacity duration-300 ${isChecked && "opacity-50"} `}>EN</h1>
-            <h1 className="font-bold font-poppins text-2xl">|</h1>
+              <h1 className="font-bold font-poppins text-2xl">|</h1>
             <h1 className={`font-bold font-poppins text-2xl transition-opacity duration-300 ${!isChecked && "opacity-50"} `}>SE</h1>
             {/* <label className="relative flex items-center  cursor-pointer">
                 <input
