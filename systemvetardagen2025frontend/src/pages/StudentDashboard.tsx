@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useQuery } from 'react-query';
-import { customFetchInsertPreSignup } from '../utilities/customFetchInsertPreSignup';
 import { customFetchGetPreSignup } from '../utilities/customFetchGetPreSignUp';
 import Login from './Login';
 import { user } from '../structure/genstruct';
@@ -33,29 +32,20 @@ const StudentDashboard: React.FC = () => {
     const login = (data: user) => {
         setLoginData(data);
     };
-    const memoizedLoginData = useMemo(
-        () => ({ username: loginData.username, password: loginData.password }),
-        [loginData.username, loginData.password]
-    );
-    useEffect(() => {
-        if (loginState === 'success') {
-            localStorage.setItem('username', loginData.username);
-            localStorage.setItem('password', loginData.password);
-        }
-        if (loginState === 'fail') {
-            localStorage.removeItem('username');
-            localStorage.removeItem('password');
-        }
-    }, [loginState]);
+
     const { isFetching: signUpsIsFetching } = useQuery({
-        queryKey: ['GetSignUps', memoizedLoginData],
-        queryFn: () =>
-            customFetchGetPreSignup('GetSignUps', { ...memoizedLoginData }),
+        enabled:
+            loginData.username != '' &&
+            loginData.password != '' &&
+            students.length === 0,
+        queryKey: ['GetSignUps', loginData],
+        queryFn: () => customFetchGetPreSignup('GetSignUps', { ...loginData }),
         onSuccess: (data) => {
             if (!data.success) {
-                console.log('fail');
                 setError('Failed to fetch signups');
                 setLoginState('fail');
+                localStorage.removeItem('username');
+                localStorage.removeItem('password');
                 return;
             }
             setLoginState('success');
@@ -65,9 +55,14 @@ const StudentDashboard: React.FC = () => {
                     : prev
             );
             setError(null);
+            localStorage.setItem('username', loginData.username);
+            localStorage.setItem('password', loginData.password);
         },
     });
 
+    if (loginState !== 'success') {
+        return <Login login={login} loginSuccess={loginState} />;
+    }
     const handleSort = (field: keyof Student) => {
         setSortConfig({
             field,
@@ -135,9 +130,6 @@ const StudentDashboard: React.FC = () => {
             }
             return 0;
         });
-    if (loginState !== 'success') {
-        return <Login login={login} loginSuccess={loginState} />;
-    }
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">
             <div className="w-full max-w-6xl text-center mb-8">
