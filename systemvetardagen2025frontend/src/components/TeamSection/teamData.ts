@@ -1,6 +1,6 @@
 interface Person {
     name: string;
-    linkedin?: string;
+    linkedIn?: string;
     github?: string;
 }
 export interface Team {
@@ -14,42 +14,42 @@ export const teamData: Team[] = [
         title: 'Project Management',
         head: {
             name: 'Karin Jäderberg Stahre',
-            linkedin:
-                'https://www.linkedin.com/in/karin-j%C3%A4derberg-80290b18a/',
+            linkedIn:
+                'https://www.linkedIn.com/in/karin-j%C3%A4derberg-80290b18a/',
         },
         viceHead: {
             name: 'Karin Jäderberg Stahre',
-            linkedin:
-                'https://www.linkedin.com/in/karin-j%C3%A4derberg-80290b18a/',
+            linkedIn:
+                'https://www.linkedIn.com/in/karin-j%C3%A4derberg-80290b18a/',
         },
     },
     {
         title: 'Web Development',
         head: {
             name: 'Jan Pakos',
-            linkedin: 'https://linkedin.com/in/janesmith',
-            github: 'https://www.linkedin.com/in/jan-p-b065a2127',
+            linkedIn: 'https://linkedIn.com/in/janesmith',
+            github: 'https://www.github.com/',
         },
         viceHead: {
             name: 'Daniel Mansour',
-            linkedin: '',
+            linkedIn: '',
             github: '',
         },
         teamMembers: [
             {
                 name: 'Fredrik Etsare',
-                linkedin:
-                    'https://www.linkedin.com/in/fredrik-etsare-20a535255/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/fredrik-etsare-20a535255/',
                 github: 'https://github.com/Mammamu4',
             },
             {
                 name: 'Gabriel Erneving',
-                linkedin:
-                    'https://www.linkedin.com/in/gabriel-erneving-a96928264/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/gabriel-erneving-a96928264/',
             },
             {
                 name: 'Ville Viljanen',
-                linkedin: 'https://www.linkedin.com/in/ville-henrik-viljanen/',
+                linkedIn: 'https://www.linkedIn.com/in/ville-henrik-viljanen/',
             },
             {
                 name: 'Giancarlo Valverde',
@@ -57,8 +57,8 @@ export const teamData: Team[] = [
             },
             {
                 name: 'Lingyu Kong',
-                linkedin:
-                    'https://www.linkedin.com/in/giancarlo-valverde-340a501b4/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/giancarlo-valverde-340a501b4/',
                 github: 'https://github.com/giancarlovalverde',
             },
         ],
@@ -67,39 +67,39 @@ export const teamData: Team[] = [
         title: 'Marketing',
         head: {
             name: 'Prince Victor Orjiugo',
-            linkedin: 'linkedin.com/in/theorjiugovictor/',
+            linkedIn: 'linkedIn.com/in/theorjiugovictor/',
             github: 'https://github.com/theorjiugovictor',
         },
         viceHead: {
             name: 'Mohammed Aleryani',
-            linkedin: 'https://www.linkedin.com/in/mohammedaleryani',
+            linkedIn: 'https://www.linkedIn.com/in/mohammedaleryani',
         },
         teamMembers: [
             {
                 name: 'Hedda Lagerberg',
-                linkedin:
-                    'https://www.linkedin.com/in/hedda-lagerberg-093135323/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/hedda-lagerberg-093135323/',
             },
             {
                 name: 'Joscelin Illanes',
-                linkedin: 'https://www.linkedin.com/in/joscelin-illanes/',
+                linkedIn: 'https://www.linkedIn.com/in/joscelin-illanes/',
             },
             {
                 name: 'Emilia Tuvner',
-                linkedin:
-                    'https://www.linkedin.com/in/emilia-tuvner-a77438198/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/emilia-tuvner-a77438198/',
             },
             {
                 name: 'Valentino Ionica',
-                linkedin:
-                    'https://www.linkedin.com/in/valentino-ionica-2baa1b238/',
+                linkedIn:
+                    'https://www.linkedIn.com/in/valentino-ionica-2baa1b238/',
             },
             {
                 name: 'Rong Zeng',
             },
             {
                 name: 'Alice Kempe',
-                linkedin: 'https://www.linkedin.com/in/alice-kempe-a6699b348/',
+                linkedIn: 'https://www.linkedIn.com/in/alice-kempe-a6699b348/',
             },
         ],
     },
@@ -107,33 +107,33 @@ export const teamData: Team[] = [
         title: 'Business relations and sales',
         head: {
             name: 'Sarah Nilsson',
-            linkedin: 'http://linkedin.com/in/sarahnilssons',
+            linkedIn: 'http://linkedIn.com/in/sarahnilssons',
         },
         viceHead: {
             name: 'Sarah Nilsson',
-            linkedin: 'http://linkedin.com/in/sarahnilssons',
+            linkedIn: 'http://linkedIn.com/in/sarahnilssons',
         },
         teamMembers: [
             {
                 name: 'Linn Sundling',
-                linkedin: 'https://www.linkedin.com/in/linnsundling/',
+                linkedIn: 'https://www.linkedIn.com/in/linnsundling/',
             },
             {
                 name: 'Adam Lugn',
-                linkedin: 'http://linkedin.com/in/adam-lugn-bb7a281a0',
+                linkedIn: 'http://linkedIn.com/in/adam-lugn-bb7a281a0',
             },
             {
                 name: 'Simon Clavensjö',
                 github: 'https://github.com/SimonClavensjo',
-                linkedin: 'https://www.linkedin.com/in/simon-clavensjo',
+                linkedIn: 'https://www.linkedIn.com/in/simon-clavensjo',
             },
             {
                 name: 'Sana Fathi',
-                linkedin: 'http://linkedin.com/in/sana-fathi-364094251',
+                linkedIn: 'http://linkedIn.com/in/sana-fathi-364094251',
             },
             {
                 name: 'Linnea Cooke',
-                linkedin: 'https://www.linkedin.com/in/linnea-cooke/',
+                linkedIn: 'https://www.linkedIn.com/in/linnea-cooke/',
             },
         ],
     },
@@ -141,7 +141,7 @@ export const teamData: Team[] = [
         title: 'Logistics',
         head: {
             name: 'Hugo Wennberg',
-            linkedin: 'https://www.linkedin.com/in/hugowennberg/',
+            linkedIn: 'https://www.linkedIn.com/in/hugowennberg/',
         },
         viceHead: {
             name: 'Emma Lenstrup',
@@ -151,7 +151,7 @@ export const teamData: Team[] = [
         title: 'Events',
         head: {
             name: 'Emir Adar',
-            linkedin: 'https://www.linkedin.com/in/emir-adar-62a5501b5/',
+            linkedIn: 'https://www.linkedIn.com/in/emir-adar-62a5501b5/',
             github: 'https://github.com/emradar',
         },
         viceHead: {
