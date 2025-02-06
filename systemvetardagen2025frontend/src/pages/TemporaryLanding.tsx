@@ -42,7 +42,7 @@ export default function TemporaryLanding() {
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal">
                 {t('disk')}
             </span>
-            <LanguageSwitch className="absolute top-4 right-4" />
+            <LanguageSwitch className="absolute top-4 right-4 text-white" />
         </div>
     );
 }

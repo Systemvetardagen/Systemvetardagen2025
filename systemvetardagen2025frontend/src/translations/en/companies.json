@@ -1,0 +1,81 @@
+{
+    "global": {
+        "header": "Companies",
+        "showing": "Showing companies for",
+        "and": "and",
+        "all": "all",
+        "programs": "programs",
+        "positions": "positions",
+        "clearFilters": "Clear filters",
+        "partners": "Our Partners",
+        "allCompanies": "All Companies",
+        "areaOfBusiness": "Area of business",
+        "founded": "Founded",
+        "employeesInSweden": "Employees in Sweden",
+        "employeesInternationally": "Employees internationally",
+        "lookingFor": "{{company}} is looking for",
+        "qualifications": "Qualifications",
+        "contact": "Contact",
+        "learnMore": "Learn more about working at {{company}}",
+        "backToCompanies": "Back to companies",
+        "scrollToTop": "Scroll to top"
+    },
+    "programs": {
+        "SYSDK": "Computer and Systems Sciences",
+        "SAFFK": "Enterprise Systems and Service Design",
+        "SDAVK": "Computer Science and Software Engineering",
+        "SGAMK": "Computer Game Development",
+        "SDIMK": "Digital Media",
+        "SITEK": "Business Administration and Information Technology",
+        "SIADK": "Interaction Design",
+        "SMARK": "Maket Communication and Information Technology",
+        "SAIHO": "AI for health",
+        "SMINO": "Information Security",
+        "SMEFO": "Open eGovernment",
+        "SCSSO": "Computer and Systems Sciences",
+        "SHINO": "Health Informatics",
+        "SSLIO": "Strategic Information Systems Management",
+        "SDSBO": "Data Science, Statistics and Decision Analysis",
+        "SPROM": "IT Project Management",
+        "SDKIO": "Design for Creative and Immersive Technology"
+    },
+    "positions": {
+        "fullTime": "Full time positions",
+        "partTime": "Part-time positions",
+        "thesis": "Thesis project",
+        "trainee": "Traineeprogram",
+        "internship": "Interships",
+        "foreignServices": "Foreign Services"
+    },
+    "cygni": {
+        "areaOfBusiness": "Systems development, consulting",
+        "description": {
+            "paragraph1": "Cygni, part of Accenture; we are an IT consultancy with the vision of being the best employer for passionate developers. Our consultants are full-stack, frontend, and mobile developers, UX designers, project managers, etc. All types of competences needed for helping our customers build the best digital solutions. Currently, we have offices in Sweden (Stockholm, Gothenburg, Malmö, Linköping, Luleå, and Östersund).",
+            "paragraph2": "At Cygni, competence development is highly prioritized. Every employee creates an individual development plan together with their consultant manager on their very first day. In the talent program, the entire talent team also meets to learn about different areas. \"The talent program at Cygni is a fantastic opportunity for those at the beginning of their careers as system developers. If you want to be part of a company that values its consultants, has a great community, and exciting clients - look no further.\" \"Cygni sponsors everything that's good,\" and we love spending time together! Therefore, we organize activities, including joint autumn and spring conferences."
+        },
+        "qualifications": "Knowledge of SQL Server and T-SQL, C#, DotNet, and WebAPI. Experience with cloud solutions, preferably within Azure. Azure DevOps, Kubernetes, Docker Swarm, or Service Fabric. Azure PaaS, SaaS, and IaaS services. Git, Powershell, Bash, Python, JavaScript, and React. Scrum. Finance. Fluency in Swedish is mandatory."
+    },
+    "accenture": {
+        "areaOfBusiness": "IT consulting services, Strategy, Security, Business Intelligence, Interaction Design, Front End, Back End, ERP Systems, System Implementations, Design.",
+        "description": {
+            "paragraph1": "Accenture is a global consultancy firm specializing in digitization, cloud services, and cybersecurity. Leveraging specialized knowledge and experience across 40 different industries, we provide services encompassing strategy, consultancy, IT, interactive solutions, and business optimization. Our presence is robust on both a global and local scale. Currently, we boast a workforce of 740 000 employees in over 120 countries, diligently delivering on the promise of technological and human ingenuity daily, with 1600 operating in Sweden.",
+            "paragraph2": "By embracing the transformative power of change, we generate value for customers, employees, shareholders, and society at large. In April 2021, software development company Cygni became a part of Accenture, and in June, we welcomed Sentor, experts in cybersecurity and managed security services. We are consistently on the lookout for talented individuals with diverse backgrounds and expertise, including recent university graduates and experienced professionals with extensive work experience. Curious about the opportunities available with us? Come and talk to us during Systemvetardagen!"
+        },
+        "qualifications": "Active union member, Exchange studies, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
+    },
+    "handelsbanken": {
+        "areaOfBusiness": "Handelsbanken IT",
+        "description": {
+            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future."
+        },
+        "qualifications": ""
+    },
+    "ericsson": {
+        "areaOfBusiness": "Information and communication technology",
+        "description": {
+            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible."
+        },
+        "qualifications": ""
+    }
+    
+}

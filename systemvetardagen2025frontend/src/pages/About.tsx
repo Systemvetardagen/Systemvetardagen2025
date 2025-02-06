@@ -9,7 +9,7 @@ const About: React.FC = () => {
             <img
                 src={'/images/2024logoWithShirt.jpg'}
                 alt="Systemvetardagen Logo shirt"
-                className="w-screen h-[20vh] lg:h-[40vh] object-cover object-[20%_50%]"
+                className="w-screen h-[20vh] lg:h-[40vh] max-h-[400px] object-cover object-[20%_50%]"
             />
             <div className="flex-grow max-w-4xl mx-auto px-4 py-8">
                 <div className="space-y-12">
@@ -63,7 +63,6 @@ const About: React.FC = () => {
                             </div>
                         </div>
                     </section>
-                    {/* Project group component */}
                     <ProjectGroup />
                 </div>
             </div>

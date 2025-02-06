@@ -1,6 +1,18 @@
 [
-    { "alt": "accenture", "src": "/companies/accenture-logo.png" },
-    { "alt": "accenture", "src": "/companies/accenture-logo.png" },
-    { "alt": "accenture", "src": "/companies/accenture-logo.png" },
-    { "alt": "accenture", "src": "/companies/accenture-logo.png" }
+    {
+        "id": "accenture",
+        "logo": "/companies/Accenture/accenture-logo.png"
+    },
+    {
+        "id": "accenture",
+        "logo": "/companies/Accenture/accenture-logo.png"
+    },
+    {
+        "id": "accenture",
+        "logo": "/companies/Accenture/accenture-logo.png"
+    },
+    {
+        "id": "accenture",
+        "logo": "/companies/Accenture/accenture-logo.png"
+    }
 ]

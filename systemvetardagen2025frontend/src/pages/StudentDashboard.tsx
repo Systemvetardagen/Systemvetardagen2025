@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useQuery } from 'react-query';
 import { customFetchInsertPreSignup } from '../utilities/customFetchInsertPreSignup';
 import { customFetchGetPreSignup } from '../utilities/customFetchGetPreSignUp';
 import Login from './Login';
+import { user } from '../structure/genstruct';
 interface Student {
     Id?: number;
     FirstName: string;
@@ -13,32 +14,60 @@ interface Student {
     CreatedAt?: string;
 }
 
-const login = {
-    username: sessionStorage.getItem('username'),
-    password: sessionStorage.getItem('password'),
-};
-
 const StudentDashboard: React.FC = () => {
     const [students, setStudents] = useState<Student[]>([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [error, setError] = useState<string | null>(null);
+    const [loginData, setLoginData] = useState<user>({
+        username: '',
+        password: '',
+    });
+    const [loginState, setLoginState] = useState<
+        'initial' | 'fail' | 'success'
+    >('initial');
     const [sortConfig, setSortConfig] = useState<{
         field: keyof Student | null;
         direction: 'asc' | 'desc';
     }>({ field: null, direction: 'asc' });
 
+    const login = (data: user) => {
+        setLoginData(data);
+    };
+    const memoizedLoginData = useMemo(
+        () => ({ username: loginData.username, password: loginData.password }),
+        [loginData.username, loginData.password]
+    );
+    useEffect(() => {
+        if (loginState === 'success') {
+            localStorage.setItem('username', loginData.username);
+            localStorage.setItem('password', loginData.password);
+        }
+        if (loginState === 'fail') {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+        }
+    }, [loginState]);
     const { isFetching: signUpsIsFetching } = useQuery({
-        queryKey: ['GetSignUps'],
-        queryFn: () => customFetchGetPreSignup('GetSignUps', { ...login }),
+        queryKey: ['GetSignUps', memoizedLoginData],
+        queryFn: () =>
+            customFetchGetPreSignup('GetSignUps', { ...memoizedLoginData }),
         onSuccess: (data) => {
             if (!data.success) {
+                console.log('fail');
                 setError('Failed to fetch signups');
+                setLoginState('fail');
                 return;
             }
-            setStudents(data.signups as Student[]);
+            setLoginState('success');
+            setStudents((prev) =>
+                JSON.stringify(prev) !== JSON.stringify(data.signups)
+                    ? data.signups
+                    : prev
+            );
+            setError(null);
         },
     });
-    console.log(students);
+
     const handleSort = (field: keyof Student) => {
         setSortConfig({
             field,
@@ -106,8 +135,8 @@ const StudentDashboard: React.FC = () => {
             }
             return 0;
         });
-    if (students.length === 0) {
-        return <Login />;
+    if (loginState !== 'success') {
+        return <Login login={login} loginSuccess={loginState} />;
     }
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex flex-col items-center pt-8 px-4">

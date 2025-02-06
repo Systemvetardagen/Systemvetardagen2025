@@ -1,0 +1,80 @@
+{
+    "global": {
+        "header": "Företag",
+        "showing": "Visar företag för",
+        "and": "och",
+        "all": "alla",
+        "programs": "program",
+        "positions": "positioner",
+        "clearFilters": "Rensa filter",
+        "partners": "Våra Partners",
+        "allCompanies": "Alla Företag",
+        "areaOfBusiness": "Affärsområde",
+        "founded": "Grundat",
+        "employeesInSweden": "Anställda i Sverige",
+        "employeesInternationally": "Anställda internationellt",
+        "lookingFor": "{{company}} söker",
+        "qualifications": "Kvalifikationer",
+        "contact": "Kontakt",
+        "learnMore": "Läs mer om att arbeta på {{company}}",
+        "backToCompanies": "Tillbaka till företagen",
+        "scrollToTop": "Skrolla till toppen"
+    },
+    "programs": {
+        "SYSDK": "Data- och systemvetenskap",
+        "SAFFK": "Affärssystem och tjänstedesign",
+        "SDAVK": "Datavetenskap",
+        "SGAMK": "Datorspelsutveckling",
+        "SDIMK": "Digitala medier",
+        "SITEK": "Ekonomi och IT",
+        "SIADK": "Interaktionsdesign",
+        "SMARK": "Marknadskommunikation och IT",
+        "SAIHO": "AI for health",
+        "SMINO": "Information Security",
+        "SMEFO": "Open eGovernment",
+        "SCSSO": "Computer and Systems Sciences",
+        "SHINO": "Health Informatics",
+        "SSLIO": "Strategic Information Systems Management",
+        "SDSBO": "Data Science, Statistics and Decision Analysis",
+        "SPROM": "IT Project Management",
+        "SDKIO": "Design for Creative and Immersive Technology"
+    },
+    "positions": {
+        "fullTime": "Heltidstjänster",
+        "partTime": "Deltidtjänster",
+        "thesis": "Examensarbete",
+        "trainee": "Traineeprogram",
+        "internship": "Praktikplatser",
+        "foreignServices": "Utlandstjänster"
+    },
+    "cygni": {
+        "areaOfBusiness": "Systemutveckling, konsulttjänster",
+        "description": {
+            "paragraph1": "Cygni, en del av Accenture; vi är ett IT-konsultföretag med visionen att vara den bästa arbetsgivaren för passionerade utvecklare. Våra konsulter är fullstack-, frontend- och mobilutvecklare, UX-designers, projektledare, etc. Alla typer av kompetenser som behövs för att hjälpa våra kunder att bygga de bästa digitala lösningarna. För närvarande har vi kontor i Sverige (Stockholm, Göteborg, Malmö, Linköping, Luleå och Östersund).",
+            "paragraph2": "På Cygni är kompetensutveckling något som är högt prioriterat. Varje medarbetare gör redan sin första anställningsdag en individuell kompetensplan tillsammans med sin konsultchef. I talangprogrammet träffas även hela talangteamet för att lära sig inom olika områden. \"Talangprogrammet på Cygni är en fantastisk möjlighet för dig som är i början av din karriär som systemutvecklare. Om du vill vara en del av ett företag som värdesätter sina konsulter, har en härlig gemenskap och spännande kunder – look no further.\" \"Cygni sponsrar allt som är bra\" och vi gillar att umgås! Därför anordnar vi aktiviteter tillsammans, däribland gemensamma höst- och vårkonferenser."
+        },
+        "qualifications": "Kunskap inom SQL Server och T-SQL, C#, DotNet och WebAPI. Erfarenhet av molnlösningar, gärna inom Azure. Azure DevOps, Kubernetes, Docker Swarm eller Service Fabric. Azure PaaS-, SaaS- och IaaS-tjänster. Git, Powershell, Bash, Python, JavaScript och React. Scrum. Ekonomi. Flytande svenska är ett krav."
+    },
+    "accenture": {
+        "areaOfBusiness": "It-konsulttjänster, Strategi, Säkerhet, Business Intelligence, Interaktionsdesign, Front End, Back End, Affärssystem, Systemimplementationer, Design.",
+        "description": {
+            "paragraph1": "Accenture är ett globalt konsultföretag inriktat mot digitalisering, molntjänster och cybersäkerhet. Med specialistkunskap och erfarenhet från 40 olika branscher erbjuder vi tjänster inom strategi, rådgivning, IT, interaktiva lösningar samt verksamhetsoptimering. Vi har stark närvaro både globalt och lokalt. För närvarande är vi ungefär 740 000 medarbetare i mer än 120 länder som varje dag levererar på löftet om teknisk och mänsklig uppfinningsförmåga, 1600 av dem är verksamma i Sverige.",
+            "paragraph2": "Genom att anamma kraften i förändring skapar vi värde för kunder, medarbetare, aktieägare och samhället i stort. I april 2021 blev mjuvaruutvecklingsföretaget Cygni en del av Accenture och i juni välkomnade vi Sentor, experter inom cybersäkerhet och manged security Services. Vi söker alltid kompetenta personer med varierad bakgrund och expertis – studenter direkt från universitetet såväl som erfarna personer med många års arbetslivserfarenhet. Vill du veta vilka möjligheter som finns hos oss? Kom och prata med oss under Systemvetardagen!"
+        },
+        "qualifications": "Aktiv kårmedlem, Utbytestudier, Föreningsliv, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
+    },
+    "handelsbanken": {
+        "areaOfBusiness": "Handelsbanken IT",
+        "description": {
+            "paragraph1": "Tillsammans utvecklar vi tjänster som används av miljoner människor dagligen och som stöttar samhällsutvecklingen. Här är du med på en spännande resa. För dig personligen och för banken i stort. Förutom att vi är en av Sveriges största banker är vi också en av landets största arbetsgivare inom tech, data och innovation − med över 2 000 medarbetare som jobbar nära affären för att utveckla bankens system."
+        },
+        "qualifications": ""
+    },
+    "ericsson": {
+        "areaOfBusiness": "Informations- och kommunikationsteknik",
+        "description": {
+            "paragraph1": "Hos Ericsson kommer du ha en unik möjlighet. Möjligheten att använda dina kunskaper och din fantasi för att tänja på gränserna för vad som är möjligt. Att skapa lösningar på några av världens tuffaste problem. Du kommer att bli utmanad. Men du kommer inte att vara ensam. Du kommer att ingå i ett team av likasinnade innovatörer, alla drivna att gå bortom status quo för att bygga vad som kommer härnäst. Du kommer att samarbeta över discipliner, gränser och kontinenter. Du kommer att få befogenhet att leda och prestera på ditt bästa. Du kommer att forma teknik för människor, samhällen, industrier och mänskligheten. Du kommer att vara en del av en mångfaldig gemenskap där du kan ta med dig ditt eget helt unika jag på jobbet. Hos Ericsson kan du vara en upptäcktsresande, en förändringsmakare och en kraft för det goda."
+        },
+        "qualifications": ""
+    }
+}

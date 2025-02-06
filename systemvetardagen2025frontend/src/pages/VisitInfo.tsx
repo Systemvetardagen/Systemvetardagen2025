@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Footer from '../components/Footer/Footer';
+import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
 const lectures = [
     {
@@ -54,7 +54,7 @@ const VisitInfo: React.FC = () => {
     const [t] = useTranslation('visitInfo');
     return (
         <div className="w-screen flex flex-col items-center font-poppins bg-background text-center">
-            <div className="w-full h-[20vh] lg:h-[40vh] overflow-hidden relative">
+            <div className="w-full h-[20vh] lg:h-[40vh] max-h-[400px] overflow-hidden">
                 <img
                     src="/images/nod.jpg"
                     alt=""
@@ -78,18 +78,22 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <img className="px-20 my-10" src="/svgs/floormap.svg" alt="" />
-            <div className="w-[500px] max-w-[90wv] text-start my-8">
+            <a href="/svgs/floormap.svg">
+                <img className="max-w-[90vw]" src="/svgs/floormap.svg" alt="" />
+            </a>
+            <div className="px-10 max-w-[90vw] lg:max-w-[50vw] text-start my-8">
                 <h1 className="font-light text-3xl mb-2">
                     {t('getting-to.header')}
                 </h1>
                 <div className="mb-4">
                     <h2>{t('getting-to.metro.header')}</h2>
-                    <p>{t('getting-to.metro.body')}</p>
+                    <p className="text-pretty">{t('getting-to.metro.body')}</p>
                 </div>
                 <div className="mb-4">
                     <h2>{t('getting-to.parking.header')}</h2>
-                    <p>{t('getting-to.parking.body')}</p>
+                    <p className="text-pretty">
+                        {t('getting-to.parking.body')}
+                    </p>
                 </div>
             </div>
             <div className="mb-20 w-[60vw]">
@@ -101,7 +105,10 @@ const VisitInfo: React.FC = () => {
                 ></iframe>
             </div>
             <Partners />
-            <Footer />
+            <br />
+            <br />
+            <SignupLink />
+            <div className="mt-[5vh]"></div>
         </div>
     );
 };
