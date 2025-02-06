@@ -31,10 +31,10 @@ export default function TemporaryLanding() {
             </span>
             <div className="w-full sm:w-3/4 lg:w-3/5 flex flex-col items-center">
     <div className="w-full bg-gray-700 rounded-full h-4 relative">
-        <div className="bg-green-400 h-4 rounded-full" style={{ width: '80%' }}></div>
+        <div className="bg-white/80 h-4 rounded-full" style={{ width: '80%' }}></div>
     </div>
     <span className="text-white text-sm sm:text-base mt-2">
-        {t('nearlyDone')}
+        {t('Nearly Done!')}
     </span>
 </div>
 
