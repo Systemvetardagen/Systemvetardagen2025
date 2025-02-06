@@ -52,6 +52,11 @@ export const teamData: Team[] = [
                 linkedIn: 'https://www.linkedIn.com/in/ville-henrik-viljanen/',
             },
             {
+                name: 'Wilhelm Durelius',
+                github: 'https://github.com/durelius',
+                linkedIn: 'www.linkedin.com/in/wilhelm-durelius-6a11012b1'
+            },
+            {
                 name: 'Giancarlo Valverde',
                 github: 'https://github.com/giancarlovalverde',
                 linkedIn:
