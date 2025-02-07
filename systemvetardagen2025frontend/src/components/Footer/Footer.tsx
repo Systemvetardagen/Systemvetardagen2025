@@ -31,7 +31,11 @@ const Footer = () => {
                 </div>
                 <div className="text-center text-gray-600">
                     <a href='https://disk.su.se/' className="text-sm">{t('disk')}</a>
-                    <p className="text-sm">Borgarfjordsgatan 6C 164 40 Kista</p>
+                    <p className="text-sm">
+                        <a href="https://www.google.com/maps/place/DSV,+Institutionen+f%C3%B6r+data-+och+systemvetenskap/@59.4068103,17.9426538,543m/data=!3m1!1e3!4m15!1m8!3m7!1s0x465f9eedb4b0b12f:0x17108ff333fa684a!2sBorgarfjordsgatan+12,+164+55+Kista!3b1!8m2!3d59.4068103!4d17.9452287!16s%2Fg%2F11c5d8mhp9!3m5!1s0x465f9eed05efbb67:0x18ac39c13897c4a9!8m2!3d59.4067198!4d17.9452225!16s%2Fg%2F1tczcj6x?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                            Borgarfjordsgatan 12 164 40 Kista
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>

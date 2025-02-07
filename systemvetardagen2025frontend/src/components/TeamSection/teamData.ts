@@ -32,8 +32,8 @@ export const teamData: Team[] = [
         },
         viceHead: {
             name: 'Daniel Mansour',
-            linkedIn: '',
-            github: '',
+            linkedIn: 'https://www.linkedin.com/in/danmanair/',
+            github: 'https://github.com/Danmanair',
         },
         teamMembers: [
             {
