@@ -80,8 +80,24 @@
     "cgi": {
         "areaOfBusiness": "IT, Affärsrådgivning",
         "description": {
-             "paragraph1": "Ett av världens största IT-konsultbolag som innefattar branscher inom industrier, bank och finans, publik sektor och försvar. Våra konsulter jobbar med allt ifrån systemutveckling, itsäkerhet, projektledning och business consulting."
+            "paragraph1": "Ett av världens största IT-konsultbolag som innefattar branscher inom industrier, bank och finans, publik sektor och försvar. Våra konsulter jobbar med allt ifrån systemutveckling, itsäkerhet, projektledning och business consulting."
         },
         "qualifications": ".NET, Azure, projektlening, arkitektur, Java, Ai, GCP, AWS, ISTQB, REQB, COBOL, PYTHON, SCRUM, Business intelligence, qliksense, power-bi, security, it-security"
+    },
+    "akavia": {
+        "areaOfBusiness": "Fackförbund",
+        "description": {
+            "paragraph1": "Akavia är fackförbundet för dig som vill mer. Som vill utveckla och utvecklas. För dig som söker fakta och sprider kunskap. Tillsammans är vi över 144 000 akademiker som valt Akavia. 33 000 av dem är studenter. Bli medlem du också! Som ditt fackförbund stöttar Akavia dig som medlem genom hela ditt arbetsliv. Hos oss är det din utbildning som är i fokus. Det gör att du kan vara medlem genom hela ditt arbetsliv och trygga din karriär oavsett sektor, bransch eller roll. Som studentmedlem i Akavia får du verktygen för att optimera starten på din karriär genom bland annat granskning av CV, lönestatistik, karriärrådgivning och intervjuträning. Besök oss på Akavia.se för att läsa mer om hur vi som organisation arbetar för att ge dig full utväxling på sin akademiska utbildning genom hela arbetslivet.",
+            "paragraph2": "Akavia är fackförbundet för ekonomer, jurister, samhällsvetare, it-akademiker, personalvetare och kommunikatörer. Du lägger just nu stor kraft och mycket resurser på din akademiska utbildning – vi jobbar för att du ska få utväxling på den investeringen. Hos Akavia får du verktygen och nätverken för att optimera starten på din karriär. Som student är medlemskapet kostnadsfritt och våra karriärrådgivare hjälper dig med allt från var jobben finns till vad du ska begära i ingångslön."
+        },
+        "qualifications": ""
+    },
+    "gtslAB": {
+        "areaOfBusiness": "Systemutveckling, Webbutveckling, UX design, Projektledning,  Affärssystem, Business Analyst, Business Intelligence, AI, Machine Learning, IT-säkerhet och Test",
+        "description": {
+            "paragraph1": "På Guided Talent Solutions är vi specialiserade på målgruppen nyexaminerade techtalanger. Genom våra olika koncept får du som techtalang en perfekt övergång från studier till arbetsliv. Vi hjälper dig att få en flygande start på din karriär genom samarbeten med några av Sveriges främsta techbolag. Med våra talangprogram och konsultuppdrag erbjuder vi unika möjligheter som kombinerar praktiskt arbete, skräddarsydda utbildningar, sociala aktiviteter och handledning. Du kommer att få en gedigen onboarding och introduktion till din roll. Med möjlighet att bygga ett starkt nätverk och gemenskap med andra techtalanger. Vi ger dig trygg handledning och stöd genom hela din resa, för att du ska ha de bästa förutsättningarna att lyckas.",
+            "paragraph2": ""
+        },
+        "qualifications": "C/C++, .Net/C#, Angular, JavaScript, HTML/CSS, React, Node.Js, Java, Python, AWS, Azure, SQL Server, ServiceNow, Kafka, PHP, Integration, DevOps, Jenkins, Kotlin, Machine Learning, AI, Test, Kravhantering, Cybersäkerhet, UX/UI, CI/CD, TDD"
     }
 }

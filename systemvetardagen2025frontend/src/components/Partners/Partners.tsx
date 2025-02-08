@@ -20,7 +20,7 @@ const Partners = () => {
             <div className="flex flex-col md:flex-row gap-8">
                 {partnersData.map(({ id, logo }, index) => (
                     <a
-                        className="bg-white rounded-3xl hover:rounded-3xl transition-all duration-100 ease-linear shadow-xl p-10 hover:scale-105"
+                        className="bg-white rounded-3xl hover:rounded-3xl transition-all duration-100 ease-linear shadow-xl p-2 hover:scale-105"
                         href={`/companies/${id}`}
                         key={index}
                     >

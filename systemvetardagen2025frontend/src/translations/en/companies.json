@@ -66,23 +66,41 @@
     "handelsbanken": {
         "areaOfBusiness": "Handelsbanken IT",
         "description": {
-            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future."
+            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future.",
+            "paragraph2": ""
         },
         "qualifications": ""
     },
     "ericsson": {
         "areaOfBusiness": "Information and communication technology",
         "description": {
-            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible."
+            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible.",
+            "paragraph2": ""
         },
         "qualifications": ""
     },
     "cgi": {
         "areaOfBusiness": "IT, Business consulting",
         "description": {
-            "paragraph1": "CGI is one of the largest IT and business consulting services firms in the world. Combining human ingenuity with the power of technology."
+            "paragraph1": "CGI is one of the largest IT and business consulting services firms in the world. Combining human ingenuity with the power of technology.",
+            "paragraph2": ""
         },
         "qualifications": ".NET, Azure, project management, architectures, Java, Ai, GCP, AWS, ISTQB, REQB, COBOL, PYTHON, SCRUM, Business intelligence, qliksense, power-bi, security, it-security."
+    },
+    "akavia": {
+        "areaOfBusiness": "Union",
+        "description": {
+            "paragraph1": "Akavia is the trade union for you who have chosen the academic path. Our organisation was formed from the unions Jusek and Civilekonomerna in 2020. Akavia brings together 144,000 economists, lawyers, social scientists, IT professionals, HR specialists, and communication professionals. The union is politically non-affiliated and the third largest within Saco. Akavia wants each member to get a full return on their academic education, throughout their professional careers. As a student member of Akavia, you receive tools and a network to optimise the start of your career – completely free of charge.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "gtslAB": {
+        "areaOfBusiness": "System development, Web development, UX design, Project management, Business systems, Business Analyst, Business Intelligence, AI, Machine Learning, IT security, and Testing",
+        "description": {
+            "paragraph1": "At Guided Talent Solutions, we specialize in newly graduated tech talents. Through our various programs, you, as a tech talent, get a seamless transition from studies to working life. We help you kick-start your career through collaborations with some of Sweden's leading tech companies. With our talent programs and consulting assignments, we offer unique opportunities that combine hands-on work, tailored training, social activities, and mentorship. You will receive a comprehensive onboarding and introduction to your role, along with the chance to build a strong network and connect with other tech talents. We provide you with reliable guidance and support throughout your journey, ensuring you have the best conditions for success.",
+            "paragraph2": ""
+        },
+        "qualifications": "C/C++, .Net/C#, Angular, JavaScript, HTML/CSS, React, Node.Js, Java, Python, AWS, Azure, SQL Server, ServiceNow, Kafka, PHP, Integration, DevOps, Jenkins, Kotlin, Machine Learning, AI, Test, requirements management, Cybersecurity, UX/UI, CI/CD, TDD"
     }
-    
 }

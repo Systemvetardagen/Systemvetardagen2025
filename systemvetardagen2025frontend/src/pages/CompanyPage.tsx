@@ -116,7 +116,6 @@ const CompanyPage: React.FC = () => {
     const { companyId } = useParams<{ companyId: string }>();
     const company = companies.find((company) => company.id === companyId);
     const { t } = useTranslation('companies');
-
     if (!company) {
         return <p>Company not found</p>;
     }
@@ -143,10 +142,12 @@ const CompanyPage: React.FC = () => {
                         <strong>{t('global.founded')}</strong>
                         <span>{company.founded}</span>
                     </div>
-                    <div className="flex justify-between gap-10">
-                        <strong>{t('global.employeesInSweden')}</strong>
-                        <span>{company.employeesSweden}</span>
-                    </div>
+                    {company.employeesSweden && (
+                        <div className="flex justify-between gap-10">
+                            <strong>{t('global.employeesInSweden')}</strong>
+                            <span>{company.employeesSweden}</span>
+                        </div>
+                    )}
                     {company.employeesTotal && (
                         <div className="flex justify-between gap-10">
                             <strong>
@@ -157,15 +158,21 @@ const CompanyPage: React.FC = () => {
                     )}
                 </div>
                 <div className="flex gap-4">
-                    <a href={company.linkedIn}>
-                        <Linkedin />
-                    </a>
-                    <a href={company.instagram}>
-                        <Instagram />
-                    </a>
-                    <a href={company.facebook}>
-                        <Facebook />
-                    </a>
+                    {company.linkedIn && (
+                        <a href={company.linkedIn}>
+                            <Linkedin />
+                        </a>
+                    )}
+                    {company.instagram && (
+                        <a href={company.instagram}>
+                            <Instagram />
+                        </a>
+                    )}
+                    {company.facebook && (
+                        <a href={company.facebook}>
+                            <Facebook />
+                        </a>
+                    )}
                 </div>
                 <p className="px-[5vw] lg:px-[10vw] text-justify">
                     {t(`${companyId}.description.paragraph1`)}
@@ -175,6 +182,11 @@ const CompanyPage: React.FC = () => {
                     src={company.banner}
                     alt=""
                 />
+                {t(`${companyId}.description.paragraph2`)?.trim() && (
+                    <p className="px-[5vw] lg:px-[10vw] text-justify">
+                        {t(`${companyId}.description.paragraph2`)}
+                    </p>
+                )}
                 {company.video && (
                     <div className="flex justify-center">
                         <video
@@ -188,7 +200,9 @@ const CompanyPage: React.FC = () => {
                         </video>
                     </div>
                 )}
-                <RecruitmentCard {...company} />
+                {company.candidatePrograms && company.masterPrograms && (
+                    <RecruitmentCard {...company} />
+                )}
                 <div className="flex flex-col md:flex-row justify-evenly gap-10">
                     {company.contacts.length > 0 &&
                         company.contacts.map((contact, index) => (

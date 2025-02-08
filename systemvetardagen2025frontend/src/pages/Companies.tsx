@@ -57,19 +57,25 @@ const Companies: React.FC = () => {
     const filteredCompanies = companies.filter((company) => {
         const matchesCandidateProgram =
             selectedFilters.candidatePrograms.size === 0 ||
-            company.candidatePrograms.some((program) =>
-                selectedFilters.candidatePrograms.has(program)
-            );
+            (company.candidatePrograms &&
+                company.candidatePrograms.some((program) =>
+                    selectedFilters.candidatePrograms.has(program)
+                ));
+
         const matchesMasterProgram =
             selectedFilters.masterPrograms.size === 0 ||
-            company.masterPrograms.some((program) =>
-                selectedFilters.masterPrograms.has(program)
-            );
+            (company.masterPrograms &&
+                company.masterPrograms.some((program) =>
+                    selectedFilters.masterPrograms.has(program)
+                ));
+
         const matchesPosition =
             selectedFilters.positions.size === 0 ||
-            company.positions.some((position) =>
-                selectedFilters.positions.has(position)
-            );
+            (company.positions &&
+                company.positions.some((position) =>
+                    selectedFilters.positions.has(position)
+                ));
+
         return (
             matchesCandidateProgram && matchesMasterProgram && matchesPosition
         );
@@ -116,7 +122,7 @@ const Companies: React.FC = () => {
                                 }}
                                 className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-md hover:opacity-90 transition-opacity"
                             >
-                                <p className=''>
+                                <p className="">
                                     {getLabel(
                                         new Set<string>([
                                             ...selectedFilters.candidatePrograms,
