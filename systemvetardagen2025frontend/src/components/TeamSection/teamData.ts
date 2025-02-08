@@ -17,11 +17,6 @@ export const teamData: Team[] = [
             linkedIn:
                 'https://linkedIn.com/in/karin-j%C3%A4derberg-80290b18a/',
         },
-        viceHead: {
-            name: 'Karin Jäderberg Stahre',
-            linkedIn:
-                'https://linkedIn.com/in/karin-j%C3%A4derberg-80290b18a/',
-        },
     },
     {
         title: 'Web Development',
