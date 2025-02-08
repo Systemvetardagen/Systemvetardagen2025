@@ -6,7 +6,7 @@ interface Person {
 export interface Team {
     title: string;
     head: Person;
-    viceHead: Person;
+    viceHead?: Person;
     teamMembers?: Person[];
 }
 export const teamData: Team[] = [
