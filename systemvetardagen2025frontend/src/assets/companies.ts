@@ -13,6 +13,9 @@ export interface Company {
     positions: string[];
     isPartner?: boolean;
     websiteLink: string;
+    linkedIn: string;
+    instagram: string;
+    facebook: string;
 }
 export interface Contact {
     name: string;

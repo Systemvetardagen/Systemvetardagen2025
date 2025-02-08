@@ -26,9 +26,38 @@
                 "phoneNumber": "0725552373"
             }
         ],
-        "candidatePrograms": ["SDIMK"],
-        "masterPrograms": ["SHINO"],
-        "positions": ["trainee"]
+        "candidatePrograms": [
+            "SYSDK",
+            "SAFFK",
+            "SDAVK",
+            "SGAMK",
+            "SDIMK",
+            "SITEK",
+            "SIADK",
+            "SMARK"
+        ],
+        "masterPrograms": [
+            "SAIHO",
+            "SMINO",
+            "SMEFO",
+            "SCSSO",
+            "SHINO",
+            "SSLIO",
+            "SDSBO",
+            "SPROM",
+            "SDKIO"
+        ],
+        "positions": [
+            "fullTime",
+            "partTime",
+            "thesis",
+            "trainee",
+            "internship",
+            "foreignServices"
+        ],
+        "linkedIn": "https://www.linkedin.com/company/accenture/",
+        "instagram": "https://www.instagram.com/accenture/",
+        "facebook": "https://www.facebook.com/accenture/"
     },
     {
         "id": "handelsbanken",
@@ -58,7 +87,10 @@
             "SDKIO",
             "SHINO"
         ],
-        "positions": ["fullTime", "trainee", "partTime", "internship"]
+        "positions": ["fullTime", "trainee", "partTime", "internship"],
+        "linkedIn": "https://www.linkedin.com/company/handelsbanken/",
+        "instagram": "https://www.instagram.com/handelsbanken/",
+        "facebook": "https://www.facebook.com/Handelsbanken/"
     },
     {
         "id": "ericsson",
@@ -86,6 +118,53 @@
             "SMINO",
             "SSLIO"
         ],
-        "positions": ["fullTime", "partTime", "thesis", "trainee", "internship"]
+        "positions": [
+            "fullTime",
+            "partTime",
+            "thesis",
+            "trainee",
+            "internship"
+        ],
+        "linkedIn": "https://www.linkedin.com/company/ericsson/",
+        "instagram": "https://www.instagram.com/inside_ericsson/",
+        "facebook": "https://www.facebook.com/ericsson/"
+    },
+    {
+        "id": "cgi",
+        "name": "CGI",
+        "logo": "/companies/CGI/cgi-logo.webp",
+        "banner": "/companies/CGI/cgi.webp",
+        "founded": 1976,
+        "employeesSweden": 3800,
+        "employeesTotal": 88000,
+        "isPartner": false,
+        "websiteLink": "https://www.cgi.com/se/sv/karriar",
+        "contacts": [
+            {
+                "name": "Albin Renlund",
+                "mail": "albin.renlund@cgi.com",
+                "phoneNumber": "0705919296"
+            },
+            {
+              "name": "Jessica Andersson",
+              "mail": "jessica.andersson@cgi.com",
+              "phoneNumber": "+46 76 1021481"
+            }
+        ],
+        "candidatePrograms": ["SAFFK", "SYSDK", "SDAVK"],
+        "masterPrograms": [
+            "SAIHO",
+            "SDSBO",
+            "SCSSO",
+            "SHINO",
+            "SMINO",
+            "SSLIO",
+            "SMEFO",
+            "SDKIO"
+        ],
+        "positions": ["fullTime", "thesis", "trainee"],
+        "linkedIn": "https://www.linkedin.com/company/cgi/",
+        "instagram": "https://www.instagram.com/cgisverige/",
+        "facebook": "https://www.facebook.com/cgisverige"
     }
 ]

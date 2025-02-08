@@ -76,6 +76,13 @@
             "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible."
         },
         "qualifications": ""
+    },
+    "cgi": {
+        "areaOfBusiness": "IT, Business consulting",
+        "description": {
+            "paragraph1": "CGI is one of the largest IT and business consulting services firms in the world. Combining human ingenuity with the power of technology."
+        },
+        "qualifications": ".NET, Azure, project management, architectures, Java, Ai, GCP, AWS, ISTQB, REQB, COBOL, PYTHON, SCRUM, Business intelligence, qliksense, power-bi, security, it-security."
     }
     
 }

@@ -6,7 +6,7 @@ import {
     positions,
     Company,
 } from '../assets/companies';
-import companiesData from "../assets/companies.json";
+import companiesData from '../assets/companies.json';
 import { useTranslation } from 'react-i18next';
 
 const Companies: React.FC = () => {
@@ -116,26 +116,21 @@ const Companies: React.FC = () => {
                                 }}
                                 className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-md hover:opacity-90 transition-opacity"
                             >
-                                {getLabel(
-                                    new Set<string>([
-                                        ...selectedFilters.candidatePrograms,
-                                        ...selectedFilters.masterPrograms,
-                                    ]),
-                                    'programs'
-                                )}
+                                <p className=''>
+                                    {getLabel(
+                                        new Set<string>([
+                                            ...selectedFilters.candidatePrograms,
+                                            ...selectedFilters.masterPrograms,
+                                        ]),
+                                        'programs'
+                                    )}
+                                </p>
                                 <ChevronDown
                                     className={`transform transition-transform duration-200 ${
                                         programsExpanded ? 'rotate-180' : ''
                                     }`}
                                 />
                             </button>
-                            <div
-                                className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300 ease-in-out ${
-                                    programsExpanded
-                                        ? 'max-h-[1000px] opacity-100'
-                                        : 'max-h-0 opacity-0 overflow-hidden'
-                                }`}
-                            ></div>
                         </div>
                         <h1 className="font-light text-gray-700">
                             {t('global.and')}
@@ -169,7 +164,7 @@ const Companies: React.FC = () => {
                     </div>
                     <div className="relative">
                         {programsExpanded && (
-                            <div className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full gap-2">
+                            <div className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full max-w-[550px] gap-2">
                                 <h1>Bachelor&apos;s programmes</h1>
                                 {candidatePrograms.map((program) => (
                                     <label
