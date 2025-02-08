@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
+import InteractiveMap from '../components/InteractiveMap';
 const lectures = [
     {
         company: 'Akavia',
@@ -78,6 +79,7 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
+            <InteractiveMap/>
             <a href="/svgs/floormap.svg">
                 <img className="max-w-[90vw]" src="/svgs/floormap.svg" alt="" />
             </a>
