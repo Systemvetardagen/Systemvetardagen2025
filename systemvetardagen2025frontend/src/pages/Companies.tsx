@@ -34,7 +34,7 @@ const Companies: React.FC = () => {
             return { ...prevFilters, [filterType]: updatedFilters };
         });
     };
-
+    
     const clearFilters = () => {
         setSelectedFilters({
             candidatePrograms: new Set(),
@@ -81,6 +81,10 @@ const Companies: React.FC = () => {
         );
     });
 
+    function shuffleCompanies(array:Company[]) {
+      return [...array].sort(() => Math.random() - 0.5);
+  }
+  
     const CompanyCard: React.FC<{ company: Company; className: string }> = ({
         company,
         className,
@@ -289,7 +293,7 @@ const Companies: React.FC = () => {
                     {t('global.allCompanies')}
                 </h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
-                    {filteredCompanies.map((company, index) => (
+                    {shuffleCompanies(filteredCompanies).map((company, index) => (
                         <CompanyCard
                             company={company}
                             key={index}

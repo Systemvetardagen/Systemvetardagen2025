@@ -8,9 +8,9 @@ export interface Company {
     employeesSweden?: number;
     employeesTotal?: number;
     contacts: Contact[];
-    candidatePrograms: string[];
-    masterPrograms: string[];
-    positions: string[];
+    candidatePrograms?: string[];
+    masterPrograms?: string[];
+    positions?: string[];
     isPartner?: boolean;
     websiteLink: string;
     linkedIn?: string;

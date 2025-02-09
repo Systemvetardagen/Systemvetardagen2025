@@ -28,64 +28,68 @@ const RecruitmentCard: React.FC<Company> = (company) => {
     const [open, setOpen] = useState<boolean>(false);
     const [t] = useTranslation('companies');
     return (
-        <div className="p-6 bg-white rounded-lg shadow-md w-full max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6">
-                {t('global.lookingFor', { company: company.name })}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card
-                    title="Bachelor Programs"
-                    items={company.candidatePrograms.map((program) =>
-                        t(`programs.${program}`)
-                    )}
-                    className="bg-[#FDE6F4] border-[#DB2677] text-[#DB2677]"
-                />
-                <Card
-                    title="Master Programs"
-                    items={company.masterPrograms.map((program) =>
-                        t(`programs.${program}`)
-                    )}
-                    expandable
-                    onExpand={() => setOpen(true)}
-                    className="bg-[#F3E8FF] border-[#9332E9] text-[#9332E9]"
-                />
-                <Card
-                    title="Positions"
-                    items={company.positions.map((position) =>
-                        t(`positions.${position}`)
-                    )}
-                    className="bg-[#DBE9FE] border-[#2762EA] text-[#2762EA]"
-                />
+        company.candidatePrograms &&
+        company.masterPrograms &&
+        company.positions && (
+            <div className="p-6 bg-white rounded-lg shadow-md w-full max-w-5xl mx-auto">
+                <h2 className="text-2xl font-bold text-center mb-6">
+                    {t('global.lookingFor', { company: company.name })}
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <Card
+                        title="Bachelor Programs"
+                        items={company.candidatePrograms.map((program) =>
+                            t(`programs.${program}`)
+                        )}
+                        className="bg-[#FDE6F4] border-[#DB2677] text-[#DB2677]"
+                    />
+                    <Card
+                        title="Master Programs"
+                        items={company.masterPrograms.map((program) =>
+                            t(`programs.${program}`)
+                        )}
+                        expandable
+                        onExpand={() => setOpen(true)}
+                        className="bg-[#F3E8FF] border-[#9332E9] text-[#9332E9]"
+                    />
+                    <Card
+                        title="Positions"
+                        items={company.positions.map((position) =>
+                            t(`positions.${position}`)
+                        )}
+                        className="bg-[#DBE9FE] border-[#2762EA] text-[#2762EA]"
+                    />
+                </div>
+                {t(`${company.id}.qualifications`)?.trim() && (
+                    <div className="mt-6 p-4 bg-[#FEF9C2] border-l-4 font-light border-[#CA8C0A] rounded-lg">
+                        <h3 className="font-bold text-[#CA8C0A]">
+                            {t('global.qualifications')}
+                        </h3>
+                        <p className="text-sm">
+                            {t(`${company.id}.qualifications`)}
+                        </p>
+                    </div>
+                )}
+                {open && (
+                    <div className="p-6 bg-white rounded-lg shadow-lg w-96 mx-auto">
+                        <h3 className="text-xl font-bold mb-4">
+                            Bachelor&apos;s programmes
+                        </h3>
+                        <ul className="list-disc pl-6 space-y-2">
+                            {company.candidatePrograms.map((program, index) => (
+                                <li key={index}>{t(`programs.${program}`)}</li>
+                            ))}
+                        </ul>
+                        <button
+                            className="mt-4 w-full bg-gray-200 p-2 rounded"
+                            onClick={() => setOpen(false)}
+                        >
+                            Close
+                        </button>
+                    </div>
+                )}
             </div>
-            {t(`${company.id}.qualifications`)?.trim() && (
-                <div className="mt-6 p-4 bg-[#FEF9C2] border-l-4 font-light border-[#CA8C0A] rounded-lg">
-                    <h3 className="font-bold text-[#CA8C0A]">
-                        {t('global.qualifications')}
-                    </h3>
-                    <p className="text-sm">
-                        {t(`${company.id}.qualifications`)}
-                    </p>
-                </div>
-            )}
-            {open && (
-                <div className="p-6 bg-white rounded-lg shadow-lg w-96 mx-auto">
-                    <h3 className="text-xl font-bold mb-4">
-                        Bachelor&apos;s programmes
-                    </h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                        {company.candidatePrograms.map((program, index) => (
-                            <li key={index}>{t(`programs.${program}`)}</li>
-                        ))}
-                    </ul>
-                    <button
-                        className="mt-4 w-full bg-gray-200 p-2 rounded"
-                        onClick={() => setOpen(false)}
-                    >
-                        Close
-                    </button>
-                </div>
-            )}
-        </div>
+        )
     );
 };
 
@@ -200,9 +204,7 @@ const CompanyPage: React.FC = () => {
                         </video>
                     </div>
                 )}
-                {company.candidatePrograms && company.masterPrograms && (
-                    <RecruitmentCard {...company} />
-                )}
+                <RecruitmentCard {...company} />
                 <div className="flex flex-col md:flex-row justify-evenly gap-10">
                     {company.contacts.length > 0 &&
                         company.contacts.map((contact, index) => (
