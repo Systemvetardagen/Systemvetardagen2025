@@ -2,8 +2,6 @@
     {
         "id": "accenture",
         "name": "Accenture",
-        "logo": "/companies/Accenture/accenture-logo.webp",
-        "banner": "/companies/Accenture/accenture-banner.webp",
         "founded": 2001,
         "employeesSweden": 1600,
         "employeesTotal": 740000,
@@ -62,8 +60,6 @@
     {
         "id": "handelsbanken",
         "name": "Handelsbanken",
-        "logo": "/companies/Handelsbanken/handelsbanken-logo.svg",
-        "banner": "/companies/Handelsbanken/handlebanken-banner.webp",
         "founded": 1871,
         "employeesSweden": 8000,
         "employeesTotal": 12000,
@@ -95,8 +91,6 @@
     {
         "id": "ericsson",
         "name": "Ericsson",
-        "logo": "/companies/Ericsson/ericsson-logo.webp",
-        "banner": "/companies/Ericsson/ericsson-banner.webp",
         "founded": 1876,
         "employeesSweden": 14500,
         "employeesTotal": 105000,
@@ -132,8 +126,6 @@
     {
         "id": "cgi",
         "name": "CGI",
-        "logo": "/companies/CGI/cgi-logo.webp",
-        "banner": "/companies/CGI/cgi-banner.webp",
         "founded": 1976,
         "employeesSweden": 3800,
         "employeesTotal": 88000,
@@ -170,8 +162,6 @@
     {
         "id": "akavia",
         "name": "Akavia",
-        "logo": "/companies/Akavia/akavia-logo.webp",
-        "banner": "/companies/Akavia/akavia-banner.webp",
         "founded": 2020,
         "employeesSweden": 130,
         "isPartner": true,
@@ -195,8 +185,6 @@
     {
         "id": "gtslAB",
         "name": "Guided Talent Solutions AB",
-        "logo": "/companies/GtslAB/gtslAB-logo.webp",
-        "banner": "/companies/GtslAB/gtslAB-banner.webp",
         "founded": 2021,
         "isPartner": false,
         "websiteLink": "https://guidedtalentsolutions.se/",

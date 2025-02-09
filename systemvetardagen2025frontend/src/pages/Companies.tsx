@@ -89,15 +89,16 @@ const Companies: React.FC = () => {
         company,
         className,
     }) => {
+        const logoPath = `/companies/${company.id}/logo.webp`;
         return (
             <a
                 className="bg-white rounded-3xl shadow-xl p-4"
                 href={`/companies/${company.id}`}
             >
                 <img
-                    src={company.logo}
+                    src={logoPath}
                     className={`object-contain ${className}`}
-                    alt=""
+                    alt={`${company.name} logo`}
                 />
             </a>
         );
@@ -270,7 +271,7 @@ const Companies: React.FC = () => {
                         <h1 className="text-2xl mb-8 text-center text-gray-700 font-light">
                             {t('global.partners')}
                         </h1>
-                        <div className="grid grid-cols-2 lg:grid-cols-3 grd-flow-row gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grd-flow-row gap-6">
                             {partners.map((partner, index) => (
                                 <CompanyCard
                                     company={partner}
@@ -292,7 +293,7 @@ const Companies: React.FC = () => {
                 <h1 className="text-2xl mb-8 text-center text-gray-700 font-light">
                     {t('global.allCompanies')}
                 </h1>
-                <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
                     {shuffleCompanies(filteredCompanies).map((company, index) => (
                         <CompanyCard
                             company={company}

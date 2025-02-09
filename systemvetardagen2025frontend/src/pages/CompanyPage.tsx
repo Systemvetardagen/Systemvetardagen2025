@@ -41,7 +41,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         items={company.candidatePrograms.map((program) =>
                             t(`programs.${program}`)
                         )}
-                        className="bg-[#FDE6F4] border-[#DB2677] text-[#DB2677]"
+                        className="bg-[#FCE7F3] border-[#DB2677] text-[#DB2677]"
                     />
                     <Card
                         title="Master Programs"
@@ -50,14 +50,14 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         )}
                         expandable
                         onExpand={() => setOpen(true)}
-                        className="bg-[#F3E8FF] border-[#9332E9] text-[#9332E9]"
+                        className="bg-[#f0e4fd] border-[#9332E9] text-[#9332E9]"
                     />
                     <Card
                         title="Positions"
                         items={company.positions.map((position) =>
                             t(`positions.${position}`)
                         )}
-                        className="bg-[#DBE9FE] border-[#2762EA] text-[#2762EA]"
+                        className="bg-[#DBEAFE] border-[#2762EA] text-[#2762EA]"
                     />
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (
@@ -123,13 +123,14 @@ const CompanyPage: React.FC = () => {
     if (!company) {
         return <p>Company not found</p>;
     }
-
+    const logoPath = `/companies/${company.id}/logo.webp`;
+    const bannerPath = `/companies/${company.id}/banner.webp`;
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
                 <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
                     <img
-                        src={company.logo}
+                        src={logoPath}
                         alt={`${company.name} logo`}
                         className="max-w-[75vw] max-h-[125px] object-contain"
                     />
@@ -183,7 +184,7 @@ const CompanyPage: React.FC = () => {
                 </p>
                 <img
                     className="rounded-3xl max-h-[200px] w-full object-cover"
-                    src={company.banner}
+                    src={bannerPath}
                     alt=""
                 />
                 {t(`${companyId}.description.paragraph2`)?.trim() && (
