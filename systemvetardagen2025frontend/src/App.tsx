@@ -30,6 +30,7 @@ const App: React.FC = () => {
                 <Route path="/companies" element={<Companies />} />
                 <Route path="/companies/:companyId" element={<CompanyPage />} />
                 <Route path="/visit-info" element={<VisitInfo />} />
+                <Route path="/visit-info/:companyId" element={<VisitInfo />} />
                 <Route path="/about" element={<About />} />
                 {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />

@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
-import InteractiveMap from '../components/InteractiveMap';
+import InteractiveMap from '../components/CompanyCircle/InteractiveMap';
 const lectures = [
     {
         company: 'Akavia',
