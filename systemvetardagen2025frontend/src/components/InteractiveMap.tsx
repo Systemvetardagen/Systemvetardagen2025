@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+// sepreat to two component  
+// 1 button ,pass in company id , when click , redirect to info/company_id
+// 2 InteractiveMap,  get companyid from url ,and map id to postion ,postion to circle
+
 type Company = {
   id: number;
   name: string;
