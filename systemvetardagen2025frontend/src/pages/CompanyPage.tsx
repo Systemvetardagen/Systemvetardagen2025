@@ -41,7 +41,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         items={company.candidatePrograms.map((program) =>
                             t(`programs.${program}`)
                         )}
-                        className="bg-[#FCE7F3] border-[#DB2677] text-[#DB2677]"
+                        className="bg-[#ffecf7] border-[#DB2677] text-[#DB2677]"
                     />
                     <Card
                         title="Master Programs"
@@ -50,14 +50,14 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         )}
                         expandable
                         onExpand={() => setOpen(true)}
-                        className="bg-[#f0e4fd] border-[#9332E9] text-[#9332E9]"
+                        className="bg-[#f3e9ff] border-[#9332E9] text-[#9332E9]"
                     />
                     <Card
                         title="Positions"
                         items={company.positions.map((position) =>
                             t(`positions.${position}`)
                         )}
-                        className="bg-[#DBEAFE] border-[#2762EA] text-[#2762EA]"
+                        className="bg-[#dbebff] border-[#2762EA] text-[#2762EA]"
                     />
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (

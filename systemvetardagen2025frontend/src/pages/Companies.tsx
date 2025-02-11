@@ -92,7 +92,7 @@ const Companies: React.FC = () => {
         const logoPath = `/companies/${company.id}/logo.webp`;
         return (
             <a
-                className="bg-white rounded-3xl shadow-xl p-4"
+                className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4"
                 href={`/companies/${company.id}`}
             >
                 <img

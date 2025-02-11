@@ -12,28 +12,32 @@ import visitInfo_en from './translations/en/visit-info.json';
 import visitInfo_se from './translations/se/visit-info.json';
 import about_en from './translations/en/about.json';
 import about_se from './translations/se/about.json';
-import companies_en from './translations/en/companies.json'
-import companies_se from './translations/se/companies.json'
+import companies_en from './translations/en/companies.json';
+import companies_se from './translations/se/companies.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
+const availableLanguages: string[] = ["en", "sv"];
+const userLocale = Intl.DateTimeFormat().resolvedOptions().locale.split("-")[0];
+const selectedLanguage = availableLanguages.includes(userLocale) ? userLocale : "en";
+console.log(selectedLanguage);
 i18next.init({
     interpolation: { escapeValue: false },
-    lng: 'en',
+    lng: selectedLanguage,
     resources: {
         en: {
             global: global_en,
             landing: landing_en,
             visitInfo: visitInfo_en,
             about: about_en,
-            companies: companies_en
+            companies: companies_en,
         },
-        se: {
+        sv: {
             global: global_se,
             landing: landing_se,
             visitInfo: visitInfo_se,
             about: about_se,
-            companies: companies_se
+            companies: companies_se,
         },
     },
 });
