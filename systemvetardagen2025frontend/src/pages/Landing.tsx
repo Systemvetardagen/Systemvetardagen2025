@@ -5,15 +5,13 @@ import { useTranslation } from 'react-i18next';
 import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
 import { MapPin } from 'lucide-react';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
     const [t] = useTranslation('landing');
     return (
         <>
-            <Navbar />
+            {/* Please stop putting navbar here its globally inserted in App.tsx */}
             <div className="overflow-hidden font-poppins">
                 {/* Hero */}
                 <div className="h-screen max-h-[1200px] w-screen gradient-background text-white flex flex-col items-center justify-evenly py-[15vh] min-w-[351px] font-poppins tracking-wide">

@@ -34,7 +34,7 @@ const Companies: React.FC = () => {
             return { ...prevFilters, [filterType]: updatedFilters };
         });
     };
-    
+
     const clearFilters = () => {
         setSelectedFilters({
             candidatePrograms: new Set(),
@@ -54,25 +54,25 @@ const Companies: React.FC = () => {
         return `${size} ${t(`global.${type}`)}`;
     };
 
-    const filteredCompanies = companies.filter((company) => {
+    const filteredCompanies = companies.filter((company: Company) => {
         const matchesCandidateProgram =
             selectedFilters.candidatePrograms.size === 0 ||
             (company.candidatePrograms &&
-                company.candidatePrograms.some((program) =>
+                company.candidatePrograms.some((program: string) =>
                     selectedFilters.candidatePrograms.has(program)
                 ));
 
         const matchesMasterProgram =
             selectedFilters.masterPrograms.size === 0 ||
             (company.masterPrograms &&
-                company.masterPrograms.some((program) =>
+                company.masterPrograms.some((program: string) =>
                     selectedFilters.masterPrograms.has(program)
                 ));
 
         const matchesPosition =
             selectedFilters.positions.size === 0 ||
             (company.positions &&
-                company.positions.some((position) =>
+                company.positions.some((position: string) =>
                     selectedFilters.positions.has(position)
                 ));
 
@@ -81,10 +81,10 @@ const Companies: React.FC = () => {
         );
     });
 
-    function shuffleCompanies(array:Company[]) {
-      return [...array].sort(() => Math.random() - 0.5);
-  }
-  
+    function shuffleCompanies(array: Company[]) {
+        return [...array].sort(() => Math.random() - 0.5);
+    } 
+
     const CompanyCard: React.FC<{ company: Company; className: string }> = ({
         company,
         className,
