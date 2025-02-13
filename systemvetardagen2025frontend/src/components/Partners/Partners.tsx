@@ -18,14 +18,14 @@ const Partners = () => {
                 {t('partners')}
             </h2>
             <div className="flex flex-col md:flex-row gap-8">
-                {partnersData.map(({ id, logo }, index) => (
+                {partnersData.map(({ id }, index) => (
                     <a
                         className="bg-white rounded-3xl hover:rounded-3xl transition-all duration-100 ease-linear shadow-xl p-2 hover:scale-105"
                         href={`/companies/${id}`}
                         key={index}
                     >
                         <img
-                            src={logo}
+                            src={`/companies/${id}/logo.webp`}
                             className="object-contain w-64"
                             alt="company logo"
                         />
