@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
     }, []);
 
     const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
-        `font-bold text-[20px] text-black ${
+        `font-semibold text-[20px] text-black ${
             isActive
                 ? 'text-black underline underline-offset-4'
                 : 'hover:text-gray-500'
@@ -41,8 +41,8 @@ const Navbar: React.FC = () => {
             className={`${
                 isSticky
                     ? 'fixed top-0 left-0 w-full rounded-none'
-                    : 'absolute top-8 w-[90vw] mx-[5vw] rounded-2xl'
-            } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150`}
+                    : 'absolute top-8 w-[90vw] mx-[5vw] rounded-3xl'
+            } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150 shadow-lg`}
         >
             <a href="/" className="flex-shrink-0">
                 <img

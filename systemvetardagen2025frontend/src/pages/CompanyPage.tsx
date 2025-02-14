@@ -227,7 +227,7 @@ const CompanyPage: React.FC = () => {
                 <div className="flex gap-4">
                     <a
                         href="/companies"
-                        className="rounded-2xl shadow-md p-4 border-2 hover:rounded-3xl transition-all duration-100"
+                        className="rounded-2xl shadow-md p-4 border-2 transition-all duration-100 hover:scale-105"
                     >
                         {t('global.backToCompanies')}
                     </a>
@@ -235,7 +235,7 @@ const CompanyPage: React.FC = () => {
                         onClick={() =>
                             window.scrollTo({ top: 0, behavior: 'smooth' })
                         }
-                        className="rounded-2xl shadow-md p-4 border-2 hover:rounded-3xl transition-all duration-100"
+                        className="rounded-2xl shadow-md p-4 border-2 transition-all duration-100 hover:scale-105"
                     >
                         {t('global.scrollToTop')}
                     </button>
