@@ -2,6 +2,7 @@
     {
         "id": "accenture",
         "name": "Accenture",
+        "slogan": "Let there be change",
         "founded": 2001,
         "employeesSweden": 1600,
         "employeesTotal": 740000,
@@ -102,6 +103,7 @@
     {
         "id": "ericsson",
         "name": "Ericsson",
+        "slogan": "Imagine a world where limitless connectivity means limitless possibility",
         "founded": 1876,
         "employeesSweden": 14500,
         "employeesTotal": 105000,
@@ -143,6 +145,7 @@
     {
         "id": "cgi",
         "name": "CGI",
+        "slogan": "Insights you can act on",
         "founded": 1976,
         "employeesSweden": 3800,
         "employeesTotal": 88000,
@@ -187,6 +190,7 @@
     {
         "id": "akavia",
         "name": "Akavia",
+        "slogan": "Fackförbundet för akademiker",
         "founded": 2020,
         "employeesSweden": 130,
         "isPartner": true,
@@ -210,6 +214,7 @@
     {
         "id": "gtslAB",
         "name": "Guided Talent Solutions AB",
+        "slogan": "Vi guidar dig till drömjobbet!",
         "founded": 2021,
         "isPartner": false,
         "websiteLink": "https://guidedtalentsolutions.se/",
@@ -242,6 +247,7 @@
     {
         "id": "swedbank",
         "name": "Swedbank",
+        "slogan": "Open, Simple, and Caring",
         "founded": 1820,
         "employeesSweden": 9759,
         "employeesTotal": 7000,
@@ -267,6 +273,7 @@
     {
         "id": "kpmg",
         "name": "KPMG",
+        "slogan": "Find opportunity everywhere with KPMG",
         "founded": 1923,
         "employeesSweden": 2400,
         "employeesTotal": 275000,
@@ -305,6 +312,7 @@
     {
         "id": "columbus",
         "name": "Columbus",
+        "slogan": "Digital Transformation for a Better Tomorrow",
         "founded": 1989,
         "employeesSweden": 400,
         "employeesTotal": 1550,
@@ -345,6 +353,7 @@
     {
         "id": "lime",
         "name": "Lime Technologies",
+        "slogan": "At Lime, we love CRM!",
         "founded": 1990,
         "employeesSweden": 350,
         "employeesTotal": 500,

@@ -110,7 +110,7 @@ export default function Landing() {
                         <h1 className="text-xl lg:text-3xl px-4 font-bold">
                             {t('body.tips.header')}
                         </h1>
-                        <div className="w-full flex flex-col gap-8 md:flex-row md:gap-0 justify-center">
+                        <div className="w-full flex flex-col gap-8 md:flex-row md:gap-0 justify-evenly">
                             {['before', 'during'].map((period) => (
                                 <div className="flex flex-col px-6 max-w-md" key={period}>
                                     <h1 className="font-bold text-center text-xl">

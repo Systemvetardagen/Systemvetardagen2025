@@ -1,6 +1,7 @@
 export interface Company {
     id: string;
     name: string;
+    slogan?: string;
     video?: string;
     founded: number;
     employeesSweden?: number;

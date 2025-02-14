@@ -124,7 +124,7 @@ const CompanyPage: React.FC = () => {
         return <p>Company not found</p>;
     }
     const logoPath = `/companies/${company.id}/logo.webp`;
-    //const bannerPath = `/companies/${company.id}/banner.webp`; i dont like the banner 
+    //const bannerPath = `/companies/${company.id}/banner.webp`; i dont like the banner
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
@@ -138,6 +138,7 @@ const CompanyPage: React.FC = () => {
             </div>
 
             <div className="max-w-[90vw] gap-10 flex flex-col items-center my-10">
+                {company.slogan && <h2 className="text-lg text-gray-600">{company.slogan}</h2>}
                 <div className="text-left shadow-md rounded-3xl w-[400px] max-w-[90vw] p-4 flex gap-4 flex-col">
                     <div>
                         <h1>{t('global.areaOfBusiness')}</h1>
