@@ -151,6 +151,7 @@ const Companies: React.FC = () => {
                         </h1>
                         <div className="">
                             <button
+                                onMouseDown={(e) => e.stopPropagation()}
                                 onClick={() => {
                                     setProgramsExpanded(!programsExpanded);
                                     setPositionsExpanded(false);
@@ -178,6 +179,7 @@ const Companies: React.FC = () => {
                         </h1>
                         <div className="">
                             <button
+                                onMouseDown={(e) => e.stopPropagation()}
                                 onClick={() => {
                                     setPositionsExpanded(!positionsExpanded);
                                     setProgramsExpanded(false);
