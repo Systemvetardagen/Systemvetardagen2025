@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import {
     candidatePrograms,
@@ -22,6 +22,26 @@ const Companies: React.FC = () => {
 
     const [programsExpanded, setProgramsExpanded] = useState<boolean>(false);
     const [positionsExpanded, setPositionsExpanded] = useState<boolean>(false);
+    
+    const programsRef = useRef<HTMLDivElement>(null);
+    const positionsRef = useRef<HTMLDivElement>(null);
+
+    // Close dropdowns when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (programsExpanded && programsRef.current && !programsRef.current.contains(e.target as Node)) {
+                setProgramsExpanded(false);
+            }
+            if (positionsExpanded && positionsRef.current && !positionsRef.current.contains(e.target as Node)) {
+                setPositionsExpanded(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [programsExpanded, positionsExpanded]);
 
     const toggleFilter = (filterType: string, filterValue: string) => {
         setSelectedFilters((prevFilters) => {
@@ -42,6 +62,7 @@ const Companies: React.FC = () => {
             positions: new Set(),
         });
     };
+
     const getLabel = (
         set: Set<string>,
         type: 'programs' | 'positions'
@@ -184,7 +205,7 @@ const Companies: React.FC = () => {
                     </div>
                     <div className="relative">
                         {programsExpanded && (
-                            <div className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full max-w-[550px] gap-2">
+                            <div ref={programsRef} className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full max-w-[550px] gap-2">
                                 <h1>Bachelor&apos;s programmes</h1>
                                 {candidatePrograms.map((program) => (
                                     <label
@@ -242,7 +263,7 @@ const Companies: React.FC = () => {
                     </div>
                     <div className="relative">
                         {positionsExpanded && (
-                            <div className="absolute bg-white rounded-xl flex flex-col right-0 shadow-md p-4  gap-2">
+                            <div ref={positionsRef} className="absolute bg-white rounded-xl flex flex-col right-0 shadow-md p-4 gap-2">
                                 {positions.map((position) => (
                                     <label
                                         key={position}
