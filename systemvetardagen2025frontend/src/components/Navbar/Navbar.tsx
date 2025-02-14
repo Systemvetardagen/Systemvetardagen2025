@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 
@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
     ];
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isSticky, setIsSticky] = useState<boolean>(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -28,6 +29,10 @@ const Navbar: React.FC = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location]);
 
     const getNavLinkClass = ({ isActive }: { isActive: boolean }): string =>
         `font-semibold text-[20px] text-black ${
@@ -84,6 +89,7 @@ const Navbar: React.FC = () => {
                             key={index}
                             to={link.href}
                             className={getNavLinkClass}
+                            onClick={() => setIsOpen(false)}
                         >
                             {link.label}
                         </NavLink>

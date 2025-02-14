@@ -219,7 +219,7 @@ const CompanyPage: React.FC = () => {
                         ))}
                 </div>
                 <a
-                    className="text-link text-2xl text-center font-bold"
+                    className="text-link text-2xl text-center font-bold hover:underline"
                     href={company.websiteLink}
                 >
                     {t('global.learnMore', { company: company.name })}
