@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
         { label: t('navbar.visit-info'), href: '/visit-info' },
         { label: t('navbar.about'), href: '/about' },
     ];
+
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isSticky, setIsSticky] = useState<boolean>(false);
     const location = useLocation();
@@ -22,13 +23,15 @@ const Navbar: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
             setIsSticky(window.scrollY > 1);
+            if (window.innerWidth < 1024 && isOpen) {
+                setIsOpen(false);
+            }
         };
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isOpen]);
 
     useEffect(() => {
         setIsOpen(false);
@@ -45,7 +48,7 @@ const Navbar: React.FC = () => {
         <nav
             className={`${
                 isSticky
-                    ? 'fixed top-0 left-0 w-full rounded-none'
+                    ? 'fixed top-0 left-0 w-full rounded-none h-14'
                     : 'absolute top-8 w-[90vw] mx-[5vw] rounded-3xl'
             } flex bg-white text-black px-4 lg:py-2 z-10 items-center justify-between transition-all duration-150 shadow-lg`}
         >
@@ -58,32 +61,41 @@ const Navbar: React.FC = () => {
             </a>
             <div className="hidden lg:flex justify-center flex-grow space-x-20 font-bold font-heading tracking-wide">
                 {links.map((link, index) => (
-                    <NavLink
-                        key={index}
-                        to={link.href}
-                        className={getNavLinkClass}
-                    >
+                    <NavLink key={index} to={link.href} className={getNavLinkClass}>
                         {link.label}
                     </NavLink>
                 ))}
             </div>
-            <div className="block lg:hidden z-10">
-                <button
-                    onClick={toggleMenu}
-                    className="flex justify-center items-center"
-                >
+            <div className="block lg:hidden z-30">
+                <button onClick={toggleMenu} className="flex justify-center items-center">
                     <img
                         src={isOpen ? '/svgs/cross.svg' : '/svgs/burger.svg'}
-                        className="h-12 p-1"
-                        alt=""
+                        className="h-12 p-1 transition-all duration-300 ease-in-out"
+                        style={{
+                            opacity: isOpen ? '1' : '0.8',
+                            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                        }}
+                        alt="Toggle Menu"
                     />
                 </button>
             </div>
             {isSticky && (
                 <div className="absolute bottom-0 left-0 w-screen h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
             )}
-            {isOpen ? (
-                <div className="fixed top-0 left-0 flex flex-col justify-center gap-4 p-4 font-bold font-heading tracking-wide bg-white w-screen transition-transform duration-300 ease-in-out">
+            <div
+                className={`fixed inset-0 z-20 bg-black/50 transition-opacity duration-300 ${
+                    isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
+                onClick={() => setIsOpen(false)}
+            >
+                <div
+                    onClick={(e) => e.stopPropagation()}
+                    className={`absolute top-0 left-0 flex flex-col justify-center gap-4 ${
+                        isSticky ? 'pt-3' : 'pt-10'
+                    } pl-12 pr-10 ${isSticky ? 'pb-4' : 'pb-10'} font-bold font-heading tracking-wide bg-white w-screen transition-transform duration-300 ease-out ${
+                        isOpen ? 'translate-y-0' : '-translate-y-full'
+                    }`}
+                >
                     {links.map((link, index) => (
                         <NavLink
                             key={index}
@@ -94,11 +106,15 @@ const Navbar: React.FC = () => {
                             {link.label}
                         </NavLink>
                     ))}
-                    <LanguageSwitch />
+                    <div onClick={() => setIsOpen(false)}>
+                        <LanguageSwitch />
+                    </div>
                     <div className="absolute bottom-0 left-0 w-screen h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
                 </div>
-            ) : null}
-            <LanguageSwitch className="hidden lg:flex" />
+            </div>
+            <div onClick={() => setIsOpen(false)} className="hidden lg:flex">
+                <LanguageSwitch />
+            </div>
         </nav>
     );
 };
