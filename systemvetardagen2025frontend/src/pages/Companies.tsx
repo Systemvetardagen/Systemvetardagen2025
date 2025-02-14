@@ -55,6 +55,17 @@ const Companies: React.FC = () => {
     };
 
     const filteredCompanies = companies.filter((company: Company) => {
+        // Check if any of the selected filter sets are empty
+        const isFilterEmpty =
+            selectedFilters.candidatePrograms.size === 0 &&
+            selectedFilters.masterPrograms.size === 0 &&
+            selectedFilters.positions.size === 0;
+
+        if (isFilterEmpty) {
+            return true; // Return true for all companies if no filters are selected
+        }
+
+        // Separate logic for candidate and master programs
         const matchesCandidateProgram =
             selectedFilters.candidatePrograms.size === 0 ||
             (company.candidatePrograms &&
@@ -69,6 +80,7 @@ const Companies: React.FC = () => {
                     selectedFilters.masterPrograms.has(program)
                 ));
 
+        // Separate logic for positions
         const matchesPosition =
             selectedFilters.positions.size === 0 ||
             (company.positions &&
@@ -76,14 +88,11 @@ const Companies: React.FC = () => {
                     selectedFilters.positions.has(position)
                 ));
 
+        // Only return true if the company matches the program filters OR position filters
         return (
-            matchesCandidateProgram && matchesMasterProgram && matchesPosition
+            (matchesCandidateProgram || matchesMasterProgram) && matchesPosition
         );
     });
-
-    function shuffleCompanies(array: Company[]) {
-        return [...array].sort(() => Math.random() - 0.5);
-    } 
 
     const CompanyCard: React.FC<{ company: Company; className: string }> = ({
         company,
@@ -294,7 +303,7 @@ const Companies: React.FC = () => {
                     {t('global.allCompanies')}
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
-                    {shuffleCompanies(filteredCompanies).map((company, index) => (
+                    {filteredCompanies.map((company, index) => (
                         <CompanyCard
                             company={company}
                             key={index}
