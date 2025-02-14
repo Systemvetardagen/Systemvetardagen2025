@@ -41,8 +41,8 @@ interface LectureItemProps {
 const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
     return (
         <div className="mb-8">
-            <p className="text-md text-white font-poppins">{lecture.time}</p>
-            <h1 className="font-bold text-3xl font-heading">
+            <p className="text-md text-white ">{lecture.time}</p>
+            <h1 className="font-semibold text-3xl">
                 {lecture.company}
             </h1>
             <p className="text-md text-white font-ibm">{lecture.topic}</p>
@@ -61,7 +61,7 @@ const VisitInfo: React.FC = () => {
                     className="object-cover w-full h-full object-[50%_70%]"
                 />
             </div>
-            <h1 className="font-heading font-bold text-2xl lg:text-4xl mt-10">
+            <h1 className="font-bold text-2xl lg:text-4xl mt-10">
                 {t('header')}
             </h1>
             <p className="text-gray-500 font-light mx-8 ">{t('sub-header')}</p>

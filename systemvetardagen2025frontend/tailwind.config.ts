@@ -12,7 +12,7 @@ export default {
                 link: 'rgba(var(--link))',
                 
             },
-            fontFamily: { body: ['WorkSans'], heading: ['OverPass'], poppins:['Poppins'], ibm:['IBM Plex Mono', 'monospace'] },
+            fontFamily: { body: ['WorkSans'], poppins:['Poppins'], ibm:['IBM Plex Mono', 'monospace'] },
         },
     },
     plugins: [],
