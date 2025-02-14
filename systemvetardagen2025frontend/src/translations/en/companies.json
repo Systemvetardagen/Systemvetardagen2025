@@ -102,5 +102,37 @@
             "paragraph2": ""
         },
         "qualifications": "C/C++, .Net/C#, Angular, JavaScript, HTML/CSS, React, Node.Js, Java, Python, AWS, Azure, SQL Server, ServiceNow, Kafka, PHP, Integration, DevOps, Jenkins, Kotlin, Machine Learning, AI, Test, requirements management, Cybersecurity, UX/UI, CI/CD, TDD"
+    },
+    "swedbank": {
+        "areaOfBusiness": "IT security, software development, cloud services, AI and machine learning, network infrastructure, data analysis, and more.",
+        "description": {
+            "paragraph1": "Swedbank is a full-service bank offering loans, payments, and savings solutions to simplify everyday life for individuals and businesses. We have our roots in the Swedish savings bank movement, which began in 1820.  As a major player in the financial market, Swedbank can influence communities, people, and the environment, contributing to more sustainable development. We strive to be sustainable both in our own operations and by setting requirements for the companies we collaborate with.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "kpmg": {
+        "areaOfBusiness": "Consulting, Cyber Security, Information Security, Risk Consulting, Management Consulting, Technology Transformation and AI, Data Analytics, Financial Services Consulting, Information Risk Management, IT Audit.",
+        "description": {
+            "paragraph1": "At KPMG, our mission is to inspire confidence and empower change. With a workforce of 2,400 employees in our region and a global network of 275,000 experts spanning 143 countries, we stand as one of the world's leading professional services firms. Our commitment is to deliver insightful business guidance and tailored expert advisory, audit, and tax services. Engineers, systems scientists, and tech experts play a pivotal role in many of our teams, enhancing our capabilities across various domains.  ",
+            "paragraph2": ""
+        },
+        "qualifications": "Strong analytical and problem-solving skills, knowledge of cybersecurity frameworks (e.g., NIST, ISO 27001), Information Security Management Systems (ISMS), risk assessment and management, strategic planning and organizational development, change management, proficiency in data analysis tools, understanding of financial regulations and compliance, IT auditing standards and practices, and excellent communication and presentation abilities."
+    },
+    "columbus": {
+        "areaOfBusiness": "We implement end-to-end solutions in Cloud ERP, Data & AI, Digital Commerce, CX and Application Management within the manufacturing, retail & distribution, food & beverage and life science industries.",
+        "description": {
+            "paragraph1": "As a leading digital consultancy, Columbus solves complex customer challenges in the manufacturing, retail & distribution, food & beverage, and life science industries. For many years, our graduate programmes have been a cornerstone of Columbus' success, enabling us to continuously implement business-critical solutions in Cloud ERP, Data & AI, Digital Commerce, Customer Experience & Engagement, Application Management Services, Cybersecurity, and ESG. Together with our customers, we transform organizations and prepare for the future.",
+            "paragraph2": ""
+        },
+        "qualifications": "IT, Affärssystem, Supply Chain, Ekonomi, Finans, Produktion, E-Handel, Utveckling, Business Intelligence"
+    },
+    "lime": {
+        "areaOfBusiness": "Tech, IT, SaaS",
+        "description": {
+            "paragraph1": "We are a listed company with 10 offices across 7 countries, growing at 20% annually since 2000. Founded in 1990, we expanded beyond the Nordics in 2020 and continue to grow through expansion and acquisitions.  What truly sets Lime apart is our people, a high-performing, caring team dedicated to creating exceptional customer experiences. We manage the entire product lifecycle, from development to delivery and support, ensuring seamless, high-quality solutions. #dontbreakthechain",
+            "paragraph2": ""
+        },
+        "qualifications": "Business-minded, Interested in technology and IT, Reliable, Smart and gets things done, Not a sore loser, but you hate to lose, Wants to develop and learn more, A person with high emotional intelligence (EQ), Despite all this: humble with a sense of humor, Fluent in either Swedish, Danish, Finnish, or Norwegian – depending on where you want to work."
     }
 }

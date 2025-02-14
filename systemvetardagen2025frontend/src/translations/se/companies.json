@@ -102,5 +102,37 @@
             "paragraph2": ""
         },
         "qualifications": "C/C++, .Net/C#, Angular, JavaScript, HTML/CSS, React, Node.Js, Java, Python, AWS, Azure, SQL Server, ServiceNow, Kafka, PHP, Integration, DevOps, Jenkins, Kotlin, Machine Learning, AI, Test, Kravhantering, Cybersäkerhet, UX/UI, CI/CD, TDD"
+    },
+    "swedbank": {
+        "areaOfBusiness": "IT-säkerhet, mjukvaruutveckling, molntjänster, AI och maskininlärning, nätverksinfrastruktur, dataanalys, och mer.",
+        "description": {
+            "paragraph1": "Swedbank är en fullservicebank som erbjuder lån, betalningar och sparande för att förenkla vardagen för privatpersoner och företag. Vi har våra rötter i den svenska sparbanksrörelsen som startade 1820.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "kpmg": {
+        "areaOfBusiness": "Konsulttjänster, Cybersäkerhet, Informationssäkerhet, Riskkonsulting, Management Consulting, Teknologitransformation och AI, Dataanalys, Finansiell tjänstekonsulting, Informationsriskhantering, IT-revision.",
+        "description": {
+            "paragraph1": "Vårt syfte på KPMG är att inspirera förtroende och möjliggöra förändring. Med 2 400 medarbetare i vår region och ett globalt nätverk av 275 000 experter i 143 länder, står vi som ett av världens ledande företag inom professional services. Vi levererar insiktsfull affärsvägledning och skräddarsydda lösningar till våra kunder, inom rådgivning, revision och skatt. Ingenjörer, systemvetare och tech-experter spelar en avgörande roll i många av våra team.",
+            "paragraph2": ""
+        },
+        "qualifications": "Starka analytiska och problemlösande färdigheter, kunskap om cybersäkerhetsramverk (t.ex. NIST, ISO 27001), Informationssäkerhetshanteringssystem (ISMS), riskbedömning och hantering, strategisk planering och organisatorisk utveckling, förändringshantering, skicklighet i dataanalysverktyg, förståelse för finansiella regler och efterlevnad, IT-revisionsstandarder och praxis, samt utmärkta kommunikations- och presentationsförmågor."
+    },
+    "columbus": {
+        "areaOfBusiness": "Vi implementerar end-to-end lösningar inom Cloud ERP, Data & AI, Digital Commerce, CX och Application Management inom tillverknings-, detaljhandels- och distributions-, livsmedels- och dryckes- samt life science-industrin.",
+        "description": {
+            "paragraph1": "Som ett ledande konsultföretag levererar Columbus projekt inom olika industrier så som manufacturing, retail & distribution, food & beverage och life science. Under många år har våra acceleratorprogram varit en hörnsten i Columbus framgång! Våra fantastiska konsulter gör det möjligt för oss att kontinuerligt implementera affärskritiska lösningar inom Cloud ERP, Data & AI, E-Handel, Customer Experience, Security och ESG.",
+            "paragraph2": ""
+        },
+        "qualifications": "IT, Affärssystem, Supply Chain, Ekonomi, Finans, Produktion, E-Handel, Utveckling, Business Intelligence"
+    },
+    "lime": {
+        "areaOfBusiness": "Tech, IT, SaaS",
+        "description": {
+            "paragraph1": "I över 30 år har vi hjälpt företag nå bättre resultat med användarvänliga CRM-lösningar som vi själva utvecklar, säljer, implementerar och supportar. Trots att vi gärna skryter om att vi haft en tillväxt på 20% per år sen millennieskiftet är vi ganska ödmjuka. Idag är vi över 500 kollegor och en av Nordens ledande CRM-leverantörer med kontor i Lund, Göteborg, Stockholm, Gävle, Köpenhamn, Oslo, Helsingfors, Utrecht och Köln.",
+            "paragraph2": ""
+        },
+        "qualifications": "Affärsmässig, Intresserad av teknik och IT, Pålitlig, Smart och får saker gjorda, Inte en dålig förlorare, men du hatar att förlora, Vill utvecklas och lära dig mer, En person med hög emotionell intelligens (EQ), Trots allt detta: ödmjuk med sinne för humor, Flytande i antingen svenska, danska, finska eller norska – beroende på var du vill arbeta."
     }
 }

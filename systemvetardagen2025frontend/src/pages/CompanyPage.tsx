@@ -62,10 +62,10 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (
                     <div className="mt-6 p-4 bg-[#FEF9C2] border-l-4 font-light border-[#CA8C0A] rounded-lg">
-                        <h3 className="font-bold text-[#CA8C0A]">
+                        <h3 className="font-semibold text-lg mb-2 text-[#CA8C0A]">
                             {t('global.qualifications')}
                         </h3>
-                        <p className="text-sm">
+                        <p className="font-light text-gray-900">
                             {t(`${company.id}.qualifications`)}
                         </p>
                     </div>
@@ -124,7 +124,7 @@ const CompanyPage: React.FC = () => {
         return <p>Company not found</p>;
     }
     const logoPath = `/companies/${company.id}/logo.webp`;
-    const bannerPath = `/companies/${company.id}/banner.webp`;
+    //const bannerPath = `/companies/${company.id}/banner.webp`; i dont like the banner 
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
@@ -179,16 +179,16 @@ const CompanyPage: React.FC = () => {
                         </a>
                     )}
                 </div>
-                <p className="px-[5vw] lg:px-[10vw] text-justify">
+                <p className="w-full max-w-5xl mx-auto text-justify">
                     {t(`${companyId}.description.paragraph1`)}
                 </p>
-                <img
+                {/* <img
                     className="rounded-3xl max-h-[200px] w-full object-cover"
                     src={bannerPath}
                     alt=""
-                />
+                /> */}
                 {t(`${companyId}.description.paragraph2`)?.trim() && (
-                    <p className="px-[5vw] lg:px-[10vw] text-justify">
+                    <p className="w-full max-w-5xl mx-auto text-justify">
                         {t(`${companyId}.description.paragraph2`)}
                     </p>
                 )}

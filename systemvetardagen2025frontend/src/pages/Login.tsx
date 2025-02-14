@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { user } from '../structure/genstruct';
 
 interface loginProps {
@@ -12,7 +11,6 @@ const Login = (props: loginProps) => {
     const [password, setPassword] = useState<string>('');
     const [loginButtonPressed, setLoginButtonPressed] =
         useState<boolean>(false);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const usernameTemp = localStorage.getItem('username');
@@ -24,6 +22,7 @@ const Login = (props: loginProps) => {
                 password: passwordTemp,
             });
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleLogin = () => {

@@ -72,7 +72,13 @@
                 "phoneNumber": "+46 (0)730315596"
             }
         ],
-        "candidatePrograms": ["SYSDK", "SDAVK", "SITEK", "SMARK", "SAFFK"],
+        "candidatePrograms": [
+            "SYSDK",
+            "SDAVK",
+            "SITEK",
+            "SMARK",
+            "SAFFK"
+        ],
         "masterPrograms": [
             "SAIHO",
             "SDSBO",
@@ -83,7 +89,12 @@
             "SDKIO",
             "SHINO"
         ],
-        "positions": ["fullTime", "trainee", "partTime", "internship"],
+        "positions": [
+            "fullTime",
+            "trainee",
+            "partTime",
+            "internship"
+        ],
         "linkedIn": "https://www.linkedin.com/company/handelsbanken/",
         "instagram": "https://www.instagram.com/handelsbanken/",
         "facebook": "https://www.facebook.com/Handelsbanken/"
@@ -102,7 +113,13 @@
                 "mail": "ida.ellingsson@ericsson.com"
             }
         ],
-        "candidatePrograms": ["SDAVK", "SYSDK", "SITEK", "SIADK", "SMARK"],
+        "candidatePrograms": [
+            "SDAVK",
+            "SYSDK",
+            "SITEK",
+            "SIADK",
+            "SMARK"
+        ],
         "masterPrograms": [
             "SAIHO",
             "SDSBO",
@@ -143,7 +160,11 @@
                 "phoneNumber": "+46 76 1021481"
             }
         ],
-        "candidatePrograms": ["SAFFK", "SYSDK", "SDAVK"],
+        "candidatePrograms": [
+            "SAFFK",
+            "SYSDK",
+            "SDAVK"
+        ],
         "masterPrograms": [
             "SAIHO",
             "SDSBO",
@@ -154,7 +175,11 @@
             "SMEFO",
             "SDKIO"
         ],
-        "positions": ["fullTime", "thesis", "trainee"],
+        "positions": [
+            "fullTime",
+            "thesis",
+            "trainee"
+        ],
         "linkedIn": "https://www.linkedin.com/company/cgi/",
         "instagram": "https://www.instagram.com/cgisverige/",
         "facebook": "https://www.facebook.com/cgisverige"
@@ -203,7 +228,154 @@
             "SIADK",
             "SMARK"
         ],
-        "masterPrograms": ["SDSBO", "SCSSO", "SMINO", "SSLIO"],
-        "positions": ["fullTime", "trainee"]
+        "masterPrograms": [
+            "SDSBO",
+            "SCSSO",
+            "SMINO",
+            "SSLIO"
+        ],
+        "positions": [
+            "fullTime",
+            "trainee"
+        ]
+    },
+    {
+        "id": "swedbank",
+        "name": "Swedbank",
+        "founded": 1820,
+        "employeesSweden": 9759,
+        "employeesTotal": 7000,
+        "isPartner": false,
+        "websiteLink": "https://www.swedbank.com/work-with-us.html",
+        "contacts": [
+            {
+                "name": "Marcus Andersson",
+                "mail": "marcus.a.andersson@swedbank.se"
+            }
+        ],
+        "positions": [
+            "fullTime",
+            "internship",
+            "thesis",
+            "partTime",
+            "trainee"
+        ],
+        "linkedIn": "https://www.linkedin.com/company/swedbank/",
+        "instagram": "https://www.instagram.com/swedbanksverige/",
+        "facebook": "https://www.facebook.com/swedbanksverige/"
+    },
+    {
+        "id": "kpmg",
+        "name": "KPMG",
+        "founded": 1923,
+        "employeesSweden": 2400,
+        "employeesTotal": 275000,
+        "isPartner": false,
+        "websiteLink": "https://kpmg.com/se/sv/home/karriar.html",
+        "contacts": [
+            {
+                "name": "Sofia Thomasson",
+                "mail": "sofia.thomasson@kpmg.se",
+                "phoneNumber": "+46 73 7396251"
+            },
+            {
+                "name": "Robin Andreasson",
+                "mail": "robin.andreasson@kpmg.se",
+                "phoneNumber": "+46 70 8803902"
+            }
+        ],
+        "candidatePrograms": [
+            "SDAVK",
+            "SITEK"
+        ],
+        "masterPrograms": [
+            "SDSBO",
+            "SCSSO",
+            "SMINO",
+            "SSLIO"
+        ],
+        "positions": [
+            "fullTime",
+            "thesis"
+        ],
+        "linkedIn": "https://se.linkedin.com/company/kpmgsweden/",
+        "instagram": "https://www.instagram.com/kpmgsweden/",
+        "facebook": "https://www.facebook.com/KPMGsweden/"
+    },
+    {
+        "id": "columbus",
+        "name": "Columbus",
+        "founded": 1989,
+        "employeesSweden": 400,
+        "employeesTotal": 1550,
+        "isPartner": false,
+        "websiteLink": "https://careers.columbusglobal.com/",
+        "contacts": [
+            {
+                "name": "Daniel Sparrow",
+                "mail": "Daniel.Sparrow@Columbusglobal.com",
+                "phoneNumber": "+46728868263"
+            },
+            {
+                "name": "Alexander Tonelli",
+                "mail": "Alexander.Tonelli@Columbusglobal.com",
+                "phoneNumber": "+46702186226"
+            }
+        ],
+        "candidatePrograms": [
+            "SYSDK",
+            "SAFFK",
+            "SDAVK",
+            "SITEK",
+            "SMARK"
+        ],
+        "masterPrograms": [
+            "SDSBO",
+            "SCSSO",
+            "SSLIO"
+        ],
+        "positions": [
+            "fullTime",
+            "trainee"
+        ],
+        "linkedIn": "https://www.linkedin.com/company/columbusglobal/",
+        "instagram": "https://www.instagram.com/columbussverige/",
+        "facebook": "https://www.facebook.com/"
+    },
+    {
+        "id": "lime",
+        "name": "Lime Technologies",
+        "founded": 1990,
+        "employeesSweden": 350,
+        "employeesTotal": 500,
+        "isPartner": false,
+        "websiteLink": "https://jobs.lime-technologies.com/trainee/",
+        "contacts": [
+            {
+                "name": "Karl-Johan Kjellberg",
+                "mail": "karl-johan.kjellberg@lime.tech",
+                "phoneNumber": "+46736446930"
+            }
+        ],
+        "candidatePrograms": [
+            "SAFFK",
+            "SYSDK",
+            "SDAVK",
+            "SITEK",
+            "SIADK",
+            "SMARK"
+        ],
+        "masterPrograms": [
+            "SCSSO",
+            "SDKIO",
+            "SSLIO"
+        ],
+        "positions": [
+            "fullTime",
+            "trainee"
+        ],
+        "linkedIn": "https://www.linkedin.com/company/limetechnologies/",
+        "instagram": "https://www.instagram.com/lime_technologies/",
+        "facebook": "https://www.facebook.com/"
     }
 ]
