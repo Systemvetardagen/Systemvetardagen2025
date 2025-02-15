@@ -88,14 +88,12 @@ const Companies: React.FC = () => {
 
         // Separate logic for candidate and master programs
         const matchesCandidateProgram =
-            selectedFilters.candidatePrograms.size === 0 ||
             (company.candidatePrograms &&
                 company.candidatePrograms.some((program: string) =>
                     selectedFilters.candidatePrograms.has(program)
                 ));
 
         const matchesMasterProgram =
-            selectedFilters.masterPrograms.size === 0 ||
             (company.masterPrograms &&
                 company.masterPrograms.some((program: string) =>
                     selectedFilters.masterPrograms.has(program)
