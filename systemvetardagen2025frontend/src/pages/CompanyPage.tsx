@@ -4,6 +4,7 @@ import companiesData from '../assets/companies.json';
 import { Company } from '../assets/companies';
 import { useTranslation } from 'react-i18next';
 import { Contact as ContactType } from '../assets/companies';
+import CompanyButton from '../components/CompanyCircle/CompanyButtons';
 
 const companies: Company[] = companiesData;
 
@@ -23,7 +24,7 @@ const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
     );
 };
 
-const CompanyPage: React.FC = () => {
+const  CompanyPage: React.FC = () => {
     const { companyId } = useParams<{ companyId: string }>();
     const company = companies.find((company) => company.id === companyId);
     const { t } = useTranslation('companies');
@@ -136,6 +137,7 @@ const CompanyPage: React.FC = () => {
                             {t('global.scrollToTop')}
                         </div>
                     </button>
+                    <CompanyButton/>
                 </div>
             </div>
         </div>

@@ -79,10 +79,8 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <InteractiveMap/>
-            <a href="/svgs/floormap.svg">
-                <img className="max-w-[90vw]" src="/svgs/floormap.svg" alt="" />
-            </a>
+            <InteractiveMap />
+
             <div className="px-10 max-w-[90vw] lg:max-w-[50vw] text-start my-8">
                 <h1 className="font-light text-3xl mb-2">
                     {t('getting-to.header')}
