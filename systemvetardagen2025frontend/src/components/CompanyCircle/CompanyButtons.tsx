@@ -18,6 +18,16 @@ const CompanyButton: React.FC = () => {
       pathname: `/visit-info/${companyId}`,
       hash: 'map-section'
     });
+    setTimeout(() => {
+      const target = document.getElementById('map-section');
+      if (target) {
+        // 使用 'instant' 立即滚动，省略第二个 setTimeout
+        target.scrollIntoView({ behavior: 'instant' });
+    
+        // 立即向上偏移 100px
+        window.scrollBy({ top: -50, left: 0 });
+      }
+    }, 100);
   };
 
   return (
