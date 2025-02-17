@@ -1,50 +1,78 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { companies } from './Company';
 
-
 const InteractiveMap: React.FC = () => {
   const { companyId } = useParams<Record<string, string | undefined>>();
+  const mapRef = useRef<HTMLImageElement>(null);
+  const [, setMapDimensions] = useState({ width: 0, height: 0 });
 
-  // 解析 companyId，确保类型一致
+  const markerSize = 200; // Size in pixels, can be adjusted as needed
+const markerScale = 1.25; // Scale factor, 1.25 means 125%
+  
+  // Parse companyId, ensure type consistency
   const selectedCompanyId = companyId ? companyId : null;
-
-
-  // 将 SVG 坐标转换为相对百分比
+  
+  useEffect(() => {
+    // Get actual dimensions of the loaded image
+    if (mapRef.current && mapRef.current.complete) {
+      setMapDimensions({
+        width: mapRef.current.naturalWidth,
+        height: mapRef.current.naturalHeight
+      });
+    }
+  }, []);
+  
+  // Handle image load event to get dimensions
+  const handleImageLoad = () => {
+    if (mapRef.current) {
+      setMapDimensions({
+        width: mapRef.current.naturalWidth,
+        height: mapRef.current.naturalHeight
+      });
+    }
+  };
+  
+  // Convert SVG coordinates to relative percentages based on actual dimensions
   const getRelativePosition = (position: { top: number; left: number }) => {
-    const viewportSize = 2000; // 假设 SVG 视口为 2000px
     return {
-      top: `${(position.top / viewportSize) * 100}%`,
-      left: `${(position.left / viewportSize) * 100}%`,
+      top: `${(position.top / 3631) * 100}%`,  // Use SVG's actual width (3631px from your comment)
+      left: `${(position.left / 2079) * 100}%`,  // Use SVG's actual height (2079px from your comment)
     };
   };
-
+  
   return (
     <div className="max-w-[90vw] relative" id="map-section">
-      {/* 背景地图 */}
+      {/* Background map */}
       <img
+        ref={mapRef}
         src="/svgs/floormap.svg"
         alt="Floor Map 2024"
         className="w-full h-full object-contain"
+        onLoad={handleImageLoad}
       />
-
-      {/* 仅当存在有效 companyId 时，显示对应公司的位置圈 */}
+      
+      {/* Only show markers for valid companyId */}
       {selectedCompanyId && companies.map((company) => {
-  if (company.id === selectedCompanyId) {
-    const position = getRelativePosition(company.position);
-    return (
-      <div
-        key={company.id}
-        className="absolute w-6 h-6 -mt-3 -ml-3 rounded-full border-2 border-red-500 scale-125"
-        style={{
-          ...position,
-          backgroundColor: 'transparent'  // Remove the background fill
-        }}
-      />
-    );
-  }
-  return null;
-})}
+        if (company.id === selectedCompanyId) {
+          const position = getRelativePosition(company.position);
+          return (
+            <div
+              key={company.id}
+              className="absolute -mt-3 -ml-3 rounded-full border-2 border-red-500"
+              style={{
+                top: position.top,
+                left: position.left,
+                backgroundColor: 'transparent',
+                width: `${markerSize}px`,
+                height: `${markerSize}px`,
+                transform: `scale(${markerScale})`
+              }}
+            />
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };

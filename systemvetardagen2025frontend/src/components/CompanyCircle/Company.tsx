@@ -1,4 +1,5 @@
 
+{/* <svg width="3631" height="2079"  */}
 export type Company = {
   id: string;
   position: { top: number; left: number };
@@ -12,27 +13,13 @@ type RoomPosition = {
 
 const roomPositions: RoomPosition[] = 
 [
-  { "room": 1, "position": { "top": 1593, "left": 1674 } },
-  { "room": 2, "position": { "top": 1382, "left": 1818 } },
-  { "room": 3, "position": { "top": 1304, "left": 1943.59 } },
-  { "room": 4, "position": { "top": 954, "left": 1685 } },
-  { "room": 5, "position": { "top": 954, "left": 1792 } },
-  { "room": 6, "position": { "top": 1593, "left": 1468 } },
-  { "room": 7, "position": { "top": 1028, "left": 1549 } },
-  { "room": 8, "position": { "top": 1028, "left": 1656 } },
-  { "room": 9, "position": { "top": 1028, "left": 1763 } },
-  { "room": 10, "position": { "top": 1155, "left": 1462 } },
-  { "room": 11, "position": { "top": 1155, "left": 1569 } },
-  { "room": 12, "position": { "top": 1155, "left": 1676 } },
-  { "room": 13, "position": { "top": 1593, "left": 1138 } },
-  { "room": 14, "position": { "top": 1370, "left": 1128 } },
-  { "room": 15, "position": { "top": 1370, "left": 1259 } },
-  { "room": 16, "position": { "top": 1370, "left": 1366 } }
+  { "room": 1, "position": { "top": 2044.59, "left": 1631.59 } },
+
 ]
 
 
 const companyRooms: Record<string, number> = {
-  'accenture': 4, 
+  'accenture': 1, 
 };
 
 
