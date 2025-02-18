@@ -8,6 +8,7 @@ import {
 } from '../assets/companies';
 import companiesData from '../assets/companies.json';
 import { useTranslation } from 'react-i18next';
+import FadeInSection from '../components/FadeInSection/FadeInSection';
 
 const Companies: React.FC = () => {
     const companies: Company[] = companiesData;
@@ -22,17 +23,25 @@ const Companies: React.FC = () => {
 
     const [programsExpanded, setProgramsExpanded] = useState<boolean>(false);
     const [positionsExpanded, setPositionsExpanded] = useState<boolean>(false);
-    
+
     const programsRef = useRef<HTMLDivElement>(null);
     const positionsRef = useRef<HTMLDivElement>(null);
 
     // Close dropdowns when clicking outside
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
-            if (programsExpanded && programsRef.current && !programsRef.current.contains(e.target as Node)) {
+            if (
+                programsExpanded &&
+                programsRef.current &&
+                !programsRef.current.contains(e.target as Node)
+            ) {
                 setProgramsExpanded(false);
             }
-            if (positionsExpanded && positionsRef.current && !positionsRef.current.contains(e.target as Node)) {
+            if (
+                positionsExpanded &&
+                positionsRef.current &&
+                !positionsRef.current.contains(e.target as Node)
+            ) {
                 setPositionsExpanded(false);
             }
         };
@@ -88,16 +97,16 @@ const Companies: React.FC = () => {
 
         // Separate logic for candidate and master programs
         const matchesCandidateProgram =
-            (company.candidatePrograms &&
-                company.candidatePrograms.some((program: string) =>
-                    selectedFilters.candidatePrograms.has(program)
-                ));
+            company.candidatePrograms &&
+            company.candidatePrograms.some((program: string) =>
+                selectedFilters.candidatePrograms.has(program)
+            );
 
         const matchesMasterProgram =
-            (company.masterPrograms &&
-                company.masterPrograms.some((program: string) =>
-                    selectedFilters.masterPrograms.has(program)
-                ));
+            company.masterPrograms &&
+            company.masterPrograms.some((program: string) =>
+                selectedFilters.masterPrograms.has(program)
+            );
 
         // Separate logic for positions
         const matchesPosition =
@@ -205,94 +214,104 @@ const Companies: React.FC = () => {
                     </div>
                     <div className="relative">
                         {programsExpanded && (
-                            <div ref={programsRef} className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full max-w-[550px] gap-2">
-                                <h1>Bachelor&apos;s programmes</h1>
-                                {candidatePrograms.map((program) => (
-                                    <label
-                                        key={program}
-                                        className="font-light text-gray-700"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            value={program}
-                                            checked={selectedFilters.candidatePrograms.has(
-                                                program
-                                            )}
-                                            onChange={() =>
-                                                toggleFilter(
-                                                    'candidatePrograms',
-                                                    program
-                                                )
-                                            }
-                                            className="mr-2"
-                                        />
-                                        {t(`programs.${program}`)}
-                                    </label>
-                                ))}
-                                <h1>Master&apos;s programmes</h1>
-                                {masterPrograms.map((program) => (
-                                    <label
-                                        key={program}
-                                        className="font-light text-gray-700"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            value={program}
-                                            checked={selectedFilters.masterPrograms.has(
-                                                program
-                                            )}
-                                            onChange={() =>
-                                                toggleFilter(
-                                                    'masterPrograms',
-                                                    program
-                                                )
-                                            }
-                                            className="mr-2"
-                                        />
-                                        {t(`programs.${program}`)}
-                                    </label>
-                                ))}
-                                <button
-                                    onClick={clearFilters}
-                                    className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                            <FadeInSection direction="fadeDown">
+                                <div
+                                    ref={programsRef}
+                                    className="absolute bg-white rounded-xl flex flex-col shadow-md p-4 left-1/2 -translate-x-1/2 w-full max-w-[550px] gap-2"
                                 >
-                                    {t('global.clearFilters')}
-                                </button>
-                            </div>
+                                    <h1>Bachelor&apos;s programmes</h1>
+                                    {candidatePrograms.map((program) => (
+                                        <label
+                                            key={program}
+                                            className="font-light text-gray-700"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                value={program}
+                                                checked={selectedFilters.candidatePrograms.has(
+                                                    program
+                                                )}
+                                                onChange={() =>
+                                                    toggleFilter(
+                                                        'candidatePrograms',
+                                                        program
+                                                    )
+                                                }
+                                                className="mr-2"
+                                            />
+                                            {t(`programs.${program}`)}
+                                        </label>
+                                    ))}
+                                    <h1>Master&apos;s programmes</h1>
+                                    {masterPrograms.map((program) => (
+                                        <label
+                                            key={program}
+                                            className="font-light text-gray-700"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                value={program}
+                                                checked={selectedFilters.masterPrograms.has(
+                                                    program
+                                                )}
+                                                onChange={() =>
+                                                    toggleFilter(
+                                                        'masterPrograms',
+                                                        program
+                                                    )
+                                                }
+                                                className="mr-2"
+                                            />
+                                            {t(`programs.${program}`)}
+                                        </label>
+                                    ))}
+                                    <button
+                                        onClick={clearFilters}
+                                        className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                                    >
+                                        {t('global.clearFilters')}
+                                    </button>
+                                </div>
+                            </FadeInSection>
                         )}
                     </div>
                     <div className="relative">
                         {positionsExpanded && (
-                            <div ref={positionsRef} className="absolute bg-white rounded-xl flex flex-col right-0 shadow-md p-4 gap-2">
-                                {positions.map((position) => (
-                                    <label
-                                        key={position}
-                                        className="font-light text-gray-700"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            value={position}
-                                            checked={selectedFilters.positions.has(
-                                                position
-                                            )}
-                                            onChange={() =>
-                                                toggleFilter(
-                                                    'positions',
-                                                    position
-                                                )
-                                            }
-                                            className="mr-2"
-                                        />
-                                        {t(`positions.${position}`)}
-                                    </label>
-                                ))}
-                                <button
-                                    onClick={clearFilters}
-                                    className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                            <FadeInSection direction='fadeDown'>
+                                <div
+                                    ref={positionsRef}
+                                    className="absolute bg-white rounded-xl flex flex-col right-0 shadow-md p-4 gap-2"
                                 >
-                                    {t('global.clearFilters')}
-                                </button>
-                            </div>
+                                    {positions.map((position) => (
+                                        <label
+                                            key={position}
+                                            className="font-light text-gray-700"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                value={position}
+                                                checked={selectedFilters.positions.has(
+                                                    position
+                                                )}
+                                                onChange={() =>
+                                                    toggleFilter(
+                                                        'positions',
+                                                        position
+                                                    )
+                                                }
+                                                className="mr-2"
+                                            />
+                                            {t(`positions.${position}`)}
+                                        </label>
+                                    ))}
+                                    <button
+                                        onClick={clearFilters}
+                                        className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-xl mt-2 hover:opacity-90 transition-opacity"
+                                    >
+                                        {t('global.clearFilters')}
+                                    </button>
+                                </div>
+                            </FadeInSection>
                         )}
                     </div>
                 </div>

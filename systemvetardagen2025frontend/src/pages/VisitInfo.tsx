@@ -2,33 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
-const lectures = [
-    {
-        company: 'Akavia',
-        time: '10:20-10:50',
-        topic: 'Arbetsmarknaden för nyexaminerade IT-akademiker',
-    },
-    {
-        company: 'Truesec',
-        time: '11:00-11:40',
-        topic: 'From Infection to Encryption: A Deep Dive into Threat Actors Malicious Code',
-    },
-    {
-        company: 'Accenture',
-        time: '12:00-12:30',
-        topic: 'About the company and intership programs',
-    },
-    {
-        company: 'Zimply',
-        time: '13:00-13:30',
-        topic: 'Om AI och hur det är att jobba på Zimply + intervju med två anställda rekryterade från Systemvetardagen',
-    },
-    {
-        company: 'Google',
-        time: '14:00-15:00',
-        topic: 'Generativ AI - LLMs and all that jazz',
-    },
-];
+import lecturesData from '../data/lectures.json';
+
+const lectures: Lecture[] = lecturesData;
 
 interface Lecture {
     company: string;
@@ -42,9 +18,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
     return (
         <div className="mb-8">
             <p className="text-md text-white ">{lecture.time}</p>
-            <h1 className="font-semibold text-3xl">
-                {lecture.company}
-            </h1>
+            <h1 className="font-semibold text-3xl">{lecture.company}</h1>
             <p className="text-md text-white font-ibm">{lecture.topic}</p>
         </div>
     );

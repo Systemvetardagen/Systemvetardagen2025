@@ -54,7 +54,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
     return (
         <div
-            className="grid gap-4 lg:flex lg:gap-24 grid-cols-2"
+            className="grid gap-4 lg:flex lg:gap-24 grid-cols-2 fadeUp"
             onClick={() => setClickAmount(prev => prev + 1)}
         >
             <Timeunit value={timeLeft.days} label={t('days')} />
