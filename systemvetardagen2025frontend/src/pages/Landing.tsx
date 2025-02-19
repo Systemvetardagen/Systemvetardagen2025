@@ -6,6 +6,7 @@ import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
 import { MapPin } from 'lucide-react';
 import FadeInSection from '../components/FadeInSection/FadeInSection';
+import { NUM_OF_COMPANIES } from '../assets/companies';
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
@@ -52,21 +53,24 @@ export default function Landing() {
                     <FadeInSection direction="fadeRight">
                         <Partners />
                     </FadeInSection>
-                    <a
-                        href="/companies"
-                        className="w-full h-[200px] overflow-hidden relative rounded-3xl group"
-                    >
-                        <img
-                            src="/images/crowded-from-above.jpg"
-                            alt=""
-                            className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
-                        />
-                        <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
-                            {t('body.meet-companies', {
-                                numberOfCompanies: 37,
-                            })}
-                        </span>
-                    </a>
+                    <FadeInSection className="w-full h-48" direction="fadeLeft">
+                        <a
+                            href="/companies"
+                            className="relative w-full h-full overflow-hidden rounded-3xl group"
+                        >
+                            <img
+                                src="/images/crowded-from-above.jpg"
+                                alt="Crowded event"
+                                className="w-full h-full object-cover rounded-3xl grayscale transition-transform duration-200 group-hover:scale-105"
+                            />
+                            <span className="absolute  top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs text-center lg:text-lg">
+                                {t('body.meet-companies', {
+                                    numberOfCompanies: NUM_OF_COMPANIES,
+                                })}
+                            </span>
+                        </a>
+                    </FadeInSection>
+
                     <FadeInSection direction="fadeRight">
                         <div className="bg-[#FFE6F4] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%] shadow-lg w-full">
                             <h1 className="text-xl lg:text-3xl ">
@@ -79,20 +83,21 @@ export default function Landing() {
                             ))}
                         </div>
                     </FadeInSection>
-
-                    <a
-                        href="/visit-info"
-                        className="w-full h-[200px] overflow-hidden relative rounded-3xl group"
-                    >
-                        <img
-                            src="/images/auditorium-seats.jpg"
-                            alt=""
-                            className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
-                        />
-                        <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
-                            {t('body.lectures')}
-                        </span>
-                    </a>
+                    <FadeInSection direction="fadeLeft" className="w-full h-48">
+                        <a
+                            href="/visit-info"
+                            className="w-full h-full overflow-hidden relative rounded-3xl group"
+                        >
+                            <img
+                                src="/images/auditorium-seats.jpg"
+                                alt=""
+                                className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
+                            />
+                            <span className="absolute  top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
+                                {t('body.lectures')}
+                            </span>
+                        </a>
+                    </FadeInSection>
                     <div className="flex flex-col md:flex-row gap-10 w-full">
                         {[
                             {
@@ -106,20 +111,21 @@ export default function Landing() {
                                 text: t('body.get-here'),
                             },
                         ].map((item, index) => (
-                            <a
-                                key={index}
-                                href={item.href}
-                                className="rounded-3xl w-full h-[200px] overflow-hidden relative group"
-                            >
-                                <img
-                                    src={item.imgSrc}
-                                    alt=""
-                                    className="object-cover w-full h-full rounded-3xl filter grayscale transition-transform duration-200 group-hover:scale-105"
-                                />
-                                <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
-                                    {item.text}
-                                </span>
-                            </a>
+                            <FadeInSection key={index} direction={index % 2 === 0 ? "fadeLeft" : "fadeRight"} className='w-full h-48'>
+                                <a
+                                    href={item.href}
+                                    className="rounded-3xl w-full h-full overflow-hidden relative group"
+                                >
+                                    <img
+                                        src={item.imgSrc}
+                                        alt=""
+                                        className="object-cover w-full h-full rounded-3xl filter grayscale transition-transform duration-200 group-hover:scale-105"
+                                    />
+                                    <span className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
+                                        {item.text}
+                                    </span>
+                                </a>
+                            </FadeInSection>
                         ))}
                     </div>
                     <FadeInSection direction="fadeLeft">
@@ -155,7 +161,7 @@ export default function Landing() {
                             </div>
                         </div>
                     </FadeInSection>
-                    <FadeInSection direction='fadeLeft'>
+                    <FadeInSection direction="fadeLeft">
                         <div className="w-full">
                             <SignupLink />
                         </div>

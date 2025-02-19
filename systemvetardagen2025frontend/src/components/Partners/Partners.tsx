@@ -17,7 +17,7 @@ const Partners = () => {
             <h2 className="text-xl lg:text-3xl mb-8 font-light">
                 {t('partners')}
             </h2>
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="md:flex grid grid-cols-2 flex-row gap-4 md:gap-8">
                 {partnersData.map(({ id }, index) => (
                     <a
                         className="bg-white rounded-3xl hover:rounded-3xl transition-all duration-100 ease-linear shadow-xl p-2 hover:scale-105"

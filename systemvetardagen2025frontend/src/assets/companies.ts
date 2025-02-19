@@ -22,6 +22,9 @@ export interface Contact {
     phoneNumber?: string;
 }
 
+import companiesData from "./companies.json";
+export const NUM_OF_COMPANIES = companiesData.length;
+
 export const candidatePrograms = [
     'SYSDK', // Computer and Systems Sciences
     'SAFFK', // Enterprise Systems and Service Design

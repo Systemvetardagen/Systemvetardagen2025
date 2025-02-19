@@ -128,16 +128,15 @@ const Companies: React.FC = () => {
     }) => {
         const logoPath = `/companies/${company.id}/logo.webp`;
         return (
-            <a
-                className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4"
-                href={`/companies/${company.id}`}
-            >
-                <img
-                    src={logoPath}
-                    className={`object-contain ${className}`}
-                    alt={`${company.name} logo`}
-                />
-            </a>
+            <div className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4">
+                <a className="" href={`/companies/${company.id}`}>
+                    <img
+                        src={logoPath}
+                        className={`object-contain ${className}`}
+                        alt={`${company.name} logo`}
+                    />
+                </a>
+            </div>
         );
     };
 
@@ -277,7 +276,7 @@ const Companies: React.FC = () => {
                     </div>
                     <div className="relative">
                         {positionsExpanded && (
-                            <FadeInSection direction='fadeDown'>
+                            <FadeInSection direction="fadeDown">
                                 <div
                                     ref={positionsRef}
                                     className="absolute bg-white rounded-xl flex flex-col right-0 shadow-md p-4 gap-2"
@@ -344,11 +343,12 @@ const Companies: React.FC = () => {
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6">
                     {filteredCompanies.map((company, index) => (
-                        <CompanyCard
-                            company={company}
-                            key={index}
-                            className="h-32 w-56"
-                        />
+                        <FadeInSection key={index} direction="fadeLeft">
+                            <CompanyCard
+                                company={company}
+                                className="h-32 w-56"
+                            />
+                        </FadeInSection>
                     ))}
                 </div>
             </div>
