@@ -85,40 +85,41 @@ const Companies: React.FC = () => {
     };
 
     const filteredCompanies = companies.filter((company: Company) => {
-        // Check if any of the selected filter sets are empty
         const isFilterEmpty =
             selectedFilters.candidatePrograms.size === 0 &&
             selectedFilters.masterPrograms.size === 0 &&
             selectedFilters.positions.size === 0;
 
         if (isFilterEmpty) {
-            return true; // Return true for all companies if no filters are selected
+            return true;
         }
 
-        // Separate logic for candidate and master programs
+        const hasCandidateFilters = selectedFilters.candidatePrograms.size > 0;
         const matchesCandidateProgram =
-            company.candidatePrograms &&
-            company.candidatePrograms.some((program: string) =>
-                selectedFilters.candidatePrograms.has(program)
-            );
+            !hasCandidateFilters ||
+            (company.candidatePrograms &&
+                company.candidatePrograms.some((program: string) =>
+                    selectedFilters.candidatePrograms.has(program)
+                ));
 
+        const hasMasterFilters = selectedFilters.masterPrograms.size > 0;
         const matchesMasterProgram =
-            company.masterPrograms &&
-            company.masterPrograms.some((program: string) =>
-                selectedFilters.masterPrograms.has(program)
-            );
+            !hasMasterFilters ||
+            (company.masterPrograms &&
+                company.masterPrograms.some((program: string) =>
+                    selectedFilters.masterPrograms.has(program)
+                ));
 
-        // Separate logic for positions
+        const hasPositionFilters = selectedFilters.positions.size > 0;
         const matchesPosition =
-            selectedFilters.positions.size === 0 ||
+            !hasPositionFilters ||
             (company.positions &&
                 company.positions.some((position: string) =>
                     selectedFilters.positions.has(position)
                 ));
 
-        // Only return true if the company matches the program filters OR position filters
         return (
-            (matchesCandidateProgram || matchesMasterProgram) && matchesPosition
+            matchesCandidateProgram && matchesMasterProgram && matchesPosition
         );
     });
 
