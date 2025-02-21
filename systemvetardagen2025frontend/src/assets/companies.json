@@ -1,390 +1,389 @@
 [
-    {
-        "id": "accenture",
-        "name": "Accenture",
-        "slogan": "Let there be change",
-        "founded": 2001,
-        "employeesSweden": 1600,
-        "employeesTotal": 740000,
-        "isPartner": false,
-        "websiteLink": "https://www.accenture.com/",
-        "contacts": [
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            },
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            },
-            {
-                "name": "Pia Hellquist",
-                "mail": "pia.hellquist@cygni.se",
-                "phoneNumber": "0725552373"
-            }
-        ],
-        "candidatePrograms": [
-            "SYSDK",
-            "SAFFK",
-            "SDAVK",
-            "SGAMK",
-            "SDIMK",
-            "SITEK",
-            "SIADK",
-            "SMARK"
-        ],
-        "masterPrograms": [
-            "SAIHO",
-            "SMINO",
-            "SMEFO",
-            "SCSSO",
-            "SHINO",
-            "SSLIO",
-            "SDSBO",
-            "SPROM",
-            "SDKIO"
-        ],
-        "positions": [
-            "fullTime",
-            "partTime",
-            "thesis",
-            "trainee",
-            "internship",
-            "foreignServices"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/accenture/",
-        "instagram": "https://www.instagram.com/accenture/",
-        "facebook": "https://www.facebook.com/accenture/"
-    },
-    {
-        "id": "handelsbanken",
-        "name": "Handelsbanken",
-        "founded": 1871,
-        "employeesSweden": 8000,
-        "employeesTotal": 12000,
-        "isPartner": false,
-        "websiteLink": "https://www.handelsbanken.se/sv/om-oss/jobba-hos-oss/tech-data-innovation",
-        "contacts": [
-            {
-                "name": "Rebecka Kjellström",
-                "mail": "rebecka.kjellstrom@handelsbanken.se",
-                "phoneNumber": "+46 (0)730315596"
-            }
-        ],
-        "candidatePrograms": [
-            "SYSDK",
-            "SDAVK",
-            "SITEK",
-            "SMARK",
-            "SAFFK"
-        ],
-        "masterPrograms": [
-            "SAIHO",
-            "SDSBO",
-            "SCSSO",
-            "SMINO",
-            "SSLIO",
-            "SMEFO",
-            "SDKIO",
-            "SHINO"
-        ],
-        "positions": [
-            "fullTime",
-            "trainee",
-            "partTime",
-            "internship"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/handelsbanken/",
-        "instagram": "https://www.instagram.com/handelsbanken/",
-        "facebook": "https://www.facebook.com/Handelsbanken/"
-    },
-    {
-        "id": "ericsson",
-        "name": "Ericsson",
-        "slogan": "Imagine a world where limitless connectivity means limitless possibility",
-        "founded": 1876,
-        "employeesSweden": 14500,
-        "employeesTotal": 105000,
-        "isPartner": false,
-        "websiteLink": "https://www.ericsson.com/en/careers",
-        "contacts": [
-            {
-                "name": "Ida Ellingsson",
-                "mail": "ida.ellingsson@ericsson.com"
-            }
-        ],
-        "candidatePrograms": [
-            "SDAVK",
-            "SYSDK",
-            "SITEK",
-            "SIADK",
-            "SMARK"
-        ],
-        "masterPrograms": [
-            "SAIHO",
-            "SDSBO",
-            "SCSSO",
-            "SDKIO",
-            "SHINO",
-            "SMINO",
-            "SSLIO"
-        ],
-        "positions": [
-            "fullTime",
-            "partTime",
-            "thesis",
-            "trainee",
-            "internship"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/ericsson/",
-        "instagram": "https://www.instagram.com/inside_ericsson/",
-        "facebook": "https://www.facebook.com/ericsson/"
-    },
-    {
-        "id": "cgi",
-        "name": "CGI",
-        "slogan": "Insights you can act on",
-        "founded": 1976,
-        "employeesSweden": 3800,
-        "employeesTotal": 88000,
-        "isPartner": false,
-        "websiteLink": "https://www.cgi.com/se/sv/karriar",
-        "contacts": [
-            {
-                "name": "Albin Renlund",
-                "mail": "albin.renlund@cgi.com",
-                "phoneNumber": "0705919296"
-            },
-            {
-                "name": "Jessica Andersson",
-                "mail": "jessica.andersson@cgi.com",
-                "phoneNumber": "+46 76 1021481"
-            }
-        ],
-        "candidatePrograms": [
-            "SAFFK",
-            "SYSDK",
-            "SDAVK"
-        ],
-        "masterPrograms": [
-            "SAIHO",
-            "SDSBO",
-            "SCSSO",
-            "SHINO",
-            "SMINO",
-            "SSLIO",
-            "SMEFO",
-            "SDKIO"
-        ],
-        "positions": [
-            "fullTime",
-            "thesis",
-            "trainee"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/cgi/",
-        "instagram": "https://www.instagram.com/cgisverige/",
-        "facebook": "https://www.facebook.com/cgisverige"
-    },
-    {
-        "id": "akavia",
-        "name": "Akavia",
-        "slogan": "Fackförbundet för akademiker",
-        "founded": 2020,
-        "employeesSweden": 130,
-        "isPartner": true,
-        "websiteLink": "https://www.akavia.se/medlemskapet/bli-studentmedlem/",
-        "contacts": [
-            {
-                "name": "Erika Eliasson",
-                "mail": "erika.eliasson@akavia.se",
-                "phoneNumber": "0706652922"
-            },
-            {
-                "name": "Abelone Brander",
-                "mail": "abelone.brander@akavia.se",
-                "phoneNumber": "0706652972"
-            }
-        ],
-        "linkedIn": "https://www.linkedin.com/company/akavia/",
-        "instagram": "https://www.instagram.com/akaviasverige/",
-        "facebook": "https://www.facebook.com/akaviasverige/"
-    },
-    {
-        "id": "gtslAB",
-        "name": "Guided Talent Solutions AB",
-        "slogan": "Vi guidar dig till drömjobbet!",
-        "founded": 2021,
-        "isPartner": false,
-        "websiteLink": "https://guidedtalentsolutions.se/",
-        "contacts": [
-            {
-                "name": "Ender Kökat",
-                "mail": "Ender.kokat@guidedtalentsolutions.se"
-            }
-        ],
-        "candidatePrograms": [
-            "SDAVK",
-            "SYSDK",
-            "SAFFK",
-            "SDIMK",
-            "SITEK",
-            "SIADK",
-            "SMARK"
-        ],
-        "masterPrograms": [
-            "SDSBO",
-            "SCSSO",
-            "SMINO",
-            "SSLIO"
-        ],
-        "positions": [
-            "fullTime",
-            "trainee"
-        ]
-    },
-    {
-        "id": "swedbank",
-        "name": "Swedbank",
-        "slogan": "Open, Simple, and Caring",
-        "founded": 1820,
-        "employeesSweden": 9759,
-        "employeesTotal": 7000,
-        "isPartner": false,
-        "websiteLink": "https://www.swedbank.com/work-with-us.html",
-        "contacts": [
-            {
-                "name": "Marcus Andersson",
-                "mail": "marcus.a.andersson@swedbank.se"
-            }
-        ],
-        "positions": [
-            "fullTime",
-            "internship",
-            "thesis",
-            "partTime",
-            "trainee"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/swedbank/",
-        "instagram": "https://www.instagram.com/swedbanksverige/",
-        "facebook": "https://www.facebook.com/swedbanksverige/"
-    },
-    {
-        "id": "kpmg",
-        "name": "KPMG",
-        "slogan": "Find opportunity everywhere with KPMG",
-        "founded": 1923,
-        "employeesSweden": 2400,
-        "employeesTotal": 275000,
-        "isPartner": false,
-        "websiteLink": "https://kpmg.com/se/sv/home/karriar.html",
-        "contacts": [
-            {
-                "name": "Sofia Thomasson",
-                "mail": "sofia.thomasson@kpmg.se",
-                "phoneNumber": "+46 73 7396251"
-            },
-            {
-                "name": "Robin Andreasson",
-                "mail": "robin.andreasson@kpmg.se",
-                "phoneNumber": "+46 70 8803902"
-            }
-        ],
-        "candidatePrograms": [
-            "SDAVK",
-            "SITEK"
-        ],
-        "masterPrograms": [
-            "SDSBO",
-            "SCSSO",
-            "SMINO",
-            "SSLIO"
-        ],
-        "positions": [
-            "fullTime",
-            "thesis"
-        ],
-        "linkedIn": "https://se.linkedin.com/company/kpmgsweden/",
-        "instagram": "https://www.instagram.com/kpmgsweden/",
-        "facebook": "https://www.facebook.com/KPMGsweden/"
-    },
-    {
-        "id": "columbus",
-        "name": "Columbus",
-        "slogan": "Digital Transformation for a Better Tomorrow",
-        "founded": 1989,
-        "employeesSweden": 400,
-        "employeesTotal": 1550,
-        "isPartner": false,
-        "websiteLink": "https://careers.columbusglobal.com/",
-        "contacts": [
-            {
-                "name": "Daniel Sparrow",
-                "mail": "Daniel.Sparrow@Columbusglobal.com",
-                "phoneNumber": "+46728868263"
-            },
-            {
-                "name": "Alexander Tonelli",
-                "mail": "Alexander.Tonelli@Columbusglobal.com",
-                "phoneNumber": "+46702186226"
-            }
-        ],
-        "candidatePrograms": [
-            "SYSDK",
-            "SAFFK",
-            "SDAVK",
-            "SITEK",
-            "SMARK"
-        ],
-        "masterPrograms": [
-            "SDSBO",
-            "SCSSO",
-            "SSLIO"
-        ],
-        "positions": [
-            "fullTime",
-            "trainee"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/columbusglobal/",
-        "instagram": "https://www.instagram.com/columbussverige/",
-        "facebook": "https://www.facebook.com/"
-    },
-    {
-        "id": "lime",
-        "name": "Lime Technologies",
-        "slogan": "At Lime, we love CRM!",
-        "founded": 1990,
-        "employeesSweden": 350,
-        "employeesTotal": 500,
-        "isPartner": false,
-        "websiteLink": "https://jobs.lime-technologies.com/trainee/",
-        "contacts": [
-            {
-                "name": "Karl-Johan Kjellberg",
-                "mail": "karl-johan.kjellberg@lime.tech",
-                "phoneNumber": "+46736446930"
-            }
-        ],
-        "candidatePrograms": [
-            "SAFFK",
-            "SYSDK",
-            "SDAVK",
-            "SITEK",
-            "SIADK",
-            "SMARK"
-        ],
-        "masterPrograms": [
-            "SCSSO",
-            "SDKIO",
-            "SSLIO"
-        ],
-        "positions": [
-            "fullTime",
-            "trainee"
-        ],
-        "linkedIn": "https://www.linkedin.com/company/limetechnologies/",
-        "instagram": "https://www.instagram.com/lime_technologies/",
-        "facebook": "https://www.facebook.com/"
-    }
+  {
+    "id": "accenture",
+    "name": "Accenture",
+    "slogan": "Let there be change",
+    "founded": 2001,
+    "employeesSweden": 1600,
+    "employeesTotal": 740000,
+    "isPartner": false,
+    "websiteLink": "https://www.accenture.com/",
+    "contacts": [
+      {
+        "name": "Pia Hellquist",
+        "mail": "pia.hellquist@cygni.se",
+        "phoneNumber": "0725552373"
+      },
+      {
+        "name": "Pia Hellquist",
+        "mail": "pia.hellquist@cygni.se",
+        "phoneNumber": "0725552373"
+      },
+      {
+        "name": "Pia Hellquist",
+        "mail": "pia.hellquist@cygni.se",
+        "phoneNumber": "0725552373"
+      }
+    ],
+    "candidatePrograms": [
+      "SYSDK",
+      "SAFFK",
+      "SDAVK",
+      "SGAMK",
+      "SDIMK",
+      "SITEK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SMINO",
+      "SMEFO",
+      "SCSSO",
+      "SHINO",
+      "SSLIO",
+      "SDSBO",
+      "SPROM",
+      "SDKIO"
+    ],
+    "positions": [
+      "fullTime",
+      "partTime",
+      "thesis",
+      "trainee",
+      "internship",
+      "foreignServices"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/accenture/",
+    "instagram": "https://www.instagram.com/accenture/",
+    "facebook": "https://www.facebook.com/accenture/"
+  },
+  {
+    "id": "handelsbanken",
+    "name": "Handelsbanken",
+    "founded": 1871,
+    "employeesSweden": 8000,
+    "employeesTotal": 12000,
+    "isPartner": false,
+    "websiteLink": "https://www.handelsbanken.se/sv/om-oss/jobba-hos-oss/tech-data-innovation",
+    "contacts": [
+      {
+        "name": "Rebecka Kjellström",
+        "mail": "rebecka.kjellstrom@handelsbanken.se",
+        "phoneNumber": "+46 (0)730315596"
+      }
+    ],
+    "candidatePrograms": [
+      "SYSDK",
+      "SDAVK",
+      "SITEK",
+      "SMARK",
+      "SAFFK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SDSBO",
+      "SCSSO",
+      "SMINO",
+      "SSLIO",
+      "SMEFO",
+      "SDKIO",
+      "SHINO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee",
+      "partTime",
+      "internship"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/handelsbanken/",
+    "instagram": "https://www.instagram.com/handelsbanken/",
+    "facebook": "https://www.facebook.com/Handelsbanken/"
+  },
+  {
+    "id": "ericsson",
+    "name": "Ericsson",
+    "slogan": "Imagine a world where limitless connectivity means limitless possibility",
+    "founded": 1876,
+    "employeesSweden": 14500,
+    "employeesTotal": 105000,
+    "isPartner": false,
+    "websiteLink": "https://www.ericsson.com/en/careers",
+    "contacts": [
+      {
+        "name": "Ida Ellingsson",
+        "mail": "ida.ellingsson@ericsson.com"
+      }
+    ],
+    "candidatePrograms": [
+      "SDAVK",
+      "SYSDK",
+      "SITEK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SDSBO",
+      "SCSSO",
+      "SDKIO",
+      "SHINO",
+      "SMINO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "partTime",
+      "thesis",
+      "trainee",
+      "internship"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/ericsson/",
+    "instagram": "https://www.instagram.com/inside_ericsson/",
+    "facebook": "https://www.facebook.com/ericsson/"
+  },
+  {
+    "id": "cgi",
+    "name": "CGI",
+    "slogan": "Insights you can act on",
+    "founded": 1976,
+    "employeesSweden": 3800,
+    "employeesTotal": 88000,
+    "isPartner": false,
+    "websiteLink": "https://www.cgi.com/se/sv/karriar",
+    "contacts": [
+      {
+        "name": "Albin Renlund",
+        "mail": "albin.renlund@cgi.com",
+        "phoneNumber": "0705919296"
+      },
+      {
+        "name": "Jessica Andersson",
+        "mail": "jessica.andersson@cgi.com",
+        "phoneNumber": "+46 76 1021481"
+      }
+    ],
+    "candidatePrograms": [
+      "SAFFK",
+      "SYSDK",
+      "SDAVK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SDSBO",
+      "SCSSO",
+      "SHINO",
+      "SMINO",
+      "SSLIO",
+      "SMEFO",
+      "SDKIO"
+    ],
+    "positions": [
+      "fullTime",
+      "thesis",
+      "trainee"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/cgi/",
+    "instagram": "https://www.instagram.com/cgisverige/",
+    "facebook": "https://www.facebook.com/cgisverige"
+  },
+  {
+    "id": "akavia",
+    "name": "Akavia",
+    "slogan": "Fackförbundet för akademiker",
+    "founded": 2020,
+    "employeesSweden": 130,
+    "isPartner": true,
+    "websiteLink": "https://www.akavia.se/medlemskapet/bli-studentmedlem/",
+    "contacts": [
+      {
+        "name": "Erika Eliasson",
+        "mail": "erika.eliasson@akavia.se",
+        "phoneNumber": "0706652922"
+      },
+      {
+        "name": "Abelone Brander",
+        "mail": "abelone.brander@akavia.se",
+        "phoneNumber": "0706652972"
+      }
+    ],
+    "linkedIn": "https://www.linkedin.com/company/akavia/",
+    "instagram": "https://www.instagram.com/akaviasverige/",
+    "facebook": "https://www.facebook.com/akaviasverige/"
+  },
+  {
+    "id": "gtslAB",
+    "name": "Guided Talent Solutions AB",
+    "slogan": "Vi guidar dig till drömjobbet!",
+    "founded": 2021,
+    "isPartner": false,
+    "websiteLink": "https://guidedtalentsolutions.se/",
+    "contacts": [
+      {
+        "name": "Ender Kökat",
+        "mail": "Ender.kokat@guidedtalentsolutions.se"
+      }
+    ],
+    "candidatePrograms": [
+      "SDAVK",
+      "SYSDK",
+      "SAFFK",
+      "SDIMK",
+      "SITEK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SDSBO",
+      "SCSSO",
+      "SMINO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ]
+  },
+  {
+    "id": "swedbank",
+    "name": "Swedbank",
+    "slogan": "Open, Simple, and Caring",
+    "founded": 1820,
+    "employeesSweden": 9759,
+    "employeesTotal": 7000,
+    "isPartner": false,
+    "websiteLink": "https://www.swedbank.com/work-with-us.html",
+    "contacts": [
+      {
+        "name": "Marcus Andersson",
+        "mail": "marcus.a.andersson@swedbank.se"
+      }
+    ],
+    "positions": [
+      "fullTime",
+      "internship",
+      "thesis",
+      "partTime",
+      "trainee"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/swedbank/",
+    "instagram": "https://www.instagram.com/swedbanksverige/",
+    "facebook": "https://www.facebook.com/swedbanksverige/"
+  },
+  {
+    "id": "kpmg",
+    "name": "KPMG",
+    "slogan": "Find opportunity everywhere with KPMG",
+    "founded": 1923,
+    "employeesSweden": 2400,
+    "employeesTotal": 275000,
+    "isPartner": false,
+    "websiteLink": "https://kpmg.com/se/sv/home/karriar.html",
+    "contacts": [
+      {
+        "name": "Sofia Thomasson",
+        "mail": "sofia.thomasson@kpmg.se",
+        "phoneNumber": "+46 73 7396251"
+      },
+      {
+        "name": "Robin Andreasson",
+        "mail": "robin.andreasson@kpmg.se",
+        "phoneNumber": "+46 70 8803902"
+      }
+    ],
+    "candidatePrograms": [
+      "SDAVK",
+      "SITEK"
+    ],
+    "masterPrograms": [
+      "SDSBO",
+      "SCSSO",
+      "SMINO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "thesis"
+    ],
+    "linkedIn": "https://se.linkedin.com/company/kpmgsweden/",
+    "instagram": "https://www.instagram.com/kpmgsweden/",
+    "facebook": "https://www.facebook.com/KPMGsweden/"
+  },
+  {
+    "id": "columbus",
+    "name": "Columbus",
+    "slogan": "Digital Transformation for a Better Tomorrow",
+    "founded": 1989,
+    "employeesSweden": 400,
+    "employeesTotal": 1550,
+    "isPartner": false,
+    "websiteLink": "https://careers.columbusglobal.com/",
+    "contacts": [
+      {
+        "name": "Daniel Sparrow",
+        "mail": "Daniel.Sparrow@Columbusglobal.com",
+        "phoneNumber": "+46728868263"
+      },
+      {
+        "name": "Alexander Tonelli",
+        "mail": "Alexander.Tonelli@Columbusglobal.com",
+        "phoneNumber": "+46702186226"
+      }
+    ],
+    "candidatePrograms": [
+      "SYSDK",
+      "SAFFK",
+      "SDAVK",
+      "SITEK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SDSBO",
+      "SCSSO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/columbusglobal/",
+    "instagram": "https://www.instagram.com/columbussverige/",
+    "facebook": "https://www.facebook.com/"
+  },
+  {
+    "name": "Lime Technologies",
+    "id": "lime",
+    "websiteLink": "https://jobs.lime-technologies.com/trainee/",
+    "slogan": "At Lime, we love CRM!",
+    "founded": 1990,
+    "employeesSweden": 350,
+    "employeesTotal": 500,
+    "linkedIn": "https://www.linkedin.com/company/limetechnologies/",
+    "instagram": "https://www.instagram.com/lime_technologies/",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SAFFK",
+      "SYSDK",
+      "SDAVK",
+      "SITEK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SCSSO",
+      "SDKIO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ],
+    "contacts": [
+      {
+        "name": "Karl-Johan Kjellberg",
+        "mail": "karl-johan.kjellberg@lime.tech",
+        "phoneNumber": "+46736446930"
+      }
+    ]
+  }
 ]
