@@ -41,7 +41,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         items={company.candidatePrograms.map((program) =>
                             t(`programs.${program}`)
                         )}
-                        className="bg-[#ffecf7] border-[#DB2677] text-[#DB2677]"
+                        className="bg-[#ffe1ee] border-[#DB2677] text-[#DB2677]"
                     />
                     <Card
                         title="Master Programs"
@@ -50,14 +50,14 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         )}
                         expandable
                         onExpand={() => setOpen(true)}
-                        className="bg-[#f3e9ff] border-[#9332E9] text-[#9332E9]"
+                        className="bg-[#f2e8ff] border-[#9332E9] text-[#9332E9]"
                     />
                     <Card
                         title="Positions"
                         items={company.positions.map((position) =>
                             t(`positions.${position}`)
                         )}
-                        className="bg-[#dbebff] border-[#2762EA] text-[#2762EA]"
+                        className="bg-[#d6e8ff] border-[#2762EA] text-[#2762EA]"
                     />
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (
@@ -151,7 +151,7 @@ const CompanyPage: React.FC = () => {
                     {company.employeesSweden && (
                         <div className="flex justify-between gap-10">
                             <strong>{t('global.employeesInSweden')}</strong>
-                            <span>{company.employeesSweden}</span>
+                            <span>{company.employeesSweden.toLocaleString('sv-SE')}</span>
                         </div>
                     )}
                     {company.employeesTotal && (
@@ -159,7 +159,7 @@ const CompanyPage: React.FC = () => {
                             <strong>
                                 {t('global.employeesInternationally')}
                             </strong>
-                            <span>{company.employeesTotal}</span>
+                            <span>{company.employeesTotal.toLocaleString('sv-SE')}</span>
                         </div>
                     )}
                 </div>
