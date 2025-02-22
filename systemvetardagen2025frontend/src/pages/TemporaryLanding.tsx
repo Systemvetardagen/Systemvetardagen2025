@@ -51,7 +51,7 @@ export default function TemporaryLanding() {
                     </button>
                 </a>
                 <span className="text-white text-sm sm:text-base opacity-90">
-                    {t('contactemail')} systemvetardagen@disk.su.se
+                    {t('contactemail')} <span className="font-bold">systemvetardagen@disk.su.se</span>
                 </span>
             </div>
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal">
