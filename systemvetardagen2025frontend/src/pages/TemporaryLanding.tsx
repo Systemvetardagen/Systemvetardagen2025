@@ -50,7 +50,7 @@ export default function TemporaryLanding() {
                         {t('signup')}
                     </button>
                 </a>
-                <span className="text-white text-sm sm:text-base opacity-90">
+                <span className="text-white text-sm sm:text-base opacity-90 mt-4">
                     {t('body.almost-there.contactemail')} <span className="font-bold">systemvetardagen@disk.su.se</span>
                 </span>
             </div>
