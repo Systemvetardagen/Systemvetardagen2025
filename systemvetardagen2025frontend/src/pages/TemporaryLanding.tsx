@@ -44,11 +44,16 @@ export default function TemporaryLanding() {
                     Sign up for updates here!
                 </button>
             </a> */}
-            <a href="/signup" className="">
-                <button className="bg-white shadow-xl p-4 rounded-full text-black font-bold font-poppins transition-transform duration-200 hover:scale-110">
-                    {t('signup')}
-                </button>
-            </a>
+            <div className="flex flex-col items-center gap-2">
+                <a href="/signup">
+                    <button className="bg-white shadow-xl p-4 rounded-full text-black font-bold font-poppins transition-transform duration-200 hover:scale-110">
+                        {t('signup')}
+                    </button>
+                </a>
+                <span className="text-white text-sm sm:text-base opacity-90">
+                    {t('contactemail')} systemvetardagen@disk.su.se
+                </span>
+            </div>
             <span className="w-full sm:w-3/4 lg:w-3/5 text-center text-white text-xs sm:text-sm lg:text-[.8vw] font-normal">
                 {t('disk')}
             </span>
