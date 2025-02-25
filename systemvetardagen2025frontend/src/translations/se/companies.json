@@ -7,6 +7,7 @@
         "programs": "program",
         "positions": "positioner",
         "clearFilters": "Rensa filter",
+        "searchPlaceholder": "Sök företag",
         "partners": "Våra Partners",
         "allCompanies": "Alla Företag",
         "areaOfBusiness": "Affärsområde",
@@ -134,5 +135,53 @@
             "paragraph2": ""
         },
         "qualifications": "Affärsmässig, Intresserad av teknik och IT, Pålitlig, Smart och får saker gjorda, Inte en dålig förlorare, men du hatar att förlora, Vill utvecklas och lära dig mer, En person med hög emotionell intelligens (EQ), Trots allt detta: ödmjuk med sinne för humor, Flytande i antingen svenska, danska, finska eller norska – beroende på var du vill arbeta."
+    },
+    "stfack": {
+        "areaOfBusiness": "",
+        "description": {
+            "paragraph1": "w",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "scania": {
+        "areaOfBusiness": "Programvaruutveckling, Moln, Cybersäkerhet, AI, Maskininlärning, Industri 4.0, Datorseende, Datavetenskap,",
+        "description": {
+            "paragraph1": "Scanias kultur är både pragmatisk och ambitiös. Vi vill driva verklig förändring och genom att utnyttja innovationens kraft hittar vi svar på några av våra mest akuta hållbarhetsutmaningar, från urban mobilitet till klimatförändringar. Samtidigt förändrar teknologier som elektrifiering och automation vår verksamhet radikalt, vilket skapar spännande nya möjligheter och affärsmodeller.",
+            "paragraph2": ""
+        },
+        "qualifications": "Java, Python, C++, JavaScript, C#, SQL, TypeScript, Scala, Kotlin, AWS, Azure."
+    },
+    "capgemini": {
+        "areaOfBusiness": "IT, Management och Engineering.",
+        "description": {
+            "paragraph1": "Ledande inom konsult- och tekniktjänster, innovation och digital transformation Capgemini är världsledande när det gäller att hjälpa kunder att driva och utveckla sina verksamheter genom den potential och de möjligheter som skapas av teknik. Koncernen har som ledstjärna att med teknikens hjälp frigöra mänsklig energi som kan användas till att bygga en hållbar och inkluderande framtid. Organisationen präglas av mångfald och ansvar och har 350 000 medarbetare i över 50 länder. Med 55 års erfarenhet och djup branschexpertis är Capgemini en trygg partner som kan hantera hela bredden av kundernas affär, från strategi till drift, och alltid i takt med den senaste utvecklingen för innovationsområden som molnet, data, AI, uppkopplade enheter, mjukvara, digital ingenjörskonst och nya plattformar. Get the Future You Want | www.capgemini.com",
+            "paragraph2": ""
+        },
+        "qualifications": "När du ansöker till Capgeminis traineeprogram, väljer du en roll baserat på din utbildning och dina intressen. Läs mer om de olika rollerna här:https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/ignite-graduate-program/"
+    },
+    "soprasteria": {
+        "areaOfBusiness": "IT, Design, Management, Business, Projektledning, Webbutveckling, Systemutveckling, Data & Analytics, Microsoft Business Applications, CRM, ERP, Affärssystem, Salesforce, ServiceNow, Cloud, Cyber Security",
+        "description": {
+            "paragraph1": "Sopra Steria är ett ledande internationellt konsultbolag inom IT, design och management som bygger samhället genom innovativa digitala lösningar. Vi erbjuder allt från dataanalys, affärs- och verksamhetsutveckling via projekt- och förändringsledning till systemutveckling, testning, driftsättning och daglig förvaltning av IT-system. 2023 utsågs vi till Sveriges Bästa Arbetsplats av Great Place to Work och rankas av Gartner som topp 5 bolag inom digital transformation. Vårt Accelerateprogram har utsetts till Sveriges mest attraktiva traineeprogram inom IT och vi har även tilldelats utmärkelsen Karriärföretag flera år i rad. I världen är vi 60 000 medarbetare fördelat på 30 länder. Här i Sverige är vi drygt 600 och har kontor i Stockholm, Göteborg, Malmö, Östersund och Sundsvall. Vi tror på trivsel, trygghet och tillit som den bästa grunden för proaktivitet och kreativitet. Som medarbetare hos oss får du schyssta villkor, ett långsiktigt perspektiv på din karriärväg och goda möjligheter till utveckling. Tillsammans når vi längre.",
+            "paragraph2": ""
+        },
+        "qualifications": "Goda kunskaper i tal och skrift på svenska och engelska. Nyutexaminerad på kandidat- eller masternivå från universitet eller högskola och din examen ska inte vara äldre än ett år. God lyssnare och kommunikatör. - Ambitiös och målinriktad."
+    },
+    "polisen": {
+        "areaOfBusiness": "Systemutveckling, uppdragsledning, UX-design, test, kravanalytiker, teknikspecialister, tekniska produktspecialister, CI/CD, AI, ML, NLP, analytiker, it-säkerhet",
+        "description": {
+            "paragraph1": "Polisens IT är en del i det brottsbekämpande arbetet, vi ger service till medborgarna och underlättar för myndighetens medarbetare att utföra sina uppdrag. I takt med att digitaliseringen ökar måste polisen kunna hantera allt större datamängder, dra nytta av nya teknologier och ligga steget före de kriminella, utan att kompromissa med säkerhet och rättssäkerhet. Att jobba på polisens IT är att vara en avgörande del i det brottsbekämpande arbetet. Oavsett om det handlar om att utveckla ny forensisk teknologi eller kommunicera via polisradion krävs väl fungerande IT-lösningar.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "innofactor": {
+        "areaOfBusiness": "Cybersecurity, Cloud Infrastructure and Business Solutions",
+        "description": {
+            "paragraph1": "Innofactors mål är att vara ledande inom digitaliserings- och molnlösningar i alla nordiska länder. Vårt uppdrag är att hjälpa våra kunder att digitalisera sina affärer, främja gemenskapsbaserat arbete och utveckla sina affärsprocesser genom databaserat beslutsfattande och säkra molntjänster. I samarbete med våra kunder, partners och investerare implementerar vi lösningar som hjälper våra kunder till framgång Hos oss kan du vara dig själv! Här är ingen stöpt i samma form. Vi värdesätter våra medarbetares olikheter och tror att utmanande uppgifter kräver nya och olika perspektiv. Alla har olika kvaliteter och därför tror vi inte på att skriva ner en lista på egenskaper som vi söker. Det som däremot är viktigt är att du gillar att lösa komplexa problem, gillar att sprida kunskap och är självgående.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
     }
 }

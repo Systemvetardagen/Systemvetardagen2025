@@ -34,7 +34,8 @@ POSITIONS_MAP = {
     'Deltidstjänster': 'partTime',
     'Examensarbete': 'thesis',
     'Traineeprogram': 'trainee',
-    'Sommarpraktik': 'internship'
+    'Sommarpraktik': 'internship',
+    "Utlandstjänster" : "foreignServices"
 }
 
 def get_input(prompt: str, required: bool = False) -> Optional[str]:

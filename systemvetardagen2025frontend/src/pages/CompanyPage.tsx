@@ -41,7 +41,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         items={company.candidatePrograms.map((program) =>
                             t(`programs.${program}`)
                         )}
-                        className="bg-[#ffe1ee] border-[#DB2677] text-[#DB2677]"
+                        className="bg-[#ffd0e4] border-[#DB2677] text-[#DB2677]"
                     />
                     <Card
                         title="Master Programs"
@@ -50,14 +50,14 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                         )}
                         expandable
                         onExpand={() => setOpen(true)}
-                        className="bg-[#f2e8ff] border-[#9332E9] text-[#9332E9]"
+                        className="bg-[#e2ccff] border-[#9332E9] text-[#9332E9]"
                     />
                     <Card
                         title="Positions"
                         items={company.positions.map((position) =>
                             t(`positions.${position}`)
                         )}
-                        className="bg-[#d6e8ff] border-[#2762EA] text-[#2762EA]"
+                        className="bg-[#cbe1ff] border-[#2762EA] text-[#2762EA]"
                     />
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (
@@ -124,23 +124,26 @@ const CompanyPage: React.FC = () => {
         return <p>Company not found</p>;
     }
     const logoPath = `/companies/${company.id}/logo.webp`;
-    //const bannerPath = `/companies/${company.id}/banner.webp`; i dont like the banner
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
-            <div className="h-[30vh] min-h-[250px] max-h-[400px] relative gradient-background w-full">
-                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
-                    <img
-                        src={logoPath}
-                        alt={`${company.name} logo`}
-                        className="max-w-[75vw] max-h-[125px] object-contain"
-                    />
+            <div className="relative w-full">
+                <div className="flex items-center justify-center h-[30vh] min-h-[250px] max-h-[400px] w-full overflow-hidden gradient-background">
+                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
+                        <img
+                            src={logoPath}
+                            alt={`${company.name} logo`}
+                            className="max-w-[75vw] max-h-[125px] object-contain"
+                        />
+                    </div>
                 </div>
             </div>
 
             <div className="max-w-[90vw] gap-10 flex flex-col items-center my-10">
-                {company.slogan && <h2 className="text-lg text-gray-600">{company.slogan}</h2>}
+                {company.slogan && (
+                    <h2 className="text-lg text-gray-600">{company.slogan}</h2>
+                )}
                 <div className="text-left shadow-md rounded-3xl w-[400px] max-w-[90vw] p-4 flex gap-4 flex-col">
-                    <div>
+                    <div className='font-light'>
                         <h1>{t('global.areaOfBusiness')}</h1>
                         {t(`${companyId}.areaOfBusiness`)}
                     </div>
@@ -151,7 +154,11 @@ const CompanyPage: React.FC = () => {
                     {company.employeesSweden && (
                         <div className="flex justify-between gap-10">
                             <strong>{t('global.employeesInSweden')}</strong>
-                            <span>{company.employeesSweden.toLocaleString('sv-SE')}</span>
+                            <span>
+                                {company.employeesSweden.toLocaleString(
+                                    'sv-SE'
+                                )}
+                            </span>
                         </div>
                     )}
                     {company.employeesTotal && (
@@ -159,7 +166,9 @@ const CompanyPage: React.FC = () => {
                             <strong>
                                 {t('global.employeesInternationally')}
                             </strong>
-                            <span>{company.employeesTotal.toLocaleString('sv-SE')}</span>
+                            <span>
+                                {company.employeesTotal.toLocaleString('sv-SE')}
+                            </span>
                         </div>
                     )}
                 </div>
@@ -220,6 +229,7 @@ const CompanyPage: React.FC = () => {
                 </div>
                 <a
                     className="text-link text-2xl text-center font-bold hover:underline"
+                    rel='nofollow'
                     href={company.websiteLink}
                 >
                     {t('global.learnMore', { company: company.name })}

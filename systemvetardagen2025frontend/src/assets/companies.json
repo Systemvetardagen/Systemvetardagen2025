@@ -6,7 +6,7 @@
     "founded": 2001,
     "employeesSweden": 1600,
     "employeesTotal": 740000,
-    "isPartner": true,
+    "isPartner": false,
     "websiteLink": "https://www.accenture.com/",
     "contacts": [
       {
@@ -383,6 +383,236 @@
         "name": "Karl-Johan Kjellberg",
         "mail": "karl-johan.kjellberg@lime.tech",
         "phoneNumber": "+46736446930"
+      }
+    ]
+  },
+  {
+    "name": "Fackförbundet ST",
+    "id": "fackst",
+    "websiteLink": "https://st.org/medlemskap/bli-studentmedlem",
+    "employeesSweden": 120,
+    "founded": 1904,
+    "linkedIn": "https://www.linkedin.com/company/the-union-of-civil-servants-fackf-rbundet-st-/?originalSubdomain=se",
+    "instagram": "https://www.instagram.com/facketst/",
+    "facebook": "https://www.facebook.com/Facket/",
+    "isPartner": false,
+    "contacts": [
+      {
+        "name": "temp",
+        "mail": "temp",
+        "phoneNumber": "temp"
+      }
+    ]
+  },
+  {
+    "name": "Scania",
+    "id": "scania",
+    "websiteLink": "https://www.scania.com/group/en/home/career.html",
+    "slogan": "Scaniakvalitet hela vägen",
+    "founded": 1891,
+    "employeesSweden": 20000,
+    "employeesTotal": 50000,
+    "linkedIn": "https://www.linkedin.com/company/scania/",
+    "instagram": "https://www.instagram.com/scaniagroup/",
+    "facebook": "https://facebook.com/scaniagroup",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "Digitala Medier",
+      "SIADK",
+      "SGAMK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SMINO",
+      "SSLIO",
+      "SDSBO",
+      "SPROM",
+      "SDKIO",
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime",
+      "thesis",
+      "trainee",
+      "Praktikplatser",
+      "foreignServices"
+    ],
+    "contacts": [
+      {
+        "name": "Team Employer Branding Sweden",
+        "mail": "employerbranding.sweden@scania.com",
+        "phoneNumber": "08-553 81000"
+      }
+    ]
+  },
+  {
+    "name": "Capgemini",
+    "id": "capgemini",
+    "websiteLink": "https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/ignite-graduate-program/",
+    "slogan": "Together we can give technology that human touch the world needs",
+    "founded": 1967,
+    "employeesSweden": 4400,
+    "employeesTotal": 35000,
+    "linkedIn": "https://www.linkedin.com/company/capgemini/",
+    "instagram": "https://www.instagram.com/capgeminisweden?igsh=aGdnMm1lZWVnZGFv",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "SIADK"
+    ],
+    "masterPrograms": [
+      "SHINO",
+      "SMINO",
+      "SPROM",
+      "SSLIO",
+      "SDSBO",
+      "SMEFO",
+      "SDKIO",
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime",
+      "thesis",
+      "trainee",
+      "Praktikplatser",
+      "foreignServices"
+    ],
+    "contacts": [
+      {
+        "name": "Emma Karlsson",
+        "mail": "emma.a.karlsson@capgemini.com",
+        "phoneNumber": "+ 46 73 231 63 81"
+      }
+    ]
+  },
+  {
+    "name": "Sopra Steria",
+    "id": "soprasteria",
+    "websiteLink": "https://www.soprasteria.se/karriar/",
+    "slogan": "Its opportunities are infinite.",
+    "founded": 1968,
+    "employeesSweden": 600,
+    "employeesTotal": 60000,
+    "linkedIn": "https://www.linkedin.com/company/soprasteria/",
+    "instagram": "https://www.instagram.com/soprasteria_se",
+    "facebook": "https://www.facebook.com/soprasteria.se/",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "SDIMK",
+      "SMARK",
+      "SIADK",
+      "SGAMK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SMINO",
+      "SMEFO",
+      "SCSSO",
+      "SHINO",
+      "SSLIO",
+      "SDSBO",
+      "SPROM",
+      "SDKIO"
+    ],
+    "positions": [
+      "fullTime",
+      "partTime"
+    ],
+    "contacts": [
+      {
+        "name": "TraineeprogramIna Tran",
+        "mail": "ina.tran@soprasteria.com",
+        "phoneNumber": "073-8500130"
+      }
+    ]
+  },
+  {
+    "name": "Polismyndigheten",
+    "id": "polisen",
+    "websiteLink": "https://polisen.se/jobb-och-utbildning/lediga-jobb/",
+    "slogan": "Har koden till ett tryggt och säkert Sverige",
+    "founded": 2015,
+    "employeesSweden": 35500,
+    "linkedIn": "https://www.linkedin.com/company/polismyndigheten",
+    "instagram": "https://www.instagram.com/polisen/",
+    "facebook": "https://www.facebook.com/Polisen/?locale=sv_SE",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "SDIMK",
+      "SMARK",
+      "SIADK",
+      "SGAMK"
+    ],
+    "masterPrograms": [
+      "SHINO",
+      "SMINO",
+      "SPROM",
+      "SSLIO",
+      "SDSBO",
+      "SMEFO",
+      "SDKIO",
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime",
+      "thesis",
+      "trainee",
+      "internship"
+    ],
+    "contacts": [
+      {
+        "name": "Adiba",
+        "mail": "student.it-avdelningen@polisen.se"
+      }
+    ]
+  },
+  {
+    "name": "Innofactor",
+    "id": "innofactor",
+    "websiteLink": "https://www.innofactor.com/se/karriar/",
+    "slogan": "We offer value through innovation.",
+    "founded": 2000,
+    "employeesSweden": 100,
+    "employeesTotal": 550,
+    "linkedIn": "https://www.linkedin.com/company/innofactor-plc/mycompany/verification/",
+    "instagram": "https://www.instagram.com/innofactor/",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK"
+    ],
+    "masterPrograms": [
+      "SMINO",
+      "SSLIO",
+      "SDSBO",
+      "SMEFO",
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime"
+    ],
+    "contacts": [
+      {
+        "name": "Elin Trotz",
+        "mail": "elin.trotz@innofactor.com",
+        "phoneNumber": "0735263876"
       }
     ]
   }

@@ -7,6 +7,7 @@
         "programs": "programs",
         "positions": "positions",
         "clearFilters": "Clear filters",
+        "searchPlaceholder": "Search company",
         "partners": "Our Partners",
         "allCompanies": "All Companies",
         "areaOfBusiness": "Area of business",
@@ -134,5 +135,54 @@
             "paragraph2": ""
         },
         "qualifications": "Business-minded, Interested in technology and IT, Reliable, Smart and gets things done, Not a sore loser, but you hate to lose, Wants to develop and learn more, A person with high emotional intelligence (EQ), Despite all this: humble with a sense of humor, Fluent in either Swedish, Danish, Finnish, or Norwegian – depending on where you want to work."
+    },
+    "stfack": {
+        "areaOfBusiness": "",
+        "description": {
+            "paragraph1": "w",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "scania": {
+        "areaOfBusiness": "Software Development, Cloud, Cyber Security, AI, Machine Learning, Industry 4.0, Computer Vision, Data Science,",
+        "description": {
+            "paragraph1": "Scania’s culture is both pragmatic and ambitious. We want to drive real change and by harnessing the power of innovation, we are finding answers to some of our most urgent sustainability challenges, from urban mobility to climate change. At the same time, technologies such as electrification and automation are radically re-shaping our business, creating exciting new opportunities and business models.",
+            "paragraph2": ""
+        },
+        "qualifications": "Java, Python, C++, JavaScript, C#, SQL, TypeScript, Scala, Kotlin, AWS, Azure."
+    },
+    "capgemini": {
+        "areaOfBusiness": "IT, Management, and Engineering.",
+        "description": {
+            "paragraph1": "Capgemini is a global leader in partnering with companies to transform and manage their business by harnessing the power of technology. The Group is guided every day by its purpose of unleashing human energy through technology for an inclusive and sustainable future. It is a responsible and diverse organization of nearly 350,000 team members in more than 50 countries. With its strong 55-year heritage and deep industry expertise, Capgemini is trusted by its clients to address the entire breadth of their business needs, from strategy and design to operations, fueled by the fast evolving and innovative world of cloud, data, AI, connectivity, software, digital engineering, and platforms. Get The Future You Want | www.capgemini.com",
+            "paragraph2": ""
+        },
+        "qualifications": "When applying to Capgemini's graduate program, you choose a role based on your education and interests. Read more about the different roles here: https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/ignite-graduate-program/"
+    },
+    "soprasteria": {
+        "areaOfBusiness": "IT, Design, Management, Business, Projektledning, Webbutveckling, Systemutveckling, Data & Analytics, Microsoft Business Applications, CRM, ERP, Affärssystem, Salesforce, ServiceNow, Cloud, Cyber Security",
+        "description": {
+            "paragraph1": "Sopra Steria is a leading international consultancy company in IT, design, and management. We build society through innovative digital solutions and offer everything from data analysis, business and organizational development, project and change management, to system development, testing, deployment, and daily management of IT systems. In 2023, we were named Sweden's Best Workplace by Great Place to Work and ranked by Gartner as one of the top 5 companies in digital transformation. Our Accelerate program has been recognized as Sweden's most attractive trainee program in IT, and we have also been awarded the Karriärföretag designation for several consecutive years. Globally, we have 60,000 employees spread across 30 countries. In Sweden, we are over 600 employees with offices in Stockholm, Gothenburg, Malmö, Östersund, and Sundsvall. We believe in well-being, security, and trust as the best foundation for proactivity and creativity. As an employee with us, you will have fair conditions, a long-term perspective on your career path, and excellent opportunities for development. Together, we reach further.",
+            "paragraph2": ""
+        },
+        "qualifications": "Proficient in spoken and written Swedish and English. Recently graduated at bachelor's or master's level and your degree should not be more than one year old. Good listener and communicator. Ambitious and goal-oriented."
+    },
+    "polisen": {
+        "areaOfBusiness": "System development, project management, UX design, testing, requirements analyst, technical specialists, technical product specialists, CI/CD, AI, ML, NLP, analysts, IT security.",
+        "description": {
+            "paragraph1": "Police IT is a part of the law enforcement work, providing service to citizens and making it easier for the agency's employees to carry out their tasks. As digitalization increases, the police must be able to handle larger amounts of data, take advantage of new technologies, and stay one step ahead of criminals, without compromising security and legal certainty. Working in the police IT is being a crucial part of law enforcement work. Whether it's about developing new forensic technology or communicating via police radio, well-functioning IT solutions are required.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "innofactor": {
+        "areaOfBusiness": "Cybersecurity, Cloud Infrastructure and Business Solutions",
+        "description": {
+            "paragraph1": "Innofactor's goal is to be a leader in digitalization and cloud solutions in all Nordic countries. Our mission is to help our clients digitalize their businesses, promote community-based work, and develop their business processes through data-driven decision-making and secure cloud services. In collaboration with our clients, partners, and investors, we implement solutions that help our clients succeed. With us, you can be yourself! Here, no one is molded into the same form. We value the differences of our employees and believe that challenging tasks require new and diverse perspectives. Everyone has different qualities, which is why we don’t believe in writing a list of qualities we’re looking for. What’s important, however, is that you enjoy solving complex problems, like sharing knowledge, and are self-driven.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
     }
 }
+

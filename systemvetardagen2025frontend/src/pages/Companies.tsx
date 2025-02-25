@@ -21,6 +21,8 @@ const Companies: React.FC = () => {
         positions: new Set(),
     });
 
+    const [searchTerm, setSearchTerm] = useState<string>('');
+
     const [programsExpanded, setProgramsExpanded] = useState<boolean>(false);
     const [positionsExpanded, setPositionsExpanded] = useState<boolean>(false);
 
@@ -85,12 +87,17 @@ const Companies: React.FC = () => {
     };
 
     const filteredCompanies = companies.filter((company: Company) => {
+        // Search filter
+        const matchesSearch =
+            searchTerm === '' ||
+            company.name.toLowerCase().includes(searchTerm.toLowerCase());
+
         const isFilterEmpty =
             selectedFilters.candidatePrograms.size === 0 &&
             selectedFilters.masterPrograms.size === 0 &&
             selectedFilters.positions.size === 0;
 
-        if (isFilterEmpty) {
+        if (isFilterEmpty && matchesSearch) {
             return true;
         }
 
@@ -119,7 +126,10 @@ const Companies: React.FC = () => {
                 ));
 
         return (
-            matchesCandidateProgram && matchesMasterProgram && matchesPosition
+            matchesSearch &&
+            matchesCandidateProgram &&
+            matchesMasterProgram &&
+            matchesPosition
         );
     });
 
@@ -141,9 +151,10 @@ const Companies: React.FC = () => {
         );
     };
 
-    const noFiltersSelected = Object.values(selectedFilters).every(
-        (filterSet) => filterSet.size === 0
-    );
+    const noFiltersSelected =
+        Object.values(selectedFilters).every(
+            (filterSet) => filterSet.size === 0
+        ) && searchTerm === '';
     const partners = companies.filter((company) => company.isPartner);
     return (
         <div className="bg-background min-h-screen">
@@ -210,6 +221,29 @@ const Companies: React.FC = () => {
                                         : 'max-h-0 opacity-0 overflow-hidden'
                                 }`}
                             ></div>
+                        </div>
+                    </div>
+                    <div className="w-full mb-4">
+                        <div className="relative">
+                            <input
+                                type="text"
+                                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder={t('global.searchPlaceholder')}
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+                            {searchTerm && (
+                                <button
+                                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                                    onClick={() => setSearchTerm('')}
+                                    aria-label={
+                                        t('search.clearSearch') ||
+                                        'Clear search'
+                                    }
+                                >
+                                    ✕
+                                </button>
+                            )}
                         </div>
                     </div>
                     <div className="relative">
@@ -351,6 +385,14 @@ const Companies: React.FC = () => {
                             />
                         </FadeInSection>
                     ))}
+                    <FadeInSection direction="fadeLeft">
+                        <div className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4 text-center text-2xl">
+                            <div className="h-32 w-56 flex justify-center flex-col">
+                                <p>More companies</p>
+                                <p>coming!</p>
+                            </div>
+                        </div>
+                    </FadeInSection>
                 </div>
             </div>
         </div>
