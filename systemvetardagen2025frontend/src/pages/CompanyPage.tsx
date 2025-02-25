@@ -4,15 +4,21 @@ import companiesData from '../assets/companies.json';
 import { Company } from '../assets/companies';
 import { useTranslation } from 'react-i18next';
 import { Contact as ContactType } from '../assets/companies';
-import { Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Linkedin, Instagram, Facebook, Briefcase, Calendar, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+// Centered even box shadow style
+const centeredShadow = '0 0 20px rgba(0, 0, 0, 0.15)';
 
 const companies: Company[] = companiesData;
 
 const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
     const [t] = useTranslation('companies');
     return (
-        <div className="p-8 flex flex-col gap-1 rounded-2xl shadow-md bg-white text-center">
+        <div
+            className="p-8 flex flex-col gap-1 rounded-2xl bg-white text-center"
+            style={{ boxShadow: centeredShadow }}
+        >
             <h1 className="text-2xl">{t('global.contact')}</h1>
             <h2>{name}</h2>
             <a className="text-link" href={`mailto:${mail}`}>
@@ -32,7 +38,10 @@ const RecruitmentCard: React.FC<Company> = (company) => {
         company.candidatePrograms &&
         company.masterPrograms &&
         company.positions && (
-            <div className="p-6 bg-white rounded-lg shadow-md w-full max-w-5xl mx-auto">
+            <div
+                className="p-6 bg-white rounded-lg w-full max-w-5xl mx-auto"
+                style={{ boxShadow: centeredShadow }}
+            >
                 <h2 className="text-2xl font-bold text-center mb-6">
                     {t('global.lookingFor', { company: company.name })}
                 </h2>
@@ -72,7 +81,10 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                     </div>
                 )}
                 {open && (
-                    <div className="p-6 bg-white rounded-lg shadow-lg w-96 mx-auto">
+                    <div
+                        className="p-6 bg-white rounded-lg w-96 mx-auto"
+                        style={{ boxShadow: centeredShadow }}
+                    >
                         <h3 className="text-xl font-bold mb-4">
                             Bachelor&apos;s programmes
                         </h3>
@@ -104,7 +116,8 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ title, items, className }) => (
     <div
-        className={`p-4 bg-gray-100 rounded-lg shadow-sm border-l-4 font-light ${className}`}
+        className={`p-4 bg-gray-100 rounded-lg border-l-4 font-light ${className}`}
+        style={{ boxShadow: centeredShadow }}
     >
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <ul className="space-y-1 list-disc pl-4">
@@ -128,12 +141,15 @@ const CompanyPage: React.FC = () => {
     return (
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="relative w-full">
-                <div className="flex items-center justify-center h-[30vh] min-h-[250px] max-h-[400px] w-full overflow-hidden gradient-background">
-                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-gray-300 shadow-md rounded-xl p-6">
+                <div className="flex items-center justify-center h-[30vh] min-h-[300px] max-h-[400px] w-full overflow-hidden gradient-background">
+                    <div
+                        className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white rounded-xl p-6"
+                        style={{ boxShadow: centeredShadow }}
+                    >
                         <img
                             src={logoPath}
                             alt={`${company.name} logo`}
-                            className="max-w-[75vw] max-h-[125px] object-contain"
+                            className="h-32 w-auto max-w-[600px] object-contain"
                         />
                     </div>
                 </div>
@@ -143,36 +159,68 @@ const CompanyPage: React.FC = () => {
                 {company.slogan && (
                     <h2 className="text-lg text-gray-600">{company.slogan}</h2>
                 )}
-                <div className="text-left shadow-md rounded-3xl w-[400px] max-w-[90vw] p-4 flex gap-4 flex-col">
-                    <div className='font-light'>
-                        <h1>{t('global.areaOfBusiness')}</h1>
-                        {t(`${companyId}.areaOfBusiness`)}
-                    </div>
-                    <div className="flex justify-between gap-10">
-                        <strong>{t('global.founded')}</strong>
-                        <span>{company.founded}</span>
-                    </div>
-                    {company.employeesSweden && (
-                        <div className="flex justify-between gap-10">
-                            <strong>{t('global.employeesInSweden')}</strong>
-                            <span>
-                                {company.employeesSweden.toLocaleString(
-                                    'sv-SE'
-                                )}
-                            </span>
+                <div
+                    className="bg-white rounded-3xl w-[500px] max-w-[95vw] p-6"
+                    style={{ boxShadow: centeredShadow }}
+                >
+                    <div className="flex flex-col gap-5">
+                        <div className="flex items-start gap-3">
+                            <div className="text-blue-500 mt-1">
+                                <Briefcase size={20} />
+                            </div>
+                            <div className="flex-1">
+                                <h3 className="text-gray-600 text-sm font-medium">
+                                    {t('global.areaOfBusiness')}
+                                </h3>
+                                <p className="text-gray-800">
+                                    {t(`${companyId}.areaOfBusiness`)}
+                                </p>
+                            </div>
                         </div>
-                    )}
-                    {company.employeesTotal && (
-                        <div className="flex justify-between gap-10">
-                            <strong>
-                                {t('global.employeesInternationally')}
-                            </strong>
-                            <span>
-                                {company.employeesTotal.toLocaleString('sv-SE')}
-                            </span>
+                        <div className="flex items-start gap-3">
+                            <div className="text-blue-500 mt-1">
+                                <Calendar size={20} />
+                            </div>
+                            <div className="flex-1">
+                                <h3 className="text-gray-600 text-sm font-medium">
+                                    {t('global.founded')}
+                                </h3>
+                                <p className="text-gray-800">{company.founded}</p>
+                            </div>
                         </div>
-                    )}
+                        {company.employeesSweden && (
+                            <div className="flex items-start gap-3">
+                                <div className="text-blue-500 mt-1">
+                                    <Users size={20} />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-gray-600 text-sm font-medium">
+                                        {t('global.employeesInSweden')}
+                                    </h3>
+                                    <p className="text-gray-800">
+                                        {company.employeesSweden.toLocaleString('sv-SE')}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                        {company.employeesTotal && (
+                            <div className="flex items-start gap-3">
+                                <div className="text-blue-500 mt-1">
+                                    <Users size={20} />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-gray-600 text-sm font-medium">
+                                        {t('global.employeesInternationally')}
+                                    </h3>
+                                    <p className="text-gray-800">
+                                        {company.employeesTotal.toLocaleString('sv-SE')}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
+
                 <div className="flex gap-4">
                     {company.linkedIn && (
                         <a href={company.linkedIn}>
@@ -193,11 +241,6 @@ const CompanyPage: React.FC = () => {
                 <p className="w-full max-w-5xl mx-auto text-justify">
                     {t(`${companyId}.description.paragraph1`)}
                 </p>
-                {/* <img
-                    className="rounded-3xl max-h-[200px] w-full object-cover"
-                    src={bannerPath}
-                    alt=""
-                /> */}
                 {t(`${companyId}.description.paragraph2`)?.trim() && (
                     <p className="w-full max-w-5xl mx-auto text-justify">
                         {t(`${companyId}.description.paragraph2`)}
@@ -205,12 +248,7 @@ const CompanyPage: React.FC = () => {
                 )}
                 {company.video && (
                     <div className="flex justify-center">
-                        <video
-                            className="rounded-3xl"
-                            controls
-                            autoPlay
-                            width="600"
-                        >
+                        <video className="rounded-3xl" controls autoPlay width="600">
                             <source src={company.video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -225,12 +263,12 @@ const CompanyPage: React.FC = () => {
                                 name={contact.name}
                                 mail={contact.mail}
                                 phoneNumber={contact.phoneNumber}
-                            ></Contact>
+                            />
                         ))}
                 </div>
                 <a
                     className="text-link text-2xl text-center font-bold hover:underline"
-                    rel='nofollow'
+                    rel="nofollow"
                     href={company.websiteLink}
                 >
                     {t('global.learnMore', { company: company.name })}
@@ -238,15 +276,15 @@ const CompanyPage: React.FC = () => {
                 <div className="flex gap-4">
                     <Link
                         to="/companies"
-                        className="rounded-2xl shadow-md p-4 border-2 transition-all duration-100 hover:scale-105"
+                        className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105"
+                        style={{ boxShadow: centeredShadow }}
                     >
                         {t('global.backToCompanies')}
                     </Link>
                     <button
-                        onClick={() =>
-                            window.scrollTo({ top: 0, behavior: 'smooth' })
-                        }
-                        className="rounded-2xl shadow-md p-4 border-2 transition-all duration-100 hover:scale-105"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105"
+                        style={{ boxShadow: centeredShadow }}
                     >
                         {t('global.scrollToTop')}
                     </button>
