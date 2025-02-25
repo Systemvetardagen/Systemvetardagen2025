@@ -9,6 +9,7 @@ import {
 import companiesData from '../assets/companies.json';
 import { useTranslation } from 'react-i18next';
 import FadeInSection from '../components/FadeInSection/FadeInSection';
+import { Link } from 'react-router-dom';
 
 const Companies: React.FC = () => {
     const companies: Company[] = companiesData;
@@ -140,13 +141,13 @@ const Companies: React.FC = () => {
         const logoPath = `/companies/${company.id}/logo.webp`;
         return (
             <div className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4">
-                <a className="" href={`/companies/${company.id}`}>
+                <Link className="" to={`/companies/${company.id}`}>
                     <img
                         src={logoPath}
                         className={`object-contain ${className}`}
                         alt={`${company.name} logo`}
                     />
-                </a>
+                </Link>
             </div>
         );
     };

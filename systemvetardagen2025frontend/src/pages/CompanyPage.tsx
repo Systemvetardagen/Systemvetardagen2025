@@ -5,6 +5,7 @@ import { Company } from '../assets/companies';
 import { useTranslation } from 'react-i18next';
 import { Contact as ContactType } from '../assets/companies';
 import { Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const companies: Company[] = companiesData;
 
@@ -235,12 +236,12 @@ const CompanyPage: React.FC = () => {
                     {t('global.learnMore', { company: company.name })}
                 </a>
                 <div className="flex gap-4">
-                    <a
-                        href="/companies"
+                    <Link
+                        to="/companies"
                         className="rounded-2xl shadow-md p-4 border-2 transition-all duration-100 hover:scale-105"
                     >
                         {t('global.backToCompanies')}
-                    </a>
+                    </Link>
                     <button
                         onClick={() =>
                             window.scrollTo({ top: 0, behavior: 'smooth' })
