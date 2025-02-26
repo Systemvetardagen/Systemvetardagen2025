@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, Linkedin, Github } from 'lucide-react';
 import { Team } from './teamData';
+import FadeInSection from '../FadeInSection/FadeInSection';
 
 interface SocialLinksProps {
     linkedIn?: string;
@@ -40,52 +41,54 @@ const TeamSection: React.FC<Team> = ({
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-        <div className="space-y-4">
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                    <p className="font-medium">Head</p>
-                    <p>{head.name}</p>
-                    <SocialLinks {...head} />
-                </div>
-                {viceHead && (
+        <FadeInSection direction="fadeLeft">
+            <div className="space-y-4">
+                <h3 className="text-xl font-semibold">{title}</h3>
+                <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                        <p className="font-medium">Vice Head</p>
-                        <p>{viceHead.name}</p>
-                        <SocialLinks {...viceHead} />
+                        <p className="font-medium">Head</p>
+                        <p>{head.name}</p>
+                        <SocialLinks {...head} />
+                    </div>
+                    {viceHead && (
+                        <div className="space-y-2">
+                            <p className="font-medium">Vice Head</p>
+                            <p>{viceHead.name}</p>
+                            <SocialLinks {...viceHead} />
+                        </div>
+                    )}
+                </div>
+                {teamMembers && teamMembers.length > 0 && (
+                    <div className="space-y-4">
+                        <button
+                            onClick={() => setIsExpanded(!isExpanded)}
+                            className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-md hover:opacity-90 transition-opacity"
+                        >
+                            Team Members
+                            <ChevronDown
+                                className={`transform transition-transform duration-200 ${
+                                    isExpanded ? 'rotate-180' : ''
+                                }`}
+                            />
+                        </button>
+                        <div
+                            className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300 ease-in-out ${
+                                isExpanded
+                                    ? 'max-h-[1000px] opacity-100'
+                                    : 'max-h-0 opacity-0 overflow-hidden'
+                            }`}
+                        >
+                            {teamMembers.map((member, index) => (
+                                <div key={index} className="space-y-2">
+                                    <p>{member.name}</p>
+                                    <SocialLinks {...member} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 )}
             </div>
-            {teamMembers && teamMembers.length > 0 && (
-                <div className="space-y-4">
-                    <button
-                        onClick={() => setIsExpanded(!isExpanded)}
-                        className="flex items-center gap-2 px-4 py-2 bg-link text-white rounded-md hover:opacity-90 transition-opacity"
-                    >
-                        Team Members
-                        <ChevronDown
-                            className={`transform transition-transform duration-200 ${
-                                isExpanded ? 'rotate-180' : ''
-                            }`}
-                        />
-                    </button>
-                    <div
-                        className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300 ease-in-out ${
-                            isExpanded
-                                ? 'max-h-[1000px] opacity-100'
-                                : 'max-h-0 opacity-0 overflow-hidden'
-                        }`}
-                    >
-                        {teamMembers.map((member, index) => (
-                            <div key={index} className="space-y-2">
-                                <p>{member.name}</p>
-                                <SocialLinks {...member} />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
-        </div>
+        </FadeInSection>
     );
 };
 

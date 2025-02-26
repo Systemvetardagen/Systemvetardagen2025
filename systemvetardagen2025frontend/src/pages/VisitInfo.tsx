@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SignupLink from '../components/SignupLink/SignupLink';
 import Partners from '../components/Partners/Partners';
 import lecturesData from '../data/lectures.json';
+import FadeInSection from '../components/FadeInSection/FadeInSection';
 
 const lectures: Lecture[] = lecturesData;
 
@@ -16,11 +17,11 @@ interface LectureItemProps {
 }
 const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
     return (
-        <div className="mb-8">
+        <FadeInSection direction='fadeLeft' className="mb-8">
             <p className="text-md text-white ">{lecture.time}</p>
             <h1 className="font-semibold text-3xl">{lecture.company}</h1>
             <p className="text-md text-white font-ibm">{lecture.topic}</p>
-        </div>
+        </FadeInSection>
     );
 };
 
@@ -35,11 +36,11 @@ const VisitInfo: React.FC = () => {
                     className="object-cover w-full h-full object-[50%_70%]"
                 />
             </div>
-            <h1 className="font-bold text-2xl lg:text-4xl mt-10">
+            <h1 className="font-bold text-2xl lg:text-4xl mt-10 fadeLeft">
                 {t('header')}
             </h1>
-            <p className="text-gray-500 font-light mx-8 ">{t('sub-header')}</p>
-            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center">
+            <p className="text-gray-500 font-light mx-8 fadeRight">{t('sub-header')}</p>
+            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
                 <h1 className="text-2xl lg:text-3xl font-light">
                     {t('lectures.header')}
                 </h1>

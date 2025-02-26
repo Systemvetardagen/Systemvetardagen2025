@@ -183,5 +183,20 @@
             "paragraph2": ""
         },
         "qualifications": ""
+    },
+    "deloitte": {
+        "areaOfBusiness": "Cyber Security, IT Audit, Data & Analytics, Management Consulting, Tax Technology Consulting, FinTech, och mer.",
+        "description": {
+            "paragraph1": "Deloitte är en ledande global tjänsteleverantör och erbjuder tjänster inom revision, consulting, finansiell rådgivning, riskhantering, skatterådgivning och relaterade tjänster till noterade och privatägda klienter inom en mängd branscher. Deloitte assisterar fyra av fem företag på Fortune Global 500® genom ett globalt nätverk av medlemsfirmor i mer än 150 länder och cirka 457 000+ medarbetare. Med spetskompetens av världsklass och högkvalitativa tjänster hjälper vi våra klienter att lösa deras mest komplexa utmaningar. Att vi är globalt integrerade gör att våra klienter kan vara säkra på att våra tjänster är av samma höga kvalitet oavsett när och var de levereras.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "pension": {
+        "areaOfBusiness": "Offentlig förvaltning",
+        "description": {
+            "paragraph1": "Ett jobb som berör alla Pensionsmyndigheten är en viktig del i samhället. Varje månad betalar vi ut pension till över två miljoner pensionärer och förvaltar den framtida pensionen för sex miljoner sparare. Vårt uppdrag är att administrera, betala ut och informera om den allmänna pensionen. Med individen i fokus ökar vi kunskapen om pensionssystemet. Vi förändrar uppfattningen om att pension är svårt och krångligt till att vara enkelt och förutsebart. Vill du jobba med något som är viktigt för många?"
+        },
+        "qualifications": ""
     }
 }

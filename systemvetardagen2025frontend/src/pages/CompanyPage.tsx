@@ -4,20 +4,29 @@ import companiesData from '../assets/companies.json';
 import { Company } from '../assets/companies';
 import { useTranslation } from 'react-i18next';
 import { Contact as ContactType } from '../assets/companies';
-import { Linkedin, Instagram, Facebook, Briefcase, Calendar, Users } from 'lucide-react';
+import {
+    Linkedin,
+    Instagram,
+    Facebook,
+    Briefcase,
+    Calendar,
+    Users,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
+import FadeInSection from '../components/FadeInSection/FadeInSection';
 
 // Centered even box shadow style
-const centeredShadow = '0 0 20px rgba(0, 0, 0, 0.15)';
+// const centeredShadow = '0 0 20px rgba(0, 0, 0, 0.15)';
 
 const companies: Company[] = companiesData;
 
 const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
     const [t] = useTranslation('companies');
     return (
-        <div
-            className="p-8 flex flex-col gap-1 rounded-2xl bg-white text-center"
-            style={{ boxShadow: centeredShadow }}
+        <FadeInSection
+            triggerOnce={true}
+            direction="fadeUp"
+            className="p-8 flex flex-col gap-1 rounded-2xl shadow-md bg-white text-center"
         >
             <h1 className="text-2xl">{t('global.contact')}</h1>
             <h2>{name}</h2>
@@ -27,7 +36,7 @@ const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
             <a className="text-link" href={`tel:${phoneNumber}`}>
                 {phoneNumber}
             </a>
-        </div>
+        </FadeInSection>
     );
 };
 
@@ -38,53 +47,61 @@ const RecruitmentCard: React.FC<Company> = (company) => {
         company.candidatePrograms &&
         company.masterPrograms &&
         company.positions && (
-            <div
-                className="p-6 bg-white rounded-lg w-full max-w-5xl mx-auto"
-                style={{ boxShadow: centeredShadow }}
-            >
-                <h2 className="text-2xl font-bold text-center mb-6">
+            <div className="p-6 bg-white shadow-lg rounded-lg w-full max-w-5xl mx-auto">
+                <FadeInSection
+                    triggerOnce={true}
+                    direction="fadeDown"
+                    className="text-2xl font-bold text-center mb-6"
+                >
                     {t('global.lookingFor', { company: company.name })}
-                </h2>
+                </FadeInSection>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Card
-                        title="Bachelor Programs"
-                        items={company.candidatePrograms.map((program) =>
-                            t(`programs.${program}`)
-                        )}
-                        className="bg-[#ffd0e4] border-[#DB2677] text-[#DB2677]"
-                    />
-                    <Card
-                        title="Master Programs"
-                        items={company.masterPrograms.map((program) =>
-                            t(`programs.${program}`)
-                        )}
-                        expandable
-                        onExpand={() => setOpen(true)}
-                        className="bg-[#e2ccff] border-[#9332E9] text-[#9332E9]"
-                    />
-                    <Card
-                        title="Positions"
-                        items={company.positions.map((position) =>
-                            t(`positions.${position}`)
-                        )}
-                        className="bg-[#cbe1ff] border-[#2762EA] text-[#2762EA]"
-                    />
+                    <FadeInSection direction="fadeLeft" triggerOnce={true}>
+                        <Card
+                            title="Bachelor Programs"
+                            items={company.candidatePrograms.map((program) =>
+                                t(`programs.${program}`)
+                            )}
+                            className="bg-bachelors border-[#DB2677] text-[#DB2677]"
+                        />
+                    </FadeInSection>
+                    <FadeInSection direction="fadeDown" triggerOnce={true}>
+                        <Card
+                            title="Master Programs"
+                            items={company.masterPrograms.map((program) =>
+                                t(`programs.${program}`)
+                            )}
+                            expandable
+                            onExpand={() => setOpen(true)}
+                            className="bg-masters border-[#9332E9] text-[#9332E9]"
+                        />
+                    </FadeInSection>
+                    <FadeInSection direction="fadeRight" triggerOnce={true}>
+                        <Card
+                            title="Positions"
+                            items={company.positions.map((position) =>
+                                t(`positions.${position}`)
+                            )}
+                            className="bg-positions border-[#2762EA] text-[#2762EA]"
+                        />
+                    </FadeInSection>
                 </div>
                 {t(`${company.id}.qualifications`)?.trim() && (
-                    <div className="mt-6 p-4 bg-[#FEF9C2] border-l-4 font-light border-[#CA8C0A] rounded-lg">
+                    <FadeInSection
+                        triggerOnce={true}
+                        direction="fadeUp"
+                        className="mt-6 p-4 bg-[#FEF9C2] border-l-4 shadow-md font-light border-[#CA8C0A] rounded-lg"
+                    >
                         <h3 className="font-semibold text-lg mb-2 text-[#CA8C0A]">
                             {t('global.qualifications')}
                         </h3>
                         <p className="font-light text-gray-900">
                             {t(`${company.id}.qualifications`)}
                         </p>
-                    </div>
+                    </FadeInSection>
                 )}
                 {open && (
-                    <div
-                        className="p-6 bg-white rounded-lg w-96 mx-auto"
-                        style={{ boxShadow: centeredShadow }}
-                    >
+                    <div className="p-6 bg-white rounded-lg w-96 shadow-md mx-auto">
                         <h3 className="text-xl font-bold mb-4">
                             Bachelor&apos;s programmes
                         </h3>
@@ -116,8 +133,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ title, items, className }) => (
     <div
-        className={`p-4 bg-gray-100 rounded-lg border-l-4 font-light ${className}`}
-        style={{ boxShadow: centeredShadow }}
+        className={`p-4 h-full bg-gray-100 rounded-lg border-l-4 shadow-md font-light ${className}`}
     >
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <ul className="space-y-1 list-disc pl-4">
@@ -142,10 +158,7 @@ const CompanyPage: React.FC = () => {
         <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
             <div className="relative w-full">
                 <div className="flex items-center justify-center h-[30vh] min-h-[300px] max-h-[400px] w-full overflow-hidden gradient-background">
-                    <div
-                        className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white rounded-xl p-6"
-                        style={{ boxShadow: centeredShadow }}
-                    >
+                    <div className="absolute -bottom-10 left-1/2 transform shadow-md -translate-x-1/2 bg-white rounded-xl p-6">
                         <img
                             src={logoPath}
                             alt={`${company.name} logo`}
@@ -159,12 +172,13 @@ const CompanyPage: React.FC = () => {
                 {company.slogan && (
                     <h2 className="text-lg text-gray-600">{company.slogan}</h2>
                 )}
-                <div
-                    className="bg-white rounded-3xl w-[500px] max-w-[95vw] p-6"
-                    style={{ boxShadow: centeredShadow }}
-                >
+                <div className="bg-white rounded-3xl w-[500px] max-w-[95vw] p-6 shadow-md">
                     <div className="flex flex-col gap-5">
-                        <div className="flex items-start gap-3">
+                        <FadeInSection
+                            triggerOnce={true}
+                            direction="fadeLeft"
+                            className="flex items-start gap-3"
+                        >
                             <div className="text-blue-500 mt-1">
                                 <Briefcase size={20} />
                             </div>
@@ -176,8 +190,12 @@ const CompanyPage: React.FC = () => {
                                     {t(`${companyId}.areaOfBusiness`)}
                                 </p>
                             </div>
-                        </div>
-                        <div className="flex items-start gap-3">
+                        </FadeInSection>
+                        <FadeInSection
+                            triggerOnce={true}
+                            direction="fadeLeft"
+                            className="flex items-start gap-3"
+                        >
                             <div className="text-blue-500 mt-1">
                                 <Calendar size={20} />
                             </div>
@@ -185,11 +203,17 @@ const CompanyPage: React.FC = () => {
                                 <h3 className="text-gray-600 text-sm font-medium">
                                     {t('global.founded')}
                                 </h3>
-                                <p className="text-gray-800">{company.founded}</p>
+                                <p className="text-gray-800">
+                                    {company.founded}
+                                </p>
                             </div>
-                        </div>
+                        </FadeInSection>
                         {company.employeesSweden && (
-                            <div className="flex items-start gap-3">
+                            <FadeInSection
+                                triggerOnce={true}
+                                direction="fadeLeft"
+                                className="flex items-start gap-3"
+                            >
                                 <div className="text-blue-500 mt-1">
                                     <Users size={20} />
                                 </div>
@@ -198,13 +222,19 @@ const CompanyPage: React.FC = () => {
                                         {t('global.employeesInSweden')}
                                     </h3>
                                     <p className="text-gray-800">
-                                        {company.employeesSweden.toLocaleString('sv-SE')}
+                                        {company.employeesSweden.toLocaleString(
+                                            'sv-SE'
+                                        )}
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
                         )}
                         {company.employeesTotal && (
-                            <div className="flex items-start gap-3">
+                            <FadeInSection
+                                triggerOnce={true}
+                                direction="fadeLeft"
+                                className="flex items-start gap-3"
+                            >
                                 <div className="text-blue-500 mt-1">
                                     <Users size={20} />
                                 </div>
@@ -213,42 +243,54 @@ const CompanyPage: React.FC = () => {
                                         {t('global.employeesInternationally')}
                                     </h3>
                                     <p className="text-gray-800">
-                                        {company.employeesTotal.toLocaleString('sv-SE')}
+                                        {company.employeesTotal.toLocaleString(
+                                            'sv-SE'
+                                        )}
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
                         )}
                     </div>
                 </div>
 
                 <div className="flex gap-4">
                     {company.linkedIn && (
-                        <a href={company.linkedIn}>
-                            <Linkedin />
-                        </a>
+                        <FadeInSection triggerOnce={true} direction="fadeUp">
+                            <a rel="nofollow" href={company.linkedIn}>
+                                <Linkedin />
+                            </a>
+                        </FadeInSection>
                     )}
                     {company.instagram && (
-                        <a href={company.instagram}>
-                            <Instagram />
-                        </a>
+                        <FadeInSection triggerOnce={true} direction="fadeUp">
+                            <a rel="nofollow" href={company.instagram}>
+                                <Instagram />
+                            </a>
+                        </FadeInSection>
                     )}
                     {company.facebook && (
-                        <a href={company.facebook}>
-                            <Facebook />
-                        </a>
+                        <FadeInSection triggerOnce={true} direction="fadeUp">
+                            <a rel="nofollow" href={company.facebook}>
+                                <Facebook />
+                            </a>
+                        </FadeInSection>
                     )}
                 </div>
-                <p className="w-full max-w-5xl mx-auto text-justify">
+                <FadeInSection
+                    triggerOnce={true}
+                    direction="fadeLeft"
+                    className="w-full max-w-5xl mx-auto text-justify"
+                >
                     {t(`${companyId}.description.paragraph1`)}
-                </p>
-                {t(`${companyId}.description.paragraph2`)?.trim() && (
-                    <p className="w-full max-w-5xl mx-auto text-justify">
-                        {t(`${companyId}.description.paragraph2`)}
-                    </p>
-                )}
+                </FadeInSection>
                 {company.video && (
                     <div className="flex justify-center">
-                        <video className="rounded-3xl" controls autoPlay width="600">
+                        <video
+                            className="rounded-3xl"
+                            controls
+                            autoPlay
+                            width="600"
+                        >
                             <source src={company.video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -256,7 +298,7 @@ const CompanyPage: React.FC = () => {
                 )}
                 <RecruitmentCard {...company} />
                 <div className="flex flex-col md:flex-row justify-evenly gap-10">
-                    {company.contacts.length > 0 &&
+                    {company.contacts && company.contacts.length > 0 &&
                         company.contacts.map((contact, index) => (
                             <Contact
                                 key={index}
@@ -277,14 +319,14 @@ const CompanyPage: React.FC = () => {
                     <Link
                         to="/companies"
                         className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105"
-                        style={{ boxShadow: centeredShadow }}
                     >
                         {t('global.backToCompanies')}
                     </Link>
                     <button
-                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        onClick={() =>
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
                         className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105"
-                        style={{ boxShadow: centeredShadow }}
                     >
                         {t('global.scrollToTop')}
                     </button>

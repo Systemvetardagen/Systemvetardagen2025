@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectGroup from './ProjectContributors';
 import { useTranslation } from 'react-i18next';
+import FadeInSection from '../components/FadeInSection/FadeInSection';
 
 const About: React.FC = () => {
     const [t] = useTranslation('about');
@@ -15,23 +16,23 @@ const About: React.FC = () => {
                 <div className="space-y-12">
                     <section className="space-y-8">
                         <div className="space-y-6">
-                            <div>
+                            <FadeInSection direction='fadeLeft'>
                                 <h2 className="text-2xl font-semibold mb-3">
                                     {t('header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
                                     {t('body')}
                                 </p>
-                            </div>
-                            <div>
+                            </FadeInSection>
+                            <FadeInSection direction='fadeLeft'>
                                 <h2 className="text-2xl font-semibold mb-3">
                                     {t('where-when.header')}
                                 </h2>
                                 <p className="text-lg leading-relaxed">
                                     {t('where-when.body')}
                                 </p>
-                            </div>
-                            <div>
+                            </FadeInSection>
+                            <FadeInSection direction='fadeLeft'>
                                 <h2 className="text-2xl font-semibold mb-3">
                                     {t('companies.header')}
                                 </h2>
@@ -45,8 +46,8 @@ const About: React.FC = () => {
                                     </a>
                                     .
                                 </p>
-                            </div>
-                            <div>
+                            </FadeInSection>
+                            <FadeInSection direction='fadeLeft'>
                                 <h2 className="text-2xl font-semibold mb-3">
                                     {t('company-display.header')}
                                 </h2>
@@ -60,7 +61,7 @@ const About: React.FC = () => {
                                     </a>
                                     .
                                 </p>
-                            </div>
+                            </FadeInSection>
                         </div>
                     </section>
                     <ProjectGroup />

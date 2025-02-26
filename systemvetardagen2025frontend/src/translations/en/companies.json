@@ -51,136 +51,133 @@
     "cygni": {
         "areaOfBusiness": "Systems development, consulting",
         "description": {
-            "paragraph1": "Cygni, part of Accenture; we are an IT consultancy with the vision of being the best employer for passionate developers. Our consultants are full-stack, frontend, and mobile developers, UX designers, project managers, etc. All types of competences needed for helping our customers build the best digital solutions. Currently, we have offices in Sweden (Stockholm, Gothenburg, Malmö, Linköping, Luleå, and Östersund).",
-            "paragraph2": "At Cygni, competence development is highly prioritized. Every employee creates an individual development plan together with their consultant manager on their very first day. In the talent program, the entire talent team also meets to learn about different areas. \"The talent program at Cygni is a fantastic opportunity for those at the beginning of their careers as system developers. If you want to be part of a company that values its consultants, has a great community, and exciting clients - look no further.\" \"Cygni sponsors everything that's good,\" and we love spending time together! Therefore, we organize activities, including joint autumn and spring conferences."
+            "paragraph1": "Cygni, part of Accenture; we are an IT consultancy with the vision of being the best employer for passionate developers. Our consultants are full-stack, frontend, and mobile developers, UX designers, project managers, etc. All types of competences needed for helping our customers build the best digital solutions. Currently, we have offices in Sweden (Stockholm, Gothenburg, Malmö, Linköping, Luleå, and Östersund)."
         },
         "qualifications": "Knowledge of SQL Server and T-SQL, C#, DotNet, and WebAPI. Experience with cloud solutions, preferably within Azure. Azure DevOps, Kubernetes, Docker Swarm, or Service Fabric. Azure PaaS, SaaS, and IaaS services. Git, Powershell, Bash, Python, JavaScript, and React. Scrum. Finance. Fluency in Swedish is mandatory."
     },
     "accenture": {
         "areaOfBusiness": "IT consulting services, Strategy, Security, Business Intelligence, Interaction Design, Front End, Back End, ERP Systems, System Implementations, Design.",
         "description": {
-            "paragraph1": "Accenture is a global consultancy firm specializing in digitization, cloud services, and cybersecurity. Leveraging specialized knowledge and experience across 40 different industries, we provide services encompassing strategy, consultancy, IT, interactive solutions, and business optimization. Our presence is robust on both a global and local scale. Currently, we boast a workforce of 740 000 employees in over 120 countries, diligently delivering on the promise of technological and human ingenuity daily, with 1600 operating in Sweden.",
-            "paragraph2": "By embracing the transformative power of change, we generate value for customers, employees, shareholders, and society at large. In April 2021, software development company Cygni became a part of Accenture, and in June, we welcomed Sentor, experts in cybersecurity and managed security services. We are consistently on the lookout for talented individuals with diverse backgrounds and expertise, including recent university graduates and experienced professionals with extensive work experience. Curious about the opportunities available with us? Come and talk to us during Systemvetardagen!"
+            "paragraph1": "Accenture is a global consultancy firm specializing in digitization, cloud services, and cybersecurity. Leveraging specialized knowledge and experience across 40 different industries, we provide services encompassing strategy, consultancy, IT, interactive solutions, and business optimization. Our presence is robust on both a global and local scale. Currently, we boast a workforce of 740 000 employees in over 120 countries, diligently delivering on the promise of technological and human ingenuity daily, with 1600 operating in Sweden."
         },
         "qualifications": "Active union member, Exchange studies, Java, SQL, React, Angular, Python, HTML, CSS, Oracle, SAP, Cloud Services."
     },
     "handelsbanken": {
         "areaOfBusiness": "Handelsbanken IT",
         "description": {
-            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future.",
-            "paragraph2": ""
+            "paragraph1": "Handelsbanken is one of Sweden's largest banks with home markets in Sweden, Norway, the Netherlands and Great Britain. We are also one of Sweden's largest Tech organizations with over 2,000 employees who together develop the bank. In the entire group, we have just over 12,000 employees. Our way of conducting banking is based on having great trust and respect for the individual - both for our customers and employees. Our employees are given personal responsibility and great authority to make decisions in various matters relating to the business. Different experiences, knowledge and ways of solving problems contribute with different perspectives. With us, every person is important for us to create a sustainable bank, now and in the future."
         },
         "qualifications": ""
     },
     "ericsson": {
         "areaOfBusiness": "Information and communication technology",
         "description": {
-            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible.",
-            "paragraph2": ""
+            "paragraph1": "At Ericsson you’ll have a unique opportunity. The chance to use your skills and imagination to push the boundaries of what’s possible. To create never-seen-before solutions to some of the world’s toughest problems. You’ll be challenged. But you won’t be alone. You’ll be part of a team of like-minded innovators, all driven to go beyond the status quo to build what comes next. You’ll collaborate across disciplines, borders and continents. You’ll be empowered to lead and perform at your best. You’ll shape technology for people, societies, industries and humanity. You’ll be part of a diverse community where you can bring your own perfectly-unique self to work. At Ericsson you can be an explorer, a change maker and a force for good. Imagine a better, brighter tomorrow. You can be the one who makes it possible."
         },
         "qualifications": ""
     },
     "cgi": {
         "areaOfBusiness": "IT, Business consulting",
         "description": {
-            "paragraph1": "CGI is one of the largest IT and business consulting services firms in the world. Combining human ingenuity with the power of technology.",
-            "paragraph2": ""
+            "paragraph1": "CGI is one of the largest IT and business consulting services firms in the world. Combining human ingenuity with the power of technology."
         },
         "qualifications": ".NET, Azure, project management, architectures, Java, Ai, GCP, AWS, ISTQB, REQB, COBOL, PYTHON, SCRUM, Business intelligence, qliksense, power-bi, security, it-security."
     },
     "akavia": {
         "areaOfBusiness": "Trade Union",
         "description": {
-            "paragraph1": "Akavia is the trade union for you who have chosen the academic path. Our organisation was formed from the unions Jusek and Civilekonomerna in 2020. Akavia brings together 144,000 economists, lawyers, social scientists, IT professionals, HR specialists, and communication professionals. The union is politically non-affiliated and the third largest within Saco. Akavia wants each member to get a full return on their academic education, throughout their professional careers. As a student member of Akavia, you receive tools and a network to optimise the start of your career – completely free of charge.",
-            "paragraph2": "Akavia is the trade union for economists, lawyers, social scientists, IT academics, HR specialists, and communicators. You are currently investing significant effort and resources into your academic education – we work to ensure you get a return on that investment. With Akavia, you gain access to tools and networks to optimize the start of your career. As a student, membership is free, and our career advisors assist you with everything from finding job opportunities to negotiating your starting salary."
+            "paragraph1": "Akavia is the trade union for you who have chosen the academic path. Our organisation was formed from the unions Jusek and Civilekonomerna in 2020. Akavia brings together 144,000 economists, lawyers, social scientists, IT professionals, HR specialists, and communication professionals. The union is politically non-affiliated and the third largest within Saco. Akavia wants each member to get a full return on their academic education, throughout their professional careers. As a student member of Akavia, you receive tools and a network to optimise the start of your career – completely free of charge."
         },
         "qualifications": ""
     },
     "gtslAB": {
         "areaOfBusiness": "System development, Web development, UX design, Project management, Business systems, Business Analyst, Business Intelligence, AI, Machine Learning, IT security, and Testing",
         "description": {
-            "paragraph1": "At Guided Talent Solutions, we specialize in newly graduated tech talents. Through our various programs, you, as a tech talent, get a seamless transition from studies to working life. We help you kick-start your career through collaborations with some of Sweden's leading tech companies. With our talent programs and consulting assignments, we offer unique opportunities that combine hands-on work, tailored training, social activities, and mentorship. You will receive a comprehensive onboarding and introduction to your role, along with the chance to build a strong network and connect with other tech talents. We provide you with reliable guidance and support throughout your journey, ensuring you have the best conditions for success.",
-            "paragraph2": ""
+            "paragraph1": "At Guided Talent Solutions, we specialize in newly graduated tech talents. Through our various programs, you, as a tech talent, get a seamless transition from studies to working life. We help you kick-start your career through collaborations with some of Sweden's leading tech companies. With our talent programs and consulting assignments, we offer unique opportunities that combine hands-on work, tailored training, social activities, and mentorship. You will receive a comprehensive onboarding and introduction to your role, along with the chance to build a strong network and connect with other tech talents. We provide you with reliable guidance and support throughout your journey, ensuring you have the best conditions for success."
         },
         "qualifications": "C/C++, .Net/C#, Angular, JavaScript, HTML/CSS, React, Node.Js, Java, Python, AWS, Azure, SQL Server, ServiceNow, Kafka, PHP, Integration, DevOps, Jenkins, Kotlin, Machine Learning, AI, Test, requirements management, Cybersecurity, UX/UI, CI/CD, TDD"
     },
     "swedbank": {
         "areaOfBusiness": "IT security, software development, cloud services, AI and machine learning, network infrastructure, data analysis, and more.",
         "description": {
-            "paragraph1": "Swedbank is a full-service bank offering loans, payments, and savings solutions to simplify everyday life for individuals and businesses. We have our roots in the Swedish savings bank movement, which began in 1820.  As a major player in the financial market, Swedbank can influence communities, people, and the environment, contributing to more sustainable development. We strive to be sustainable both in our own operations and by setting requirements for the companies we collaborate with.",
-            "paragraph2": ""
+            "paragraph1": "Swedbank is a full-service bank offering loans, payments, and savings solutions to simplify everyday life for individuals and businesses. We have our roots in the Swedish savings bank movement, which began in 1820.  As a major player in the financial market, Swedbank can influence communities, people, and the environment, contributing to more sustainable development. We strive to be sustainable both in our own operations and by setting requirements for the companies we collaborate with."
         },
         "qualifications": ""
     },
     "kpmg": {
         "areaOfBusiness": "Consulting, Cyber Security, Information Security, Risk Consulting, Management Consulting, Technology Transformation and AI, Data Analytics, Financial Services Consulting, Information Risk Management, IT Audit.",
         "description": {
-            "paragraph1": "At KPMG, our mission is to inspire confidence and empower change. With a workforce of 2,400 employees in our region and a global network of 275,000 experts spanning 143 countries, we stand as one of the world's leading professional services firms. Our commitment is to deliver insightful business guidance and tailored expert advisory, audit, and tax services. Engineers, systems scientists, and tech experts play a pivotal role in many of our teams, enhancing our capabilities across various domains.  ",
-            "paragraph2": ""
+            "paragraph1": "At KPMG, our mission is to inspire confidence and empower change. With a workforce of 2,400 employees in our region and a global network of 275,000 experts spanning 143 countries, we stand as one of the world's leading professional services firms. Our commitment is to deliver insightful business guidance and tailored expert advisory, audit, and tax services. Engineers, systems scientists, and tech experts play a pivotal role in many of our teams, enhancing our capabilities across various domains.  "
         },
         "qualifications": "Strong analytical and problem-solving skills, knowledge of cybersecurity frameworks (e.g., NIST, ISO 27001), Information Security Management Systems (ISMS), risk assessment and management, strategic planning and organizational development, change management, proficiency in data analysis tools, understanding of financial regulations and compliance, IT auditing standards and practices, and excellent communication and presentation abilities."
     },
     "columbus": {
         "areaOfBusiness": "We implement end-to-end solutions in Cloud ERP, Data & AI, Digital Commerce, CX and Application Management within the manufacturing, retail & distribution, food & beverage and life science industries.",
         "description": {
-            "paragraph1": "As a leading digital consultancy, Columbus solves complex customer challenges in the manufacturing, retail & distribution, food & beverage, and life science industries. For many years, our graduate programmes have been a cornerstone of Columbus' success, enabling us to continuously implement business-critical solutions in Cloud ERP, Data & AI, Digital Commerce, Customer Experience & Engagement, Application Management Services, Cybersecurity, and ESG. Together with our customers, we transform organizations and prepare for the future.",
-            "paragraph2": ""
+            "paragraph1": "As a leading digital consultancy, Columbus solves complex customer challenges in the manufacturing, retail & distribution, food & beverage, and life science industries. For many years, our graduate programmes have been a cornerstone of Columbus' success, enabling us to continuously implement business-critical solutions in Cloud ERP, Data & AI, Digital Commerce, Customer Experience & Engagement, Application Management Services, Cybersecurity, and ESG. Together with our customers, we transform organizations and prepare for the future."
         },
         "qualifications": "IT, Affärssystem, Supply Chain, Ekonomi, Finans, Produktion, E-Handel, Utveckling, Business Intelligence"
     },
     "lime": {
         "areaOfBusiness": "Tech, IT, SaaS",
         "description": {
-            "paragraph1": "We are a listed company with 10 offices across 7 countries, growing at 20% annually since 2000. Founded in 1990, we expanded beyond the Nordics in 2020 and continue to grow through expansion and acquisitions.  What truly sets Lime apart is our people, a high-performing, caring team dedicated to creating exceptional customer experiences. We manage the entire product lifecycle, from development to delivery and support, ensuring seamless, high-quality solutions. #dontbreakthechain",
-            "paragraph2": ""
+            "paragraph1": "We are a listed company with 10 offices across 7 countries, growing at 20% annually since 2000. Founded in 1990, we expanded beyond the Nordics in 2020 and continue to grow through expansion and acquisitions.  What truly sets Lime apart is our people, a high-performing, caring team dedicated to creating exceptional customer experiences. We manage the entire product lifecycle, from development to delivery and support, ensuring seamless, high-quality solutions. #dontbreakthechain"
         },
         "qualifications": "Business-minded, Interested in technology and IT, Reliable, Smart and gets things done, Not a sore loser, but you hate to lose, Wants to develop and learn more, A person with high emotional intelligence (EQ), Despite all this: humble with a sense of humor, Fluent in either Swedish, Danish, Finnish, or Norwegian – depending on where you want to work."
     },
     "stfack": {
         "areaOfBusiness": "",
         "description": {
-            "paragraph1": "w",
-            "paragraph2": ""
+            "paragraph1": "w"
         },
         "qualifications": ""
     },
     "scania": {
         "areaOfBusiness": "Software Development, Cloud, Cyber Security, AI, Machine Learning, Industry 4.0, Computer Vision, Data Science,",
         "description": {
-            "paragraph1": "Scania’s culture is both pragmatic and ambitious. We want to drive real change and by harnessing the power of innovation, we are finding answers to some of our most urgent sustainability challenges, from urban mobility to climate change. At the same time, technologies such as electrification and automation are radically re-shaping our business, creating exciting new opportunities and business models.",
-            "paragraph2": ""
+            "paragraph1": "Scania’s culture is both pragmatic and ambitious. We want to drive real change and by harnessing the power of innovation, we are finding answers to some of our most urgent sustainability challenges, from urban mobility to climate change. At the same time, technologies such as electrification and automation are radically re-shaping our business, creating exciting new opportunities and business models."
         },
         "qualifications": "Java, Python, C++, JavaScript, C#, SQL, TypeScript, Scala, Kotlin, AWS, Azure."
     },
     "capgemini": {
         "areaOfBusiness": "IT, Management, and Engineering.",
         "description": {
-            "paragraph1": "Capgemini is a global leader in partnering with companies to transform and manage their business by harnessing the power of technology. The Group is guided every day by its purpose of unleashing human energy through technology for an inclusive and sustainable future. It is a responsible and diverse organization of nearly 350,000 team members in more than 50 countries. With its strong 55-year heritage and deep industry expertise, Capgemini is trusted by its clients to address the entire breadth of their business needs, from strategy and design to operations, fueled by the fast evolving and innovative world of cloud, data, AI, connectivity, software, digital engineering, and platforms. Get The Future You Want | www.capgemini.com",
-            "paragraph2": ""
+            "paragraph1": "Capgemini is a global leader in partnering with companies to transform and manage their business by harnessing the power of technology. The Group is guided every day by its purpose of unleashing human energy through technology for an inclusive and sustainable future. It is a responsible and diverse organization of nearly 350,000 team members in more than 50 countries. With its strong 55-year heritage and deep industry expertise, Capgemini is trusted by its clients to address the entire breadth of their business needs, from strategy and design to operations, fueled by the fast evolving and innovative world of cloud, data, AI, connectivity, software, digital engineering, and platforms. Get The Future You Want | www.capgemini.com"
         },
         "qualifications": "When applying to Capgemini's graduate program, you choose a role based on your education and interests. Read more about the different roles here: https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/ignite-graduate-program/"
     },
     "soprasteria": {
         "areaOfBusiness": "IT, Design, Management, Business, Projektledning, Webbutveckling, Systemutveckling, Data & Analytics, Microsoft Business Applications, CRM, ERP, Affärssystem, Salesforce, ServiceNow, Cloud, Cyber Security",
         "description": {
-            "paragraph1": "Sopra Steria is a leading international consultancy company in IT, design, and management. We build society through innovative digital solutions and offer everything from data analysis, business and organizational development, project and change management, to system development, testing, deployment, and daily management of IT systems. In 2023, we were named Sweden's Best Workplace by Great Place to Work and ranked by Gartner as one of the top 5 companies in digital transformation. Our Accelerate program has been recognized as Sweden's most attractive trainee program in IT, and we have also been awarded the Karriärföretag designation for several consecutive years. Globally, we have 60,000 employees spread across 30 countries. In Sweden, we are over 600 employees with offices in Stockholm, Gothenburg, Malmö, Östersund, and Sundsvall. We believe in well-being, security, and trust as the best foundation for proactivity and creativity. As an employee with us, you will have fair conditions, a long-term perspective on your career path, and excellent opportunities for development. Together, we reach further.",
-            "paragraph2": ""
+            "paragraph1": "Sopra Steria is a leading international consultancy company in IT, design, and management. We build society through innovative digital solutions and offer everything from data analysis, business and organizational development, project and change management, to system development, testing, deployment, and daily management of IT systems. In 2023, we were named Sweden's Best Workplace by Great Place to Work and ranked by Gartner as one of the top 5 companies in digital transformation. Our Accelerate program has been recognized as Sweden's most attractive trainee program in IT, and we have also been awarded the Karriärföretag designation for several consecutive years. Globally, we have 60,000 employees spread across 30 countries. In Sweden, we are over 600 employees with offices in Stockholm, Gothenburg, Malmö, Östersund, and Sundsvall. We believe in well-being, security, and trust as the best foundation for proactivity and creativity. As an employee with us, you will have fair conditions, a long-term perspective on your career path, and excellent opportunities for development. Together, we reach further."
         },
         "qualifications": "Proficient in spoken and written Swedish and English. Recently graduated at bachelor's or master's level and your degree should not be more than one year old. Good listener and communicator. Ambitious and goal-oriented."
     },
     "polisen": {
         "areaOfBusiness": "System development, project management, UX design, testing, requirements analyst, technical specialists, technical product specialists, CI/CD, AI, ML, NLP, analysts, IT security.",
         "description": {
-            "paragraph1": "Police IT is a part of the law enforcement work, providing service to citizens and making it easier for the agency's employees to carry out their tasks. As digitalization increases, the police must be able to handle larger amounts of data, take advantage of new technologies, and stay one step ahead of criminals, without compromising security and legal certainty. Working in the police IT is being a crucial part of law enforcement work. Whether it's about developing new forensic technology or communicating via police radio, well-functioning IT solutions are required.",
-            "paragraph2": ""
+            "paragraph1": "Police IT is a part of the law enforcement work, providing service to citizens and making it easier for the agency's employees to carry out their tasks. As digitalization increases, the police must be able to handle larger amounts of data, take advantage of new technologies, and stay one step ahead of criminals, without compromising security and legal certainty. Working in the police IT is being a crucial part of law enforcement work. Whether it's about developing new forensic technology or communicating via police radio, well-functioning IT solutions are required."
         },
         "qualifications": ""
     },
     "innofactor": {
         "areaOfBusiness": "Cybersecurity, Cloud Infrastructure and Business Solutions",
         "description": {
-            "paragraph1": "Innofactor's goal is to be a leader in digitalization and cloud solutions in all Nordic countries. Our mission is to help our clients digitalize their businesses, promote community-based work, and develop their business processes through data-driven decision-making and secure cloud services. In collaboration with our clients, partners, and investors, we implement solutions that help our clients succeed. With us, you can be yourself! Here, no one is molded into the same form. We value the differences of our employees and believe that challenging tasks require new and diverse perspectives. Everyone has different qualities, which is why we don’t believe in writing a list of qualities we’re looking for. What’s important, however, is that you enjoy solving complex problems, like sharing knowledge, and are self-driven.",
-            "paragraph2": ""
+            "paragraph1": "Innofactor's goal is to be a leader in digitalization and cloud solutions in all Nordic countries. Our mission is to help our clients digitalize their businesses, promote community-based work, and develop their business processes through data-driven decision-making and secure cloud services. In collaboration with our clients, partners, and investors, we implement solutions that help our clients succeed. With us, you can be yourself! Here, no one is molded into the same form. We value the differences of our employees and believe that challenging tasks require new and diverse perspectives. Everyone has different qualities, which is why we don’t believe in writing a list of qualities we’re looking for. What’s important, however, is that you enjoy solving complex problems, like sharing knowledge, and are self-driven."
+        },
+        "qualifications": ""
+    },
+    "deloitte": {
+        "areaOfBusiness": "Cyber Security, IT Audit, Data & Analytics, Management Consulting, Tax Technology Consulting, FinTech, and other.",
+        "description": {
+            "paragraph1": "Deloitte is a leading global provider of audit and assurance, consulting, financial advisory, risk advisory, tax and related services. Our global network of member firms and related entities with approximately 457,000+ people in more than 150 countries and territories (collectively, the \"Deloitte organization\") serves four out of five Fortune Global 500® companies. With our global structure we can assure that the services our clients receive are of the same superior quality, each time, every time and everywhere."
+        },
+        "qualifications": ""
+    },
+    "pension": {
+        "areaOfBusiness": "Offentlig förvaltning",
+        "description": {
+            "paragraph1": "Ett jobb som berör alla Pensionsmyndigheten är en viktig del i samhället. Varje månad betalar vi ut pension till över två miljoner pensionärer och förvaltar den framtida pensionen för sex miljoner sparare. Vårt uppdrag är att administrera, betala ut och informera om den allmänna pensionen. Med individen i fokus ökar vi kunskapen om pensionssystemet. Vi förändrar uppfattningen om att pension är svårt och krångligt till att vara enkelt och förutsebart. Vill du jobba med något som är viktigt för många?"
         },
         "qualifications": ""
     }

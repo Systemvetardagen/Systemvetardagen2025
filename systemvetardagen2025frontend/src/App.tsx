@@ -13,6 +13,7 @@ import VisitInfo from './pages/VisitInfo';
 import VisitInfoTest from './pages/VisitInfoTest';
 import About from './pages/About';
 import CompanyPage from './pages/CompanyPage';
+import ScrollToTop from './utilities/ScrollToTop';
 
 const App: React.FC = () => {
     const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App: React.FC = () => {
     return (
         <QueryClientProvider client={queryClient}>
             {/* <Navbar /> */}
+            <ScrollToTop />
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
                 <Route path="/" element={<TemporaryLanding />} />
@@ -36,7 +38,7 @@ const App: React.FC = () => {
                 {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-            {/* <Footer/> */}
+            {/* <Footer /> */}
         </QueryClientProvider>
     );
 };

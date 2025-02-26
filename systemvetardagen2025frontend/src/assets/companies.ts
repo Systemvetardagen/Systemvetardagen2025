@@ -6,7 +6,7 @@ export interface Company {
     founded: number;
     employeesSweden?: number;
     employeesTotal?: number;
-    contacts: Contact[];
+    contacts?: Contact[];
     candidatePrograms?: string[];
     masterPrograms?: string[];
     positions?: string[];

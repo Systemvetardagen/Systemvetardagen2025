@@ -7,15 +7,27 @@ interface FadeInSectionProps {
     children: ReactNode;
     direction: Direction;
     className?: string;
+    triggerOnce?: boolean;
 }
 
-const FadeInSection: React.FC<FadeInSectionProps> = ({ children, direction, className }) => {
+const FadeInSection: React.FC<FadeInSectionProps> = ({
+    children,
+    direction,
+    className,
+    triggerOnce,
+}) => {
     const { ref, inView } = useInView({
         threshold: 0.2,
+        triggerOnce: triggerOnce,
     });
-    
+
     return (
-        <div ref={ref} className={`opacity-0 ${className} ${inView ?  `opacity-100 ${direction}` : ''}`}>
+        <div
+            ref={ref}
+            className={`opacity-0 ${className} ${
+                inView ? `opacity-100 ${direction}` : ''
+            }`}
+        >
             {children}
         </div>
     );

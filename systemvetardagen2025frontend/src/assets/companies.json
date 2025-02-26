@@ -59,6 +59,49 @@
     "facebook": "https://www.facebook.com/accenture/"
   },
   {
+    "name": "Deloitte",
+    "id": "deloitte",
+    "websiteLink": "https://www2.deloitte.com/se/sv/karriar/Lediga-tjanster.html",
+    "slogan": "Together, we can build better futures.",
+    "founded": 1845,
+    "employeesSweden": 1700,
+    "employeesTotal": 457000,
+    "linkedIn": "https://www.linkedin.com/company/deloitte/",
+    "instagram": "https://www.instagram.com/deloittesweden/",
+    "facebook": "https://www.facebook.com/DeloitteSweden/?locale=sv_SE",
+    "isPartner": true,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SHINO",
+      "SMINO",
+      "SPROM",
+      "SSLIO",
+      "SDSBO",
+      "SAIHO",
+      "SMEFO",
+      "SDSBO",
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime",
+      "foreignServices",
+      "internship"
+    ],
+    "contacts": [
+      {
+        "name": "Dennis Leach",
+        "mail": "deleach@deloitte.se",
+        "phoneNumber": "+46700802540"
+      }
+    ]
+  },
+  {
     "id": "handelsbanken",
     "name": "Handelsbanken",
     "founded": 1871,
@@ -614,6 +657,26 @@
         "mail": "elin.trotz@innofactor.com",
         "phoneNumber": "0735263876"
       }
+    ]
+  },
+  {
+    "name": "Pensionsmyndigheten",
+    "id": "pension",
+    "websiteLink": "https://www.pensionsmyndigheten.se/om-pensionsmyndigheten/jobba-hos-oss/lediga-jobb",
+    "slogan": "Vi informerar om hela pensionen.",
+    "founded": 2010,
+    "employeesSweden": 1600,
+    "linkedIn": "https://www.linkedin.com/company/pensionsmyndigheten/mycompany/?viewAsMember=true",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SYSDK",
+      "SDAVK"
+    ],
+    "masterPrograms": [
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime"
     ]
   }
 ]
