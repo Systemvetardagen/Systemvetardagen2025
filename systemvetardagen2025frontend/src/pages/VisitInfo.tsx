@@ -40,7 +40,7 @@ const VisitInfo: React.FC = () => {
                 {t('header')}
             </h1>
             <p className="text-gray-500 font-light mx-8 fadeRight">{t('sub-header')}</p>
-            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
+            {/*<div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
                 <h1 className="text-2xl lg:text-3xl font-light">
                     {t('lectures.header')}
                 </h1>
@@ -54,8 +54,8 @@ const VisitInfo: React.FC = () => {
                 </div>
             </div>
             <a href="/svgs/floormap.svg">
-                <img className="max-w-[90vw]" src="/svgs/floormap.svg" alt="" />
-            </a>
+                <img className="max-w-[80vw]" src="/svgs/floormap.svg" alt="Floor map" />
+            </a>*/}
             <div className="px-10 max-w-[90vw] lg:max-w-[50vw] text-start my-8">
                 <h1 className="font-light text-3xl mb-2">
                     {t('getting-to.header')}
@@ -77,13 +77,13 @@ const VisitInfo: React.FC = () => {
                     width="100%"
                     height="500"
                     loading="lazy"
-                    className="rounded-xl max-w-[90%]"
+                    className="rounded-3xl max-w-[60%]"
                 ></iframe>
             </div>
-            <Partners />
-            <br />
-            <br />
             <SignupLink />
+            <br />
+            <br />
+            <Partners />
             <div className="mt-[5vh]"></div>
         </div>
     );

@@ -44,7 +44,7 @@ export default function Landing() {
                     </NavLink>
                 </div>
                 {/* Body */}
-                <div className="w-screen px-[8vw] md:px-[15vw] lg:px-[20vw] py-[4vw] flex flex-col items-center justify-center gap-10 bg-background text-text text-center">
+                <div className="w-screen px-[7vw] md:px-[15vw] lg:px-[20vw] py-[4vw] flex flex-col items-center justify-center gap-10 bg-background text-text text-center">
                     <FadeInSection direction="fadeLeft">
                         <div className="gradient-background gradient-text text-xl md:text-2xl lg:text-4xl">
                             {t('body.about')}
@@ -128,7 +128,7 @@ export default function Landing() {
                             </FadeInSection>
                         ))}
                     </div>
-                    <FadeInSection direction="fadeLeft">
+                    <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="bg-[#FFEAC9] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
                             <h1 className="text-xl lg:text-3xl px-4 font-bold">
                                 {t('body.tips.header')}
@@ -161,7 +161,7 @@ export default function Landing() {
                             </div>
                         </div>
                     </FadeInSection>
-                    <FadeInSection direction="fadeLeft">
+                    <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="w-full">
                             <SignupLink />
                         </div>

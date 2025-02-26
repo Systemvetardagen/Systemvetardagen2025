@@ -175,7 +175,7 @@ const Companies: React.FC = () => {
                                     setProgramsExpanded(!programsExpanded);
                                     setPositionsExpanded(false);
                                 }}
-                                className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-md hover:opacity-90 transition-opacity"
+                                className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-2xl hover:opacity-90 transition-opacity"
                             >
                                 <p className="">
                                     {getLabel(
@@ -203,7 +203,7 @@ const Companies: React.FC = () => {
                                     setPositionsExpanded(!positionsExpanded);
                                     setProgramsExpanded(false);
                                 }}
-                                className="flex items-center gap-2 px-4 py-2 bg-accent rounded-md hover:opacity-90 transition-opacity"
+                                className="flex items-center gap-2 px-4 py-2 bg-accent rounded-2xl hover:opacity-90 transition-opacity"
                             >
                                 {getLabel(
                                     selectedFilters.positions,
@@ -228,7 +228,7 @@ const Companies: React.FC = () => {
                         <div className="relative">
                             <input
                                 type="text"
-                                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full px-4 py-2 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 placeholder={t('global.searchPlaceholder')}
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}

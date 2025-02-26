@@ -50,9 +50,10 @@ const Navbar: React.FC = () => {
                 isSticky
                     ? 'fixed top-0 left-0 w-full rounded-none h-14'
                     : 'absolute top-8 w-[90vw] mx-[5vw] rounded-3xl'
-            } flex bg-white text-black px-4 lg:py-1 z-10 items-center justify-between transition-all duration-150 shadow-lg`}
+            } flex bg-white text-black px-4 lg:py-2 z-10 items-center justify-between transition-all duration-150 shadow-lg`}
         >{/* FREDRIK SNÄLLAAA LÅT DEN VARA SNÄLLA */}
         {/* NE DEDÄR ÄR ACTUALLY ETT BROTT SLUTA JAG ACCEPTERAR MAX P-2 JAG KOMMER LÄGGA EN --force JAG SVÄR*/}
+        {/* FINE */}
             <a href="/" className="flex-shrink-0">
                 <img
                     src="/svgs/specialLogo.svg"

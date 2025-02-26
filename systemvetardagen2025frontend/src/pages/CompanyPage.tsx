@@ -155,7 +155,7 @@ const CompanyPage: React.FC = () => {
     }
     const logoPath = `/companies/${company.id}/logo.webp`;
     return (
-        <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10">
+        <div className="min-h-screen overflow-x-hidden items-center flex flex-col gap-10 bg-[#F7F4FF]">
             <div className="relative w-full">
                 <div className="flex items-center justify-center h-[30vh] min-h-[300px] max-h-[400px] w-full overflow-hidden gradient-background">
                     <div className="absolute -bottom-10 left-1/2 transform shadow-md -translate-x-1/2 bg-white rounded-xl p-6">
