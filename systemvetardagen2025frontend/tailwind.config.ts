@@ -10,9 +10,6 @@ export default {
                 secondary: 'rgba(var(--secondary))',
                 accent: 'rgba(var(--accent))',
                 link: 'rgba(var(--link))',
-                bachelors: '#ffe2e2',
-                masters: '#e7d3ff',
-                positions: '#cae0ff'
             },
             fontFamily: { body: ['WorkSans'], poppins:['Poppins'], ibm:['IBM Plex Mono', 'monospace'] },
         },

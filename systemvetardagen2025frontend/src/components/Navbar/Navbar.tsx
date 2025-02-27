@@ -54,13 +54,14 @@ const Navbar: React.FC = () => {
         >{/* FREDRIK SNÄLLAAA LÅT DEN VARA SNÄLLA */}
         {/* NE DEDÄR ÄR ACTUALLY ETT BROTT SLUTA JAG ACCEPTERAR MAX P-2 JAG KOMMER LÄGGA EN --force JAG SVÄR*/}
         {/* NEJ DET BLIR 3 FUCK U */}
-            <a href="/" className="flex-shrink-0">
+        {/* O_O me verry sad */}
+            <NavLink to="/" className="flex-shrink-0">
                 <img
                     src="/svgs/specialLogo.svg"
                     alt="Left Logo"
                     className="h-10 p-0 m-0"
                 />
-            </a>
+            </NavLink>
             <div className="hidden lg:flex justify-center flex-grow space-x-20 font-bold font-heading tracking-wide">
                 {links.map((link, index) => (
                     <NavLink key={index} to={link.href} className={getNavLinkClass}>
