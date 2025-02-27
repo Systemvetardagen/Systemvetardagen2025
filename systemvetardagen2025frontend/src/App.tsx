@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import TemporaryLanding from './pages/TemporaryLanding';
+import TemporaryLanding from './pages/Landing';
 import Landing from './pages/Landing';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import SignupForm from './pages/SignupForm';
@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
     return (
         <QueryClientProvider client={queryClient}>
-            {/* <Navbar /> */}
+            <Navbar />
             <ScrollToTop />
             <Routes>
                 <Route path="/signup" element={<SignupForm />} />
@@ -38,7 +38,7 @@ const App: React.FC = () => {
                 {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </QueryClientProvider>
     );
 };
