@@ -46,7 +46,7 @@ export default function Landing() {
                 {/* Body */}
                 <div className="w-screen px-[7vw] md:px-[15vw] lg:px-[20vw] py-[4vw] flex flex-col items-center justify-center gap-10 bg-background text-text text-center">
                     <FadeInSection direction="fadeLeft">
-                        <div className="gradient-background gradient-text text-xl md:text-2xl lg:text-4xl">
+                        <div className="gradient-background gradient-text text-xl md:text-2xl lg:text-4xl mt-6">
                             {t('body.about')}
                         </div>
                     </FadeInSection>
@@ -63,7 +63,7 @@ export default function Landing() {
                                 alt="Crowded event"
                                 className="w-full h-full object-cover rounded-3xl grayscale transition-transform duration-200 group-hover:scale-105"
                             />
-                            <span className="absolute  top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs text-center lg:text-lg">
+                            <span className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs text-center lg:text-lg">
                                 {t('body.meet-companies', {
                                     numberOfCompanies: NUM_OF_COMPANIES,
                                 })}
@@ -73,11 +73,11 @@ export default function Landing() {
 
                     <FadeInSection direction="fadeRight">
                         <div className="bg-[#FFE6F4] flex flex-col gap-10 text-center rounded-3xl pt-8 pb-14 px-[5%] md:px-[10%] shadow-lg w-full">
-                            <h1 className="text-xl lg:text-3xl ">
+                            <h1 className="text-lg md:text-xl lg:text-3xl">
                                 {t('body.almost-there.header')}
                             </h1>
                             {['p1', 'p2', 'p3'].map((key) => (
-                                <p key={key} className="text-lg lg:text-xl">
+                                <p key={key} className="text-base md:text-lg lg:text-xl">
                                     {t(`body.almost-there.${key}`)}
                                 </p>
                             ))}
@@ -93,7 +93,7 @@ export default function Landing() {
                                 alt=""
                                 className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
                             />
-                            <span className="absolute  top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
+                            <span className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
                                 {t('body.lectures')}
                             </span>
                         </a>
@@ -111,7 +111,7 @@ export default function Landing() {
                                 text: t('body.get-here'),
                             },
                         ].map((item, index) => (
-                            <FadeInSection key={index} direction={index % 2 === 0 ? "fadeLeft" : "fadeRight"} className='w-full h-48'>
+                            <FadeInSection key={index} direction={index % 2 === 0 ? "fadeLeft" : "fadeRight"} className="w-full h-48">
                                 <a
                                     href={item.href}
                                     className="rounded-3xl w-full h-full overflow-hidden relative group"
@@ -130,7 +130,7 @@ export default function Landing() {
                     </div>
                     <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="bg-[#FFEAC9] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
-                            <h1 className="text-xl lg:text-3xl px-4 font-bold">
+                            <h1 className="text-lg md:text-xl lg:text-3xl px-4 font-bold">
                                 {t('body.tips.header')}
                             </h1>
                             <div className="w-[90%] flex flex-col gap-8 md:flex-row md:gap-0 justify-evenly">
@@ -140,19 +140,15 @@ export default function Landing() {
                                         key={period}
                                     >
                                         <div className="flex flex-col px-6 max-w-md">
-                                            <h1 className="font-bold text-center text-xl">
-                                                {t(
-                                                    `body.tips.${period}.header`
-                                                )}
+                                            <h1 className="font-bold text-center text-lg md:text-xl">
+                                                {t(`body.tips.${period}.header`)}
                                             </h1>
                                             {['t1', 't2', 't3'].map((tip) => (
                                                 <p
-                                                    className="text-lg mt-4 list-item text-left"
+                                                    className="text-base md:text-lg mt-4 list-item text-left"
                                                     key={tip}
                                                 >
-                                                    {t(
-                                                        `body.tips.${period}.${tip}`
-                                                    )}
+                                                    {t(`body.tips.${period}.${tip}`)}
                                                 </p>
                                             ))}
                                         </div>
