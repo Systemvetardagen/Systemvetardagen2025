@@ -125,12 +125,12 @@
         },
         "qualifications": "Business-minded, Interested in technology and IT, Reliable, Smart and gets things done, Not a sore loser, but you hate to lose, Wants to develop and learn more, A person with high emotional intelligence (EQ), Despite all this: humble with a sense of humor, Fluent in either Swedish, Danish, Finnish, or Norwegian – depending on where you want to work."
     },
-    "stfack": {
-        "areaOfBusiness": "",
+    "fackst": {
+        "areaOfBusiness": "Administration, Economics, IT, Law, Human Resources",
         "description": {
-            "paragraph1": "w"
+            "paragraph1": "The Union of Civil Servants (ST) is the union for you as a student. Here's why you should join the Union of Civil Servants (ST) as a student: Student membership in the Union of Civil Servants (ST) is completely free. In addition to that, you get a number of student benefits, while at the same time you are supporting our union work for better working conditions. Unions exist to represent your interests as an employee. Our strength depends on having many members, therefore your membership is important – also for others. In this way, the union is relevant to you as a student. Furthermore, we can actually represent you if you have a part-time job alongside your studies. As a member, we also help you with a range of benefits and a smooth transition into working life.\n You get benefits for both your wallet and your career: When you become a member of ST, you get access to a range of beneficial student benefits. As a student member, you get, for example, free access to several services that prepare you for professional life – professional feedback on your CV, salary advice, or job interview training, to name a few. Nowadays, aptitude tests are also an important part of many recruitment processes. Become a student member today by visiting this link: https://st.org/medlemskap/bli-studentmedlem"
         },
-        "qualifications": ""
+        "qualifications": "a"
     },
     "scania": {
         "areaOfBusiness": "Software Development, Cloud, Cyber Security, AI, Machine Learning, Industry 4.0, Computer Vision, Data Science,",
@@ -182,4 +182,3 @@
         "qualifications": ""
     }
 }
-

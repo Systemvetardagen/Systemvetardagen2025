@@ -38,9 +38,9 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(calculateTimeLeft());
 
     useEffect(() => {
-        const tickInterval = 50;
+        const tickInterval = 25;
         const timer = setInterval(() => {
-            const multiplier = clickAmount <= 5 ? 1 : clickAmount > 50 ? (clickAmount - 5) * 50 : (clickAmount - 5) * 10;
+            const multiplier = clickAmount <= 3 ? 1 : clickAmount > 50 ? (clickAmount - 3) * 50 : (clickAmount - 3) * 10;
             acceleratedOffsetRef.current += (multiplier - 1) * tickInterval;
             const effectiveNow = new Date().getTime() + acceleratedOffsetRef.current;
             setTimeLeft(calculateTimeLeft(effectiveNow));

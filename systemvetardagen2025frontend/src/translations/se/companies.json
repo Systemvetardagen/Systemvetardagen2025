@@ -136,13 +136,12 @@
         },
         "qualifications": "Affärsmässig, Intresserad av teknik och IT, Pålitlig, Smart och får saker gjorda, Inte en dålig förlorare, men du hatar att förlora, Vill utvecklas och lära dig mer, En person med hög emotionell intelligens (EQ), Trots allt detta: ödmjuk med sinne för humor, Flytande i antingen svenska, danska, finska eller norska – beroende på var du vill arbeta."
     },
-    "stfack": {
-        "areaOfBusiness": "",
+    "fackst": {
+        "areaOfBusiness": "Administration, Ekonomi, IT, Juridik, Personalfrågor",
         "description": {
-            "paragraph1": "w",
-            "paragraph2": ""
+            "paragraph1": "Fackförbundet ST är fackförbundet för dig som student. Därför ska du som student vara med i Fackförbundet ST: Studentmedlemskapet i Fackförbundet ST är helt kostnadsfritt. Utöver det får du en rad studentförmåner, samtidigt är du med och stödjer vårt fackliga arbete för bättre arbetsvillkor. Fackförbund finns för att företräda dina intressen som arbetstagare. Vår styrka är beroende av att vi är många, därför är ditt medlemskap viktigt – även för andra. På så sätt är facket relevant för dig som student. Dessutom kan vi faktiskt företräda dig om du jobbar extra vid sidan av studierna. Som medlem hjälper vi dig också med en rad förmåner och en smidig övergång till arbetslivet. \n Du får förmåner för både plånboken och karriären: När du blir medlem i ST får du ta del av en rad förmånliga studentförmåner. Som studentmedlem får du till exempel kostnadsfri tillgång till flera tjänster som förbereder dig inför yrkeslivet – professionell feedback på ditt CV, lönerådgivning eller arbetsintervjuträning för att nämna några. Numera är också begåvningstest en viktig del av många rekryteringsprocesser. Bli studentmedlem idag genom att gå in på den här länken https://st.org/medlemskap/bli-studentmedlem"
         },
-        "qualifications": ""
+        "qualifications": "a"
     },
     "scania": {
         "areaOfBusiness": "Programvaruutveckling, Moln, Cybersäkerhet, AI, Maskininlärning, Industri 4.0, Datorseende, Datavetenskap,",
