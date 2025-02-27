@@ -62,7 +62,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                             items={company.candidatePrograms.map((program) =>
                                 t(`programs.${program}`)
                             )}
-                            className="bg-bachelors border-[#DB2677] text-[#DB2677]"
+                            className="bg-[#ffe2e2] border-[#DB2677] text-[#DB2677]"
                         />
                     </FadeInSection>
                     <FadeInSection direction="fadeDown" triggerOnce={true}>
@@ -73,7 +73,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                             )}
                             expandable
                             onExpand={() => setOpen(true)}
-                            className="bg-masters border-[#9332E9] text-[#9332E9]"
+                            className="bg-[#e7d3ff] border-[#9332E9] text-[#9332E9]"
                         />
                     </FadeInSection>
                     <FadeInSection direction="fadeRight" triggerOnce={true}>
@@ -82,7 +82,7 @@ const RecruitmentCard: React.FC<Company> = (company) => {
                             items={company.positions.map((position) =>
                                 t(`positions.${position}`)
                             )}
-                            className="bg-positions border-[#2762EA] text-[#2762EA]"
+                            className="bg-[#cae0ff] border-[#2762EA] text-[#2762EA]"
                         />
                     </FadeInSection>
                 </div>
@@ -133,7 +133,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ title, items, className }) => (
     <div
-        className={`p-4 h-full bg-gray-100 rounded-lg border-l-4 shadow-md font-light ${className}`}
+        className={`p-4 h-full rounded-lg border-l-4 shadow-md font-light ${className}`}
     >
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <ul className="space-y-1 list-disc pl-4">
