@@ -82,7 +82,9 @@ const VisitInfo: React.FC = () => {
                     className="rounded-3xl md:max-w-[60%] max-w-[95%]"
                 ></iframe>
             </div>
-            <SignupLink />
+            <div className="max-w-[90%]">
+                <SignupLink />
+            </div>
             <br />
             <br />
             <Partners />
