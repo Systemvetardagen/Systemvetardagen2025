@@ -17,7 +17,7 @@ interface LectureItemProps {
 }
 const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
     return (
-        <FadeInSection direction='fadeLeft' className="mb-8">
+        <FadeInSection direction="fadeLeft" className="mb-8">
             <p className="text-md text-white ">{lecture.time}</p>
             <h1 className="font-semibold text-3xl">{lecture.company}</h1>
             <p className="text-md text-white font-ibm">{lecture.topic}</p>
@@ -39,7 +39,9 @@ const VisitInfo: React.FC = () => {
             <h1 className="font-bold text-2xl lg:text-4xl mt-10 fadeLeft">
                 {t('header')}
             </h1>
-            <p className="text-gray-500 font-light mx-8 fadeRight">{t('sub-header')}</p>
+            <p className="text-gray-500 font-light mx-8 fadeRight">
+                {t('sub-header')}
+            </p>
             {/*<div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
                 <h1 className="text-2xl lg:text-3xl font-light">
                     {t('lectures.header')}
@@ -71,13 +73,13 @@ const VisitInfo: React.FC = () => {
                     </p>
                 </div>
             </div>
-            <div className="mb-20 w-full flex justify-center">
+            <div className="mb-20 w-full  flex justify-center">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.2724538117486!2d17.94447928059294!3d59.40656019752912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed05efbb67%3A0x18ac39c13897c4a9!2sDSV%2C%20Institutionen%20f%C3%B6r%20data-%20och%20systemvetenskap!5e0!3m2!1ssv!2sse!4v1738844966811!5m2!1ssv!2sse"
                     width="100%"
-                    height="500"
+                    height="500px"
                     loading="lazy"
-                    className="rounded-3xl max-w-[60%]"
+                    className="rounded-3xl md:max-w-[60%] max-w-[95%]"
                 ></iframe>
             </div>
             <SignupLink />
