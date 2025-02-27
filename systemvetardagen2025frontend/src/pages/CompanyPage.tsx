@@ -162,7 +162,7 @@ const CompanyPage: React.FC = () => {
                         <img
                             src={logoPath}
                             alt={`${company.name} logo`}
-                            className="h-32 w-auto max-w-[600px] object-contain"
+                            className="h-32 w-auto max-w-[70vw] object-contain"
                         />
                     </div>
                 </div>
