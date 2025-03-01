@@ -59,7 +59,7 @@ export default function Landing() {
                             className="relative w-full h-full overflow-hidden rounded-3xl group"
                         >
                             <img
-                                src="/images/crowded-from-above.jpg"
+                                src="/images/crowded-from-above.webp"
                                 alt="Crowded event"
                                 className="w-full h-full object-cover rounded-3xl grayscale transition-transform duration-200 group-hover:scale-105"
                             />
@@ -89,7 +89,7 @@ export default function Landing() {
                             className="w-full h-full overflow-hidden relative rounded-3xl group"
                         >
                             <img
-                                src="/images/auditorium-seats.jpg"
+                                src="/images/auditorium-seats.webp"
                                 alt=""
                                 className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
                             />
@@ -102,12 +102,12 @@ export default function Landing() {
                         {[
                             {
                                 href: '/about',
-                                imgSrc: '/images/crowded.jpg',
+                                imgSrc: '/images/crowded.webp',
                                 text: t('body.read-more'),
                             },
                             {
                                 href: '/visit-info',
-                                imgSrc: '/images/nod.jpg',
+                                imgSrc: '/images/nod.webp',
                                 text: t('body.get-here'),
                             },
                         ].map((item, index) => (

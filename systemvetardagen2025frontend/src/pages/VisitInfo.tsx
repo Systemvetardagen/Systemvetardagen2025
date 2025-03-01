@@ -31,7 +31,7 @@ const VisitInfo: React.FC = () => {
         <div className="w-screen flex flex-col items-center font-poppins bg-background text-center">
             <div className="w-full h-[20vh] lg:h-[40vh] max-h-[400px] overflow-hidden">
                 <img
-                    src="/images/nod.jpg"
+                    src="/images/nod.webp"
                     alt=""
                     className="object-cover w-full h-full object-[50%_70%]"
                 />

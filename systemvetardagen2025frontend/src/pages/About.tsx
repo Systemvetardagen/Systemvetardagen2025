@@ -8,7 +8,7 @@ const About: React.FC = () => {
     return (
         <div className="bg-background text-text flex flex-col min-h-screen">
             <img
-                src={'/images/2024logoWithShirt.jpg'}
+                src={'/images/2024logoWithShirt.webp'}
                 alt="Systemvetardagen Logo shirt"
                 className="w-screen h-[20vh] lg:h-[40vh] max-h-[400px] object-cover object-[20%_50%]"
             />
