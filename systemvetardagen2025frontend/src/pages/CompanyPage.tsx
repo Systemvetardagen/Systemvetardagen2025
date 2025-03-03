@@ -279,7 +279,7 @@ const CompanyPage: React.FC = () => {
                 <FadeInSection
                     triggerOnce={true}
                     direction="fadeLeft"
-                    className="w-full max-w-5xl mx-auto text-justify"
+                    className="w-full max-w-5xl mx-auto"
                 >
                     {t(`${companyId}.description.paragraph1`)}
                 </FadeInSection>
@@ -318,9 +318,11 @@ const CompanyPage: React.FC = () => {
                 <div className="flex gap-4">
                     <Link
                         to="/companies"
-                        className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105"
+                        className="rounded-2xl p-4 border-2 transition-all duration-100 hover:scale-105 flex items-center justify-center"
                     >
-                        {t('global.backToCompanies')}
+                        <span className="text-center">
+                            {t('global.backToCompanies')}
+                        </span>
                     </Link>
                     <button
                         onClick={() =>
