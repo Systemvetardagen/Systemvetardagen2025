@@ -112,8 +112,7 @@ export const teamData: Team[] = [
             linkedIn: 'http://linkedIn.com/in/sarahnilssons',
         },
         viceHead: {
-            name: 'Sarah Nilsson',
-            linkedIn: 'http://linkedIn.com/in/sarahnilssons',
+            name: 'Shueb Elmi',
         },
         teamMembers: [
             {
