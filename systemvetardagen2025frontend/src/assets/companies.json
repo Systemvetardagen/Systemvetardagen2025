@@ -438,14 +438,7 @@
     "linkedIn": "https://www.linkedin.com/company/the-union-of-civil-servants-fackf-rbundet-st-/?originalSubdomain=se",
     "instagram": "https://www.instagram.com/facketst/",
     "facebook": "https://www.facebook.com/Facket/",
-    "isPartner": false,
-    "contacts": [
-      {
-        "name": "temp",
-        "mail": "temp",
-        "phoneNumber": "temp"
-      }
-    ]
+    "isPartner": false
   },
   {
     "name": "Scania",
