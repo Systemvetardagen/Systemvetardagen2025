@@ -17,7 +17,7 @@ export interface Company {
     facebook?: string;
 }
 export interface Contact {
-    name: string;
+    name?: string;
     mail?: string;
     phoneNumber?: string;
 }

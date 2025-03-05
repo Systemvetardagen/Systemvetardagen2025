@@ -29,7 +29,7 @@ const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {
             className="p-8 flex flex-col gap-1 rounded-2xl shadow-md bg-white text-center"
         >
             <h1 className="text-2xl">{t('global.contact')}</h1>
-            <h2>{name}</h2>
+            {name && <h2>{name}</h2>}
             <a className="text-link" href={`mailto:${mail}`}>
                 {mail}
             </a>
