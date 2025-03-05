@@ -3,16 +3,21 @@
     "id": "accenture",
     "name": "Accenture",
     "slogan": "Let there be change",
-    "founded": 2001,
+    "founded": 1989,
     "employeesSweden": 1600,
-    "employeesTotal": 740000,
+    "employeesTotal": 774000,
     "isPartner": false,
-    "websiteLink": "https://www.accenture.com/",
+    "websiteLink": "https://www.accenture.com/se-en/careers",
     "contacts": [
       {
-        "name": "Pia Hellquist",
-        "mail": "pia.hellquist@cygni.se",
-        "phoneNumber": "0725552373"
+        "name": "Marcus Carlestål",
+        "mail": "marcus.carlestal@accenture.com",
+        "phoneNumber": "+46700910032"
+      },
+      {
+        "name": "Christopher Johnsson",
+        "mail": "christopher.johnsson@accenture.com",
+        "phoneNumber": "+46724069891"
       }
     ],
     "candidatePrograms": [
@@ -26,23 +31,16 @@
       "SMARK"
     ],
     "masterPrograms": [
-      "SAIHO",
       "SMINO",
-      "SMEFO",
       "SCSSO",
-      "SHINO",
       "SSLIO",
       "SDSBO",
-      "SPROM",
       "SDKIO"
     ],
     "positions": [
       "fullTime",
-      "partTime",
-      "thesis",
       "trainee",
-      "internship",
-      "foreignServices"
+      "internship"
     ],
     "linkedIn": "https://www.linkedin.com/company/accenture/",
     "instagram": "https://www.instagram.com/accenture/",
@@ -478,11 +476,11 @@
   {
     "name": "Capgemini",
     "id": "capgemini",
-    "websiteLink": "https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/ignite-graduate-program/",
-    "slogan": "Together we can give technology that human touch the world needs",
+    "websiteLink": "https://www.capgemini.com/se-en/careers/career-paths/students-and-graduates/",
+    "slogan": "Get the future you want",
     "founded": 1967,
-    "employeesSweden": 4400,
-    "employeesTotal": 35000,
+    "employeesSweden": 4500,
+    "employeesTotal": 340000,
     "linkedIn": "https://www.linkedin.com/company/capgemini/",
     "instagram": "https://www.instagram.com/capgeminisweden?igsh=aGdnMm1lZWVnZGFv",
     "isPartner": false,
@@ -490,31 +488,27 @@
       "SDAVK",
       "SAFFK",
       "SYSDK",
-      "SITEK",
-      "SIADK"
+      "SITEK"
     ],
     "masterPrograms": [
       "SHINO",
       "SMINO",
-      "SPROM",
       "SSLIO",
-      "SDSBO",
-      "SMEFO",
-      "SDKIO",
+      "SAIHO",
       "SCSSO"
     ],
     "positions": [
       "fullTime",
-      "thesis",
-      "trainee",
-      "internship",
-      "foreignServices"
+      "trainee"
     ],
     "contacts": [
       {
-        "name": "Emma Karlsson",
-        "mail": "emma.a.karlsson@capgemini.com",
-        "phoneNumber": "+ 46 73 231 63 81"
+        "name": "Katarina Malm, Employer Branding Specialist",
+        "mail": "katarina.malm@capgemini.com"
+      },
+      {
+        "name": "Martin Höglund",
+        "mail": "martin.hoglund@capgemini.com"
       }
     ]
   },
@@ -522,10 +516,10 @@
     "name": "Sopra Steria",
     "id": "soprasteria",
     "websiteLink": "https://www.soprasteria.se/karriar/",
-    "slogan": "Its opportunities are infinite.",
+    "slogan": "Sveriges mest attraktiva traineeprogram inom IT",
     "founded": 1968,
     "employeesSweden": 600,
-    "employeesTotal": 60000,
+    "employeesTotal": 50000,
     "linkedIn": "https://www.linkedin.com/company/soprasteria/",
     "instagram": "https://www.instagram.com/soprasteria_se",
     "facebook": "https://www.facebook.com/soprasteria.se/",
@@ -548,18 +542,27 @@
       "SHINO",
       "SSLIO",
       "SDSBO",
-      "SPROM",
       "SDKIO"
     ],
     "positions": [
       "fullTime",
-      "partTime"
+      "trainee"
     ],
     "contacts": [
       {
-        "name": "TraineeprogramIna Tran",
-        "mail": "ina.tran@soprasteria.com",
-        "phoneNumber": "073-8500130"
+        "name": "Julia Karlberg",
+        "mail": "julia.karlberg@soprasteria.com",
+        "phoneNumber": "072-1763025"
+      },
+      {
+        "name": "Emma Calderon",
+        "mail": "emma.calderon@soprasteria.com",
+        "phoneNumber": "070-8964052"
+      },
+      {
+        "name": "Agnes Edlund",
+        "mail": "agnes.edlund@soprasteria.com",
+        "phoneNumber": "073-8500104"
       }
     ]
   },
