@@ -569,7 +569,7 @@
     "websiteLink": "https://polisen.se/jobb-och-utbildning/lediga-jobb/",
     "slogan": "Har koden till ett tryggt och säkert Sverige",
     "founded": 2015,
-    "employeesSweden": 35500,
+    "employeesSweden": 40000,
     "linkedIn": "https://www.linkedin.com/company/polismyndigheten",
     "instagram": "https://www.instagram.com/polisen/",
     "facebook": "https://www.facebook.com/Polisen/?locale=sv_SE",
@@ -602,7 +602,6 @@
     ],
     "contacts": [
       {
-        "name": "Adiba",
         "mail": "student.it-avdelningen@polisen.se"
       }
     ]
