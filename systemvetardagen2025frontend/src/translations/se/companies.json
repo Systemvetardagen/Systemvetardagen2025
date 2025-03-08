@@ -65,7 +65,7 @@
     "ericsson": {
         "areaOfBusiness": "Informations- och kommunikationsteknik",
         "description": {
-            "paragraph1": "Hos Ericsson kommer du ha en unik möjlighet. Möjligheten att använda dina kunskaper och din fantasi för att tänja på gränserna för vad som är möjligt. Att skapa lösningar på några av världens tuffaste problem. Du kommer att bli utmanad. Men du kommer inte att vara ensam. Du kommer att ingå i ett team av likasinnade innovatörer, alla drivna att gå bortom status quo för att bygga vad som kommer härnäst. Du kommer att samarbeta över discipliner, gränser och kontinenter. Du kommer att få befogenhet att leda och prestera på ditt bästa. Du kommer att forma teknik för människor, samhällen, industrier och mänskligheten. Du kommer att vara en del av en mångfaldig gemenskap där du kan ta med dig ditt eget helt unika jag på jobbet. Hos Ericsson kan du vara en upptäcktsresande, en förändringsmakare och en kraft för det goda."
+            "paragraph1": "Hos Ericsson kommer du ha en unik möjlighet. Möjligheten att använda dina kunskaper och din fantasi för att tänja på gränserna för vad som är möjligt. Att skapa lösningar på några av världens tuffaste problem. Du kommer att bli utmanad. Men du kommer inte att vara ensam. Du kommer att ingå i ett team av likasinnade innovatörer, alla drivna att gå bortom status quo för att bygg vad som kommer härnäst. Du kommer att samarbeta över discipliner, gränser och kontinenter. Du kommer att få befogenhet att leda och prestera på ditt bästa. Du kommer att forma teknik för människor, samhällen, industrier och mänskligheten. Du kommer att vara en del av en mångfaldig gemenskap där du kan ta med dig ditt eget helt unika jag på jobbet. Hos Ericsson kan du vara en upptäcktsresande, en förändringsmakare och en kraft för det goda."
         },
         "qualifications": ""
     },
@@ -85,7 +85,7 @@
         "qualifications": ""
     },
     "gtslAB": {
-        "areaOfBusiness": "Systemutveckling, Webbutveckling, UX design, Projektledning,  Affärssystem, Business Analyst, Business Intelligence, AI, Machine Learning, IT-säkerhet och Test",
+        "areaOfBusiness": "Systemutveckling, Webbutveckling, UX design, Projektledning, Affärssystem, Business Analyst, Business Intelligence, AI, Machine Learning, IT-säkerhet och Test",
         "description": {
             "paragraph1": "På Guided Talent Solutions är vi specialiserade på målgruppen nyexaminerade techtalanger. Genom våra olika koncept får du som techtalang en perfekt övergång från studier till arbetsliv. Vi hjälper dig att få en flygande start på din karriär genom samarbeten med några av Sveriges främsta techbolag. Med våra talangprogram och konsultuppdrag erbjuder vi unika möjligheter som kombinerar praktiskt arbete, skräddarsydda utbildningar, sociala aktiviteter och handledning. Du kommer att få en gedigen onboarding och introduktion till din roll. Med möjlighet att bygga ett starkt nätverk och gemenskap med andra techtalanger. Vi ger dig trygg handledning och stöd genom hela din resa, för att du ska ha de bästa förutsättningarna att lyckas."
         },
@@ -163,26 +163,59 @@
         "qualifications": ""
     },
     "innofactor": {
-        "areaOfBusiness": "Cybersecurity, Cloud Infrastructure and Business Solutions",
+        "areaOfBusiness": "IT-konsultbolag",
         "description": {
-            "paragraph1": "Innofactors mål är att vara ledande inom digitaliserings- och molnlösningar i alla nordiska länder. Vårt uppdrag är att hjälpa våra kunder att digitalisera sina affärer, främja gemenskapsbaserat arbete och utveckla sina affärsprocesser genom databaserat beslutsfattande och säkra molntjänster. I samarbete med våra kunder, partners och investerare implementerar vi lösningar som hjälper våra kunder till framgång Hos oss kan du vara dig själv! Här är ingen stöpt i samma form. Vi värdesätter våra medarbetares olikheter och tror att utmanande uppgifter kräver nya och olika perspektiv. Alla har olika kvaliteter och därför tror vi inte på att skriva ner en lista på egenskaper som vi söker. Det som däremot är viktigt är att du gillar att lösa komplexa problem, gillar att sprida kunskap och är självgående.",
+            "paragraph1": "På Innofactor arbetar nästan 600 experter i Finland, Sverige, Danmark och Norge. Vi är ett IT‑konsultbolag som sätter individen i fokus och erbjuder en arbetsmiljö som främjar personlig utveckling samt en god balans mellan arbete och privatliv.",
             "paragraph2": ""
         },
-        "qualifications": ""
+        "qualifications": "Dynamics 365 CE och Power Platform, C#, .Net, JS, VS Code, git, Azure, DevOps."
     },
     "deloitte": {
         "areaOfBusiness": "Cyber Security, IT Audit, Data & Analytics, Management Consulting, Tax Technology Consulting, FinTech, och mer.",
         "description": {
-            "paragraph1": "Deloitte är en ledande global tjänsteleverantör och erbjuder tjänster inom revision, consulting, finansiell rådgivning, riskhantering, skatterådgivning och relaterade tjänster till noterade och privatägda klienter inom en mängd branscher. Deloitte assisterar fyra av fem företag på Fortune Global 500® genom ett globalt nätverk av medlemsfirmor i mer än 150 länder och cirka 457 000+ medarbetare. Med spetskompetens av världsklass och högkvalitativa tjänster hjälper vi våra klienter att lösa deras mest komplexa utmaningar. Att vi är globalt integrerade gör att våra klienter kan vara säkra på att våra tjänster är av samma höga kvalitet oavsett när och var de levereras.",
+            "paragraph1": "Deloitte är en ledande global leverantör av revision, konsulttjänster, finansiell rådgivning, riskrådgivning, skatt och relaterade tjänster. Vårt globala nätverk av medlemsföretag och relaterade enheter består av cirka 460 000+ personer i mer än 150 länder och territorier, vilket gör att vi betjänar fyra av fem Fortune Global 500‑företag.",
             "paragraph2": ""
         },
         "qualifications": ""
     },
     "pension": {
-        "areaOfBusiness": "Offentlig förvaltning",
+        "areaOfBusiness": "Statlig verksamhet",
         "description": {
-            "paragraph1": "Ett jobb som berör alla Pensionsmyndigheten är en viktig del i samhället. Varje månad betalar vi ut pension till över två miljoner pensionärer och förvaltar den framtida pensionen för sex miljoner sparare. Vårt uppdrag är att administrera, betala ut och informera om den allmänna pensionen. Med individen i fokus ökar vi kunskapen om pensionssystemet. Vi förändrar uppfattningen om att pension är svårt och krångligt till att vara enkelt och förutsebart. Vill du jobba med något som är viktigt för många?"
+            "paragraph1": "Vi går pensioner enklare. Vi informerar om hela pensionen, administrerar och betalar ut allmän pension samt analyserar pensioner och pensionssystemet.",
+            "paragraph2": ""
         },
         "qualifications": ""
+    },
+    "folksam": {
+        "areaOfBusiness": "Juridik, Ekonomi, Försäkring, IT, Systemvetenskap och försäkringsmatematik/statistik",
+        "description": {
+            "paragraph1": "Folksam är ett kundägt företag med stort fokus på hållbarhetsfrågor. Vi erbjuder försäkringar och långsiktigt sparande som skapar trygghet i livets alla skeden, samtidigt som vi engagerar oss i trafiksäkerhet, miljöarbete och ansvarsfulla investeringar.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "unionenStudent": {
+        "areaOfBusiness": "Fackligt medlemskap – privat arbetsmarknad",
+        "description": {
+            "paragraph1": "Unionen Student är Sveriges största fackförbund för studenter på den privata arbetsmarknaden. Som medlem får du hjälp med att vässa ditt CV, personligt brev och din LinkedIn-profil, samt tillgång till en rad studentrabatter och rådgivning.",
+            "paragraph2": ""
+        },
+        "qualifications": ""
+    },
+    "deviera": {
+        "areaOfBusiness": "IT‑konsulter",
+        "description": {
+            "paragraph1": "Deviera samlar engagerade IT‑konsulter som använder teknik för att skapa positiv förändring. Vi moderniserar verksamheter genom innovativa lösningar med hjälp av AI, maskininlärning, DevOps och mycket mer.",
+            "paragraph2": ""
+        },
+        "qualifications": "AI, LLM, DevOps, Azure, AWS, JavaScript, Grafisk Design, Agila arbetssätt."
+    },
+    "scandicHotels": {
+        "areaOfBusiness": "Webb- och apputveckling, integration, design, analys, IT-säkerhet, arkitektur och CRM",
+        "description": {
+            "paragraph1": "Scandic Hotels är Nordens största hotelloperatör som driver digital transformation inom hotellbranschen. Vi strävar efter att utveckla nästa generations digitala upplevelser för våra gäster och skapa en modern och hållbar hotellmiljö.",
+            "paragraph2": ""
+        },
+        "qualifications": "Azure cloud, .NET, Javascript, TypeScript, Next.js 15, React Native, React, Kubernetes, test automation."
     }
 }

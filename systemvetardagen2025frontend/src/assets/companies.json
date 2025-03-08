@@ -50,10 +50,10 @@
     "name": "Deloitte",
     "id": "deloitte",
     "websiteLink": "https://www2.deloitte.com/se/sv/karriar/Lediga-tjanster.html",
-    "slogan": "Together, we can build better futures.",
+    "slogan": "Choose your impact",
     "founded": 1845,
-    "employeesSweden": 1700,
-    "employeesTotal": 457000,
+    "employeesSweden": 1800,
+    "employeesTotal": 460000,
     "linkedIn": "https://www.linkedin.com/company/deloitte/",
     "instagram": "https://www.instagram.com/deloittesweden/",
     "facebook": "https://www.facebook.com/DeloitteSweden/?locale=sv_SE",
@@ -63,7 +63,8 @@
       "SAFFK",
       "SYSDK",
       "SITEK",
-      "SMARK"
+      "SMARK",
+      "SIADK"
     ],
     "masterPrograms": [
       "SHINO",
@@ -73,8 +74,8 @@
       "SDSBO",
       "SAIHO",
       "SMEFO",
-      "SDSBO",
-      "SCSSO"
+      "SCSSO",
+      "SDKIO"
     ],
     "positions": [
       "fullTime",
@@ -85,7 +86,7 @@
       {
         "name": "Dennis Leach",
         "mail": "deleach@deloitte.se",
-        "phoneNumber": "+46700802540"
+        "phoneNumber": "0700802540"
       }
     ]
   },
@@ -594,7 +595,8 @@
       "SDSBO",
       "SMEFO",
       "SDKIO",
-      "SCSSO"
+      "SCSSO",
+      "SAIHO"
     ],
     "positions": [
       "fullTime",
@@ -612,10 +614,10 @@
     "name": "Innofactor",
     "id": "innofactor",
     "websiteLink": "https://www.innofactor.com/se/karriar/",
-    "slogan": "We offer value through innovation.",
+    "slogan": "Be the real you",
     "founded": 2000,
     "employeesSweden": 100,
-    "employeesTotal": 550,
+    "employeesTotal": 600,
     "linkedIn": "https://www.linkedin.com/company/innofactor-plc/mycompany/verification/",
     "instagram": "https://www.instagram.com/innofactor/",
     "isPartner": false,
@@ -623,14 +625,16 @@
       "SDAVK",
       "SAFFK",
       "SYSDK",
-      "SITEK"
+      "SITEK",
+      "SIADK"
     ],
     "masterPrograms": [
       "SMINO",
       "SSLIO",
       "SDSBO",
       "SMEFO",
-      "SCSSO"
+      "SCSSO",
+      "SAIHO"
     ],
     "positions": [
       "fullTime"
@@ -639,7 +643,7 @@
       {
         "name": "Elin Trotz",
         "mail": "elin.trotz@innofactor.com",
-        "phoneNumber": "0735263876"
+        "phoneNumber": "0768684369"
       }
     ]
   },
@@ -647,9 +651,9 @@
     "name": "Pensionsmyndigheten",
     "id": "pension",
     "websiteLink": "https://www.pensionsmyndigheten.se/om-pensionsmyndigheten/jobba-hos-oss/lediga-jobb",
-    "slogan": "Vi informerar om hela pensionen.",
+    "slogan": "Vi gör pensioner enklare",
     "founded": 2010,
-    "employeesSweden": 1600,
+    "employeesSweden": 1700,
     "linkedIn": "https://www.linkedin.com/company/pensionsmyndigheten/mycompany/?viewAsMember=true",
     "isPartner": false,
     "candidatePrograms": [
@@ -660,7 +664,184 @@
       "SCSSO"
     ],
     "positions": [
-      "fullTime"
+      "fullTime",
+      "thesis"
+    ],
+    "contacts": [
+      {
+        "name": "Rekrytering",
+        "mail": "rekrytering@pensionsmyndigheten.se"
+      }
+    ]
+  },
+  {
+    "name": "Folksam",
+    "id": "folksam",
+    "websiteLink": "https://www.folksam.se/jobb-och-karriar",
+    "founded": 1908,
+    "employeesSweden": 4000,
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SAFFK",
+      "SYSDK",
+      "SITEK",
+      "SMARK",
+      "SIADK",
+      "SDIMK"
+    ],
+    "masterPrograms": [
+      "SCSSO",
+      "SSLIO",
+      "SMINO"
+    ],
+    "positions": [
+      "fullTime",
+      "internship"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/folksam/",
+    "facebook": "https://www.facebook.com/folksam",
+    "contacts": [
+      {
+        "name": "Elin Jacobsson",
+        "mail": "elin.jacobsson@folksam.se",
+        "phoneNumber": "0708316853"
+      }
+    ]
+  },
+  {
+    "name": "Unionen Student",
+    "id": "unionenStudent",
+    "websiteLink": "https://www.unionen.se/student",
+    "slogan": "Unionen Student är den perfekta kickstarten för dig som siktar på jobb i privata arbetslivet",
+    "founded": 2008,
+    "employeesSweden": 1000,
+    "isPartner": false,
+    "candidatePrograms": [
+      "SAFFK",
+      "SYSDK",
+      "SDAVK",
+      "SGAMK",
+      "SDIMK",
+      "SITEK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SDSBO",
+      "SCSSO",
+      "SDKIO",
+      "SHINO",
+      "SMINO",
+      "SSLIO",
+      "SMEFO"
+    ],
+    "positions": [
+      "fullTime",
+      "partTime",
+      "internship"
+    ],
+    "instagram": "https://www.instagram.com/unionenstudent/",
+    "contacts": [
+      {
+        "name": "Mikael Udén-Berglund",
+        "mail": "studentevent@unionen.se",
+        "phoneNumber": "072-5901632"
+      },
+      {
+        "name": "Julia Engman",
+        "mail": "studentevent@unionen.se",
+        "phoneNumber": "072-5901607"
+      }
+    ]
+  },
+  {
+    "name": "Deviera",
+    "id": "deviera",
+    "websiteLink": "https://www.deviera.se/#contact",
+    "slogan": "Utveckling i rätt riktning",
+    "founded": 2019,
+    "employeesSweden": 6,
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SYSDK",
+      "SIADK",
+      "SMARK"
+    ],
+    "masterPrograms": [
+      "SAIHO",
+      "SDSBO",
+      "SCSSO",
+      "SDKIO",
+      "SMINO",
+      "SSLIO"
+    ],
+    "positions": [
+      "thesis"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/deviera/",
+    "contacts": [
+      {
+        "name": "Martin Lindberg",
+        "mail": "martin.lindberg@deviera.se",
+        "phoneNumber": "0790676643"
+      },
+      {
+        "name": "Mattias Folke",
+        "mail": "mattias.folke@deviera.se",
+        "phoneNumber": "0723214248"
+      },
+      {
+        "name": "Esmeralda Säll",
+        "mail": "esmeralda.sall@deviera.se",
+        "phoneNumber": "0760246222"
+      }
+    ]
+  },
+  {
+    "name": "Scandic Hotels",
+    "id": "scandicHotels",
+    "websiteLink": "https://www.scandichotelsgroup.com/career/",
+    "slogan": "Your friend in town!",
+    "founded": 1963,
+    "employeesSweden": 11000,
+    "employeesTotal": 20000,
+    "isPartner": false,
+    "candidatePrograms": [
+      "SDAVK",
+      "SYSDK",
+      "SITEK",
+      "SIADK",
+      "SMARK",
+      "SDIMK",
+      "SAFFK"
+    ],
+    "masterPrograms": [
+      "SCSSO",
+      "SDSBO",
+      "SDKIO",
+      "SMINO",
+      "SSLIO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ],
+    "linkedIn": "https://www.linkedin.com/company/scandic-hotels",
+    "instagram": "https://www.instagram.com/scandichotels",
+    "facebook": "https://facebook.com/scandic",
+    "contacts": [
+      {
+        "name": "Michaela Liljedahl",
+        "mail": "michaela.liljedahl@scandichotels.com",
+        "phoneNumber": "0729379635"
+      },
+      {
+        "name": "Jenny Holmberg",
+        "mail": "jenny.holmberg@scandichotels.com"
+      }
     ]
   }
 ]
