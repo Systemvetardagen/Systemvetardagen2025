@@ -42,7 +42,8 @@ const VisitInfo: React.FC = () => {
             <p className="text-gray-500 font-light mx-8 fadeRight">
                 {t('sub-header')}
             </p>
-            {/*<div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
+            {/* 
+            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft"></div>
                 <h1 className="text-2xl lg:text-3xl font-light">
                     {t('lectures.header')}
                 </h1>
@@ -55,9 +56,10 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <a href="/svgs/floormap.svg">
-                <img className="max-w-[80vw]" src="/svgs/floormap.svg" alt="Floor map" />
-            </a>*/}
+            */}
+            <a href="/svgs/floormap.svg" className="mt-10">
+                <img className="max-w-[80vw] rounded-3xl" src="/svgs/floormap.svg" alt="Floor map" />
+            </a>
             <div className="px-10 max-w-[90vw] lg:max-w-[50vw] text-start my-8">
                 <h1 className="font-light text-3xl mb-2">
                     {t('getting-to.header')}
