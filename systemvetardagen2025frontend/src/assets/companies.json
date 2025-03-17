@@ -856,12 +856,22 @@
     "linkedIn": "https://se.linkedin.com/company/saab",
     "instagram": "https://www.instagram.com/saab/",
     "facebook": "https://www.facebook.com/SAAB/",
-    "candidatePrograms": [],
-    "masterPrograms": [],
+    "candidatePrograms": [
+      "SYSDK",
+      "SDAVK",
+      "SITEK"
+    ],
+    "masterPrograms": [
+      "SCSSO",
+      "SPROM",
+      "SSLIO",
+      "SMINO",
+      "SAIHO"
+    ],
     "positions": [
       "fullTime",
       "partTime",
-      "examensarbete"
+      "thesis"
     ],
     "contacts": []
   }
