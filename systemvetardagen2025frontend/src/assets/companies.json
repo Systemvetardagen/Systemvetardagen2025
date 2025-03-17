@@ -843,5 +843,26 @@
         "mail": "jenny.holmberg@scandichotels.com"
       }
     ]
+  },
+  {
+    "name": "Saab",
+    "id": "saab",
+    "websiteLink": "https://www.saab.com/career",
+    "slogan": "Keeping people and society safe",
+    "founded": 1937,
+    "employeesSweden": 17000,
+    "employeesTotal": 24000,
+    "isPartner": false,
+    "linkedIn": "https://se.linkedin.com/company/saab",
+    "instagram": "https://www.instagram.com/saab/",
+    "facebook": "https://www.facebook.com/SAAB/",
+    "candidatePrograms": [],
+    "masterPrograms": [],
+    "positions": [
+      "fullTime",
+      "partTime",
+      "examensarbete"
+    ],
+    "contacts": []
   }
 ]

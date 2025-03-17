@@ -65,7 +65,7 @@
     "ericsson": {
         "areaOfBusiness": "Informations- och kommunikationsteknik",
         "description": {
-            "paragraph1": "Hos Ericsson kommer du ha en unik möjlighet. Möjligheten att använda dina kunskaper och din fantasi för att tänja på gränserna för vad som är möjligt. Att skapa lösningar på några av världens tuffaste problem. Du kommer att bli utmanad. Men du kommer inte att vara ensam. Du kommer att ingå i ett team av likasinnade innovatörer, alla drivna att gå bortom status quo för att bygg vad som kommer härnäst. Du kommer att samarbeta över discipliner, gränser och kontinenter. Du kommer att få befogenhet att leda och prestera på ditt bästa. Du kommer att forma teknik för människor, samhällen, industrier och mänskligheten. Du kommer att vara en del av en mångfaldig gemenskap där du kan ta med dig ditt eget helt unika jag på jobbet. Hos Ericsson kan du vara en upptäcktsresande, en förändringsmakare och en kraft för det goda."
+            "paragraph1": "Hos Ericsson kommer du ha en unik möjlighet. Möjligheten att använda dina kunskaper och din fantasi för att tänja på gränserna för vad som är möjligt. Att skapa lösningar på några av världens tuffaste problem. Du kommer att bli utmanad. Men du kommer inte att vara ensam. Du kommer att ingå i ett team av likasinnade innovatörer, alla drivna att gå bortom status quo för att bygga vad som kommer härnäst. Du kommer att samarbeta över discipliner, gränser och kontinenter. Du kommer att få befogenhet att leda och prestera på ditt bästa. Du kommer att forma teknik för människor, samhällen, industrier och mänskligheten. Du kommer att vara en del av en mångfaldig gemenskap där du kan ta med dig ditt eget helt unika jag på jobbet. Hos Ericsson kan du vara en upptäcktsresande, en förändringsmakare och en kraft för det goda."
         },
         "qualifications": ""
     },
@@ -131,17 +131,16 @@
         "qualifications": "a"
     },
     "scania": {
-        "areaOfBusiness": "Programvaruutveckling, Moln, Cybersäkerhet, AI, Maskininlärning, Industri 4.0, Datorseende, Datavetenskap,",
+        "areaOfBusiness": "Programvaruutveckling, Moln, Cybersäkerhet, AI, Maskininlärning, Industri 4.0, Datorseende, Datavetenskap",
         "description": {
-            "paragraph1": "Scanias kultur är både pragmatisk och ambitiös. Vi vill driva verklig förändring och genom att utnyttja innovationens kraft hittar vi svar på några av våra mest akuta hållbarhetsutmaningar, från urban mobilitet till klimatförändringar. Samtidigt förändrar teknologier som elektrifiering och automation vår verksamhet radikalt, vilket skapar spännande nya möjligheter och affärsmodeller.",
-            "paragraph2": ""
+            "paragraph1": "Scanias kultur är både pragmatisk och ambitiös. Vi vill driva verklig förändring och genom att utnyttja innovationens kraft hittar vi svar på några av våra mest akuta hållbarhetsutmaningar, från urban mobilitet till klimatförändringar. Samtidigt förändrar teknologier som elektrifiering och automation vår verksamhet radikalt, vilket skapar spännande nya möjligheter och affärsmodeller."
         },
         "qualifications": "Java, Python, C++, JavaScript, C#, SQL, TypeScript, Scala, Kotlin, AWS, Azure."
     },
     "capgemini": {
         "areaOfBusiness": "Capgemini arbetar med organisationer inom bl.a energi, bank, försäkring, bilindustri, offentlig sektor, telecom, produktion, life science.",
         "description": {
-            "paragraph1": "Capgemini är en global partner inom affärs- och tekniktransformation som hjälper organisationer att påskynda deras övergång till en digital och hållbar värld, och samtidigt gör skillnad för företag och samhälle. Det är en ansvarsfull och mångsidig organisation med 340 000 medarbetare i över 50 länder. Med ett starkt arv som sträcker sig över 55 år tillbaka har Capgemini sina kunders förtroende att hjälpa dem frigöra värdet av teknik för att tillgodose hela deras affärsbehov. Capgemini levererar helhetslösningar som utnyttjar styrkan från strategi och design till teknik. Allt drivet av en marknadsledande kapacitet inom AI, moln och data, kombinerat med en djup branschexpertis och ett ekosystem av partners. År 2023 rapporterade Capgemini Group globala intäkter på 22,5 miljarder euro.",
+            "paragraph1": "Capgemini är en global partner inom affärs- och tekniktransformation som hjälper organisationer att påskynda deras övergång till en digital och hållbar värld, och samtidigt göra skillnad för företag och samhälle. Det är en ansvarsfull och mångsidig organisation med 340 000 medarbetare i över 50 länder. Med ett starkt arv som sträcker sig över 55 år tillbaka har Capgemini sina kunders förtroende att hjälpa dem frigöra värdet av teknik för att tillgodose hela deras affärsbehov. Capgemini levererar helhetslösningar som utnyttjar styrkan från strategi och design till teknik. Allt drivet av en marknadsledande kapacitet inom AI, moln och data, kombinerat med en djup branschexpertis och ett ekosystem av partners. År 2023 rapporterade Capgemini Group globala intäkter på 22,5 miljarder euro.",
             "paragraph2": ""
         },
         "qualifications": ""
@@ -217,5 +216,12 @@
             "paragraph2": ""
         },
         "qualifications": "Azure cloud, .NET, Javascript, TypeScript, Next.js 15, React Native, React, Kubernetes, test automation."
+    },
+    "saab": {
+        "areaOfBusiness": "Försvars- och säkerhetsindustri, flygteknik, flygtrafikledning, civil säkerhet",
+        "description": {
+            "paragraph1": "Saab betjänar den globala marknaden med världsledande produkter, tjänster och lösningar från militärt försvar till civil säkerhet. Med verksamhet på varje kontinent utvecklar, anpassar och förbättrar Saab kontinuerligt ny teknik för att möta kundernas förändrade behov. De viktigaste marknaderna är Europa, Asien och Nordamerika. Saab har cirka 24 000 anställda med en årlig omsättning på cirka 40 miljarder kronor, varav cirka 25 procent är relaterat till forskning och utveckling."
+        },
+        "qualifications": "Ingenjörskompetens, mjukvaruutveckling, systemintegration, analytiskt tänkande, projektledning"
     }
 }

@@ -201,5 +201,12 @@
             "paragraph1": "Scandic is the largest Nordic hotel operator with a network of about 280 hotels with 58,000 hotel rooms in operation and under development in six countries. Scandic Friends is the biggest loyalty program in the Nordic hotel sector. At Scandic Hotels, we are on an exciting journey of digital transformation. 2023 marked another record year with strong results and high momentum in our development and we are now accelerating the pace to grow our portfolio and excel within digitalization. With a lot of curiosity and a truly customer-centric approach, we aim to develop the next generation of digital experiences for our guests."
         },
         "qualifications": "Azure cloud, .NET, Javascript, TypeScript, Next.js 15, React Native, React, Kubernetes, test automation"
+    },
+    "saab": {
+        "areaOfBusiness": "Defense and security industry, aerospace technology, air traffic management, civil security",
+        "description": {
+            "paragraph1": "Saab serves the global market with world-leading products, services and solutions from military defense to civil security. With operations on every continent, Saab continuously develops, adapts and improves new technology to meet customers' changing needs. The most important markets are Europe, Asia and North America. Saab has around 24,000 employees with annual sales of approximately SEK 40 billion, of which around 25 percent is related to research and development."
+        },
+        "qualifications": "Engineering skills, software development, systems integration, analytical thinking, project management"
     }
 }
