@@ -832,17 +832,7 @@
     "linkedIn": "https://www.linkedin.com/company/scandic-hotels",
     "instagram": "https://www.instagram.com/scandichotels",
     "facebook": "https://facebook.com/scandic",
-    "contacts": [
-      {
-        "name": "Michaela Liljedahl",
-        "mail": "michaela.liljedahl@scandichotels.com",
-        "phoneNumber": "0729379635"
-      },
-      {
-        "name": "Jenny Holmberg",
-        "mail": "jenny.holmberg@scandichotels.com"
-      }
-    ]
+    "contacts": []
   },
   {
     "name": "Saab",
