@@ -874,5 +874,75 @@
       "thesis"
     ],
     "contacts": []
+  },
+  {
+    "name": "Softronic",
+    "id": "softronic",
+    "websiteLink": "https://www.softronic.se/karriar/",
+    "slogan": "GoodTech - Ledande teknik som gör gott i samhället",
+    "founded": 1984,
+    "employeesSweden": 430,
+    "linkedIn": "https://www.linkedin.com/company/softronic/",
+    "instagram": "https://www.instagram.com/softronicab/",
+    "facebook": "https://www.facebook.com/softronic/",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SYSDK",
+      "SDAVK"
+    ],
+    "masterPrograms": [
+      "SCSSO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ],
+    "contacts": [
+      {
+        "name": "Therés Hesselgren Zaar",
+        "mail": "thz@softronic.se",
+        "phoneNumber": "0708813073"
+      }
+    ]
+  },
+  {
+    "name": "Skatteverket",
+    "id": "skatteverket",
+    "websiteLink": "https://www.skatteverket.se/jobbamedit",
+    "slogan": "Tillsammans gör vi samhället möjligt",
+    "founded": 2004,
+    "employeesSweden": 10 000,
+    "linkedIn": "https://www.linkedin.com/company/165993",
+    "instagram": "https://www.instagram.com/skatteverketomoss/",
+    "facebook": "https://www.facebook.com/skatteverketomoss",
+    "isPartner": false,
+    "candidatePrograms": [
+      "SYSDK",
+      "SAFFK",
+      "SDAVK",
+      "SGAMK",
+      "SDIMK", 
+      "SITEK", 
+      "SIADK", 
+      "SMARK", 
+    ],
+    "masterPrograms": [
+      "SCSSO",
+      "SPROM",
+      "SDSBO",
+      "SSLIO",
+      "SMINO"
+    ],
+    "positions": [
+      "fullTime",
+      "trainee"
+    ],
+    "contacts": [
+      {
+        "name": "Per Olsson",
+        "mail": "per.olsson@skatteverket.se",
+        "phoneNumber": "0105744238"
+      }
+    ]
   }
 ]
