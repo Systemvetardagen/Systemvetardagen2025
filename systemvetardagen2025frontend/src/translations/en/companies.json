@@ -208,5 +208,19 @@
             "paragraph1": "Saab serves the global market with world-leading products, services and solutions from military defense to civil security. With operations on every continent, Saab continuously develops, adapts and improves new technology to meet customers' changing needs. The most important markets are Europe, Asia and North America. Saab has around 24,000 employees with annual sales of approximately SEK 40 billion, of which around 25 percent is related to research and development."
         },
         "qualifications": "Engineering skills, software development, systems integration, analytical thinking, project management"
+    },
+    "skatteverket": {
+        "areaOfBusiness": "We build systems that support essential activities such as public financing, population registration and law enforcement.",
+        "description": {
+            "paragraph1": "With us, you get to work with modern technology together with others who share your commitment to society. Together, you contribute to solutions that benefit everyone in Sweden, such as e-services for those who file tax returns, run businesses, move or get married. The IT department has around 1 500 employees and is located in Gothenburg, Malmö, Sundbyberg, Umeå, Visby, Västerås and Östersund. We work with the development, operation, management and maintenance of IT systems for the Swedish Tax Agency, the Swedish Enforcement Authority, the Swedish Election Authority and the Swedish Payment Authority. At the Swedish Tax Agency, we are constantly working on system renewal by introducing modern technology and developing our architecture. We develop backend services in Java with tools such as Spring Boot, Gradle, Maven, Oracle, IntelliJ, Visual Studio Code, Eclipse and Jenkins. For web development, we use frameworks such as React, Angular and Vue.js. Our technical environment includes OpenShift Container Platform, Kubernetes, Red Hat Enterprise Linux and Git. With us, you have good chances for work-life balance. Most roles offer flexible working hours and the opportunity to work partly from home. You also get one hour of wellness per week and a wellness allowance. Our trainee program is a kick-start for ambitious IT graduates. You will be employed in one of our teams and deliver in the business from day one. At the same time, you will develop both broad and deep skills through the trainee program. Read more at skatteverket.se/jobbamedit"
+        },
+        "qualifications": "To do a good job and thrive with us at the Swedish Tax Agency, you need to be responsive, innovative and take responsibility."
+    },
+    "softronic": {
+        "areaOfBusiness": "IT consultancy - software development and operational services. Innovative digital solutions that create real benefits for society.",
+        "description": {
+            "paragraph1": "Our ambition is to develop leading technologies with a long-term perspective on business relationships and societal benefits. GoodTech is technology that sharpens business processes and helps people to receive fast and efficient public services. The sustainability perspective is included in all parts, in both relationships and in the environmental footprint of our solutions. With us, you can work with everything from AI and automation to UX and streamlined operations. As an advisor, we always base our work on the real needs of the customer and we expect you to be stimulated by contributing your insights to reach the best solution."
+        },
+        "qualifications": ".Net, C#, Java, AI, BC"
     }
 }
