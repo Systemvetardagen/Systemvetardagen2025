@@ -223,5 +223,21 @@
             "paragraph1": "Saab betjänar den globala marknaden med världsledande produkter, tjänster och lösningar från militärt försvar till civil säkerhet. Med verksamhet på varje kontinent utvecklar, anpassar och förbättrar Saab kontinuerligt ny teknik för att möta kundernas förändrade behov. De viktigaste marknaderna är Europa, Asien och Nordamerika. Saab har cirka 24 000 anställda med en årlig omsättning på cirka 40 miljarder kronor, varav cirka 25 procent är relaterat till forskning och utveckling."
         },
         "qualifications": "Ingenjörskompetens, mjukvaruutveckling, systemintegration, analytiskt tänkande, projektledning"
+    },
+    "softronic": {
+        "areaOfBusiness": "Konsultföretag inom IT - mjukvaruutveckling och driftnära tjänster. Innovativa digitala lösningar som skapar verklig samhällsnytta.",
+        "description": {
+            "paragraph1": "Vår ambition är att utveckla ledande teknik med ett långsiktigt perspektiv på affärsrelationer och samhällsnytta. GoodTech är teknik som vässar affärsprocesser och hjälper människor att få snabb och effektiv samhällsservice. Hållbarhetsperspektivet finns med i alla delar, i såväl relationer som i våra lösningars miljöavtryck. Hos oss kan du jobba med allt från AI och automatisering till UX och rationell drift. Som rådgivare grundar vi oss alltid i kundens verkliga behov och vi förväntar oss att du stimuleras av att bidra med dina insikter för att nå den bästa lösningen.",
+            "paragraph2": ""
+        },
+        "qualifications": ".Net, C#, Java, AI, BC"
+    },
+    "skatteverket": {
+        "areaOfBusiness": "Vi bygger system som stöttar samhällsviktig verksamhet så som finansiering av det offentliga, folkbokföring och brottsbekämpning.",
+        "description": {
+            "paragraph1": "Hos oss får du arbeta med modern teknik ihop med andra som delar ditt samhällsengagemang. Tillsammans bidrar ni till lösningar som gynnar alla i Sverige, till exempel e-tjänster för den som deklarerar, driver företag, flyttar eller gifter sig. It-avdelningen har cirka 1 500 medarbetare och finns i Göteborg, Malmö, Sundbyberg, Umeå, Visby, Västerås och Östersund. Vi arbetar med utveckling, drift, förvaltning och underhåll av it-system för Skatteverket, Kronofogden, Valmyndigheten och Utbetalningsmyndigheten. På Skatteverket jobbar vi ständigt med systemförnyelse genom att införa modern teknik och utveckla vår arkitektur. Vi utvecklar backend-tjänster i Java med verktyg som Spring Boot, Gradle, Maven, Oracle, IntelliJ, Visual Studio Code, Eclipse och Jenkins. För webbutveckling använder vi ramverk som React, Angular och Vue.js. Vår tekniska miljö omfattar bland annat OpenShift Container Platform, Kubernetes, Red Hat Enterprise Linux och Git. Hos oss har du goda chanser till balans mellan jobb och fritid. De flesta roller ger möjlighet till flexibel arbetstid och att jobba delvis hemifrån. Du får också en friskvårdstimme i veckan och friskvårdsbidrag. Vårt traineeprogram är en kickstart för dig som är ambitiös och nyutexaminerad inom it. Du blir anställd i ett av våra team och levererar i verksamheten från dag ett. Samtidigt utvecklar du både bred och djup kompetens genom traineeprogrammet. Läs mer på skatteverket.se/jobbamedit",
+            "paragraph2": ""
+        },
+        "qualifications": "För att göra ett bra jobb och trivas hos oss på Skatteverket behöver du vara lyhörd, tänka nytt och ta ansvar."
     }
 }
