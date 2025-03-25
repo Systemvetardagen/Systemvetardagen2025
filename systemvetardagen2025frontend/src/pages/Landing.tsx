@@ -13,11 +13,11 @@ import sourcecomQR from '../assets/images/Sourcecomqrcode.png';
 import ebuilderQR from '../assets/images/eBuilderqrcode.png';
 import eciceronQR from '../assets/images/eCiceronqrcode.png';
 
-import kpmgLogo from '../assets/images/KPMGlogo.png';
-import northwaveLogo from '../assets/images/NorthwaveLogo.png';
-import sourcecomLogo from '../assets/images/SourcecomLogo.png';
-import ebuilderLogo from '../assets/images/eBuilderLogo.png';
-import eciceronLogo from '../assets/images/eCiceronLogo.png';
+import kpmgLogo from '../assets/images/KPMGlogo.jpg';
+import northwaveLogo from '../assets/images/NorthwaveLogo.jpg';
+import sourcecomLogo from '../assets/images/SourcecomLogo.jpg';
+import ebuilderLogo from '../assets/images/eBuilderLogo.jpg';
+import eciceronLogo from '../assets/images/eCiceronLogo.jpg';
 
 
 export default function Landing() {
