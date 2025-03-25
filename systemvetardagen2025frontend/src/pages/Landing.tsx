@@ -7,10 +7,44 @@ import Partners from '../components/Partners/Partners';
 import { MapPin } from 'lucide-react';
 import FadeInSection from '../components/FadeInSection/FadeInSection';
 import { NUM_OF_COMPANIES } from '../assets/companies';
+import kpmgQR from '../assets/images/KPMGqrcode.png';
+import northwaveQR from '../assets/images/Northwaveqrcode.png';
+import sourcecomQR from '../assets/images/Sourcecomqrcode.png';
+import ebuilderQR from '../assets/images/eBuilderqrcode.png';
+import eciceronQR from '../assets/images/eCiceronqrcode.png';
+
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
     const [t] = useTranslation('landing');
+    const qrCodes = [
+    {
+        qrSrc: kpmgQR,
+        linkHref: 'https://example1.com',
+        buttonText: t('body.qr-codes.buttonKPMG')
+    },
+    {
+        qrSrc: northwaveQR,
+        linkHref: 'https://example2.com',
+        buttonText: t('body.qr-codes.buttonNORTHWAVE')
+    },
+    {
+        qrSrc: sourcecomQR,
+        linkHref: 'https://example3.com',
+        buttonText: t('body.qr-codes.buttonSOURCECOM')
+    },
+    {
+        qrSrc: ebuilderQR,
+        linkHref: 'https://example4.com',
+        buttonText: t('body.qr-codes.buttoneEBUILDER')
+    },
+    {
+        qrSrc: eciceronQR,
+        linkHref: 'https://example5.com',
+        buttonText: t('body.qr-codes.buttonECICERON')
+    }
+];
+
     return (
         <>
             {/* Please stop putting navbar here its globally inserted in App.tsx */}
@@ -163,33 +197,7 @@ export default function Landing() {
             {t('body.qr-codes.header')}
         </h1>
         <div className="w-full px-4 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-6 justify-items-center">
-            {[
-                {
-                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/KPMGqrcode.png',
-                    linkHref: 'https://example1.com',
-                    buttonText: t('body.qr-codes.buttonKPMG')
-                },
-                {
-                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/Northwaveqrcode.png',
-                    linkHref: 'https://example2.com',
-                    buttonText: t('body.qr-codes.buttonNORTHWAVE')
-                },
-                {
-                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/Sourcecomqrcode.png',
-                    linkHref: 'https://example3.com',
-                    buttonText: t('body.qr-codes.buttonSOURCECOM')
-                },
-                {
-                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/eBuilderqrcode.png',
-                    linkHref: 'https://example4.com',
-                    buttonText: t('body.qr-codes.buttoneEBUILDER')
-                },
-                {
-                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/eCiceronqrcode.png',
-                    linkHref: 'https://example5.com',
-                    buttonText: t('body.qr-codes.buttonECICERON')
-                }
-            ].map((item, index) => (
+            {qrCodes.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-4 w-full max-w-[200px]">
                     <img 
                         src={item.qrSrc} 
