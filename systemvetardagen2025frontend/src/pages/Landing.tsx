@@ -216,11 +216,14 @@ export default function Landing() {
                         alt={`QR Code ${index + 1}`} 
                         className="w-full aspect-square object-contain rounded-xl shadow-md"
                     />
-                    <img 
-                        src={item.logoSrc} 
-                        alt={`Logo ${index + 1}`} 
-                        className="w-28 h-auto object-contain" 
-                    />
+                    <div className="w-28 h-16 flex items-center justify-center">
+                        <img 
+                            src={item.logoSrc} 
+                            alt={`Logo ${index + 1}`} 
+                            className="max-h-full max-w-full object-contain" 
+                        />
+                    </div>
+
                     <a 
                         href={item.linkHref} 
                         target="_blank" 
