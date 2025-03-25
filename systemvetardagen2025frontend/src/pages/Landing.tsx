@@ -13,6 +13,12 @@ import sourcecomQR from '../assets/images/Sourcecomqrcode.png';
 import ebuilderQR from '../assets/images/eBuilderqrcode.png';
 import eciceronQR from '../assets/images/eCiceronqrcode.png';
 
+import kpmgLogo from '../assets/images/KPMGlogo.png';
+import northwaveLogo from '../assets/images/NorthwaveLogo.png';
+import sourcecomLogo from '../assets/images/SourcecomLogo.png';
+import ebuilderLogo from '../assets/images/eBuilderLogo.png';
+import eciceronLogo from '../assets/images/eCiceronLogo.png';
+
 
 export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
@@ -20,30 +26,36 @@ export default function Landing() {
     const qrCodes = [
     {
         qrSrc: kpmgQR,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-LVSgu9lKbWTgir5fIeZ',
+        logoSrc: kpmgLogo,
+        linkHref: 'https://example1.com',
         buttonText: t('body.qr-codes.buttonKPMG')
     },
     {
         qrSrc: northwaveQR,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mOFFhsOa4zLpQ-h_',
+        logoSrc: northwaveLogo,
+        linkHref: 'https://example2.com',
         buttonText: t('body.qr-codes.buttonNORTHWAVE')
     },
     {
         qrSrc: sourcecomQR,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5DkXmD3RY9LyE_q48',
+        logoSrc: sourcecomLogo,
+        linkHref: 'https://example3.com',
         buttonText: t('body.qr-codes.buttonSOURCECOM')
     },
     {
         qrSrc: ebuilderQR,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
+        logoSrc: ebuilderLogo,
+        linkHref: 'https://example4.com',
         buttonText: t('body.qr-codes.buttoneEBUILDER')
     },
     {
         qrSrc: eciceronQR,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5CyNSKRxUPJzmgNeB',
+        logoSrc: eciceronLogo,
+        linkHref: 'https://example5.com',
         buttonText: t('body.qr-codes.buttonECICERON')
     }
 ];
+
 
     return (
         <>
@@ -204,6 +216,11 @@ export default function Landing() {
                         alt={`QR Code ${index + 1}`} 
                         className="w-full aspect-square object-contain rounded-xl shadow-md"
                     />
+                    <img 
+                        src={item.logoSrc} 
+                        alt={`Logo ${index + 1}`} 
+                        className="w-28 h-auto object-contain" 
+                    />
                     <a 
                         href={item.linkHref} 
                         target="_blank" 
@@ -219,6 +236,7 @@ export default function Landing() {
         </div>
     </div>
 </FadeInSection>
+
                     <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="w-full">
                             <SignupLink />
