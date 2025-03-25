@@ -11,16 +11,88 @@ interface Lecture {
     company: string;
     time: string;
     topic: string;
+    location: string;
+    note?: string;
+    speaker?: string;
+    speakers?: string[];
 }
+
 interface LectureItemProps {
     lecture: Lecture;
 }
+
 const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
     return (
-        <FadeInSection direction="fadeLeft" className="mb-8">
-            <p className="text-md text-white ">{lecture.time}</p>
-            <h1 className="font-semibold text-3xl">{lecture.company}</h1>
-            <p className="text-md text-white font-ibm">{lecture.topic}</p>
+        <FadeInSection direction="fadeLeft" className="mb-5 border-b border-white/10 pb-4 last:border-0">
+            <div className="flex flex-col text-left">
+                {/* Desktop view */}
+                <div className="hidden md:flex items-start gap-3">
+                    <div className="bg-gradient-to-r from-primary/20 to-transparent px-2 py-1 rounded-lg w-[90px] text-center shrink-0">
+                        <p className="text-sm text-white font-medium">{lecture.time}</p>
+                    </div>
+                    <div className="flex-1">
+                        <h1 className="font-semibold text-xl md:text-2xl">{lecture.company}</h1>
+                        <p className="text-sm md:text-md text-white/90 font-medium">{lecture.topic}</p>
+                        
+                        <div className="flex flex-wrap items-center gap-3 mt-1 text-xs md:text-sm text-white/70">
+                            <div className="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                                </svg>
+                                {lecture.location}
+                            </div>
+                            
+                            {(lecture.speaker || lecture.speakers) && (
+                                <div className="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                    </svg>
+                                    {lecture.speaker || lecture.speakers?.join(", ")}
+                                </div>
+                            )}
+                        </div>
+                        
+                        {lecture.note && (
+                            <div className="bg-white/5 rounded-md p-2 mt-1 max-w-md">
+                                <p className="text-xs text-white/80 italic">{lecture.note}</p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+                
+                {/* Mobile view */}
+                <div className="flex flex-col md:hidden">
+                    <div className="bg-gradient-to-r from-primary/20 to-transparent px-2 py-1 rounded-lg w-fit mb-1">
+                        <p className="text-xs text-white font-medium">{lecture.time}</p>
+                    </div>
+                    <h1 className="font-semibold text-lg">{lecture.company}</h1>
+                    <p className="text-sm text-white/90 font-medium">{lecture.topic}</p>
+                    
+                    <div className="flex flex-wrap items-center gap-2 mt-1 text-xs text-white/70">
+                        <div className="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                            {lecture.location}
+                        </div>
+                        
+                        {(lecture.speaker || lecture.speakers) && (
+                            <div className="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                </svg>
+                                {lecture.speaker || lecture.speakers?.join(", ")}
+                            </div>
+                        )}
+                    </div>
+                    
+                    {lecture.note && (
+                        <div className="bg-white/5 rounded-md p-2 mt-1">
+                            <p className="text-xs text-white/80 italic">{lecture.note}</p>
+                        </div>
+                    )}
+                </div>
+            </div>
         </FadeInSection>
     );
 };
@@ -28,7 +100,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
 const VisitInfo: React.FC = () => {
     const [t] = useTranslation('visitInfo');
     return (
-        <div className="w-screen flex flex-col items-center font-poppins bg-background text-center">
+        <div className="w-full overflow-x-hidden flex flex-col items-center font-poppins bg-background text-center">
             <div className="w-full h-[20vh] lg:h-[40vh] max-h-[400px] overflow-hidden">
                 <img
                     src="/images/nod.webp"
@@ -42,8 +114,8 @@ const VisitInfo: React.FC = () => {
             <p className="text-gray-500 font-light mx-8 fadeRight">
                 {t('sub-header')}
             </p>
-            {/* 
-            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft"></div>
+
+            <div className="w-[600px] max-w-[90vw] tracking-wider gradient-background flex flex-col gap-4 py-6 my-8 text-white rounded-3xl items-center fadeLeft">
                 <h1 className="text-2xl lg:text-3xl font-light">
                     {t('lectures.header')}
                 </h1>
@@ -56,7 +128,7 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            */}
+            
             <a href="/svgs/floormap.svg" className="mt-10">
                 <img className="max-w-[80vw] rounded-3xl" src="/svgs/floormap.svg" alt="Floor map" />
             </a>

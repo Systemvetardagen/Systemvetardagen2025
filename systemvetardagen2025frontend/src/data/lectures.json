@@ -1,7 +1,45 @@
 [
     {
+        "company": "Opening of the fair",
+        "time": "10:00",
+        "topic": "",
+        "location": "Fairground",
+        "note": "Welcome to visit all of the companies and organisations on the fair!"
+    },
+    {
+        "company": "Truesec",
+        "time": "10:40",
+        "topic": "Dissecting the Cicada - In the shadow of the Black Cat",
+        "location": "Aula NOD",
+        "speaker": "Nicklas Keijser"
+    },
+    {
+        "company": "Northwave Cyber Security",
+        "time": "11:20",
+        "topic": "Key trends and challenges in cybersecurity",
+        "location": "Aula NOD",
+        "speakers": ["Kim Elm", "Sakarias Strand"],
+        "note": "Kim Elm, Country Manager Northwave, and Sakarias Strand, Project Manager Cybersecurity Kista Science City, covering the key trends and challenges in cybersecurity, along with the secrets to becoming a leader in the field"
+    },
+    {
+        "company": "Scania",
+        "time": "12:00",
+        "topic": "Eat, Play, Win",
+        "location": "L50",
+        "note": "Enjoy a free lunch, a great vibe, and the chance to win exciting prices while connecting with Scania. Pre-registration required!"
+    },
+    {
         "company": "Kista Science City",
-        "time": "11:00 - 12:00",
-        "topic": "Någonting"
+        "time": "13:00",
+        "topic": "TechTalent Connect",
+        "location": "Booth 6",
+        "note": "One-on-one meetings bringing students together with companies within the field of cybersecurity. Pre-registration required!"
+    },
+    {
+        "company": "After work and pub",
+        "time": "15:45",
+        "topic": "",
+        "location": "Foo Bar",
+        "note": "Foo Bar, located on the second floor of DSV, opens! We invite you to share a bite, mingle and unwind after the fair!"
     }
 ]
