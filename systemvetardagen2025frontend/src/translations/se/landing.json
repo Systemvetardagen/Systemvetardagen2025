@@ -43,12 +43,12 @@
             }
         },
         "qr-codes": {
-            "header": "Speed dating",
-            "buttonKPMG": "Boka hos KPMG",
-            "buttonNORTHWAVE": "Boka hos Northwave",
-            "buttonSOURCECOM": "Boka hos Sourcecom",
-            "buttoneEBUILDER": "Boka hos eBuilder",
-            "buttonECICERON": "Boka hos eCiceron"
+            "header": "Boka en speeddejtingsession med ett företag",
+            "buttonKPMG": "Boka med KPMG",
+            "buttonNORTHWAVE": "Boka med Northwave",
+            "buttonSOURCECOM": "Boka med Sourcecom",
+            "buttoneEBUILDER": "Boka med eBuilder",
+            "buttonECICERON": "Boka med eCiceron"
         },
         "uppdated": {
             "header":"Håll dig uppdaterad",
