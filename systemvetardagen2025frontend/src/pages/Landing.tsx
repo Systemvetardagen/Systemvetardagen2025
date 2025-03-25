@@ -20,27 +20,27 @@ export default function Landing() {
     const qrCodes = [
     {
         qrSrc: kpmgQR,
-        linkHref: 'https://example1.com',
+        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-LVSgu9lKbWTgir5fIeZ',
         buttonText: t('body.qr-codes.buttonKPMG')
     },
     {
         qrSrc: northwaveQR,
-        linkHref: 'https://example2.com',
+        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mOFFhsOa4zLpQ-h_',
         buttonText: t('body.qr-codes.buttonNORTHWAVE')
     },
     {
         qrSrc: sourcecomQR,
-        linkHref: 'https://example3.com',
+        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5DkXmD3RY9LyE_q48',
         buttonText: t('body.qr-codes.buttonSOURCECOM')
     },
     {
         qrSrc: ebuilderQR,
-        linkHref: 'https://example4.com',
+        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
         buttonText: t('body.qr-codes.buttoneEBUILDER')
     },
     {
         qrSrc: eciceronQR,
-        linkHref: 'https://example5.com',
+        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5CyNSKRxUPJzmgNeB',
         buttonText: t('body.qr-codes.buttonECICERON')
     }
 ];
