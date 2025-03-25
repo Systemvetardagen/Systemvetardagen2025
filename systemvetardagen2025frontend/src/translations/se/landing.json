@@ -42,6 +42,14 @@
                 "t3": "Under dagen kommer det att hållas företagsevent i Aula NOD. Kolla schemat efter intressanta event!."
             }
         },
+        "qr-codes": {
+            "header": "Speed dating",
+            "buttonKPMG": "Boka hos KPMG",
+            "buttonNORTHWAVE": "Boka hos Northwave",
+            "buttonSOURCECOM": "Boka hos Sourcecom",
+            "buttoneEBUILDER": "Boka hos eBuilder",
+            "buttonECICERON": "Boka hos eCiceron"
+        },
         "uppdated": {
             "header":"Håll dig uppdaterad",
             "body": "Vill du få uppdateringar om Systemvetardagen med skräddarsydd information via e-post?",
