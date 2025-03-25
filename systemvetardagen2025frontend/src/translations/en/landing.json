@@ -42,6 +42,14 @@
                 "t3": "Throughout the day, company events will be held in Aula NOD. Check the schedule for interesting events!"
             }
         },
+        "qr-codes": {
+            "header": "Speed dating",
+            "buttonKPMG": "Book with KPMG",
+            "buttonNORTHWAVE": "Book with Northwave",
+            "buttonSOURCECOM": "Book with Sourcecom",
+            "buttoneEBUILDER": "Book with eBuilder",
+            "buttonECICERON": "Book with eCiceron"
+        },
         "uppdated": {
             "header":"Keep yourself updated",
             "body": "Would you like to receive updates about Systemvetardagen with tailored information via email?",
