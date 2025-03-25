@@ -158,6 +158,60 @@ export default function Landing() {
                         </div>
                     </FadeInSection>
                     <FadeInSection direction="fadeLeft" className="w-full">
+    <div className="bg-[#E6F4FF] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
+        <h1 className="text-lg md:text-xl lg:text-3xl px-4 font-bold">
+            {t('body.qr-codes.header')}
+        </h1>
+        <div className="w-full px-4 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-6 justify-items-center">
+            {[
+                {
+                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/KPMGqrcode.png',
+                    linkHref: 'https://example1.com',
+                    buttonText: t('body.qr-codes.buttonKPMG')
+                },
+                {
+                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/Northwaveqrcode.png',
+                    linkHref: 'https://example2.com',
+                    buttonText: t('body.qr-codes.buttonNORTHWAVE')
+                },
+                {
+                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/Sourcecomqrcode.png',
+                    linkHref: 'https://example3.com',
+                    buttonText: t('body.qr-codes.buttonSOURCECOM')
+                },
+                {
+                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/eBuilderqrcode.png',
+                    linkHref: 'https://example4.com',
+                    buttonText: t('body.qr-codes.buttoneEBUILDER')
+                },
+                {
+                    qrSrc: 'systemvetardagen2025frontend/src/assets/images/eCiceronqrcode.png',
+                    linkHref: 'https://example5.com',
+                    buttonText: t('body.qr-codes.buttonECICERON')
+                }
+            ].map((item, index) => (
+                <div key={index} className="flex flex-col items-center gap-4 w-full max-w-[200px]">
+                    <img 
+                        src={item.qrSrc} 
+                        alt={`QR Code ${index + 1}`} 
+                        className="w-full aspect-square object-contain rounded-xl shadow-md"
+                    />
+                    <a 
+                        href={item.linkHref} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-full"
+                    >
+                        <button className="bg-white border-2 border-blue-200 py-2 px-4 rounded-full text-sm font-bold w-full hover:bg-blue-50 transition-colors">
+                            {item.buttonText}
+                        </button>
+                    </a>
+                </div>
+            ))}
+        </div>
+    </div>
+</FadeInSection>
+                    <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="w-full">
                             <SignupLink />
                         </div>
