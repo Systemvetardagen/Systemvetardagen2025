@@ -386,14 +386,6 @@ const Companies: React.FC = () => {
                             />
                         </FadeInSection>
                     ))}
-                    <FadeInSection direction="fadeLeft">
-                        <div className="bg-white rounded-3xl hover:scale-105 transition-transform duration-100 shadow-xl p-4 text-center text-2xl">
-                            <div className="h-32 w-56 flex justify-center flex-col">
-                                <p>More companies</p>
-                                <p>coming!</p>
-                            </div>
-                        </div>
-                    </FadeInSection>
                 </div>
             </div>
         </div>
