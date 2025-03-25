@@ -83,7 +83,7 @@ export default function Landing() {
                     <span className="lg:text-[1.2vw] opacity-95 fadeUp">
                         {t('date.day')}, {t('date.month')} 26 10:00-16:00
                     </span>
-                    <NavLink to="/companies">
+                    <NavLink to="/visitInfo">
                         <button className="bg-none border-4 py-4 px-6 rounded-full text-xl font-bold mt-10 fadeDown">
                             {t('exhibitors')}
                         </button>
