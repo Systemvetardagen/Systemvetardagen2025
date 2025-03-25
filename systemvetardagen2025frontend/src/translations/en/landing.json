@@ -43,7 +43,7 @@
             }
         },
         "qr-codes": {
-            "header": "Speed dating",
+            "header": "Book a speed dating session with a company",
             "buttonKPMG": "Book with KPMG",
             "buttonNORTHWAVE": "Book with Northwave",
             "buttonSOURCECOM": "Book with Sourcecom",
