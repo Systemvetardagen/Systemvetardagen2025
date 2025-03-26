@@ -51,7 +51,7 @@ export default function Landing() {
         {
             qrSrc: eciceronQR,
             logoSrc: eciceronLogo,
-            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5CyNSKRxUPJzmgNeB',
             buttonText: t('body.qr-codes.buttonECICERON')
         }
     ];
