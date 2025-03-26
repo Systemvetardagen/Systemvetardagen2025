@@ -24,42 +24,41 @@ export default function Landing() {
     const targetDate = '2025-03-26T16:00:00+01:00';
     const [t] = useTranslation('landing');
     const qrCodes = [
-    {
-        qrSrc: kpmgQR,
-        logoSrc: kpmgLogo,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-LVSgu9lKbWTgir5fIeZ',
-        buttonText: t('body.qr-codes.buttonKPMG')
-    },
-    {
-        qrSrc: northwaveQR,
-        logoSrc: northwaveLogo,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mOFFhsOa4zLpQ-h_',
-        buttonText: t('body.qr-codes.buttonNORTHWAVE')
-    },
-    {
-        qrSrc: sourcecomQR,
-        logoSrc: sourcecomLogo,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5DkXmD3RY9LyE_q48',
-        buttonText: t('body.qr-codes.buttonSOURCECOM')
-    },
-    {
-        qrSrc: ebuilderQR,
-        logoSrc: ebuilderLogo,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
-        buttonText: t('body.qr-codes.buttoneEBUILDER')
-    },
-    {
-        qrSrc: eciceronQR,
-        logoSrc: eciceronLogo,
-        linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
-        buttonText: t('body.qr-codes.buttonECICERON')
-    }
-];
+        {
+            qrSrc: kpmgQR,
+            logoSrc: kpmgLogo,
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-LVSgu9lKbWTgir5fIeZ',
+            buttonText: t('body.qr-codes.buttonKPMG')
+        },
+        {
+            qrSrc: northwaveQR,
+            logoSrc: northwaveLogo,
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mOFFhsOa4zLpQ-h_',
+            buttonText: t('body.qr-codes.buttonNORTHWAVE')
+        },
+        {
+            qrSrc: sourcecomQR,
+            logoSrc: sourcecomLogo,
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL5DkXmD3RY9LyE_q48',
+            buttonText: t('body.qr-codes.buttonSOURCECOM')
+        },
+        {
+            qrSrc: ebuilderQR,
+            logoSrc: ebuilderLogo,
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
+            buttonText: t('body.qr-codes.buttoneEBUILDER')
+        },
+        {
+            qrSrc: eciceronQR,
+            logoSrc: eciceronLogo,
+            linkHref: 'https://mitt.systemvetardagen.se/?exhibitor=-OL7mSABtS6L1XeNNS9a',
+            buttonText: t('body.qr-codes.buttonECICERON')
+        }
+    ];
 
 
     return (
         <>
-            {/* Please stop putting navbar here its globally inserted in App.tsx */}
             <div className="overflow-hidden font-poppins">
                 {/* Hero */}
                 <div className="h-screen max-h-[1200px] w-screen gradient-background text-white flex flex-col items-center justify-evenly py-[15vh] min-w-[351px] font-poppins tracking-wide">
@@ -100,20 +99,22 @@ export default function Landing() {
                         <Partners />
                     </FadeInSection>
                     <FadeInSection className="w-full h-48" direction="fadeLeft">
-                        <a
-                            href="/companies"
-                            className="relative w-full h-full overflow-hidden rounded-3xl group"
-                        >
+                        <a href="/companies" className="block w-full h-48 relative rounded-3xl overflow-hidden group">
                             <img
                                 src="/images/crowded-from-above.webp"
                                 alt="Crowded event"
-                                className="w-full h-full object-cover rounded-3xl grayscale transition-transform duration-200 group-hover:scale-105"
+                                className="w-full h-full object-cover filter grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-105"
                             />
-                            <span className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs text-center lg:text-lg">
-                                {t('body.meet-companies', {
-                                    numberOfCompanies: NUM_OF_COMPANIES,
-                                })}
-                            </span>
+
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-all duration-500 ease-in-out group-hover:bg-opacity-0"></div>
+
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <span className="bg-white p-4 rounded-2xl text-xs lg:text-lg text-center shadow-lg">
+                                    {t('body.meet-companies', {
+                                        numberOfCompanies: NUM_OF_COMPANIES,
+                                    })}
+                                </span>
+                            </div>
                         </a>
                     </FadeInSection>
 
@@ -132,16 +133,21 @@ export default function Landing() {
                     <FadeInSection direction="fadeLeft" className="w-full h-48">
                         <a
                             href="/visit-info"
-                            className="w-full h-full overflow-hidden relative rounded-3xl group"
+                            className="block w-full h-48 relative rounded-3xl overflow-hidden group"
                         >
                             <img
                                 src="/images/auditorium-seats.webp"
                                 alt=""
-                                className="object-cover w-full h-full filter grayscale rounded-3xl transition-transform duration-200 group-hover:scale-105"
+                                className="w-full h-full object-cover filter grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-105"
                             />
-                            <span className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
-                                {t('body.lectures')}
-                            </span>
+
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-all duration-500 ease-in-out group-hover:bg-opacity-0"></div>
+
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <span className="bg-white p-4 rounded-2xl text-xs lg:text-lg text-center shadow-lg">
+                                    {t('body.lectures')}
+                                </span>
+                            </div>
                         </a>
                     </FadeInSection>
                     <div className="flex flex-col md:flex-row gap-10 w-full">
@@ -160,16 +166,21 @@ export default function Landing() {
                             <FadeInSection key={index} direction={index % 2 === 0 ? "fadeLeft" : "fadeRight"} className="w-full h-48">
                                 <a
                                     href={item.href}
-                                    className="rounded-3xl w-full h-full overflow-hidden relative group"
+                                    className="block w-full h-48 relative rounded-3xl overflow-hidden group"
                                 >
                                     <img
                                         src={item.imgSrc}
                                         alt=""
-                                        className="object-cover w-full h-full rounded-3xl filter grayscale transition-transform duration-200 group-hover:scale-105"
+                                        className="w-full h-full object-cover filter grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-105"
                                     />
-                                    <span className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl text-xs lg:text-lg text-center">
-                                        {item.text}
-                                    </span>
+
+                                    <div className="absolute inset-0 bg-black bg-opacity-50 transition-all duration-500 ease-in-out group-hover:bg-opacity-0"></div>
+
+                                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                        <span className="bg-white p-4 rounded-2xl text-xs lg:text-lg text-center shadow-lg">
+                                            {item.text}
+                                        </span>
+                                    </div>
                                 </a>
                             </FadeInSection>
                         ))}
@@ -204,41 +215,41 @@ export default function Landing() {
                         </div>
                     </FadeInSection>
                     <FadeInSection direction="fadeLeft" className="w-full">
-    <div className="bg-[#E6F4FF] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
-        <h1 className="text-lg md:text-xl lg:text-3xl px-4 font-bold">
-            {t('body.qr-codes.header')}
-        </h1>
-        <div className="w-full px-4 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-6 justify-items-center">
-            {qrCodes.map((item, index) => (
-                <div key={index} className="flex flex-col items-center gap-4 w-full max-w-[200px]">
-                    <img 
-                        src={item.qrSrc} 
-                        alt={`QR Code ${index + 1}`} 
-                        className="w-full aspect-square object-contain rounded-xl shadow-md"
-                    />
-                    <div className="w-28 h-16 flex items-center justify-center">
-                        <img 
-                            src={item.logoSrc} 
-                            alt={`Logo ${index + 1}`} 
-                            className="max-h-full max-w-full object-contain" 
-                        />
-                    </div>
+                        <div className="bg-[#E6F4FF] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
+                            <h1 className="text-lg md:text-xl lg:text-3xl px-4 font-bold">
+                                {t('body.qr-codes.header')}
+                            </h1>
+                            <div className="w-full px-4 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-6 justify-items-center">
+                                {qrCodes.map((item, index) => (
+                                    <div key={index} className="flex flex-col items-center gap-4 w-full max-w-[200px]">
+                                        <img
+                                            src={item.qrSrc}
+                                            alt={`QR Code ${index + 1}`}
+                                            className="w-full aspect-square object-contain rounded-xl shadow-md"
+                                        />
+                                        <div className="w-28 h-16 flex items-center justify-center">
+                                            <img
+                                                src={item.logoSrc}
+                                                alt={`Logo ${index + 1}`}
+                                                className="max-h-full max-w-full object-contain"
+                                            />
+                                        </div>
 
-                    <a 
-                        href={item.linkHref} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="w-full"
-                    >
-                        <button className="bg-white border-2 border-blue-200 py-2 px-4 rounded-full text-sm font-bold w-full hover:bg-blue-50 transition-colors">
-                            {item.buttonText}
-                        </button>
-                    </a>
-                </div>
-            ))}
-        </div>
-    </div>
-</FadeInSection>
+                                        <a
+                                            href={item.linkHref}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-full"
+                                        >
+                                            <button className="bg-white border-2 border-blue-200 py-2 px-4 rounded-full text-sm font-bold w-full hover:bg-blue-50 transition-colors">
+                                                {item.buttonText}
+                                            </button>
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </FadeInSection>
 
                     <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="w-full">
