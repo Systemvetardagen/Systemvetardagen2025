@@ -21,7 +21,7 @@ import eciceronLogo from '../assets/images/eCiceronLogo.png';
 
 
 export default function Landing() {
-    const targetDate = '2025-03-26T16:00:00+01:00';
+    const targetDate = '2025-03-26T10:00:00+01:00';
     const [t] = useTranslation('landing');
     const qrCodes = [
         {
