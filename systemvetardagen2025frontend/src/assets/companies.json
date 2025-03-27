@@ -11,13 +11,9 @@
     "contacts": [
       {
         "name": "Marcus Carlestål",
-        "mail": "marcus.carlestal@accenture.com",
-        "phoneNumber": "+46700910032"
       },
       {
         "name": "Christopher Johnsson",
-        "mail": "christopher.johnsson@accenture.com",
-        "phoneNumber": "+46724069891"
       }
     ],
     "candidatePrograms": [
@@ -85,8 +81,6 @@
     "contacts": [
       {
         "name": "Dennis Leach",
-        "mail": "deleach@deloitte.se",
-        "phoneNumber": "0700802540"
       }
     ]
   },
@@ -101,8 +95,6 @@
     "contacts": [
       {
         "name": "Rebecka Kjellström",
-        "mail": "career@handelsbanken.se",
-        "phoneNumber": "+46 (0)730315596"
       }
     ],
     "candidatePrograms": [
@@ -144,7 +136,6 @@
     "contacts": [
       {
         "name": "Ida Ellingsson",
-        "mail": "ida.ellingsson@ericsson.com"
       }
     ],
     "candidatePrograms": [
@@ -186,13 +177,11 @@
     "contacts": [
       {
         "name": "Albin Renlund",
-        "mail": "albin.renlund@cgi.com",
-        "phoneNumber": "0705919296"
+
       },
       {
         "name": "Jessica Andersson",
-        "mail": "jessica.andersson@cgi.com",
-        "phoneNumber": "+46 76 1021481"
+
       }
     ],
     "candidatePrograms": [
@@ -230,13 +219,11 @@
     "contacts": [
       {
         "name": "Erika Eliasson",
-        "mail": "erika.eliasson@akavia.se",
-        "phoneNumber": "0706652922"
+
       },
       {
         "name": "Abelone Brander",
-        "mail": "abelone.brander@akavia.se",
-        "phoneNumber": "0706652972"
+
       }
     ],
     "linkedIn": "https://www.linkedin.com/company/akavia/",
@@ -253,7 +240,7 @@
     "contacts": [
       {
         "name": "Ender Kökat",
-        "mail": "Ender.kokat@guidedtalentsolutions.se"
+
       }
     ],
     "candidatePrograms": [
@@ -288,7 +275,6 @@
     "contacts": [
       {
         "name": "Marcus Andersson",
-        "mail": "marcus.a.andersson@swedbank.se"
       }
     ],
     "positions": [
@@ -314,13 +300,11 @@
     "contacts": [
       {
         "name": "Sofia Thomasson",
-        "mail": "sofia.thomasson@kpmg.se",
-        "phoneNumber": "+46 73 7396251"
+
       },
       {
         "name": "Robin Andreasson",
-        "mail": "robin.andreasson@kpmg.se",
-        "phoneNumber": "+46 70 8803902"
+
       }
     ],
     "candidatePrograms": [
@@ -353,13 +337,11 @@
     "contacts": [
       {
         "name": "Daniel Sparrow",
-        "mail": "Daniel.Sparrow@Columbusglobal.com",
-        "phoneNumber": "+46728868263"
+
       },
       {
         "name": "Alexander Tonelli",
-        "mail": "Alexander.Tonelli@Columbusglobal.com",
-        "phoneNumber": "+46702186226"
+
       }
     ],
     "candidatePrograms": [
@@ -413,8 +395,7 @@
     "contacts": [
       {
         "name": "Karl-Johan Kjellberg",
-        "mail": "karl-johan.kjellberg@lime.tech",
-        "phoneNumber": "+46736446930"
+
       }
     ]
   },
@@ -469,8 +450,7 @@
     "contacts": [
       {
         "name": "Team Employer Branding Sweden",
-        "mail": "employerbranding.sweden@scania.com",
-        "phoneNumber": "08-553 81000"
+
       }
     ]
   },
@@ -505,11 +485,11 @@
     "contacts": [
       {
         "name": "Katarina Malm, Employer Branding Specialist",
-        "mail": "katarina.malm@capgemini.com"
+
       },
       {
         "name": "Martin Höglund",
-        "mail": "martin.hoglund@capgemini.com"
+
       }
     ]
   },
@@ -552,18 +532,15 @@
     "contacts": [
       {
         "name": "Julia Karlberg",
-        "mail": "julia.karlberg@soprasteria.com",
-        "phoneNumber": "072-1763025"
+
       },
       {
         "name": "Emma Calderon",
-        "mail": "emma.calderon@soprasteria.com",
-        "phoneNumber": "070-8964052"
+
       },
       {
         "name": "Agnes Edlund",
-        "mail": "agnes.edlund@soprasteria.com",
-        "phoneNumber": "073-8500104"
+
       }
     ]
   },
@@ -606,7 +583,6 @@
     ],
     "contacts": [
       {
-        "mail": "student.it-avdelningen@polisen.se"
       }
     ]
   },
@@ -642,8 +618,7 @@
     "contacts": [
       {
         "name": "Elin Trotz",
-        "mail": "elin.trotz@innofactor.com",
-        "phoneNumber": "0768684369"
+
       }
     ]
   },
@@ -670,7 +645,7 @@
     "contacts": [
       {
         "name": "Rekrytering",
-        "mail": "rekrytering@pensionsmyndigheten.se"
+
       }
     ]
   },
@@ -704,8 +679,7 @@
     "contacts": [
       {
         "name": "Elin Jacobsson",
-        "mail": "elin.jacobsson@folksam.se",
-        "phoneNumber": "0708316853"
+
       }
     ]
   },
@@ -746,13 +720,11 @@
     "contacts": [
       {
         "name": "Mikael Udén-Berglund",
-        "mail": "studentevent@unionen.se",
-        "phoneNumber": "072-5901632"
+
       },
       {
         "name": "Julia Engman",
-        "mail": "studentevent@unionen.se",
-        "phoneNumber": "072-5901607"
+
       }
     ]
   },
@@ -785,18 +757,15 @@
     "contacts": [
       {
         "name": "Martin Lindberg",
-        "mail": "martin.lindberg@deviera.se",
-        "phoneNumber": "0790676643"
+
       },
       {
         "name": "Mattias Folke",
-        "mail": "mattias.folke@deviera.se",
-        "phoneNumber": "0723214248"
+
       },
       {
         "name": "Esmeralda Säll",
-        "mail": "esmeralda.sall@deviera.se",
-        "phoneNumber": "0760246222"
+
       }
     ]
   },
@@ -835,11 +804,11 @@
     "contacts": [
       {
         "name": "Michaela Liljedahl",
-        "mail": "michaela.liljedahl@scandichotels.com"
+
       },
       {
         "name": "Jenny Holmberg",
-        "mail": "jenny.holmberg@scandichotels.com"
+
       }
       
     ]
@@ -900,8 +869,7 @@
     "contacts": [
       {
         "name": "Therés Hesselgren Zaar",
-        "mail": "thz@softronic.se",
-        "phoneNumber": "0708813073"
+
       }
     ]
   },
@@ -940,8 +908,7 @@
     "contacts": [
       {
         "name": "Per Olsson",
-        "mail": "per.olsson@skatteverket.se",
-        "phoneNumber": "0105744238"
+
       }
     ]
   }
