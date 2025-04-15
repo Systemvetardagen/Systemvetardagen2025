@@ -5,11 +5,13 @@
     background-size: 300% 150%;
     animation: Background 20s ease infinite;
 }
+
 .gradient-background-reverse {
     background: linear-gradient(26deg, #ffc93f, #ff4cc2, #325fff);
     background-size: 300% 150%;
     animation: Background 20s ease infinite;
 }
+
 .gradient-text {
     -webkit-background-clip: text;
     color: transparent;
@@ -48,13 +50,6 @@
         --secondary: 255, 76, 194;
         --accent: 255, 201, 63;
         --link: 122, 142, 255;
-        /* Temporarily disabling darkmode */
-        /* --background: 30, 30, 30;
-        --text: 238, 229, 255;
-        --primary: 101, 23, 252;
-        --secondary: 253, 126, 220;
-        --accent: 253, 64, 139;
-        --link:122,142,255; */
     }
 }
 
@@ -78,50 +73,61 @@ h6 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 100;
         transform: translateY(0);
     }
 }
+
 @keyframes fadeDown {
     from {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 100;
         transform: translateY(0);
     }
 }
+
 @keyframes fadeLeft {
     from {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 100;
         transform: translateY(0);
     }
 }
+
 @keyframes fadeRight {
     from {
         opacity: 0;
         transform: translateX(20px);
     }
+
     to {
         opacity: 100;
         transform: translateY(0);
     }
 }
+
 .fadeUp {
     animation: fadeUp 0.5s;
 }
+
 .fadeDown {
-  animation: fadeDown 0.5s;
+    animation: fadeDown 0.5s;
 }
+
 .fadeLeft {
-  animation: fadeLeft 0.5s;
+    animation: fadeLeft 0.5s;
 }
+
 .fadeRight {
-  animation: fadeRight 0.5s;
+    animation: fadeRight 0.5s;
 }

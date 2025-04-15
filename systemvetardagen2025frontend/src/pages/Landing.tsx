@@ -61,7 +61,6 @@ export default function Landing() {
     return (
         <>
             <div className="overflow-hidden font-poppins">
-                {/* Hero */}
                 <div className="h-screen max-h-[1200px] w-screen gradient-background text-white flex flex-col items-center justify-evenly py-[15vh] min-w-[351px] font-poppins tracking-wide">
                     <div className="text-center mt-8">
                         <h1 className="text-4xl fadeRight">
@@ -91,7 +90,6 @@ export default function Landing() {
                         </button>
                     </NavLink>
                 </div>
-                {/* Body */}
                 <div className="w-screen px-[7vw] md:px-[15vw] lg:px-[20vw] py-[4vw] flex flex-col items-center justify-center gap-10 bg-background text-text text-center">
                     <FadeInSection direction="fadeLeft">
                         <div className="gradient-background gradient-text text-xl md:text-2xl lg:text-4xl mt-6">
@@ -217,6 +215,7 @@ export default function Landing() {
                             </div>
                         </div>
                     </FadeInSection>
+                    {/*
                     <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="bg-[#E6F4FF] rounded-3xl py-10 text-center items-center flex flex-col gap-10 shadow-lg w-full">
                             <h1 className="text-lg md:text-xl lg:text-3xl px-4 font-bold">
@@ -253,7 +252,7 @@ export default function Landing() {
                             </div>
                         </div>
                     </FadeInSection>
-
+                    */}
                     <FadeInSection direction="fadeLeft" className="w-full">
                         <div className="w-full">
                             <SignupLink />

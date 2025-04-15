@@ -15,9 +15,6 @@ import {
 import { Link } from 'react-router-dom';
 import FadeInSection from '../components/FadeInSection/FadeInSection';
 
-// Centered even box shadow style
-// const centeredShadow = '0 0 20px rgba(0, 0, 0, 0.15)';
-
 const companies: Company[] = companiesData;
 
 const Contact: React.FC<ContactType> = ({ name, mail, phoneNumber }) => {

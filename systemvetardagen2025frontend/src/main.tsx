@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import App from './App'; // Import main App component where routes are defined
+import App from './App';
 
 import global_en from './translations/en/global.json';
 import global_se from './translations/se/global.json';

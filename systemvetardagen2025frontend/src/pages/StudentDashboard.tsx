@@ -235,10 +235,9 @@ const StudentDashboard: React.FC = () => {
                                         (student, index) => (
                                             <tr
                                                 key={student.Id ?? index}
-                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${
-                                                    index % 2 !== 0 &&
+                                                className={`border-b border-gray-100 hover:bg-blue-200 transition-colors duration-200 ${index % 2 !== 0 &&
                                                     'bg-gray-100'
-                                                }`}
+                                                    }`}
                                             >
                                                 <td className="px-4 py-3">{`${student.FirstName} ${student.LastName}`}</td>
                                                 <td className="px-4 py-3">

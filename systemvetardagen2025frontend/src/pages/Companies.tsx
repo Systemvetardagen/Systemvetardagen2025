@@ -30,7 +30,6 @@ const Companies: React.FC = () => {
     const programsRef = useRef<HTMLDivElement>(null);
     const positionsRef = useRef<HTMLDivElement>(null);
 
-    // Close dropdowns when clicking outside
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
             if (
@@ -88,7 +87,6 @@ const Companies: React.FC = () => {
     };
 
     const filteredCompanies = companies.filter((company: Company) => {
-        // Search filter
         const matchesSearch =
             searchTerm === '' ||
             company.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -187,9 +185,8 @@ const Companies: React.FC = () => {
                                     )}
                                 </p>
                                 <ChevronDown
-                                    className={`transform transition-transform duration-200 ${
-                                        programsExpanded ? 'rotate-180' : ''
-                                    }`}
+                                    className={`transform transition-transform duration-200 ${programsExpanded ? 'rotate-180' : ''
+                                        }`}
                                 />
                             </button>
                         </div>
@@ -210,17 +207,15 @@ const Companies: React.FC = () => {
                                     'positions'
                                 )}
                                 <ChevronDown
-                                    className={`transform transition-transform duration-200 ${
-                                        positionsExpanded ? 'rotate-180' : ''
-                                    }`}
+                                    className={`transform transition-transform duration-200 ${positionsExpanded ? 'rotate-180' : ''
+                                        }`}
                                 />
                             </button>
                             <div
-                                className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300 ease-in-out ${
-                                    positionsExpanded
+                                className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300 ease-in-out ${positionsExpanded
                                         ? 'max-h-[1000px] opacity-100'
                                         : 'max-h-0 opacity-0 overflow-hidden'
-                                }`}
+                                    }`}
                             ></div>
                         </div>
                     </div>

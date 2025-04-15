@@ -35,7 +35,6 @@ const App: React.FC = () => {
                 <Route path="/visit-info" element={<VisitInfo />} />
                 <Route path="/visit-info-test" element={<VisitInfoTest />} />
                 <Route path="/about" element={<About />} />
-                {/* Redirecting undefined routes */}
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             <Footer />

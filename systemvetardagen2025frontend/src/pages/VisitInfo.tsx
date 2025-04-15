@@ -33,7 +33,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                     <div className="flex-1">
                         <h1 className="font-semibold text-xl md:text-2xl">{lecture.company}</h1>
                         <p className="text-sm md:text-md text-white/90 font-medium">{lecture.topic}</p>
-                        
+
                         <div className="flex flex-wrap items-center gap-3 mt-1 text-xs md:text-sm text-white/70">
                             <div className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
@@ -41,7 +41,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                                 </svg>
                                 {lecture.location}
                             </div>
-                            
+
                             {(lecture.speaker || lecture.speakers) && (
                                 <div className="flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
@@ -51,7 +51,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                                 </div>
                             )}
                         </div>
-                        
+
                         {lecture.note && (
                             <div className="bg-white/5 rounded-md p-2 mt-1 max-w-md">
                                 <p className="text-xs text-white/80 italic">{lecture.note}</p>
@@ -59,7 +59,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                         )}
                     </div>
                 </div>
-                
+
                 {/* Mobile view */}
                 <div className="flex flex-col md:hidden">
                     <div className="bg-gradient-to-r from-primary/20 to-transparent px-2 py-1 rounded-lg w-fit mb-1">
@@ -67,7 +67,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                     </div>
                     <h1 className="font-semibold text-lg">{lecture.company}</h1>
                     <p className="text-sm text-white/90 font-medium">{lecture.topic}</p>
-                    
+
                     <div className="flex flex-wrap items-center gap-2 mt-1 text-xs text-white/70">
                         <div className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
@@ -75,7 +75,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                             </svg>
                             {lecture.location}
                         </div>
-                        
+
                         {(lecture.speaker || lecture.speakers) && (
                             <div className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-primary" viewBox="0 0 20 20" fill="currentColor">
@@ -85,7 +85,7 @@ const LectureItem: React.FC<LectureItemProps> = ({ lecture }) => {
                             </div>
                         )}
                     </div>
-                    
+
                     {lecture.note && (
                         <div className="bg-white/5 rounded-md p-2 mt-1">
                             <p className="text-xs text-white/80 italic">{lecture.note}</p>
@@ -128,7 +128,7 @@ const VisitInfo: React.FC = () => {
                     ))}
                 </div>
             </div>
-            
+
             <a href="/svgs/floormap.svg" className="mt-10">
                 <img className="max-w-[80vw] rounded-3xl" src="/svgs/floormap.svg" alt="Floor map" />
             </a>

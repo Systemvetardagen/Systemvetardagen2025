@@ -51,7 +51,7 @@
             "buttonECICERON": "Book with eCiceron"
         },
         "uppdated": {
-            "header":"Keep yourself updated",
+            "header": "Keep yourself updated",
             "body": "Would you like to receive updates about Systemvetardagen with tailored information via email?",
             "button": "Click here!"
         }
